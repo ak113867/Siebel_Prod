@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+></Comments
+><DestinationObjectName
+>VHA Accepted Recommendations IO</DestinationObjectName
+><Name
+>VHA Accepted Recommendations Map</Name
+><SourceObjectName
+>VHA All Recommendations Internal IO</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Accepted Recommendations</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA All Recommendations Details_to_Accepted Recommendations</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>VHA All Recommendations Details</SourceComponentName
+><SourceSearchSpecification
+>[Issue]&lt;&gt;&quot;Service&quot; AND [Outcome] = &quot;Accepted&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AssociatedProductIDs</DestinationFieldName
+><SourceFieldExpression
+>[AssociatedProductIDs]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>BillingAccountID</DestinationFieldName
+><SourceFieldExpression
+>[BillingAccountID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bundle Configuration</DestinationFieldName
+><SourceFieldExpression
+>[Bundle Configuration]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bundle Name</DestinationFieldName
+><SourceFieldExpression
+>[Bundle Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bundle Parent</DestinationFieldName
+><SourceFieldExpression
+>[Bundle Parent]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Category</DestinationFieldName
+><SourceFieldExpression
+>[Category]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Channel</DestinationFieldName
+><SourceFieldExpression
+>[Channel]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coexistence Flag</DestinationFieldName
+><SourceFieldExpression
+>[Coexistence Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ContextName</DestinationFieldName
+><SourceFieldExpression
+>[ContextName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Direction</DestinationFieldName
+><SourceFieldExpression
+>[Direction]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>EndDate</DestinationFieldName
+><SourceFieldExpression
+>[EndDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ExternalID</DestinationFieldName
+><SourceFieldExpression
+>[ExternalID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>GroupID</DestinationFieldName
+><SourceFieldExpression
+>[GroupID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsHardBundle</DestinationFieldName
+><SourceFieldExpression
+>[IsHardBundle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsPickMix</DestinationFieldName
+><SourceFieldExpression
+>[IsPickMix]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsSoftBundle</DestinationFieldName
+><SourceFieldExpression
+>[IsSoftBundle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Issue</DestinationFieldName
+><SourceFieldExpression
+>[Issue]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Label</DestinationFieldName
+><SourceFieldExpression
+>[Label]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>MSISDN</DestinationFieldName
+><SourceFieldExpression
+>[MSISDN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Offer Type</DestinationFieldName
+><SourceFieldExpression
+>[Offer Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Outcome</DestinationFieldName
+><SourceFieldExpression
+>[Outcome]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Par Row Id</DestinationFieldName
+><SourceFieldExpression
+>[Par Row Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Pega InteractionId</DestinationFieldName
+><SourceFieldExpression
+>[Pega InteractionId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Rank</DestinationFieldName
+><SourceFieldExpression
+>[Rank]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Reward Term</DestinationFieldName
+><SourceFieldExpression
+>[Reward Term]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Reward Value</DestinationFieldName
+><SourceFieldExpression
+>[Reward Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>RewardTerm</DestinationFieldName
+><SourceFieldExpression
+>[RewardTerm]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Row Id</DestinationFieldName
+><SourceFieldExpression
+>[Row Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Sam Product Id</DestinationFieldName
+><SourceFieldExpression
+>[Sam Product Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>StackabilityFlag</DestinationFieldName
+><SourceFieldExpression
+>[StackabilityFlag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SubCategory</DestinationFieldName
+><SourceFieldExpression
+>[SubCategory]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SubjectID</DestinationFieldName
+><SourceFieldExpression
+>[SubjectID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>[Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ValidMPPTerm</DestinationFieldName
+><SourceFieldExpression
+>[ValidMPPTerm]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>

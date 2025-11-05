@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+></Comments
+><DestinationObjectName
+>VHA Pega Intent Order IO</DestinationObjectName
+><Name
+>VHA Pega Order Datamap</Name
+><SourceObjectName
+>VHA Pega Intent Order External IO</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Order Entry - Orders</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Order_to_VF Order Entry - Orders Thin BC</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Order</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Pega Accepted Recommendation Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>AcceptedRecommendationDetails_to_VHA Pega Accepted Recommendation Details</Name
+><ParentComponentMapName
+>Order_to_VF Order Entry - Orders Thin BC</ParentComponentMapName
+><SourceComponentName
+>AcceptedRecommendationDetails</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Context Name</DestinationFieldName
+><SourceFieldExpression
+>[Context Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bundle Configuration</DestinationFieldName
+><SourceFieldExpression
+>[Bundle Configuration]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bundle Parent</DestinationFieldName
+><SourceFieldExpression
+>[Bundle Parent]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Category</DestinationFieldName
+><SourceFieldExpression
+>[Category]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Channel</DestinationFieldName
+><SourceFieldExpression
+>[Channel]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>GroupID</DestinationFieldName
+><SourceFieldExpression
+>[GroupID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsHardBundle</DestinationFieldName
+><SourceFieldExpression
+>[IsHardBundle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsPickMix</DestinationFieldName
+><SourceFieldExpression
+>[IsPickMix]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsSoftBundle</DestinationFieldName
+><SourceFieldExpression
+>[IsSoftBundle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Issue</DestinationFieldName
+><SourceFieldExpression
+>[Issue]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>MSISDN</DestinationFieldName
+><SourceFieldExpression
+>[MSISDN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Multi Service Flag</DestinationFieldName
+><SourceFieldExpression
+>[Multi Service Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Offer Type</DestinationFieldName
+><SourceFieldExpression
+>[Offer Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Pega Interaction Id</DestinationFieldName
+><SourceFieldExpression
+>[Pega Interaction Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Plan Type</DestinationFieldName
+><SourceFieldExpression
+>[Plan Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Rank</DestinationFieldName
+><SourceFieldExpression
+>[Rank]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Reward Term</DestinationFieldName
+><SourceFieldExpression
+>[Reward Term]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Reward Value</DestinationFieldName
+><SourceFieldExpression
+>[Reward Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Short Description</DestinationFieldName
+><SourceFieldExpression
+>[Short Description]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SubCategory</DestinationFieldName
+><SourceFieldExpression
+>[SubCategory]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Subject ID</DestinationFieldName
+><SourceFieldExpression
+>[Subject ID]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Pega Primary Intents</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>PrimaryIntents_to_VHA Pega Primary Intents</Name
+><ParentComponentMapName
+>Order_to_VF Order Entry - Orders Thin BC</ParentComponentMapName
+><SourceComponentName
+>PrimaryIntents</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Intent CDH Code</DestinationFieldName
+><SourceFieldExpression
+>[Intent CDH Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ProductDescription</DestinationFieldName
+><SourceFieldExpression
+>[ProductDescription]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Pega Secondary Intents</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>SecondaryIntents_to_VHA Pega Secondary Intents</Name
+><ParentComponentMapName
+>Order_to_VF Order Entry - Orders Thin BC</ParentComponentMapName
+><SourceComponentName
+>SecondaryIntents</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Intent CDH Code</DestinationFieldName
+><SourceFieldExpression
+>[Intent CDH Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Intent Question Code</DestinationFieldName
+><SourceFieldExpression
+>[Intent Question Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>
