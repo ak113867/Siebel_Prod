@@ -1,0 +1,50 @@
+:root {
+		--container-bgcolor: #F4F4F4;
+
+		--padding-xxxsmall : 2px;
+		--noPadding: 0px;
+		--padding-xsmall: 8px;
+		--padding-small-ten: 10px;
+		--padding-small: 12px;
+		--padding-medium: 14px;
+		--padding-large: 16px;    
+		--padding-xlarge: 20px;    
+		--padding-xxlarge: 24px;
+
+		--noMargin: 0px;
+		--margin-xxsmall: 4px;
+		--margin-xsmall: 8px;
+		--margin-small: 12px;
+		--margin-medium: 16px;    
+		--margin-large: 20px;    
+		--margin-xlarge: 24px;
+		--margin-xxlarge: 32px;
+
+		--radius-xxsmall: 4px;
+		--border-radius-xxsmall: 4px;
+		--border-radius-xxxsmall :2px;
+
+		--divider-color: #A3A3AD;
+		
+		--label--border-radius-rounded: 999px;
+		--border-color--enabled: #A3A3AD;
+		
+		--color-secondary-active:#024;
+		--color-secondary-lightest:#F0F2F5;
+
+		--flex-gap-xlarge : 24px;
+		--flex-gap-medium : 16px;
+		--flex-gap-small : 12px;
+		--flex-gap-xsmall : 8px;
+		--flex-gap-xxsmall : 4px;
+
+		--border-width-xsmall: 2px;
+		--border-width-small: 1px;
+		--border-width-medium: 4px;
+		--border-width-large: 8px;
+		--border-width-xxlarge: 12px;
+
+		--height-medium: 32px;
+
+		--display-none: none;
+}

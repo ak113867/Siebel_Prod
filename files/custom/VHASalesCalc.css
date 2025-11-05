@@ -177,15 +177,34 @@ opacity: 1;
 }
 
 /*Vasavi coverage status*/
+
+
+.vhascppbtn.vha-sc-btn-border-clr {/*added by vinay*/
+    background-color: #dbe5e052;
+    color: #0c0a0ad4;
+	padding: 5px;
+}
+ 
+.CSRed:before{
+    content: url(../../images/custom/menu-icons/exclamationCircleIcon.svg);
+    vertical-align: middle;
+ 
+}
 .CSRed {
-	background: #e60000;
+	/*background: #e60000;*/
+	background-color:#F0F2F5;
     width: 12px;
     height: 12px;
     display: inline-block;
     border-radius: 50%;
     margin: auto 10px;
 }
+.CSGreen:before{
+    content: url(../../images/custom/menu-icons/active_icon.svg);
+    vertical-align: middle;
+}
 .CSGreen {
+	background:white !important;
 	background: #28a745;
     width: 12px;
     height: 12px;
@@ -193,8 +212,13 @@ opacity: 1;
     border-radius: 50%;
     margin: auto 10px;
 }
+.CSOrange:before{
+    content: url(../../images/custom/menu-icons/warningIcon.svg);
+    vertical-align: middle;
+}
 .CSOrange {
-	background: orange;
+	/*background: orange;*/
+	background-color:#F0F2F5;
     width: 12px;
     height: 12px;
     display: inline-block;
@@ -2949,15 +2973,36 @@ opacity: 1;
 }
 
 /*Vasavi coverage status*/
+.vhascppbtn.vha-sc-btn-border-clr {/*added by vinay*/
+    background-color: #dbe5e052;
+    color: #0c0a0ad4;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.CSRed:before{
+    content: url(../../images/custom/menu-icons/exclamationCircleIcon.svg);
+    vertical-align: middle;
+}
+
 .CSRed {
-	background: #e60000;
+
+	/*background: #e60000;*/
+	background-color:#F0F2F5;
     width: 12px;
     height: 12px;
     display: inline-block;
     border-radius: 50%;
     margin: auto 10px;
 }
+
+.CSGreen:before{
+    content: url(../../images/custom/menu-icons/active_icon.svg);
+    vertical-align: middle;
+}
+
 .CSGreen {
+	background:white !important;
 	background: #28a745;
     width: 12px;
     height: 12px;
@@ -2965,14 +3010,23 @@ opacity: 1;
     border-radius: 50%;
     margin: auto 10px;
 }
+
+.CSOrange:before{
+    content: url(../../images/custom/menu-icons/warningIcon.svg);
+    vertical-align: middle;
+}
+
 .CSOrange {
-	background: orange;
+
+	/*background: orange;*/
+	background-color:#F0F2F5;
     width: 12px;
     height: 12px;
     display: inline-block;
     border-radius: 50%;
     margin: auto 10px;
 }
+
 
 .vha-sc-bldnewpln-cust-dtls {
 	background: #F4F4F4;
@@ -5666,4 +5720,19 @@ opacity: 0;
 }
 #vha-sc-nbn-tech-type{
 	margin-left:60px;
+}
+
+#vha-ign-billingAccounts.singleAccount{
+	-webkit-appearance: none;
+	pointer-events: none;
+	background-color: #F0F2F5;
+}
+
+.vha-ign-recm-C1-row2 .siebui-applet .siebui-applet-header .miniBtnUIC{
+	display:none;	
+}
+.vha-ign-coveragecheckbutton:disabled {
+    opacity: 0.65;
+    pointer-events: none !important;
+    cursor: none !important;
 }
