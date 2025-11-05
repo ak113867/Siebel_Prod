@@ -1,0 +1,6587 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+></Comments
+><DestinationObjectName
+>VHAOneSQRESTAPIIO</DestinationObjectName
+><Name
+>VHA OneSQ REST API Response Map</Name
+><SourceObjectName
+>CheckServiceQualificationOneSQ</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>NBN MAS Range Flag</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[mas] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;MAS Range Flag&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;MaximumAttainableSpeed&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([mas] IS NOT NULL, IIF(InStr([mas], &quot; - &quot;) &gt; 0,&quot;Yes&quot;,&quot;No&quot;),&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>serviceSpecification_alternativeTechnology_mas</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>serviceSpecification</SourceComponentName
+><SourceSearchSpecification
+>[alternativeTechnology.mas] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;AlternativeTechnologyMAS&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;AlternativeTechnology&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[alternativeTechnology.mas]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision supportingProductFeatures_mas TRANSACT</Name
+><ParentComponentMapName
+>Vision VHA Site Qualification BC TRANSACT</ParentComponentMapName
+><SourceComponentName
+>TRANSACT</SourceComponentName
+><SourceSearchSpecification
+>[mas] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;MaximumAttainableSpeed&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[mas]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;MAS&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingProductFeatures_tr069UNIV</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[tr069UNIV] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;TR-069 UNI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([tr069UNIV] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>capacityAvailability</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>capacityAvailability</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF ([highSpeedNotLessThan] IS NULL,IIF([available] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),IIF([highSpeedNotLessThan] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>IIF ([highSpeedNotLessThan] IS NULL,([supportingProductFeatures.type]+&quot; &quot;+[featureType]+&quot; &quot;+[capacity]+[unitOfMeasure]+&quot; &quot;+Capacity),([supportingProductFeatures.type]+&quot; &quot;+[featureType]+&quot; &quot;+&quot;High Speed Tiers (greater or equal to&quot;+&quot; &quot;+[capacity]+[unitOfMeasure]+&quot;)&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Qualifier</DestinationFieldName
+><SourceFieldExpression
+>[unitOfMeasure]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingRelatedLocationFeatures_safetyCriticalServiceAlert</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[safetyCriticalServiceAlert] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([safetyCriticalServiceAlert] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Safety Critical Service Alert&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>OptisupportingRelatedLocationFeatures_selfAndRSPProfessionalInstallEligible</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[selfAndRSPProfessionalInstallEligible] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Self Install and RSP Professional Install Eligible&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([selfAndRSPProfessionalInstallEligible] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification Service List</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Service Line Attributes</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[supportingResource.serviceabilityClass] IS NOT NULL AND [supportingResource.type] = &quot;CopperLineResource&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Copper Pair Status</DestinationFieldName
+><SourceFieldExpression
+>[copperPairStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Last Active Date</DestinationFieldName
+><SourceFieldExpression
+>[lastActiveDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NTD Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[supportingResource.ntdInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect</DestinationFieldName
+><SourceFieldExpression
+>[potsInterconnect]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect Match</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.potsInterconnectMatch] IS NOT NULL ,IIF([supportingResource.potsInterconnectMatch] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Port Id</DestinationFieldName
+><SourceFieldExpression
+>[Port Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Power Supply Battery Backup Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[ntdBatteryBackup.powerSupplywithBatteryBackupInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Instance Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Priority Assist</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.priorityAssist]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>&quot;&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Provider Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.potsInterconnectType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.nbnServiceStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UNI Type</DestinationFieldName
+><SourceFieldExpression
+>[UNI Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Subsequent Charge Applies</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.subsequentInstallationChargeApplies] IS NOT NULL ,IIF([supportingResource.subsequentInstallationChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Id Match</DestinationFieldName
+><SourceFieldExpression
+>[serviceIDMatch]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification Service List</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Service List Attributes_uniPortD</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>uniPortD</SourceComponentName
+><SourceSearchSpecification
+>[supportingResource.serviceabilityClass] IS NULL AND [supportingResource.type] = &quot;NTD&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Subsequent Charge Applies</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.subsequentInstallationChargeApplies] IS NOT NULL ,IIF([supportingResource.subsequentInstallationChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Copper Pair Status</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.copperPairStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NTD Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[supportingResource.ntdInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Id Match</DestinationFieldName
+><SourceFieldExpression
+>[serviceIDMatch]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect Match</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.potsInterconnectMatch] IS NOT NULL ,IIF([supportingResource.potsInterconnectMatch] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Port Id</DestinationFieldName
+><SourceFieldExpression
+>Right([uniPortD.id],1)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Power Supply Battery Backup Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[ntdBatteryBackup.powerSupplywithBatteryBackupInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Priority Assist</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.priorityAssist]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Instance Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Provider Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.potsInterconnectType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UNI Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;UNI-D&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification Service List</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Service List Attributes_uniPortV</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>uniPortV</SourceComponentName
+><SourceSearchSpecification
+>[supportingResource.serviceabilityClass] IS NULL AND [supportingResource.type] = &quot;NTD&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Copper Pair Status</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.copperPairStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NTD Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[supportingResource.ntdInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect Match</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.potsInterconnectMatch] IS NOT NULL ,IIF([supportingResource.potsInterconnectMatch] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Port Id</DestinationFieldName
+><SourceFieldExpression
+>Right([uniPortV.id],1)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Power Supply Battery Backup Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[ntdBatteryBackup.powerSupplywithBatteryBackupInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Priority Assist</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.priorityAssist]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Instance Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Provider Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.potsInterconnectType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UNI Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;UNI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Subsequent Charge Applies</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.subsequentInstallationChargeApplies] IS NOT NULL ,IIF([supportingResource.subsequentInstallationChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Id Match</DestinationFieldName
+><SourceFieldExpression
+>[serviceIDMatch]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingRelatedLocationFeatures_NewDevelopmentsChargeApplies</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[newDevelopmentsChargeApplies] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([newDevelopmentsChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NewDevelopmentsChargeApplies&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ChargeFeature&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingRelatedLocationFeatures_networkBoundaryPoint</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[networkBoundaryPoint] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[networkBoundaryPoint]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Network Boundary Point&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+> Opti supportingRelatedSiteBoundaries_OSAID</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingRelatedSiteBoundaries</SourceComponentName
+><SourceSearchSpecification
+>[osaId] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;OSAID&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[osaId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>CheckServiceQualification</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>CheckServiceQualificationOneSQ</SourceComponentName
+><SourceSearchSpecification
+>1=2</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>CheckServiceQualification_NBNLocationId</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>CheckServiceQualificationOneSQ</SourceComponentName
+><SourceSearchSpecification
+>[id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NBNLocationID&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>FibreConnectServiceable</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>serviceSpecification</SourceComponentName
+><SourceSearchSpecification
+>[alternativeTechnology.type] IS NOT NULL AND [alternativeTechnology.svcClass] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([serviceSpecification.alternativeTechnology.type] = &apos;Fibre&apos; AND [serviceSpecification.alternativeTechnology.svcClass] &gt; 0 ,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Fibre Connect Serviceable&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>No Network Services</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>CheckServiceQualificationOneSQ</SourceComponentName
+><SourceSearchSpecification
+>[&amp;ConfirmedNetwork] IS NULL  AND (([Services.nbn]&lt;&gt;&quot;1&quot; AND [Services.nbn]&lt;&gt;&quot;-2&quot;) OR [Services.nbn] IS NULL OR [Services.nbn] = &quot;-1&quot;) AND (([Services.opticomm]&lt;&gt;&quot;1&quot; AND [Services.opticomm]&lt;&gt;&quot;-2&quot;) OR [Services.opticomm] IS NULL OR [Services.opticomm] = &quot;-1&quot;) AND (([Services.fttbw]&lt;&gt;&quot;1&quot; AND [Services.fttbw]&lt;&gt;&quot;-2&quot;)OR [Services.fttbw] IS NULL OR [Services.fttbw] = &quot;-1&quot;) AND (([Services.transact]&lt;&gt;&quot;1&quot; AND [Services.transact]&lt;&gt;&quot;-2&quot;) OR [Services.transact] IS NULL OR [Services.transact] = &quot;-1&quot;)</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Site Qualification Status</DestinationFieldName
+><SourceFieldExpression
+>&quot;Rejected&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQPriorityNetwork</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;PriorityNetwork] IS NULL,&apos;N/A&apos;,[&amp;PriorityNetwork])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Session Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SessionId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Technology</DestinationFieldName
+><SourceFieldExpression
+>No Primary Access Technology</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is4Goutdoor</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is4Goutdoor]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is4Goutdoor&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5G</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>FWA</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5G]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;fwaStatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5G&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_SubsequentInstallationChargeApplies</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[subsequentInstallationChargeApplies] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;SubsequentInstallationChargeApplies&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.subsequentInstallationChargeApplies] IS NOT NULL ,IIF([supportingResource.subsequentInstallationChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5GM</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5G]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5G&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5Gindoor</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5Gindoor]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5Gindoor&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5GindoorNsa</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5GindoorNsa]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5GindoorNsa&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5Gnsa</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>FWA</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5Gnsa]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;fwaStatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5Gnsa&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5GnsaM</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5Gnsa]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5Gnsa&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingRelatedLocationFeatures_safetyCriticalServiceAlert</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[safetyCriticalServiceAlert] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([safetyCriticalServiceAlert] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Safety Critical Service Alert&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5Goutdoor</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5Goutdoor]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5Goutdoor&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is5GoutdoorNsa</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is5GoutdoorNsa]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is5GoutdoorNsa&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>isNbnFallback4G</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[isNbnFallback4G]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;isNbnFallback4G&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>ntdBatteryBackup_BatteryPowerUnit</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>ntdBatteryBackup</SourceComponentName
+><SourceSearchSpecification
+>[batteryPowerUnit] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;BatteryPowerUnit&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTD&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([batteryPowerUnit] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>service</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>service</SourceComponentName
+><SourceSearchSpecification
+>1=2</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>serviceQualificationItem</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>serviceQualificationItem</SourceComponentName
+><SourceSearchSpecification
+>1=2</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>serviceSpecification_BusinessFibre</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>serviceSpecification</SourceComponentName
+><SourceSearchSpecification
+>[businessFibre] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Business Fibre&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([businessFibre] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>serviceSpecification_ServiceabilityClass</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>serviceSpecification</SourceComponentName
+><SourceSearchSpecification
+>[serviceabilityClass] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;ServiceabilityClass&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>serviceSpecification_alternativeTechnology</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>serviceSpecification</SourceComponentName
+><SourceSearchSpecification
+>[alternativeTechnology.type] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;AlternativeTechnology&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[alternativeTechnology.type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>serviceSpecification_alternativeTechnology_svcClass</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>serviceSpecification</SourceComponentName
+><SourceSearchSpecification
+>[alternativeTechnology.svcClass] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;AlternativeTechnologysvcClass&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[alternativeTechnology.svcClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingProductFeatures_tr069UNIV</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[tr069UNIV] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;TR-069 UNI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([tr069UNIV] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>serviceSpecification_primaryAccessTechnology</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>serviceSpecification</SourceComponentName
+><SourceSearchSpecification
+>[primaryAccessTechnology] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[primaryAccessTechnology]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;PrimaryAccessTechnology&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>speedTierAvailability</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>speedTierAvailability</SourceComponentName
+><SourceSearchSpecification
+>[Value] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF(InStr([&amp;HighSpeedTier], &quot;Home Ultrafast&quot;) &gt; 0,&quot;greater or equal to 1000Mbps&quot;,IIF(InStr([&amp;HighSpeedTier], &quot;Home Superfast&quot;) &gt; 0,&quot;greater or equal to 250Mbps&quot;,&quot;&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Speed Tier Availability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingProduct</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingProduct</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;serviceProviderId&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;supportingProduct&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingProductFeatures_ftpUNIV</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[ftpUNIV] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([ftpUNIV] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;FTP UNI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingProductFeatures_mas</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[mas] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;MAS&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;MaximumAttainableSpeed&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[mas]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingProductFeatures_multicast</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[multicast] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Multicast&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([multicast] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingProductFeatures_tc2</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[tc2] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;TC2&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([tc2] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingRelatedSiteBoundaries_CSAID</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingRelatedSiteBoundaries</SourceComponentName
+><SourceSearchSpecification
+>[csaId] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;CSAID&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[csaId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>1=2</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingRelatedLocationFeatures_selfAndRSPProfessionalInstallEligible</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[selfAndRSPProfessionalInstallEligible] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Self Install and RSP Professional Install Eligible&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([selfAndRSPProfessionalInstallEligible] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_NTDInstallDate</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[ntdInstallDate] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTDInstallDate&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTD&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[ntdInstallDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_NTDPowerType</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[ntdPowerType] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTDPowerType&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTD&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[ntdPowerType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification Service List</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti Service Line Attributes</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingResource</SourceComponentName
+><SourceSearchSpecification
+>[&amp;serviceabilityClass] IS NOT NULL AND [OptisupportingResource.type] = &quot;OTD&quot; AND 1=2</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Copper Pair Status</DestinationFieldName
+><SourceFieldExpression
+>[copperPairStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Last Active Date</DestinationFieldName
+><SourceFieldExpression
+>[lastActiveDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NTD Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[OptisupportingResource.OTDInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect</DestinationFieldName
+><SourceFieldExpression
+>[potsInterconnect]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect Match</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.potsInterconnectMatch] IS NOT NULL ,IIF([supportingResource.potsInterconnectMatch] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Port Id</DestinationFieldName
+><SourceFieldExpression
+>[Port Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Power Supply Battery Backup Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[ntdBatteryBackup.powerSupplywithBatteryBackupInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Priority Assist</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.priorityAssist]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Instance Id</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingProduct.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>&quot;&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Provider Id</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingProduct.serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingResource.type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[&amp;serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingProduct.serviceabilityStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UNI Type</DestinationFieldName
+><SourceFieldExpression
+>[UNI Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Subsequent Charge Applies</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.subsequentInstallationChargeApplies] IS NOT NULL ,IIF([supportingResource.subsequentInstallationChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification Service List</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti Service List Attributes_OptiouiPortD</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptiouiPortD</SourceComponentName
+><SourceSearchSpecification
+>[OptisupportingResource.type] = &quot;OTD&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Loss Notification Identifier</DestinationFieldName
+><SourceFieldExpression
+>[lossNotificationIdentifier]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NTD Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[OptisupportingResource.OTDInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect Match</DestinationFieldName
+><SourceFieldExpression
+>IIF([OptisupportingResource.potsInterconnectMatch] IS NOT NULL ,IIF([OptisupportingResource.potsInterconnectMatch] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Port Id</DestinationFieldName
+><SourceFieldExpression
+>Right([OptiouiPortD.id],1)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Power Supply Battery Backup Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[ntdBatteryBackup.powerSupplywithBatteryBackupInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Priority Assist</DestinationFieldName
+><SourceFieldExpression
+>[priorityAssist]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Provider Id</DestinationFieldName
+><SourceFieldExpression
+>[serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.potsInterconnectType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[&amp;serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UNI Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;OUI-D&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Subsequent Charge Applies</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.subsequentInstallationChargeApplies] IS NOT NULL ,IIF([supportingResource.subsequentInstallationChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Instance Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingProductId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Copper Pair Status</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingResource.copperPairStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingRelatedLocationFeatures_networkBoundaryPoint</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[networkBoundaryPoint] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[networkBoundaryPoint]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Network Boundary Point&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification Service List</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti Service List Attributes_OptiouiPortV</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptiouiPortV</SourceComponentName
+><SourceSearchSpecification
+>[OptisupportingResource.type] = &quot;OTD&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POTS Interconnect Match</DestinationFieldName
+><SourceFieldExpression
+>IIF([OptisupportingResource.potsInterconnectMatch] IS NOT NULL ,IIF([OptisupportingResource.potsInterconnectMatch] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Port Id</DestinationFieldName
+><SourceFieldExpression
+>Right([OptiouiPortV.id],1)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Power Supply Battery Backup Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[ntdBatteryBackup.powerSupplywithBatteryBackupInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Priority Assist</DestinationFieldName
+><SourceFieldExpression
+>[supportingService.priorityAssist]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Instance Id</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingProduct.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Provider Id</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingProduct.serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.potsInterconnectType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[&amp;serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UNI Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;OUI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Subsequent Charge Applies</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.subsequentInstallationChargeApplies] IS NOT NULL ,IIF([supportingResource.subsequentInstallationChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Copper Pair Status</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.copperPairStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NTD Install Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[OptisupportingResource.OTDInstallDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti Services</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>Optiservice</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([Services.nbn]=&apos;1&apos; OR [Services.nbn]=&apos;-2&apos;,IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/OPTICOMM/VISION&apos;,&apos;NBN/OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/VISION&apos;,&apos;NBN&apos;)),IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;OPTICOMM/VISION&apos;,&apos;OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;VISION&apos;,[&amp;ConfirmedNetwork])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti UNI Type_uniPortD_Attributes</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptiouiPortD</SourceComponentName
+><SourceSearchSpecification
+>[id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;OUI Type&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>&quot;OUI-D&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti UNI Type_uniPortV_Attributes</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptiouiPortV</SourceComponentName
+><SourceSearchSpecification
+>[id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;OUI Type&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>&quot;OUI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti VHA Site Qualification BC</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Optiservice</SourceComponentName
+><SourceSearchSpecification
+>[&amp;ConfirmedNetwork]=&quot;OPTICOMM&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status Code</DestinationFieldName
+><SourceFieldExpression
+>[&amp;serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status Description</DestinationFieldName
+><SourceFieldExpression
+>[Status Description]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Appointment Required Flag</DestinationFieldName
+><SourceFieldExpression
+>[&amp;OptiAppointmentStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQConfirmedNetwork</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConfirmedNetwork]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Technology</DestinationFieldName
+><SourceFieldExpression
+>EAILookUpSiebel(&quot;OPTICOMM_ACCESS_TECHNOLOGY&quot;,[&amp;primaryAccessTechnology])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CSA Id</DestinationFieldName
+><SourceFieldExpression
+>[OptisupportingRelatedSiteBoundaries.osaId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>HighSpeedTier</DestinationFieldName
+><SourceFieldExpression
+>[&amp;HighSpeedTier]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Installation Option</DestinationFieldName
+><SourceFieldExpression
+>IIF([serviceSpecification.primaryAccessTechnology]=&apos;HFC&apos; , IIF([supportingRelatedLocationFeatures.selfAndRSPProfessionalInstallEligible]=&apos;true&apos;, &apos;Self Installation&apos;, &apos;&apos;), &apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>[OptiserviceQualificationItem.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Site Qualification Status</DestinationFieldName
+><SourceFieldExpression
+>[Optiservice.serviceabilityStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>New Development Charge</DestinationFieldName
+><SourceFieldExpression
+>IIF([OptisupportingRelatedLocationFeatures.newDevelopmentsChargeApplies] = &apos;true&apos; OR [OptisupportingRelatedLocationFeatures.newConnectionChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQPriorityNetwork</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;PriorityNetwork] IS NULL,&apos;N/A&apos;,[&amp;PriorityNetwork])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Serviceability Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[OptisupportingTechnology.serviceabilityDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SelfInstallEligible</DestinationFieldName
+><SourceFieldExpression
+>IIF([serviceSpecification.primaryAccessTechnology]=&apos;HFC&apos; , IIF([supportingRelatedLocationFeatures.selfAndRSPProfessionalInstallEligible]=&apos;true&apos;, &apos;Y&apos;, &apos;N&apos;), &apos;N&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[&amp;serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Session Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SessionId]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is4Gindoor</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is4Gindoor]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is4Gindoor&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti capacityAvailability</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OpticapacityAvailability</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>IIF ([highSpeedNotLessThan] IS NULL,([OptisupportingProductFeatures.type]+&quot; &quot;+[featureType]+&quot; &quot;+[capacity]+[unitOfMeasure]+&quot; &quot;+Capacity),([OptisupportingProductFeatures.type]+&quot; &quot;+[featureType]+&quot; &quot;+&quot;High Speed Tiers (greater or equal to&quot;+&quot; &quot;+[capacity]+[unitOfMeasure]+&quot;)&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Qualifier</DestinationFieldName
+><SourceFieldExpression
+>[unitOfMeasure]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF ([highSpeedNotLessThan] IS NULL,IIF([available] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;),IIF([highSpeedNotLessThan] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingProduct</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingProduct</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;serviceProviderId&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;supportingProduct&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[serviceProviderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingProductFeatures_ftpUNIV</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[FTPUNIV] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;FTP UNI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([FTPUNIV] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingProductFeatures_mas</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[mas] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;MAS&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;MaximumAttainableSpeed&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[mas]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingProductFeatures_multicast</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[multicast] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Multicast&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([multicast] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingProductFeatures_tc2</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingProductFeatures</SourceComponentName
+><SourceSearchSpecification
+>[TC2] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;TC2&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([TC2] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opti supportingRelatedLocationFeatures_NewDevelopmentsChargeApplies</Name
+><ParentComponentMapName
+>Opti VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>OptisupportingRelatedLocationFeatures</SourceComponentName
+><SourceSearchSpecification
+>[newDevelopmentsChargeApplies] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NewDevelopmentsChargeApplies&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ChargeFeature&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([newDevelopmentsChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA Site Qualification BC</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>service</SourceComponentName
+><SourceSearchSpecification
+>[&amp;ConfirmedNetwork]=&quot;NBN&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQConfirmedNetwork</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConfirmedNetwork]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Technology</DestinationFieldName
+><SourceFieldExpression
+>[serviceSpecification.primaryAccessTechnology]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CSA Id</DestinationFieldName
+><SourceFieldExpression
+>[supportingRelatedSiteBoundaries.csaId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>HighSpeedTier</DestinationFieldName
+><SourceFieldExpression
+>IIF(InStr([&amp;HighSpeedTier], &quot;Home Ultrafast&quot;) &gt; 0,&quot;greater or equal to 1000Mbps&quot;,IIF(InStr([&amp;HighSpeedTier], &quot;Home Superfast&quot;) &gt; 0,&quot;greater or equal to 250Mbps&quot;,&quot;&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Installation Option</DestinationFieldName
+><SourceFieldExpression
+>IIF([serviceSpecification.primaryAccessTechnology]=&apos;HFC&apos; , IIF([supportingRelatedLocationFeatures.selfAndRSPProfessionalInstallEligible]=&apos;true&apos;, &apos;Self Installation&apos;, &apos;&apos;), &apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>[serviceQualificationItem.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Site Qualification Status</DestinationFieldName
+><SourceFieldExpression
+>[service.serviceabilityStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>New Development Charge</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingRelatedLocationFeatures.newDevelopmentsChargeApplies] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQPriorityNetwork</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;PriorityNetwork] IS NULL,&apos;N/A&apos;,[&amp;PriorityNetwork])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Serviceability Date</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;ConvertDateTimeFormat&quot;,&quot;SourceDateTime=&quot;&quot;&quot;+[serviceSpecification.serviceabilityDate]+&quot;&quot;&quot;&quot;,&quot;ConvertedDate&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SelfInstallEligible</DestinationFieldName
+><SourceFieldExpression
+>IIF([serviceSpecification.primaryAccessTechnology]=&apos;HFC&apos; , IIF([supportingRelatedLocationFeatures.selfAndRSPProfessionalInstallEligible]=&apos;true&apos;, &apos;Y&apos;, &apos;N&apos;), &apos;N&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Class</DestinationFieldName
+><SourceFieldExpression
+>[serviceSpecification.serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Session Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SessionId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status Code</DestinationFieldName
+><SourceFieldExpression
+>[serviceSpecification.serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status Description</DestinationFieldName
+><SourceFieldExpression
+>[Status Description]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site Restriction Message</DestinationFieldName
+><SourceFieldExpression
+>[service.siteRestrictionError.message]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site Restriction Code</DestinationFieldName
+><SourceFieldExpression
+>[service.siteRestrictionError.code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Selected CVC</DestinationFieldName
+><SourceFieldExpression
+>[&amp;CVCId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Line Item Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ServiceOrderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SiebelOrderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Transfer Type DSQ</DestinationFieldName
+><SourceFieldExpression
+>LookupValue(&quot;VHA_NBN_VHA_TRANSFER_TYPE_MAP&quot;, [&amp;TransferType])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Premise Address Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;NBNAddressRowId]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>bandwidthRatesSupported</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>bandwidthRatesSupported</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>[featureType] +&quot; &quot; +[bandwidthRate]+[unitOfMeasure]+ &quot; &quot;+&quot;[Supported]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[supported]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>copperBandwidthRates</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>copperBandwidthRates</SourceComponentName
+><SourceSearchSpecification
+>[bandwidth] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>[featureType]+&quot; &quot;+[bandwidthType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Qualifier</DestinationFieldName
+><SourceFieldExpression
+>[unitOfMeasure]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[bandwidth]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>fibreSpeedTierAvailability</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>fibreSpeedTierAvailability</SourceComponentName
+><SourceSearchSpecification
+>[Value] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Associated Entity ID</DestinationFieldName
+><SourceFieldExpression
+>IIF([Value] = &quot;Home Ultrafast&quot; OR [Value] = &quot;Home Superfast&quot;, &quot;Yes&quot;, &quot;No&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Fibre Upgrade Speed Tier Availability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is4G</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>FWA</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is4G]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;fwaStatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is4G&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check Band</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>is4GM</Name
+><ParentComponentMapName
+>VF Coverage Check</ParentComponentMapName
+><SourceComponentName
+>MOBILE</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Site</DestinationFieldName
+><SourceFieldExpression
+>&quot;mobilestatus&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Coverage Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;is4G&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;BAND&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Note</DestinationFieldName
+><SourceFieldExpression
+>[is4G]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_NTDType</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[ntdType] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[ntdType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTDType&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTD&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_copperPairStatus</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[copperPairStatus] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Copper Pair Status&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[copperPairStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_lastActiveDate</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[lastActiveDate] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Last Active Date&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[lastActiveDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_nbnServiceStatus</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[nbnServiceStatus] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NBN Service Status&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[nbnServiceStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_networkCoexistence</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[networkCoexistence] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Network Coexistence&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([networkCoexistence] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_ntdLocation</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[ntdLocation] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTDLocation&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTD&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[ntdLocation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_potsInterconnect</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[potsInterconnect] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;POTS Interconnect&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[potsInterconnect]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_potsInterconnectMatch</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[potsInterconnectMatch] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;POTS Interconnect Match&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([supportingResource.potsInterconnectMatch] = &apos;true&apos;,&apos;Yes&apos;,&apos;No&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_remediationRequired</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[remediationRequired] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Remediation Required&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[remediationRequired]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingResource_serviceabilityClass</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingResource</SourceComponentName
+><SourceSearchSpecification
+>[serviceabilityClass] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;serviceabilityClass&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;CopperPair&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[serviceabilityClass]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingService_PRIID</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingService</SourceComponentName
+><SourceSearchSpecification
+>[supportingService.id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Product Instance ID&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;Product Specification&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>supportingService_priorityAssist</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>supportingService</SourceComponentName
+><SourceSearchSpecification
+>[supportingService.priorityAssist] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Priority Assist&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>[supportingProductFeatures.type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[priorityAssist]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>uniPortD_Attributes</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>uniPortD</SourceComponentName
+><SourceSearchSpecification
+>[id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Status&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>uniPortV_Attributes</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>uniPortV</SourceComponentName
+><SourceSearchSpecification
+>[id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Status&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>FWABandwidthRates</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>ntdBandwidth</SourceComponentName
+><SourceSearchSpecification
+>[bandwidth] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>[featureType]+&quot; &quot;+[bandwidthType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Qualifier</DestinationFieldName
+><SourceFieldExpression
+>[unitOfMeasure]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NTDBandwidth&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[bandwidth]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision VHA Site Qualification BC FTTBW</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>FTTBW</SourceComponentName
+><SourceSearchSpecification
+>[&amp;ConfirmedNetwork]=&quot;VISION&quot; AND [FTTBW.technology] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>HighSpeedTier</DestinationFieldName
+><SourceFieldExpression
+>IIF([mas] IS NOT NULL,IIF(Left([mas],InStr([mas],&quot;/&quot;)) &gt; 100, &quot;greater or equal to 250Mbps&quot;,&quot;&quot;),&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQConfirmedNetwork</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConfirmedNetwork]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Technology</DestinationFieldName
+><SourceFieldExpression
+>&quot;FTTBW-&quot;+IIF([FTTBW.technology]=&quot;FTTH&quot;,&quot;FTTH&quot;,&quot;FTTB-&quot; +[FTTBW.technology])+&quot;-&quot;+IIF([FTTBW.gfastEnabled]=&quot;1&quot;,&quot;gfast&quot;,&quot;Non gfast&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>[FTTBW.locId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQPriorityNetwork</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;PriorityNetwork] IS NULL,&apos;N/A&apos;,[&amp;PriorityNetwork])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Session Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SessionId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Site Qualification Status</DestinationFieldName
+><SourceFieldExpression
+>&quot;Serviceable&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification Service List</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision Service List Attributes FTTBW</Name
+><ParentComponentMapName
+>Vision VHA Site Qualification BC FTTBW</ParentComponentMapName
+><SourceComponentName
+>FTTBW</SourceComponentName
+><SourceSearchSpecification
+>[FTTBW.freePorts] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Port Id</DestinationFieldName
+><SourceFieldExpression
+>[FTTBW.freePorts]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>IIF([FTTBW.freePorts] IS NOT NULL, &quot;Free&quot;,&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision supportingProductFeatures_mas FTTBW</Name
+><ParentComponentMapName
+>Vision VHA Site Qualification BC FTTBW</ParentComponentMapName
+><SourceComponentName
+>FTTBW</SourceComponentName
+><SourceSearchSpecification
+>[mas] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;MAS&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;MaximumAttainableSpeed&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[mas]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision supportingProductFeatures_exch FTTBW</Name
+><ParentComponentMapName
+>Vision VHA Site Qualification BC FTTBW</ParentComponentMapName
+><SourceComponentName
+>FTTBW</SourceComponentName
+><SourceSearchSpecification
+>[exch] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;exch&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;FTTBW-Addr&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[exch]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>NetworkServices</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>service</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;ConfirmedNetworkServices&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ConfirmedNetworkServices&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([Services.nbn]=&apos;1&apos; OR [Services.nbn]=&apos;-2&apos;,IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/OPTICOMM/VISION&apos;,&apos;NBN/OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/VISION&apos;,&apos;NBN&apos;)),IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;OPTICOMM/VISION&apos;,&apos;OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;VISION&apos;,[&amp;ConfirmedNetwork])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision Services FTTBW</Name
+><ParentComponentMapName
+>Vision VHA Site Qualification BC FTTBW</ParentComponentMapName
+><SourceComponentName
+>FTTBW</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([Services.nbn]=&apos;1&apos; OR [Services.nbn]=&apos;-2&apos;,IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/OPTICOMM/VISION&apos;,&apos;NBN/OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/VISION&apos;,&apos;NBN&apos;)),IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;OPTICOMM/VISION&apos;,&apos;OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;VISION&apos;,[&amp;ConfirmedNetwork])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision Services Transact</Name
+><ParentComponentMapName
+>Vision VHA Site Qualification BC TRANSACT</ParentComponentMapName
+><SourceComponentName
+>TRANSACT</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([Services.nbn]=&apos;1&apos; OR [Services.nbn]=&apos;-2&apos;,IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/OPTICOMM/VISION&apos;,&apos;NBN/OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/VISION&apos;,&apos;NBN&apos;)),IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;OPTICOMM/VISION&apos;,&apos;OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;VISION&apos;,[&amp;ConfirmedNetwork])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Query Address</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Address</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Address</SourceComponentName
+><SourceSearchSpecification
+>[&amp;ConfirmedNetwork] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>GNAF Id</DestinationFieldName
+><SourceFieldExpression
+>[Address.gnafPid]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Unit Type</DestinationFieldName
+><SourceFieldExpression
+>[Address.unitType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Unit Number</DestinationFieldName
+><SourceFieldExpression
+>[Address.unitNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Site Building Name</DestinationFieldName
+><SourceFieldExpression
+>[Address.buildingName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Plan Number</DestinationFieldName
+><SourceFieldExpression
+>[Address.planNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Secondary Site Building Name</DestinationFieldName
+><SourceFieldExpression
+>[Address.secondaryComplexName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Secondary Road Number1</DestinationFieldName
+><SourceFieldExpression
+>[Address.complexRoadNumber1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Secondary Road Number2</DestinationFieldName
+><SourceFieldExpression
+>[Address.complexRoadNumber2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Secondary Road Name</DestinationFieldName
+><SourceFieldExpression
+>[Address.complexRoadName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Secondary Road Type Code</DestinationFieldName
+><SourceFieldExpression
+>[Address.complexRoadTypeCode]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Secondary Road Suffix Code</DestinationFieldName
+><SourceFieldExpression
+>[Address.complexRoadSuffixCode]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Lot Number</DestinationFieldName
+><SourceFieldExpression
+>[Address.allotmentNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Level Type</DestinationFieldName
+><SourceFieldExpression
+>[Address.buildingLevelType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Level Number</DestinationFieldName
+><SourceFieldExpression
+>[Address.buildingLevelNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Latitude</DestinationFieldName
+><SourceFieldExpression
+>[Address.latitude]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Longitude</DestinationFieldName
+><SourceFieldExpression
+>[Address.longitude]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Service Address Flag</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SessionId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Road Name</DestinationFieldName
+><SourceFieldExpression
+>[Address.streetName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+> InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Address Freeform Line1</DestinationFieldName
+><SourceFieldExpression
+>[&amp;FormattedAddr]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Road Number1</DestinationFieldName
+><SourceFieldExpression
+>[Address.streetNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Locality Suburb Name</DestinationFieldName
+><SourceFieldExpression
+>[Address.suburb]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>State Territory Code</DestinationFieldName
+><SourceFieldExpression
+>[Address.state]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Road Type Code</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;ConfirmedNetwork]=&quot;NBN&quot;,IIF(LookupName(&quot;VHA_ADDRESS_STREETTYPE&quot;,[streetTypeCode]) IS NOT NULL,LookupName(&quot;VHA_ADDRESS_STREETTYPE&quot;,[streetTypeCode]),[streetTypeCode]),[streetType])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Post Code</DestinationFieldName
+><SourceFieldExpression
+>[Address.postcode]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;OneSQLocId]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Site Qualification BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision VHA Site Qualification BC TRANSACT</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>TRANSACT</SourceComponentName
+><SourceSearchSpecification
+>[&amp;ConfirmedNetwork]=&quot;VISION&quot; AND [TRANSACT.technology] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>HighSpeedTier</DestinationFieldName
+><SourceFieldExpression
+>IIF([mas] IS NOT NULL,IIF(Left([mas],InStr([mas],&quot;/&quot;)) &gt; 100, &quot;greater or equal to 250Mbps&quot;,&quot;&quot;),&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQConfirmedNetwork</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConfirmedNetwork]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Technology</DestinationFieldName
+><SourceFieldExpression
+>&quot;TRANSACT-&quot;+IIF([TRANSACT.technology]=&quot;HFC&quot;,&quot;HFC&quot;,&quot;FTTN-&quot; +[TRANSACT.technology]+IIF([TRANSACT.vdslType]IS NULL,&quot;&quot;,IIF([TRANSACT.vdslType]=&quot;gfast&quot;,&quot;-gfast&quot;,&quot;-Non gfast&quot;)))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>&quot;VLOC&quot; + InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;GenerateLocId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;LocId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Site Qualification Status</DestinationFieldName
+><SourceFieldExpression
+>&quot;Serviceable&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OneSQPriorityNetwork</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;PriorityNetwork] IS NULL,&apos;N/A&apos;,[&amp;PriorityNetwork])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Session Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SessionId]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Services</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>service</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;AvailableWholesalers&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>IIF([Services.nbn]=&apos;1&apos; OR [Services.nbn]=&apos;-2&apos;,IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/OPTICOMM/VISION&apos;,&apos;NBN/OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;NBN/VISION&apos;,&apos;NBN&apos;)),IIF([Services.opticomm]=&apos;1&apos; OR [Services.opticomm]=&apos;-2&apos;,IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;OPTICOMM/VISION&apos;,&apos;OPTICOMM&apos;),IIF([Services.transact]=&apos;1&apos; OR [Services.transact]=&apos;-2&apos; OR [Services.fttbw]=&apos;1&apos; OR [Services.fttbw]=&apos;-2&apos;,&apos;VISION&apos;,[&amp;ConfirmedNetwork])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>UNI Type_uniPortD_Attributes</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>uniPortD</SourceComponentName
+><SourceSearchSpecification
+>[id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;UNI Type&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>&quot;UNI-D&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>UNI Type_uniPortV_Attributes</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>uniPortV</SourceComponentName
+><SourceSearchSpecification
+>[id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;UNI Type&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>&quot;UNI-V&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Exchange ID</DestinationFieldName
+><SourceFieldExpression
+>[supportingResource.id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Code</DestinationFieldName
+><SourceFieldExpression
+>[id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Coverage Check</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF Coverage Check</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>CheckServiceQualificationOneSQ</SourceComponentName
+><SourceSearchSpecification
+>1=2</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Latitude</DestinationFieldName
+><SourceFieldExpression
+>[Address.latitude]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SessionId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Longitude</DestinationFieldName
+><SourceFieldExpression
+>[Address.longitude]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA SQ Service Key Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Copper speedTierAvailability</Name
+><ParentComponentMapName
+>VHA Site Qualification BC</ParentComponentMapName
+><SourceComponentName
+>speedTierAvailability</SourceComponentName
+><SourceSearchSpecification
+>[Value] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>&quot;Copper Speed Tier Availability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;ProductFeatureAvailability&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConfirmedNetwork</DisplayName
+><Name
+>ConfirmedNetwork</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>CoverageId</DisplayName
+><Name
+>CoverageId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>FormattedAddr</DisplayName
+><Name
+>FormattedAddr</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>HighSpeedTier</DisplayName
+><Name
+>HighSpeedTier</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>NBNAddressRowId</DisplayName
+><Name
+>NBNAddressRowId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>OneSQLocId</DisplayName
+><Name
+>OneSQLocId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>OptiAppointmentStatus</DisplayName
+><Name
+>OptiAppointmentStatus</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>PriorityNetwork</DisplayName
+><Name
+>PriorityNetwork</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>RetrieveNBN</DisplayName
+><Name
+>RetrieveNBN</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ServiceOrderId</DisplayName
+><Name
+>ServiceOrderId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>SessionId</DisplayName
+><Name
+>SessionId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>SiebelOrderId</DisplayName
+><Name
+>SiebelOrderId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>primaryAccessTechnology</DisplayName
+><Name
+>primaryAccessTechnology</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>serviceabilityClass</DisplayName
+><Name
+>serviceabilityClass</Name
+></EaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>

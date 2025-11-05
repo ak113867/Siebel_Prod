@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+></Comments
+><DestinationObjectName
+>VF EGW Sync Asset Details</DestinationObjectName
+><Name
+>EGW Disconnect Asset Sync Details</Name
+><SourceObjectName
+>VF EGW Disconnect Asset Sync SF</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF EGW Sync Asset Flat</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF EGW Asset Sync SF</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Installed Assets</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Billing Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Primary MSISDN</DestinationFieldName
+><SourceFieldExpression
+>[MSISDN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Root Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TF Account Number</DestinationFieldName
+><SourceFieldExpression
+>[VF TechFundBANumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contract End Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Contract End Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contract Start Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Contract Start Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contract Term</DestinationFieldName
+><SourceFieldExpression
+>Left([VF Contract Term],2)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF End Date</DestinationFieldName
+><SourceFieldExpression
+>ToChar(Today(), &apos;MM/DD/YYYY&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF IMSI Asset Num</DestinationFieldName
+><SourceFieldExpression
+>[IMSI]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF PUK</DestinationFieldName
+><SourceFieldExpression
+>[PUK]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF PUK1</DestinationFieldName
+><SourceFieldExpression
+>[PUK2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Proposition Vendr Part Num</DestinationFieldName
+><SourceFieldExpression
+>IIF([Product Type] = &quot;Proposition&quot;,[VF Proposition SAM Id],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Rate Plan</DestinationFieldName
+><SourceFieldExpression
+>IIF([Service Type] = &quot;ACCOUNT&quot;,[VF AddOn Rate Plan],[VF Rate Plan])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Rate Plan SAM Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([Service Type] = &quot;ACCOUNT&quot;,[VF AddOn Rate Plan SAM Id],[VF Rate Plan SAM Id])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF SIM Asset Num</DestinationFieldName
+><SourceFieldExpression
+>[SIM]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF SIM Type</DestinationFieldName
+><SourceFieldExpression
+>IIF([Service Type] = &apos;ACCOUNT&apos;, &quot;&quot;, IIF([SIM Type] IS NULL,&quot;Physical&quot;,[SIM Type]))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Service Type</DestinationFieldName
+><SourceFieldExpression
+>IIF([Special Siebel Type] = &apos;Member Proposition&apos; AND [Siebel Product Type]=&apos;Voice&apos;, &apos;Mobile Service&apos;, IIF(([Special Siebel Type] = &apos;Member Proposition&apos; AND [Siebel Product Type] = &apos;MBB&apos;), &apos;Mobile Broadband Service&apos;,IIF([Special Siebel Type] = &apos;Account Level Add-On&apos;,&apos;Add-on&apos;,&quot;&quot;)))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Start Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Created Date Calc]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Addon NRC</DestinationFieldName
+><SourceFieldExpression
+>[AddOnPlanPrice]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Customer Reference</DestinationFieldName
+><SourceFieldExpression
+>[VF Customer Reference]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA OriginalPlan SAM Id</DestinationFieldName
+><SourceFieldExpression
+>[VF Original SAM Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Plan MRC</DestinationFieldName
+><SourceFieldExpression
+>[Plan Price]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA TF Amount</DestinationFieldName
+><SourceFieldExpression
+>[VF TF Amount]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>
