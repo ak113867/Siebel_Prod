@@ -77,6 +77,7 @@ if (typeof(SiebelAppFacade.VHACustomerDashboardViewPR) === "undefined") {
 		var NBNTypeDesc = "";
 		var ConId = SiebelApp.S_App.GetProfileAttr("VHA Cotact Primary Id");
 		var displayPegaData = "";
+		var RecomendationView = "";
 		var OrgN;
     VHACustomerDashboardViewPR.prototype.Init = function () {
      SiebelAppFacade.VHACustomerDashboardViewPR.superclass.Init.apply(this, arguments);
@@ -104,20 +105,34 @@ if (typeof(SiebelAppFacade.VHACustomerDashboardViewPR) === "undefined") {
 		{
 			var res = "Available";
 			displayPegaData = "Y";
+			var pegaResp2 = VHAAppUtilities.GetPickListValues("", "[List Of Values.Type]='VHA_FUNCTION_ACCESS_RESP' AND [List Of Values.Value]= 'Resp|PegaRespR2' AND [List Of Values.Active]='Y'", {"All": "true"})[0].Name;
+				var bsRespCheckR2 = SiebelApp.S_App.GetService("VF BS Process Manager")
+				var psInputs = SiebelApp.S_App.NewPropertySet();
+				var userid =SiebelApp.S_App.GetProfileAttr("PegaLoginId");
+				psInputs.SetProperty("User Id",userid );
+				psInputs.SetProperty("Responsibility", pegaResp2);
+				psInputs.SetProperty("Service Name", "VF Check Responsibilities");
+				psInputs.SetProperty("Method Name", "Check Responsibilities");
+				var Output = bsRespCheckR2.InvokeMethod("Run Process", psInputs);
+				//var Output = bsRespCheck.InvokeMethod("Check Responsibilities", psInputs);
+				var resultsetR2 = Output?.GetChildByType("ResultSet");
+				if(resultsetR2.propArray.Exists =  'Y'){
+					RecomendationView = 'Y';
+				}
 		}
 		else
 		{
 			//$(".vha-img-applet5").addClass("displaynone");
 			$('#LaunchButton').prop('disabled',true);
-			$('.Launch-Rec-btn').prop('disabled',true);
-			displayPegaData = "Y";
+			//$('.Launch-Rec-btn').prop('disabled',true);
+			displayPegaData = "N";
 		}
 		 if (sLovFlg == "N")
 		 {
 		 //$(".vha-img-applet5").addClass("displaynone");
 			$('#LaunchButton').prop('disabled',true);
-			$('.Launch-Rec-btn').prop('disabled',true);
-			displayPegaData = "Y";
+			//$('.Launch-Rec-btn').prop('disabled',true);
+			displayPegaData = "N";
 		 }
 		 else
 		 {
@@ -1185,6 +1200,23 @@ if (typeof(SiebelAppFacade.VHACustomerDashboardViewPR) === "undefined") {
   $('.Launch-Rec-btn').on('click',function(e){
   //$('#LaunchButton').on('click',function(e){
 		 e.preventDefault(); // Prevent default link behavior 
+		var accrowId =$("#accountRowId").text();
+		SiebelApp.S_App.SetProfileAttr("CustomerAccountId",accrowId);
+		
+		if(RecomendationView == 'Y' || (RecomendationView == 'Y' && displayPegaData == 'Y'))
+		{
+			var CustomerAccountId = SiebelApp.S_App.GetProfileAttr("CustomerAccountId");
+			var ser = SiebelApp.S_App.GetService("Workflow Process Manager");
+			var Inputs = SiebelApp.S_App.NewPropertySet();
+			var Outputs = SiebelApp.S_App.NewPropertySet()
+			Inputs.SetProperty("ProcessName","VHA Recommendation Order WF");
+			Inputs.SetProperty("CustomerAccountId",accrowId);
+			Inputs.SetProperty("Action","New");
+			Outputs = ser.InvokeMethod("RunProcess", Inputs);
+				
+			SiebelApp.S_App.GotoView("VHA Recommendations View");
+		}
+		 else{
 		 var loginUserID = SiebelApp.S_App.GetProfileAttr("Login Name");
 		var serPega = SiebelApp.S_App.GetService("Workflow Process Manager");
 		var inputsPega = SiebelApp.S_App.NewPropertySet();
@@ -1216,6 +1248,7 @@ if (typeof(SiebelAppFacade.VHACustomerDashboardViewPR) === "undefined") {
 			};
 			url = [url, $.param(params)].join('?');			
 			window.open(url);
+		 }
 		
 	 });
 	 
@@ -1884,6 +1917,7 @@ function creditCheckData(crStatus,expiryDate,connections,equipmentLimit,creditSt
 					$('#selectBillingAcc').append('<option value="Update payment details">Update payment details</option>');
 					$('#selectBillingAcc').append('<option value="Lodge service request">Lodge service request</option>');
 					$('#selectBillingAcc').append('<option value="View orders">View orders</option>');
+					$('#selectBillingAcc').append('<option value="Sales calculator">Sales calculator</option>');
 				}
 				else if (paymentmethod =="Prepay")
 				{
@@ -1909,6 +1943,7 @@ function creditCheckData(crStatus,expiryDate,connections,equipmentLimit,creditSt
 					$('#selectBillingAcc').append('<option value="Update automatic recharge">Update automatic recharge</option>');
 					$('#selectBillingAcc').append('<option value="Lodge service request">Lodge service request</option>');
 					$('#selectBillingAcc').append('<option value="View orders">View orders</option>');
+					$('#selectBillingAcc').append('<option value="Sales calculator">Sales calculator</option>');
 				}
 				else
 				{
@@ -1917,6 +1952,7 @@ function creditCheckData(crStatus,expiryDate,connections,equipmentLimit,creditSt
 					$('#selectBillingAcc').append('<option value="View full billing account">View full billing account</option>');
 					$('#selectBillingAcc').append('<option value="Lodge service request">Lodge service request</option>');
 					$('#selectBillingAcc').append('<option value="View orders">View orders</option>');
+					$('#selectBillingAcc').append('<option value="Sales calculator">Sales calculator</option>');
 				}
 			//queryByBillingAccount(selectedbillAcc)
 	}
@@ -2418,7 +2454,6 @@ function fCoverageCheck(sResp, this_t) {
                 nInputs.SetProperty("role", "VCS");
                 nInputs.SetProperty("longitude", sResp.address.geometry.coordinates[0]); //??
                 nInputs.SetProperty("latitude", sResp.address.geometry.coordinates[1]);
-				nInputs.SetProperty("GNAFId", sResp.address.id);// Added for MOCN: Sandesh
                 SiebelApp.S_App.SetProfileAttr("Testlan", sResp.address.geometry.coordinates[0]);
                 SiebelApp.S_App.SetProfileAttr("Testlog", sResp.address.geometry.coordinates[1]);
                 //nInputs.SetProperty("SessionId", vSessionId);
