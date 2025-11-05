@@ -1,0 +1,7 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+Just a reminder that we'll be in touch on <input class="InlineField" SEQ="2" type='text'/> about your nbn fault. 
+<br><br>
+Thanks,<br>
+Vodafone.
+<br><br>

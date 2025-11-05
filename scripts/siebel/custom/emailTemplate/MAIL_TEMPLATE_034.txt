@@ -1,0 +1,7 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+We've placed the order for your new Vodafone Wi-Fi Hub. Your order no is <input class="InlineField" SEQ="2" type='text'/>. You can track you order at www.vodafone.com.au/tracking
+<br><br>
+Thanks,<br>
+Vodafone.
+<br><br>

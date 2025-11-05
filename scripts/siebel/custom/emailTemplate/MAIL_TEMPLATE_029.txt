@@ -1,0 +1,7 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+We noticed you missed your nbn appointment. Please give us a call back on 1300 801 122 so we can get everything sorted for you. 
+<br><br>
+Thanks,<br>
+Vodafone.
+<br><br>

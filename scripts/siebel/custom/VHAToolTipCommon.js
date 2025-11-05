@@ -1,0 +1,1 @@
+VHAToolTipCommon={showToolTip:function(sToolTipText,sUIItem){var sPlaceHolder="[aria-labelledby='"+sUIItem+"']";$(sPlaceHolder).tooltip({content:sToolTipText,position:{adjust:{screen:true},my:"left center",at:"right+15 top",of:sPlaceHolder,collision:"none",track:true,using:function(position,feedback){$(this).css(position)}}})}};

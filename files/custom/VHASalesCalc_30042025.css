@@ -1,0 +1,5669 @@
+f/*TULASIY:12-09-2023::Created for Default classes*/
+.vha-sc-gf-eistcust-grey-accordion{
+	border: 1px solid #9B9C9C;
+	width:auto;
+	padding:20px 10px;
+	background: #F4F4F4 0% 0% no-repeat padding-box;
+	border-radius:6px;
+}
+.vha-sc-gf-grey-accordion {
+    /* border: 1px solid #9B9C9C; */
+    width: 70%;
+    padding: 10px;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    margin-left: 42px;
+	margin-top:7px;
+}
+.vha-sc-nbnaddr {
+    background: #F4F4F4;
+    padding: 20px 45px;
+    border-radius: 6px;
+	margin-left: 23px;
+    margin-right: 23px;
+
+}
+#vha-sc-nbngo-btn {
+    color: #9D2AA0;
+}
+.vha-sc-nbn-cantfindadrss {
+color: #9D2AA0;
+margin-left: 23px;	
+letter-spacing: 0px;
+opacity: 1;
+font: normal normal 600 14px/24px Segoe UI;
+}
+.vha-sc-nbn-cantfindadrss:hover{
+	color:#eba7e3;
+}
+#vha-sc-getnbn{
+	margin-left: 27px;
+}
+.vha-sc-btns-color{
+	float:right;
+	color:white;
+	background-color:red;
+	min-width: 100px;
+	border: 1px solid #d4d4d4 !important;
+	border-radius: 8px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+}
+.vha-sc-float-right{
+	float:right;
+}
+.vhascppbtn
+{
+	min-width: 100px;
+    background: white;
+	border: 1px solid #707070;
+    color: #4a4d4e;
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+    
+    border-radius: 8px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+}
+.VHASCDisplayNone {
+    display: none!important;
+}
+.VHASCDisplayNoneimp {
+    display: none !important;
+}
+
+.VHASCDisplayBlock {
+    display: block;
+}
+.vha-sc-gf-accordion {
+    border: 1px solid #9B9C9C;
+    width: auto;
+    height: 71px;
+    padding-left: 35px;
+    background-color: #5E2750;
+    border-radius: 6px;
+    padding-top: 20px;
+    margin-left: 23px;
+    margin-right: 23px;
+	margin-top: 23px;
+}
+#vha-sc-chngaddr-btn,#vha-sc-nbn-clearbtn {
+    color: #9D2AA0;
+    margin-left: 30px;
+}
+.vha-sc-cvrgchk-tab-font{
+	font-size: 18px !important;
+    font: normal normal 600 24px/32px Segoe UI;
+    color: #2E2A2A;
+    margin-left: 27px;
+}
+
+.vha-sc-cvrgchk-subtab-font{
+	font-size: 15px !important;
+    font: normal normal 600 20px/27px Segoe UI;
+    color: #706B6B;
+    margin-left: 28px;
+}
+#vha-sc-3G-IO{
+	margin-left: 28px;
+}
+#vha-sc-4G-Avl{
+	margin-left: 28px;
+}
+.vha-color-white{
+	color:white;
+}
+.vha-bgcolor-white{
+	background-color:white;
+}
+.vha-color-blue{
+	color:blue;
+}
+.vha-color-red{
+	color:red;
+}
+.vha-color-grey{
+	color:#8A8383;
+}
+.vha-sc-bold-h1
+{
+	font-size: 20px !important;
+    font-weight: bold !important;
+}
+.vha-sc-bold-h2
+{
+    font-size: 24px !important;
+    font-weight: 600;
+    color: #2E2A2A;
+}
+/*TULASIY CSS Ends*/
+
+
+
+/*Rushikesh W Sales Calc CSS start*/
+
+.vha-sc-ExistingCustCartSumPanel {
+	margin: 20px 0px;
+}
+#salescalcpage button{
+	outline: none !important;
+}
+#MobileNumber {
+font: normal normal 600 17px/24px Segoe UI;
+letter-spacing: 0px;
+color: #413A3A;
+opacity: 1;
+}
+#CustomerName {
+    padding: 50px 0px 0px 20% !important;
+    font: normal normal 600 20px/35px Segoe UI;
+    display: block;
+}
+#vha-sc-extcustinfo >.row .pt-3 {
+	    padding-left: 25% !important;
+		padding-top: 0px !important;
+}
+
+#salescalcpage {
+	font-family: Segoe UI !important;
+	font-size: 17px;
+}
+.vha-sc-coverageStatus {
+	background: gray;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+
+/*Vasavi coverage status*/
+.CSRed {
+	background: #e60000;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+.CSGreen {
+	background: #28a745;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+.CSOrange {
+	background: orange;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+
+.vha-sc-bldnewpln-cust-dtls {
+	background: #F4F4F4;
+	padding: 30px 55px;
+}
+
+.vha-sc-bldnewpln-cust-dtls input {
+	border: 1px solid black;
+	border-radius: 6px;
+	margin: 10px;
+	width: 30%;
+	height: 26px;
+	text-indent: 10px;
+}
+
+.vha-sc-bldnewpln-cust-dtls input:focus {
+	outline: none;
+}
+
+.vha-sc-bldnewpln-cust-dtls span {
+	text-align: left;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	width: 25%;
+	display: inline-block;
+}
+.vha-sc-lndpagebtns {
+    width: 300px;
+    height: 100px;
+    background: #5E2750 0% 0% no-repeat padding-box;
+    box-shadow: 5px 5px 11px #d5d5d529;
+    border-radius: 15px;
+    opacity: 1;
+    color: #fff;
+}
+
+ .vha-sc-lndpagebtns:hover {
+	color: #fff;
+}
+.vha-sc-bldnewpln-active {
+    background: #DA0000 0% 0% no-repeat padding-box;
+	box-shadow: 5px 5px 11px #D5D5D529;
+	color: #fff; 
+}
+.vha-sc-btn-lndpgebtn-botm {
+	display: block;
+    position: relative;
+   font-size:17px;
+   text-align:left;
+   margin-left:75px;
+}
+.vha-sc-btn-lndpgebtn-top {
+    position: relative;
+    font-size: 23px;
+    display: block;
+	margin-left:75px;
+	text-align:left;
+	font-weight:600;
+}
+.vha-sc-btn-lndpgebtn-top-sty {
+    position: relative;
+    font-size: 24px;
+    display: block;	
+	margin-left:75px;
+	text-align:left;
+	width: 100%;
+}	
+
+.vha-sc-bldnewpln-active > span.vha-sc-lndpgbtns-icon-span  {
+	border: 5px solid #e65252;
+}
+.vha-sc-lndpagebtns:hover > span.vha-sc-lndpgbtns-icon-span  {
+	padding: 8px;
+}
+.vha-sc-lndpgbtns-icon-span {
+	background: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    display: block;
+    position: absolute;
+	border-radius: 50%;
+	border: 5px solid #926c88;
+}
+
+.vha-sc-btn-bldnewpln-btn-dtls,
+.vha-sc-btn-existcust-btn-dtls,
+.vha-sc-btn-salesquote-btn-dtls,
+.vha-sc-btn-banquote-btn-dtls,
+.vha-sc-btn-searchquote-btn-dtls, {
+	text-align: left;
+    padding-left: 30%;
+}
+.vha-sc-bldnewpln-icon {
+	content: url("../../images/custom/menu-icons/Icon feather-user_1.png") !important;
+}
+.vha-sc-existcust-icon {
+	content: url("../../images/custom/menu-icons/User_2.png") !important;
+}
+.vha-sc-salesquote-icon {
+    
+	content: url("../../images/custom/menu-icons/Sales agent quote.png") !important;
+}
+.vha-sc-banquote-icon {
+	content: url("../../images/custom/menu-icons/Billing account qote.png") !important;
+}
+.vha-sc-searchquote-icon {
+	content: url("../../images/custom/menu-icons/search_quote.png") !important;
+}
+
+
+/* Mobile coverage and NBN button design*/
+.vha-sc-cvragechk-btns ul {
+	display:table-row;
+}
+.vha-sc-cvragechk-btns ul li
+{
+	display: table-cell;
+	height: auto;
+	list-style-type: none;
+	margin: 10px;
+	vertical-align: middle;
+}
+.vha-sc-cvragechk-btns ul li button {
+	height: 57px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600 !important;
+    margin-left: 18px;
+    font-size: 17px;
+}
+
+.vha-sc-cvragechk-bar {
+	border-right: 2px solid #E5E5E5;
+    margin: auto 40px;
+    position: relative;
+    top: 20px;
+}
+.vha-sc-cvrage-mob-active::after {
+	content: '';
+	display: block;
+	width: 30%;
+	height: 4px;
+	background: #DA0000;
+}
+.vha-sc-newcust-active::after {
+	content: '';
+	display: block;
+	width: 5%;
+	height: 4px;
+	background: #DA0000;
+}
+
+/* Device and plan button css */
+
+.vha-sc-allguidedtab-btns-init ul {
+    display:table-row;
+}
+.vha-sc-allguidedtab-btns-init ul li
+{
+    display: table-cell;
+    height: auto;
+    list-style-type: none;
+    margin: 10px;
+    vertical-align: middle;
+    padding: 0px 20px 0px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #E5E5E5;
+}
+.vha-sc-allguidedtab-btns-init ul li button {
+    height:50px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+	font-size: 17px;
+}
+.vha-sc-devplan-active {
+    letter-spacing: 0px;
+    color: #5E2750;
+    opacity: 1;
+    font-weight: 600;
+}
+.vha-sc-devplan-active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #DA0000;
+}
+   /* Web 1920 -2 screen design sales calc */
+
+  .vha-sc-customerSince-span {
+    width: 15px;
+    height: 15px;
+    background: red;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .vha-sc-existingCustService {
+    list-style-type: none;
+    color: #75736B;
+  }
+  .vha-sc-existingCustService li span {
+    color: #5E2750;
+    font-weight: 600;
+    padding-top: 5px;
+    display: table-cell;
+  }
+  .vha-sc-existingCustService li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+	white-space: nowrap;
+  }
+  .vha-existingContract_bg {
+    position: relative;
+    color: #5E2750;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .vha-existingContract_bg:after {
+    content: " ";
+    display: block;
+    background: #DA0000;
+    height: 5px;
+    width: 70px;
+}
+.vha-sc-currentPlan {
+    background: #F4F4F4;
+    padding: 10px 5px 10px 5px;
+    color: #706B6B;
+    font-weight: 500;
+}
+.vha-sc-currentPlan li {
+    list-style-type: none;
+}
+.vha-sc-currentPlan li span {
+   position: absolute;
+   right: -25%;
+   color: #2E2A2A;
+   font-weight: 600;
+}
+
+.vha-sc-EarlyUpgradeButton button {
+    margin: auto 3px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #E8E5E5;
+}
+.vha-sc-BundleAndSave_Icon {
+	content: url("../../images/custom/menu-icons/BundleAndSave_Icon_sc.png") !important;
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-top: 10px;
+}
+.vha-sc-exxistingCustImg {
+	content: url("../../images/custom/menu-icons/ExistingCustomer_Icon_sc.png") !important;
+    width: 150px;
+    height: 150px;
+    display: block;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10%;
+	margin-top: 20px;
+}
+.vha-sc-Watch_Icon {
+	content: url("../../images/custom/menu-icons/cart_summary_panel_sc.png") !important;
+    width: 35px;
+    height: 30px;
+    display: inline-block; 
+	margin: 20px 5px;
+}
+.vha-sc-custEmailIcon {
+	content: url("../../images/custom/menu-icons/Email_Icon_sc.png") !important;
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+	 margin-right: -10px;	
+}
+.vha-sc-custPhoneNumberIcon {
+	content: url("../../images/custom/menu-icons/PhoneNumber_Icon_sc.png") !important;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;	
+}
+.vha-sc-custMobileIcon {
+	content: url("../../images/custom/menu-icons/MobileIcon_sc.png") !important;
+	width: 20px;
+    height: 30px;
+    display: block;
+    margin-top: 5px;
+}
+#vha-sc-extcontractinfo {
+	flex: 0 0 30%;
+	max-width: 100%;
+}
+#vha-sc-extcustinfo {
+	flex: 0 0 70%;
+	max-width: 100%;
+}
+#vha-sc-extcustinfo .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 0px;
+}
+#vha-sc-extservices {
+	margin-top: 15px;
+    background: #fff;
+}
+#vha-sc-extservices .col {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#vha-sc-extcontractinfo .border {
+	margin: 0px !important;
+}
+#vha-sc-extcustinfo >.row >.col-6> .pt-5 {
+	padding: 0px !important;
+}
+#vha-sc-extcustinfo >.row >.col-6> .p-4 {
+	    padding: 20px 0px;
+}
+#vha-sc-extcustinfo >.row .text-center {
+	text-align: left !important;
+}
+#vha-sc-extcustinfo >.row .p-4 {
+	    padding: 40px 0px;
+}
+#vha-sc-extcustinfo >.row >.col-3 > .pt-5 {
+	padding: 0px !important;
+}
+#vha-sc-extcontractinfo .border, #vha-sc-extcustinfo .border, #vha-sc-extservices {
+    box-shadow: 0px 6px 16px #522d241a;
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 8px;
+	padding: 20px !important;	
+}
+#vha-sc-cancel-rli {
+	    display: block;
+    position: absolute;
+    right: 15px;
+}
+.vha-sc-DevicePlanSave {
+	display: flex;
+    /*gap: 2%;*/
+}
+.vha-sc-exiAccBan {
+    background: #5E2750 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    height: 50px;
+    padding: 10px 5px;
+    color: #F4F4F4;
+    margin: 10px 0px;
+}
+.vha-sc-exiAccBan .vha-sc-exiBANspan {
+    margin: auto 30px;
+}
+/*05Jan*/
+.vha-sc-MnpAppDef {
+    color: #F4F4F4;
+    border-radius: 50%;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    display: initial;
+    position: absolute;
+    margin: 5px;
+    text-align: center;
+}
+
+.vha-sc-upgradeServiceBtn {
+    position: absolute;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    opacity: 1;
+    background: #fff;
+    border: 1px solid #9D2AA0;
+    border-radius: 6px;
+    padding: 10px 40px;
+    right: 10%;
+	margin-top: 5px;
+	font-size:15px;	
+}
+.vha-sc-checkbox {
+    position: absolute;
+    right: 5%;
+    margin-top: 15px;
+}
+
+.vha-sc-extcustomerdtls .row , ##MobileNumber {
+	font: normal normal 600 16px/24px Segoe UI !important;
+}
+.vha-sc-extcustomerdtls .col-5,.col-4,.col-3, .col-7, .col-6	{
+	padding-left: 0px;
+	padding-right: 0px;	
+}
+.vha-sc-extcustomerdtls .col-3 {
+	position: relative;
+	left: -50px;
+}
+.vha-sc-bgRed {
+	background: red !important;
+}
+/* Summary Card CSS */
+#vha-sc-SummaryCartApplet {
+    position: relative;
+	margin-left:10px;
+}
+.vha-sc-summaryMaindiv {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 16px #522D241A;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 10px;
+   /* width: 378px; */
+}
+.vha-sc-SummaryHeading {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #5E2750;
+	display: flex;
+    align-items: center;
+}
+/*10Nov*/
+.vha-sc-planDesigncart {
+    background: white;
+    /*display: flex;*/
+    padding: 10px;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0px;
+}
+
+/*05Jan*/
+.vha-sc-exiAccBanCart {
+	background-color: #F4F4F4;
+    border-radius: 5px;
+    gap: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    padding-left: 10px;
+	margin: 10px 0px;
+}
+/*05Jan*/
+.vha-sc-cartserdata{
+	margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.vha-sc-aligncartcustSpanDiv {
+	font-weight:600;
+	letter-spacing: 0px;
+    color: #2E2A2A;
+}
+/*05Jan*/
+.vha-sc-planDesign {
+    background: #F9F9F9;
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+	/*line-height: 35px;*/
+	font-weight:600;
+	color: #706B6B;
+}
+/*.vha-sc-planDesign span{
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    font-weight: 600;
+}*/
+.vha-sc-PromoCode {
+    padding: 20px 5px;
+	    /*justify-content: center;*/
+}
+.vha-sc-invPromo{
+	font-weight: 500;
+    color: red;
+    margin-left: 20px;
+}
+
+.vha-sc-PromoCode span {
+	display: none;
+}
+/*05Jan*/
+.vha-sc-upgradeMnpApp {
+	background: #DA0000 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+	margin: 40px 0px;
+}	
+.vha-sc-EarlyUpgradeBtn {
+	background: #E8E5E5;
+    border-radius: 8px;
+    border: none;
+    margin: 0px 5px;
+    padding: 0px 10px;
+}
+.vha-sc-PromoCodeInput {
+    outline: none;
+    border: 1px solid #CCCCCC;
+    width: 140px;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+.vha-sc-PromoCode, input::placeholder {
+    color: #E09BE2;
+  }
+.vha-sc-ApplyPromoBtn {
+    color: #9D2AA0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+}
+.vha-sc-ExistCustTerminateBtn {
+    color: #9D2AA0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+}
+.panel-title {
+	padding-bottom: 5px;
+    padding-top: 5px;
+	/*display: flex;
+    align-items: center;*/
+}
+.panel-title > .cust-details:before {
+    padding-left: 62px;
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+}
+.panel-title > .exist-services:before {
+    padding-left: 67px;
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+}
+.panel-title > .exist-contract:before {
+    padding-left: 63px;
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+}
+
+.panel-title ::after {
+    content: " ";
+    display: block;
+    background:  #CCCCCC;
+    opacity: 0.61;
+    height: 1px;
+}
+
+.panel-title > a:before {
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content: '\002B';
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.panel-title > a {
+    font: normal normal 600 22px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #5E2750;
+}
+.panel-title > a:hover {
+    color: #5E2750;
+}
+.vha-sc-customerDetails {
+    white-space: nowrap;
+    gap: 10px !important;
+	background: #fff;
+}
+/*10Nov*/
+/* .vha-sc-aligncartcustSpanDiv { */
+    /* position: relative; */
+    /* left: -16px; */
+    /* top: -20px; */
+    /* white-space: nowrap; */
+/* } */
+/*05Jan*/
+.vha-sc-alignSpanDiv {
+     position: absolute;
+    right: 0;
+	width: 30%;
+	color: #2E2A2A;
+}
+.vha-sc-summaryBottom {
+    background: #5E2750;
+    border-radius: 8px;
+    padding: 10px;
+  /*  margin: 10px 0px; */
+    margin-top: 10px;
+	color: #F4F4F4;
+ /*   width: 378px; */
+}
+.vha-sc-activeServiceBottom {
+    display: flex;
+    align-items: center;
+    gap: 16%;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.vha-sc-MnpAppDefbtm {
+    color: #F4F4F4;
+    opacity: 0.8;
+    background: #DA0000;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: initial;
+    position: relative;
+	text-align: center;
+    margin-left: 5px;
+	font-size: 16px;
+}
+.vha-sc-activeServiceIcondiv {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.vha-sc-activedeleteEdit {
+	box-shadow: 0px 0px 8px #f5f5f5 !important;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	margin: 0 5px 5px 5px;
+}
+.vha-sc-deleteEdit {
+    background: #461647;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vha-sc-WithDeviceIcon {
+	content: url("../../images/custom/menu-icons/Device_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+.vha-sc-NbnDeviceIcon {
+	content: url("../../images/custom/menu-icons/NBN_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+.vha-sc-HomeInternetIcon{
+	content: url("../../images/custom/menu-icons/Home_internet_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+.vha-sc-SimOnlyIconIcon{
+	content: url("../../images/custom/menu-icons/Sim_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+
+.vha-sc-SummaryHeadingIcon {
+	content: url("../../images/custom/menu-icons/Summary_Icon_sc.png") !important;
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-BundleAndSaveSummary_Icon {
+	content: url("../../images/custom/menu-icons/BundleAndSave_Icon_sc.png") !important;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+	margin: 20px 5px;
+}
+.vha-sc-offer_Icon {
+	content: url("../../images/custom/menu-icons/Data_offers_Icon_sc.png") !important;
+    width: auto;
+    height: auto;
+    display: inline-block;
+	margin: 20px 5px;
+}
+
+.vha-sc-ExistingServicesIcon {
+	content: url("../../images/custom/menu-icons/Existing_services_Icon_sc.png") !important;
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-ExistingContractIcon {
+	content: url("../../images/custom/menu-icons/Existing_contract_Icon_sc.png") !important;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-CustDetails_Icon {
+	content: url("../../images/custom/menu-icons/Customer_Icon_sc.png") !important;
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-DataOffersIcon {
+	content: url("../../images/custom/menu-icons/Data_offers_Icon_sc.png") !important;
+     width: 20px;
+    height: 30px;
+    display: inline-block; 
+}
+/*05Jan*/
+.vha-sc-DiviceCareIcon {
+	content: url("../../images/custom/menu-icons/Data_Icon_sc.png") !important;
+	width: 24px;
+    height: 32px;
+    display: inline-block;
+	margin: 40px 5px; 
+}
+/*10Nov*/
+.vha-sc-maxwidth22per{
+	max-width: 22%;
+}
+.vha-sc-MobileandDataplanIcon {
+    content: url("../../images/custom/menu-icons/MobileIcon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+	margin: 20px 5px;
+}
+
+.vha-sc-EditIcons {
+	content: url("../../images/custom/menu-icons/Edit_Icon_sc.png") !important;
+    width: 10px;
+    height: 10px;
+    display: inline-block; 
+}
+
+.vha-sc-EditIcon {
+	content: url("../../images/custom/menu-icons/Edit_Icon_sc.png") !important;
+    width: 10px;
+    height: 10px;
+    display: inline-block; 
+}
+.vha-sc-DeleteIcon {
+	content: url("../../images/custom/menu-icons/Delete_Icon_sc.png") !important;
+    width: 10px;
+    height: 13px;
+    display: inline-block; 
+}
+.vha-sc-simHomeNbn {
+    padding-left: 30px;
+    padding-bottom: 10px; 
+	display: flex;
+    gap: 16%;
+}
+.vha-sc-simHomeNbn span {
+    word-wrap: break-word;
+    display: inline-table;
+    width: auto;
+}
+.vha-sc-activeTotalAmt {
+    display: flex;
+    align-items: center;
+    gap: 23%;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.vha-sc-totalNewbtn {
+    background: #DA0000;
+    border-radius: 6px;
+    opacity: 1;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 3px 15px;
+}
+#ExistingPlan{
+	width: 150px;
+}
+.vha-sc-DeletEdit{
+	background: transparent;
+    border: none;
+}
+.vha-sc-reviewSummary >span > button:focus{
+	outline:none;
+}
+
+/* Device and plan*/
+.input-margin-left {
+	margin-left: 15px !important;
+}
+#vha-sc-p-carousel-container {
+	background: transparent linear-gradient(90deg, #5E2020 0%, #5E2750 100%) 0% 0% no-repeat padding-box;
+	margin-left: 0px;
+    margin-right: 0px;
+}
+#vha-sc-tot-paltym0,#vha-sc-tot-paltym1, #vha-sc-tot-paltym3 {
+	color: #fff !important;
+	font-size: 15px !important;
+}
+.vha-sc-card-row1-col2 .pt-3 >span {
+	font-size: 30px !important;
+	color: #fff !important;
+	    vertical-align: inherit !important;
+}
+.vha-sc-card-row1-col2 >div >span {
+	color: #fff !important;
+}
+.vha-sc-card-row1-col2 .pt-3 {
+	padding-top: 0px !important;
+}
+.vha-sc-simonlyupg, .vha-sc-byod {
+	display: block;
+    position: absolute;    
+	margin-top: 2.75rem;
+	margin-left: 2rem;
+}
+.vha-sc-byod {
+    left: 58%;
+}
+
+.vha-sc-simonlyupg {
+    left: 50%;
+}
+.vha-sc-simonlyupg label, .vha-sc-byod label{
+	font-weight: 600;
+	color: white;
+}
+.vha-sc-simonlyupg #slectbox, .vha-sc-byod #slectbox{
+    vertical-align: bottom;
+}
+.vha-sc-simonlyupg #tickmark, .vha-sc-byod #tickmark {
+	    margin-top: 10px !important;
+		    height: 23px !important;
+    width: 23px !important;
+}
+.vha-sc-device-select{
+	padding-top: 20px;
+}
+.vha-sc-lbl {
+	text-align: left;
+    font: normal normal 600 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #413A3A;
+    opacity: 1;
+    font-size: 15px;
+	padding-bottom:5px;
+}
+.vha-sc-dev-plan-md-font {
+	text-align: left;
+    font: normal normal 600 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #413A3A;
+    opacity: 1;
+    font-size: 16px;
+	padding-bottom:0px;
+}
+.vha-sc-btn-div-bottom-div {
+		display: flow-root;
+    padding: 20px 10px;
+    background: #F4F4F4;
+    margin: 10px 0px;
+}
+.vha-sc-btn-div-brand{
+	display: flow-root;
+    padding: 20px 0px;
+    background: #F4F4F4;
+    margin: 10px 0px;
+}
+.vha-sc-btn-div-payment {
+	display: flow-root;
+    padding: 20px 0px;
+    background: #fff;
+    margin: 10px 0px;
+}
+.vhascbrand ,.vhasc-d-term {
+	    min-width: 130px;
+    background: white;
+    border: 1px solid #D981DB !important;
+    color: #2E2A2A;
+    border-radius: 5px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+    margin: 0px 5px;
+}
+.vhascplantype {
+	    min-width: 150px;
+    background: white;
+    border: 1px solid #CCCCCC !important;
+    color: #4a4d4e;
+    border-radius: 6px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+    margin-left: 10px;
+}
+.vhascbrand :hover {
+	background: #9D2AA0;
+	color : #fff;	
+}
+.vha-sc-SearchDeviceIcon {
+	content: url("../../images/custom/menu-icons/vha-sc-searchIcon.png") !important;
+	    width: 25px;
+    display: block;
+}
+#vha-sc-d-carousel .device-card{
+    border-radius: 10px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+}
+.vha-sc-card-red {
+	    display: none !important;
+}
+.applet-button-active {
+	background: #9D2AA0 0% 0% no-repeat padding-box;
+	border: 1px solid #D981DB;
+	color: #fff;
+}
+/*Device and Plan*/
+
+/*Rushikesh W Sales Calc CSS end*/
+
+
+
+/* Hari Yeturu sales calculator button style */
+.vha-sc-mobno-err{ 
+	color: Red; 
+	visibility: hidden;
+	font-family: Arial; font-size: 10pt;
+ }
+.vha-sc-addressdetails-val{
+    width: 500px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-btn-border-clr
+{
+	border: 1px solid #9D2AA0 !important;
+	border-radius: 6px;
+}
+.vha-sc-connectaddr-lbl{
+    /*border-radius: 5px;*/
+    font-size: 15px;
+    /*border: 1px solid #9B9C9C;*/
+    margin: 5px 0px 0px 20px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-txtbox-large{
+    width: 500px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-txtbox-medium{
+    width: 242px;
+    height: 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 20px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-greyclr-h150px{
+        background:#EBE9E9;
+        height:150px; 
+        border-radius: 6px;
+        justify-content: start;
+        /* align-items: center; */
+}
+.vha-sc-txtbox-medium-mleft-127px{
+	width:200px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 127px;
+	padding-left: 0px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+   
+.vha-sc-pleft-172px{
+	padding-left: 172px;
+}
+.vha-sc-pleft-207px{
+	padding-left: 200px;
+}
+.vha-sc-pleft-202px{
+	padding-left: 203px;
+}
+
+.vha-sc-txt-style-pre-medium{
+	font: normal normal 600 20px/27px Segoe UI;
+	letter-spacing: 0px;
+	color: #413A3A;
+	opacity: 1;
+	font-size: 15px;
+}
+.vha-sc-txt-style-pre-normal{
+	font: normal normal normal 18px/24px Segoe UI;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	opacity: 0.8;
+	font-size: 14px;
+}
+/*Configure Service*/
+.vha-sc-greyclr{
+	background: #F4F4F4;
+	height:80px; 
+	border-radius: 6px;
+	justify-content: start;
+	align-items: center;
+	
+  }
+  .vha-sc-greyclr-h35px{
+	background-color: #F4F4F4;
+	height:35px; 
+	border-radius: 6px;
+	justify-content: start;
+	align-items: center;
+  }
+  .vha-sc-greyclr-h50px{
+	background-color: #F4F4F4;
+	height:50px; 
+	border-radius: 6px;
+	justify-content: start;
+	align-items: center;
+	
+  }
+  .vha-sc-pleft-50px{
+	padding-left: 43px;
+  }
+  .vha-sc-pleft-360px{
+	padding-left: 250px;
+  }
+  .vha-sc-pleft-70px{
+	padding-left: 70px;
+  }
+  .vha-sc-mleft-42px{
+	margin-left: 32px;
+  }
+  .vha-sc-mleft-67px{
+	margin-left: 67px;
+  }
+  
+  .vha-sc-list-style li {
+list-style-type: none;
+
+  }
+
+
+
+.vha-sc-cfg-txtbox-medium{
+	width: 350px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 25px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left;
+	/* padding-right: 30px; */
+}
+.vha-sc-cfg-txtbox-small{
+	width: 110px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 25px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left;
+	/* padding-right: 30px; */
+}
+.vha-sc-txtbox-medium-mleft-37px{
+	width: 200px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 37px;
+/*  padding-left: 4px; */
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+.vha-sc-cfg-txtbox-small{
+	width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 40px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+.vha-sc-txtbox-small-mleft-41px{
+	width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 41px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+
+.vha-sc-txtbox-small-mleft-105px{
+width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 152px;
+	padding-left: 0px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+
+.vha-sc-txtbox-small-mleft-150px{
+	width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 150px;
+	padding-left: 0px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+
+
+
+.vha-sc-txt-style{
+	font: normal normal 600 18px/24px Segoe UI;
+	letter-spacing: 0px;
+	color: #706B6B;
+	opacity: 1;
+	font-size: 15px;
+}
+.vha-sc-txt-style-black{
+	font: normal normal 600 18px/24px Segoe UI;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	opacity: 1;
+	font-size: 15px;
+}
+.vha-sc-txt-style-black-bold{
+	text-align: left;
+	font: normal normal 600 22px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	opacity: 1;
+	font-size: 17px;
+}
+
+#salescalcpage input[type=radio] {
+	appearance: none;
+	padding: 7px;
+	border-radius:50%;
+	background-color: #CCCCCC;
+	opacity: 1;
+
+}
+#salescalcpage input[type=radio]:checked {
+	background-color: #9D2AA0;
+	opacity: 1;
+}
+.vha-sc-config-col1{
+	/* border-radius: 8px; */
+
+}
+.vha-sc-config-col2{
+	border-radius: 8px;
+	padding: 0px;
+}
+.vha-sc-cfg-row2{
+    width: 100%;
+    /* margin-top: 17px; */
+    /*display: block; */
+    margin: 20px 0px;
+}
+.vha-sc-prepay{
+	/* border-radius: 8px; */
+}
+.vha-sc-btm-mrgn{
+	margin-bottom:23px;
+}
+.vha-sc-configservice-select{
+  /*  background: #F4F4F4; */
+}
+.vha-sc-mleft-27px{
+	margin-left: 27px;
+    margin-top: 7px;
+}
+ .vha-sc-greyclr-bg-white{
+	/* background: #F4F4F4; */
+    height:60px; 
+    border-radius: 6px;
+    justify-content: start;
+    align-items: center;
+}
+.vha-sc-exist-cus-overide{
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    opacity: 1;
+    font-size: 16px;
+	padding-left: 26px;
+}
+.vha-sc-dev-plan-drp-dwn{
+	width: 227px;
+	height: 29px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 0px 0px 0px 25px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left;    
+	/* padding-right: 30px; */
+}
+.vhascppbtn-new{
+	/* min-width: 150px; */
+    /* background: white; */
+	border: 1px solid #707070;
+    /* color: #4a4d4e; */
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+    border-radius: 4px;
+    font: 16px VodafoneRegular !important;
+    height: 30px;
+}
+.vha-sc-mleft-30px{
+	margin-left:30px;
+}
+.vha-sc-mleft-15px{
+	margin-left:15px;
+}
+/*Accessory & wearbles*/
+
+.vha-sc-smartwearbles{
+    padding-left: 27px;
+}
+.vha-sc-wear-fltby-brand{
+    padding-left: 41px;
+}
+.vha-sc-wear-payterm{
+    padding-left: 41px;
+}
+.vha-sc-acces-payterm{
+    padding-left: 41px;
+}
+.vha-sc-Accessory{
+    padding-left: 27px;
+}
+
+.vha-sc-font-sty-acess-wear{
+    text-align: left;
+    font: normal normal 600 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #413A3A;
+    opacity: 1;
+    font-size: 15px;
+}
+
+
+
+.vha-sc-greyclr-new{
+    background: #F4F4F4;
+    height:110px; 
+    /*border-radius: 6px; */
+    /* justify-content: start; */
+    /*  align-items: center; */
+    }
+    .vha-sc-whiteclr-new{
+    background: white;
+    height:110px; 
+    /*border-radius: 6px; */
+    /* justify-content: start; */
+    /*  align-items: center; */
+    }
+     
+.vhascppbtn-new-sm {
+   /* min-width: 100px; */
+    background: red;
+    color: white;
+    /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 6px;
+    font: 16px VodafoneRegular !important;
+    height: 29px;
+	min-height: 32px;
+    max-height: 32px;
+    float: right;
+	width: 80px;
+}
+    .vha-sc-acces-txtbox-medium{
+        width: 200px;
+        height: 26px;
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid #9B9C9C;
+        margin: 0px 0px 0px 0px;
+    /*  padding-left: 4px; */
+        background-size: 30px;
+        text-align: left !important;
+        /* padding-right: 30px; */
+    }
+
+
+    .vha-sc-txt-style-drp-dwn{
+		font: normal normal 600 18px/24px Segoe UI;
+		letter-spacing: 0px;
+		color: black;
+		opacity: 1;
+		font-size: 13px;
+    }
+    .vhascppbtn {
+    min-width: 100px;
+    background: white;
+    color: #4a4d4e;
+    /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 6px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+    }
+    .vha-sc-txt-style-black-bold{
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    opacity: 1;
+    font-size: 17px;
+    }
+	.vha-sc-wear-col1{
+		/* border-radius:8px; */
+	}
+	.vha-sc-acces-col1{
+		/* border-radius:8px; */
+	}
+	.vha-sc-mleft-41px{
+		margin-left:41px;
+	}
+	.vha-sc-mleft-40px{
+		margin-left:40px;
+	}
+	.vha-sc-mleft-53px{
+		margin-left:53px;
+	}
+	.vha-sc-mleft-52px{
+		margin-left:52px;
+	}
+	.vha-sc-mleft-65px{
+		margin-left:65px;
+	}
+	.vha-sc-mleft-64px{
+		margin-left:64px;
+	}
+	.vha-sc-nmleft-10px{
+		margin-left:-10px;
+	}
+    .vha-sc-mleft-27px{
+		margin-left:27px;
+	}
+	.vha-sc-exist-new-btn{
+		margin-top:-28px;
+		/*float: right; */
+		color: white;
+		background-color: red;
+		min-width: 100px;
+		border: 1px solid #d4d4d4 !important;
+		border-radius: 8px;
+		font: 16px VodafoneRegular !important;
+		height: 32px;
+		position: absolute;
+		margin-left: 834px;
+	}
+	.vha-custom-button{
+		margin-left: 23px;
+	}
+	.vha-sc-coveragechk-applet{
+		background: white;
+	}
+	.btn-toolbar{
+		background: white; 
+		
+	}
+/*	.bd-highlight {
+		margin-top: 3rem!important;
+	} */
+	.vha-sc-cfg-row1{
+		margin-right: 0px;
+        margin-left: 0px;
+	}
+	.vha-sc-addressdetails-lblnm{
+		font-size: 15px;
+	}
+	sup {
+		top: -2px;
+	}
+	.vha-sc-pl-2px{
+		padding-left: 2px;
+	}	
+	
+	.vha-sc-quotelist {
+	 /* box-shadow: #d4d4d4 0 0 4px 0 !important; */
+	padding-left: 0px;
+	padding-right: 0px;
+		}
+	 
+	.reviewsum1{
+	padding-left: 0px;
+		padding-right: 0px;
+		margin-top: 50px;
+	}
+	 
+	.reviewsum2{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.vha-sc-flex_row_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 100% !important;
+	}
+	 
+	 
+	.vha-sc-we-NCIdrecLines {
+		margin-top: 10px;
+	}
+	.vha-sc-acc-NCIdrecLines {
+		margin-top: 10px;
+	}
+	 
+	.vha-sc-accessory-font {
+		text-align: left;
+		font: normal normal 600 22px/30px Segoe UI;
+		letter-spacing: 0px;
+		color: #2E2A2A;
+		opacity: 1;
+		font-size: 15px;
+	}
+	.vha-sc-greyclr-access-new{
+		background: #F4F4F4;
+		/* height: 110px; */
+		/* border-radius: 6px; */
+		/* justify-content: start; */
+		/* align-items: center; */
+	}
+	.parent-controls-container {
+    display: flex;
+    padding: 15px 0 15px 0;
+}
+.input-field {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-999999);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    opacity: 1;
+    min-height: 32px;
+    max-height: 32px;
+    width: 300px;
+}
+.siebui-icon-dropdown, .siebui-icon-pick {
+    display: inline !important;
+}
+/*Dec 19 sales calculator accessory style */
+.vha-sc-QuoteNumberIcon {
+	content: url("../../images/custom/menu-icons/Quoteno_Icon_sc.png") !important;
+	width: 25px;
+    height: 32px;
+    display: inline-block;
+	margin: 20px 5px;
+	/* padding: 20px 7px;	
+    margin-top: 20px;
+    margin-left: 15px;*/ 
+}
+
+#vha-sc-acc-payterm-reason{
+	margin-left:39px;
+}
+.vha-sc-cartsumcustquote{
+	float:right;
+}   
+.vha-sc-address-coveragechk-nbn .vha-sc-nbnaddr-val {
+	width:500px;
+}
+.vhascwearbrand{
+	 min-width: 130px;
+	 /* background: white; */
+	 border: 1px solid #D981DB !important;
+	 /* color: #2E2A2A; */
+	 border-radius: 5px;
+	 font: 16px VodafoneRegular !important;
+	 height: 35px;
+	 margin: 0px 5px;
+}
+.vhascwearbrand:hover{
+	background: #9D2AA0;
+	color : #fff;	
+	
+}
+.vhascbrand:hover, .vhasc-d-term:hover, .vha-sc-pp-btn:hover,.vhascwearbrand:hover {
+	background: #9D2AA0 0% 0% no-repeat padding-box;
+	border: 1px solid #D981DB;
+	color: #fff;
+}
+/*05Jan*/
+.vha-sc-searchdevice-col{
+    background-color: #5E2750;
+    height: 68px;
+    align-items: center;
+	border-radius:5px;
+}
+.vha-sc-searchdevice-col .vha-sc-dev-plan-md-font{
+	font-size: 16.5px;
+	color:white;
+ 
+}
+.vha-sc-searchplan-col{
+	background-color: #5E2750;
+    height: 68px;
+    align-items: center;
+}
+.vha-sc-searchplan-col .vha-sc-dev-plan-md-font{
+	font-size: 16.5px;
+	color:white;
+}
+.vha-sc-bg-purple-clr{
+	 background-color: #5E2750;
+}
+.vha-sc-white-color-fnt{
+	color: white;
+}
+.vha-sc-searchdevice-new-ml-5 {
+    width: 350px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-left: 91px;
+    background-size: 30px;
+    text-align: left !important;
+    padding-right: 30px;
+}
+.vha-sc-gf-eistcust-grey-accordion{
+	border: 1px solid #9B9C9C;
+	width:auto;
+	padding:20px 10px;
+	background: #F4F4F4 0% 0% no-repeat padding-box;
+	border-radius:6px;
+}
+/* Hari Yeturu sales calculator button style */
+/*Device and Plan*/
+#vha-sc-d-carousel {
+    height: 100%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    background-color: inherit;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.vha-sc-carousel-container {
+    margin-top: 25px;
+	    margin-right: 0px;
+    margin-left: 0px;
+	background: #E2E2E2;
+}
+.vha-sc-d-carousel-inner {
+position: relative;
+    width: 99%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 0%;
+}
+.vha-sc-d-carouselnav {
+    background-color: black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+.carousel-control-next, .carousel-control-prev {
+	z-index:999;
+}
+#vha-sc-carousel {
+    height: 100%;
+    width: 93%;
+    margin-bottom: 25px;
+    display: flex;
+    background-color: transparent;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.vha-sc-carouselnav {
+    background-color: black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.vha-sc-carousel-inner {
+    position: relative;
+    width: 88%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 6%;
+}
+
+.vha-sc-carousel-inner .card {
+    max-width: 350px;
+    background: #DA0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 35px #00000029;
+    border-radius: 22px;
+    color: #fff;
+}
+.vha-sc-d-carousel-inner .card {
+    max-width: 250px;
+}
+[name="vhatscapacity"],
+[name="vhatscolour"] {
+    width: 35% !important;
+}
+.vha-sc-d-card-row1 {
+    height: 30px;
+    /*padding-bottom: 10px;*/
+    border: 1px solid #707070;
+    border-top: none;
+}
+.vha-sc-d-card-row2 {
+    height: 250px;
+    padding-bottom: 10px;
+    border: none;
+    border-top: none;
+}
+.vha-sc-d-card-row3 {
+    /*background-color: #e9ecef; */
+    /*border: 1px solid #727780;*/
+	border: none;
+    height: 170px;
+    padding-bottom: 30px;
+    border-top: none;
+    /*background: #DDDDDD5D 0% 0% no-repeat padding-box;*/
+}
+.vha-sc-greysmall {
+    font-size: small;
+    color: gray;
+}
+.vha-sc-carasole-dollar {
+    margin-left: 1px;
+    vertical-align: super;
+    font-weight: bold;
+    /*Changed rate ($ amount) weight to bold*/
+    font-size: 15px;
+    color: black;
+    /*Changed rate ($ amount) color to black*/
+}
+.vha-sc-d-desc{
+    min-width:250px;
+}
+.vha-sc-d-shopaddtocartbtn {
+    background-color: purple;
+    border-color: purple
+}
+
+/*Added below post click colour change for Shop Now button*/
+.vha-sc-d-shopaddtocartbtn:hover,
+.vha-sc-d-shopaddtocartbtn:focus {
+    background-color: purple;
+    border-color: purple;
+}
+.vha-sc-carasole-bolder {
+    font-weight: 600;
+    font-size: 30px;
+}
+.vha-sc-carasole-bold {
+	font-size: 24px;
+	padding-left: 5px;
+    font-weight: 600;
+}
+.vha-ts-carasole-bold {
+    font-weight: 700;
+}
+.vha-sc-card-red {
+    background: #E60000 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border-color: red;
+    border: 1px solid #707070;
+}
+.vha-sc-d-name{
+    min-height:40px;
+}
+img[class^="vha-sc-d-img"] {
+    height: 70%;
+    width: 50%;
+    padding-left: 25%;
+}
+.vha-sc-searchdevice-col,
+.vha-sc-searchplan-col {
+	display: flex;
+	
+}
+.vha-sc-searchdevice,
+.vha-sc-searchplan {
+    width: 350px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin-top: 5px;
+    padding-left: 5px;
+	margin-left:40px;
+    background-size: 30px;
+    text-align: left !important;
+    padding-right: 30px;
+}
+/* .vha-sc-searchdevice-btn:hover,
+.vha-sc-searchplan-btn:hover {
+    border: 1px solid #999999;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+
+.vha-sc-searchdevice-btn,
+.vha-sc-searchplan-btn {
+	height: 36px;
+    vertical-align: bottom;
+    background-color: transparent;
+    left: -50px;
+    border: none;
+    position: relative;
+}
+Ã¢â‚¬â€¹ .vha-sc-card-row1 {
+    height: 135px;
+    z-index: 1;
+    border: 1px solid #dc3545;
+}
+
+.vha-sc-card-row1-col1 {
+    color: #FFFFFF;
+    width: 50%;
+    opacity: 1;
+    border: none;
+}
+
+.vha-sc-card-row1-col2 {
+   border: none;
+    width: auto;
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    background: #413A3A;
+    height: 60px;
+    border-radius: 12px;
+	padding: 1rem!important;
+}
+.vha-sc-card-row2 {
+    max-height: 25%;
+    min-height: 75px;
+    /*border-bottom: 1px solid #727780;*/
+    padding-bottom: 10px;
+    border: none;
+    border-top: none;
+}
+
+.vha-sc-card-row3 {
+    /* background-color: #e9ecef; */
+    /* border-bottom: 1px solid #727780; */
+    max-height: 60px!important;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    border: none;
+    border-top: none;
+    background: transparent;
+    min-height: 60px !important
+}
+.vha-sc-tot-conterm-hd {
+    font: Bold 17px/18px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1
+}
+
+.vha-sc-tot-conterm {
+    font: 15px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-tot-ent {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-tot-enttxt {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+[id^="vha-sc-tot-enttxt"] {
+    min-height: 40px;
+    max-height: 40px;
+}
+.vha-sc-tot-plantype {
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    font: Bold 15px/16px VodafoneRegular;
+}
+
+.vha-sc-tot-plantypedtls {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-card-row4 {
+    /*background-color: #e9ecef; */
+    border: none;
+    /*height: 130px;*/
+    padding-bottom: 10px;
+    border-top: none;
+    background: transparent;
+}
+.vha-sc-tot-conterm-hd {
+    font: Bold 17px/18px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1
+}
+
+.vha-sc-tot-conterm {
+    font: 15px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-addtocartbtn {
+    width: 100%;
+    height: 40px;
+    padding: 0px !important;
+    box-shadow: 0px 1px 3px #0000004d;
+    opacity: 1;
+    font: 16px/18px VodafoneRegular;
+    background: #413A3A 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    /*position: absolute;*/
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid #413A3A;
+}
+
+
+/*Added below post click colour change for Shop Now button*/
+
+.vha-sc-addtocartbtn:hover,
+.vha-sc-addtocartbtn:focus {
+    background-color: purple !important;
+    border-color: purple !important;
+}
+/*shankar start*/
+.vhascppbtn-active {
+	background-color: #9d2aa0;
+	color: white;
+}
+/*shankar end*/
+
+/*balaji*/
+.vha-sc-container>.sw-theme-dots>ul.step-anchor>li>div:before {
+    content: counter(step);
+    counter-increment: step;
+    position: relative;
+    bottom: 0px;
+    left: 15%;
+    display: block;
+    border-radius: 50%;
+    color: #727780;
+    border: 2px solid #9d2aa0;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 98;
+    top: 19%;
+}
+
+.vha-sc-container>div>#vha-guided-wizard li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 3px;
+    position: relative;
+    text-align: center;
+    color: #7d7d7d;
+}
+.vha-sc-parentdiv-bdr {
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 6px 16px #522d241a;
+border: 1px solid #E5E5E5;
+border-radius: 8px;
+}
+
+.width75 {
+width: 75%;
+}
+.width25 {
+width: 25%;
+}
+.scmainbgcolor{
+	background-color: #F4F4F4;
+}
+.vha-sc-container{
+	min-width: 90%;
+}
+/*4Nov*/
+.vha-sc-EditIcon:hover,
+.vha-sc-DeletEdit:hover,
+.vha-sc-totalNewbtn:hover{
+	transform: scale(1.5);
+}
+
+.vha-sc-totalNewbtn-disable{
+	pointer-events: none;
+    background-color: #ccc !important;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.vha-sc-summarybtn{
+    background: #DA0000;
+    border-radius: 6px;
+    opacity: 1;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+	margin-left: 5px;
+}
+
+.vha-sc-cart-cost, .vha-sc-cart-mins, .vha-sc-cart-gb{
+	float: right;
+}
+
+.vha-sc-container>.sw-theme-dots>ul.step-anchor>li.active>div:before {
+    color: #fff;
+    background: #5E2750;
+    border: 2px solid #9d2aa0;
+    left: 26%;
+    transform: scale(1.2);
+    font-size: 2.1rem;
+    line-height: 35px;
+}
+
+/*.vha-sc-container>.sw-theme-dots>ul.step-anchor>li.done>div:before {
+    background-color: #9d2aa0 !important;
+    border-color: #9d2aa0;
+    background: url(../../images/custom/check.svg) no-repeat;
+    text-indent: -99999999px;
+    background-position: center;
+    background-size: 30px;
+}*/
+
+.vha-sc-container>div>#vha-guided-wizard li:after {
+    width: 98%;
+    height: 3px;
+    position: absolute;
+    background-color: #ada3a3;
+    top: 29%;
+    left: -71%;
+}
+
+.vha-sc-reviewsum iframe{
+	position: relative;
+}
+
+#pdf_preview_sc {
+    Min-height: 900px;
+}
+
+.sc-text-warning-red {
+    color: red;
+    font-size: medium;
+    background-color: #e09be229;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+}
+
+/*.sc-text-warning-red::before {
+    content: "!     ";
+    color: red; 
+    font-weight: 	; 
+    font-size: 1.5em; 
+    width: 20px;
+}*/
+.sc-stock-status{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem!important;       
+}
+/*Dev and plan change Rushi - 18JAN2024*/
+.device-card {
+	border: none;
+}
+.sc-stock-status-border-green {
+	border: 2px solid lightgreen !important;
+    box-shadow: 0px 0px 8px lightgreen !important;
+}
+.sc-stock-status-border-red {
+	border: 2px solid #e60000ba !important;
+    box-shadow: 0px 0px 8px #e60000ba !important;
+}
+.sc-stock-status-border-yellow {
+	border: 2px solid #ffff008c !important;
+    box-shadow: 0px 0px 8px #ffff008c !important;
+}
+
+/*Dev and plan change Rushi - 18JAN2024*/
+.sc-stock-status-green{
+	background-color: lightgreen; 
+}
+.sc-stock-status-red{
+	color: red;
+    background-color: #e09be229;
+}
+.sc-stock-status-yellow{
+    background-color: #ff65004a;
+}
+/*.vha-sc-SendEmailNote {
+	display: block;
+    height: 2em;
+    background-repeat: no-repeat;
+	font-size: medium;
+}*/		
+ 
+.VHASCattachimgcontainer {
+    float: right;
+    position: relative;
+    /* margin: -5% -40% 11% 4%; */
+    display: flex;
+    /* width: 20%;*/
+}
+.VHASCPrint{
+display: block;
+    width: 200em;
+    height: 4em;
+    background-repeat: no-repeat;
+    margin: 0% 30%;
+}
+ 
+.vha-sc-att-icon{
+margin-right: 40px;
+cursor: pointer;
+}
+ 
+.VHASCSend {
+    display: block;
+    width: 200em;
+    height: 4em;
+    background-repeat: no-repeat;
+    margin: 0% -80%;
+}
+/*.vha-sc-attmsgCont{
+	width: 90%;
+}*/
+.vha-sc-emailCont{
+	display: flex;
+}
+
+.vha-sc-cart-item-cont{
+	width: 100%;
+    margin-right: 20%;
+}
+
+.vha-sc-wear-table-main, .vha-sc-access-table-main{
+	padding-left: 27px;
+}
+#scpwdtoggle{
+	margin-top: -5px;
+	margin-left: -30px;
+    vertical-align: middle!important;
+}
+
+/*balaji*/
+/*shankar Device and  plan start*/
+.vha-sc-btn-div-brand, .vha-sc-searchdevice-col, .vha-sc-btn-div-payment, .vha-sc-searchplan-col{
+    padding-left: 25px;
+}
+.vhascbrand:hover, .vhasc-d-term:hover, .vha-sc-pp-btn:hover {
+	background: #9D2AA0 0% 0% no-repeat padding-box;
+	border: 1px solid #D981DB;
+	color: #fff;
+}
+#vha-sc-d-carousel .device-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 5px !important;
+	/*cursor: pointer;*/
+}
+img[class^="vha-sc-d-img"] {
+    height: 100%;
+}
+.vha-sc-d-card-row2 {
+    height: 200px;
+}
+.vha-sc-d-brand{
+    font-size: 0.85rem;
+}
+.vha-sc-d-product-name{
+    font-size: 0.85rem;
+    font-weight: 600;
+	width:50%;
+	color: #5E2750;
+}
+.vhasccapacity, .vhasccolour{
+	border:none;
+	outline: none;
+	font-size: 0.85rem;
+	max-width:50%;
+	float:right;
+	color: #5E2750;
+		
+}
+.vha-sc-d-card-row-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.vha-sc-d-card-col-flex{
+    width: 50%;
+    display: flex;
+}
+.vhasccapacity, .vhasccolour {
+    background: url("data:image/svg+xml,<svg height='9px' width='8px' viewBox='0 0 16 16' fill='%235E2750' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance:none !important;
+    -webkit-appearance: none !important; 
+    appearance: none !important;
+    padding-right: 20px !important;
+}
+.vha-sc-carasole-bolder {
+    font-weight: 600;
+    font-size: 1.2rem;
+	color: #5E2750;
+}
+.vha-sc-d-price, .vha-sc-d-description {
+	font-size: 0.75rem;
+}
+.vha-sc-d-card-row3 {
+    height: 110px;
+    padding-bottom: 0px;
+}
+.vha-sc-d-shopaddtocartbtn{
+	width: 100%;
+    border: none;
+    height: 2.5rem;
+	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+	background-color: #F4F4F4;
+    border-color: #F4F4F4;
+	outline: none;
+}
+.vha-sc-d-shopaddtocartbtn:hover, .vha-sc-d-shopaddtocartbtn:focus {
+    background-color: #DA0000;
+    border-color: #DA0000;
+	color:white;
+	outline: none !important;
+}
+#vha-sc-d-carousel .device-card:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+#vha-sc-d-carousel .device-card:hover .vha-sc-d-shopaddtocartbtn {
+    background-color: #DA0000;
+    border-color: #DA0000;
+	color:white;
+	outline: none !important;
+}
+/*#vha-sc-d-carousel .device-card:hover .sucess_check-mark {
+    display: block;
+}*/
+.sucess_check-mark {
+    display: none;
+    position: absolute;
+    top: 15rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 0.1rem solid #28A745;
+    border-radius: 50%;
+    background-color: #28A745;
+}
+
+.check-mark {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 20px;
+    width: 7px;
+    position: relative;
+    top: -4px;
+    left: 3px;
+    border-bottom: 3px solid rgb(255 255 255);
+    border-right: 3px solid rgb(255 255 255);
+}
+#vha-sc-d-carousel .device-card.device-card-selected .sucess_check-mark {
+    display: block;
+}
+.vha-sc-carousel-inner .vha-sc-container {
+    min-width: 90%;
+}
+#vha-sc-d-carousel .device-card.device-card-selected .vha-sc-d-shopaddtocartbtn {
+    background-color: #DA0000;
+    border-color: #DA0000;
+	color:white;
+	outline: none !important;
+}
+.vha-sc-carousel-inner .vha-sc-carasole-bolder {
+    color: #fff;
+}
+.vha-sc-addtocartbtn:hover, .vha-sc-addtocartbtn:focus {
+    background-color: white !important;
+    border-color: white !important;
+    color: #2E2A2A;
+}
+.vha-sc-card-row3 {
+    padding-bottom: 0px;
+}
+.vha-sc-empty-row {
+	min-height: 1rem;
+}
+
+.vha-sc-plan-select {
+    padding-top: 20px;
+}
+
+.vha-sc-carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 0;
+}
+#vha-sc-carousel {
+    width: 95%;
+}
+.vha-sc-carousel-inner .card {
+    max-width: 260px;
+}
+
+.vha-sc-checkbox-container {
+display: block;
+position: absolute;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.vha-sc-checkbox-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.vha-sc-checkbox-checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #8A8383;
+border-radius: 50%;
+}
+.vha-sc-checkbox-checkmark:after {
+content: "";
+position: absolute;
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid #5E2750;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.vha-sc-checkbox-container:hover input ~ .vha-sc-checkbox-checkmark {
+background-color: #28A745;
+}
+.vha-sc-checkbox-container:hover input ~ .vha-sc-checkbox-checkmark:after {
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.vha-sc-checkbox-container input:checked ~ .vha-sc-checkbox-checkmark {
+background-color: #28A745;
+}
+.vha-sc-checkbox-container input:checked ~ .vha-sc-checkbox-checkmark:after {
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.vha-sc-checkbox-container input[type=radio]:checked {
+opacity: 0;
+}
+/*shankar Device and  plan end*/
+/*shankar summary start */
+.vha-sc-summarybtn-new .vha-sc-simHomeNbn {
+    padding-left: 0;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.vha-sc-summarybtn-new .vha-sc-activeServiceIcondiv {
+    gap: 0;
+    justify-content: space-between;
+}
+
+.vha-sc-summarybtn-new .vha-sc-activeServiceBottom {
+    gap: 0;
+    justify-content: space-between;
+}
+.vha-sc-summarybtn-new .vha-sc-deleteEdit-parent { 
+    margin: -10px;
+    margin-top: 10px;
+}
+.vha-sc-summarybtn-new .vha-sc-deleteEdit:nth-child(odd) {
+    background-color: #461647;
+}
+.vha-sc-summarybtn-new .vha-sc-deleteEdit:nth-child(even) {
+    background-color: #360C37;
+}
+
+.vha-sc-summarybtn-new .vha-sc-deleteEdit { 
+    padding: 10px;
+}
+.vha-sc-summarybtn-new .vha-sc-activedeleteEdit {
+    /*box-shadow: none !important;*/
+    border: none;
+    /*border-radius: 0;*/
+	justify-content: space-between;
+}
+.vha-sc-summarybtn-new .vha-sc-simHomeNbn span {
+    word-wrap: break-word;
+    display: inline-table;
+    width: auto;
+}
+.vha-sc-summarybtn-new .vha-sc-activeTotalAmt {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.vha-sc-devcecare-align {
+	margin-left:70px;
+	margin-bottom: 30px;
+}
+.vha-sc-exiBANspan-mpp  {
+    position: absolute;
+    right: 36%;
+    margin-top: 15px !important;
+}
+.vha-sc-exiBANspan-app  {
+    position: absolute;
+    right: 30%;
+    margin-top: 15px !important;
+}
+/*.vha-sc-pp-btn:hover,
+.vha-sc-pp-btn:focus {
+    background-color: purple;
+    border-color: purple;
+	color: white;
+}*/
+.vha-sc-pp-btn-active {
+	background: #9D2AA0 0% 0% no-repeat padding-box !important;
+    border: 1px solid #D981DB !important;
+    color: #fff !important;
+}
+
+.vha-sc-extcustomerdtls-outercontainer {
+	margin-top: -50px;
+    padding-top: 50px;
+}
+
+/*#salescalcpage:not(:has(div.vha-sc-extcustomerdtls.VHASCDisplayNoneimp.container)) {
+ background-color: #F4F4F4;
+ 	margin-top: -50px;
+ padding-top: 50px;
+ 	margin-bottom: -50px;
+ padding-bottom: 50px;
+ }*/
+ 
+.vha-sc-deleteEdit-parent .vha-sc-deleteEdit {
+	background: #461647;
+	display: flex;
+	align-items: center;
+	gap: 0%;
+	justify-content: space-between;
+}
+.vha-sc-summarybtn-new .vha-sc-activeServiceIcondiv {
+	padding-top: 6px;
+}
+
+.sc-landpage-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-width: 80%;
+}
+
+.container-responsiveUI {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container-responsiveUI {
+        max-width:540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-responsiveUI {
+        max-width:720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-responsiveUI {
+        max-width:960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-responsiveUI {
+        max-width:1140px;
+    }
+}
+.vha-sc-txtbox-small-pin {
+    width: 121px;
+    height: 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right:*/
+}
+.vha-sc-trade-txtbox {
+    width: 80px;
+    height: 26px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 4px 0px 0px 30px;
+    padding-left: 0px;
+    background-size: 30px;
+    text-align: left !important;
+}
+
+.vha-input-bg-readonly{
+	background-color: "#dddddd"
+}
+
+.vha-sc-address-coveragechk-nbn .vha-input-bg-readonly{
+	background-color: #f3ebeb;
+}
+
+#vha-sc-nbaofferbtn:disabled {
+	color: #a29ba3;
+}
+/*shankar summary end */f/*TULASIY:12-09-2023::Created for Default classes*/
+.vha-sc-gf-eistcust-grey-accordion{
+	border: 1px solid #9B9C9C;
+	width:auto;
+	padding:20px 10px;
+	background: #F4F4F4 0% 0% no-repeat padding-box;
+	border-radius:6px;
+}
+.vha-sc-gf-grey-accordion {
+    /* border: 1px solid #9B9C9C; */
+    width: 70%;
+    padding: 10px;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    margin-left: 42px;
+	margin-top:7px;
+}
+.vha-sc-nbnaddr {
+    background: #F4F4F4;
+    padding: 20px 45px;
+    border-radius: 6px;
+	margin-left: 23px;
+    margin-right: 23px;
+
+}
+#vha-sc-nbngo-btn {
+    color: #9D2AA0;
+}
+.vha-sc-nbn-cantfindadrss {
+color: #9D2AA0;
+margin-left: 23px;	
+letter-spacing: 0px;
+opacity: 1;
+font: normal normal 600 14px/24px Segoe UI;
+}
+.vha-sc-nbn-cantfindadrss:hover{
+	color:#eba7e3;
+}
+#vha-sc-getnbn{
+	margin-left: 27px;
+}
+.vha-sc-btns-color{
+	float:right;
+	color:white;
+	background-color:red;
+	min-width: 100px;
+	border: 1px solid #d4d4d4 !important;
+	border-radius: 8px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+}
+.vha-sc-float-right{
+	float:right;
+}
+.vhascppbtn
+{
+	min-width: 100px;
+    background: white;
+	border: 1px solid #707070;
+    color: #4a4d4e;
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+    
+    border-radius: 8px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+}
+.VHASCDisplayNone {
+    display: none!important;
+}
+.VHASCDisplayNoneimp {
+    display: none !important;
+}
+
+.VHASCDisplayBlock {
+    display: block;
+}
+.vha-sc-gf-accordion {
+    border: 1px solid #9B9C9C;
+    width: auto;
+    height: 71px;
+    padding-left: 35px;
+    background-color: #5E2750;
+    border-radius: 6px;
+    padding-top: 20px;
+    margin-left: 23px;
+    margin-right: 23px;
+	margin-top: 23px;
+}
+#vha-sc-chngaddr-btn,#vha-sc-nbn-clearbtn {
+    color: #9D2AA0;
+    margin-left: 30px;
+}
+.vha-sc-cvrgchk-tab-font{
+	font-size: 18px !important;
+    font: normal normal 600 24px/32px Segoe UI;
+    color: #2E2A2A;
+    margin-left: 27px;
+}
+
+.vha-sc-cvrgchk-subtab-font{
+	font-size: 15px !important;
+    font: normal normal 600 20px/27px Segoe UI;
+    color: #706B6B;
+    margin-left: 28px;
+}
+#vha-sc-3G-IO{
+	margin-left: 28px;
+}
+#vha-sc-4G-Avl{
+	margin-left: 28px;
+}
+.vha-color-white{
+	color:white;
+}
+.vha-bgcolor-white{
+	background-color:white;
+}
+.vha-color-blue{
+	color:blue;
+}
+.vha-color-red{
+	color:red;
+}
+.vha-color-grey{
+	color:#8A8383;
+}
+.vha-sc-bold-h1
+{
+	font-size: 20px !important;
+    font-weight: bold !important;
+}
+.vha-sc-bold-h2
+{
+    font-size: 24px !important;
+    font-weight: 600;
+    color: #2E2A2A;
+}
+/*TULASIY CSS Ends*/
+
+
+
+/*Rushikesh W Sales Calc CSS start*/
+
+.vha-sc-ExistingCustCartSumPanel {
+	margin: 20px 0px;
+}
+#salescalcpage button{
+	outline: none !important;
+}
+#MobileNumber {
+font: normal normal 600 17px/24px Segoe UI;
+letter-spacing: 0px;
+color: #413A3A;
+opacity: 1;
+}
+#CustomerName {
+    padding: 50px 0px 0px 20% !important;
+    font: normal normal 600 20px/35px Segoe UI;
+    display: block;
+}
+#vha-sc-extcustinfo >.row .pt-3 {
+	    padding-left: 25% !important;
+		padding-top: 0px !important;
+}
+
+#salescalcpage {
+	font-family: Segoe UI !important;
+	font-size: 17px;
+}
+.vha-sc-coverageStatus {
+	background: gray;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+
+/*Vasavi coverage status*/
+.CSRed {
+	background: #e60000;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+.CSGreen {
+	background: #28a745;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+.CSOrange {
+	background: orange;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+}
+
+.vha-sc-bldnewpln-cust-dtls {
+	background: #F4F4F4;
+	padding: 30px 55px;
+}
+
+.vha-sc-bldnewpln-cust-dtls input {
+	border: 1px solid black;
+	border-radius: 6px;
+	margin: 10px;
+	width: 30%;
+	height: 26px;
+	text-indent: 10px;
+}
+
+.vha-sc-bldnewpln-cust-dtls input:focus {
+	outline: none;
+}
+
+.vha-sc-bldnewpln-cust-dtls span {
+	text-align: left;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	width: 25%;
+	display: inline-block;
+}
+.vha-sc-lndpagebtns {
+    width: 300px;
+    height: 100px;
+    background: #5E2750 0% 0% no-repeat padding-box;
+    box-shadow: 5px 5px 11px #d5d5d529;
+    border-radius: 15px;
+    opacity: 1;
+    color: #fff;
+}
+
+ .vha-sc-lndpagebtns:hover {
+	color: #fff;
+}
+.vha-sc-bldnewpln-active {
+    background: #DA0000 0% 0% no-repeat padding-box;
+	box-shadow: 5px 5px 11px #D5D5D529;
+	color: #fff; 
+}
+.vha-sc-btn-lndpgebtn-botm {
+	display: block;
+    position: relative;
+   font-size:17px;
+   text-align:left;
+   margin-left:75px;
+}
+.vha-sc-btn-lndpgebtn-top {
+    position: relative;
+    font-size: 23px;
+    display: block;
+	margin-left:75px;
+	text-align:left;
+	font-weight:600;
+}
+.vha-sc-btn-lndpgebtn-top-sty {
+    position: relative;
+    font-size: 24px;
+    display: block;	
+	margin-left:75px;
+	text-align:left;
+	width: 100%;
+}	
+
+.vha-sc-bldnewpln-active > span.vha-sc-lndpgbtns-icon-span  {
+	border: 5px solid #e65252;
+}
+.vha-sc-lndpagebtns:hover > span.vha-sc-lndpgbtns-icon-span  {
+	padding: 8px;
+}
+.vha-sc-lndpgbtns-icon-span {
+	background: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    display: block;
+    position: absolute;
+	border-radius: 50%;
+	border: 5px solid #926c88;
+}
+
+.vha-sc-btn-bldnewpln-btn-dtls,
+.vha-sc-btn-existcust-btn-dtls,
+.vha-sc-btn-salesquote-btn-dtls,
+.vha-sc-btn-banquote-btn-dtls,
+.vha-sc-btn-searchquote-btn-dtls, {
+	text-align: left;
+    padding-left: 30%;
+}
+.vha-sc-bldnewpln-icon {
+	content: url("../../images/custom/menu-icons/Icon feather-user_1.png") !important;
+}
+.vha-sc-existcust-icon {
+	content: url("../../images/custom/menu-icons/User_2.png") !important;
+}
+.vha-sc-salesquote-icon {
+    
+	content: url("../../images/custom/menu-icons/Sales agent quote.png") !important;
+}
+.vha-sc-banquote-icon {
+	content: url("../../images/custom/menu-icons/Billing account qote.png") !important;
+}
+.vha-sc-searchquote-icon {
+	content: url("../../images/custom/menu-icons/search_quote.png") !important;
+}
+
+
+/* Mobile coverage and NBN button design*/
+.vha-sc-cvragechk-btns ul {
+	display:table-row;
+}
+.vha-sc-cvragechk-btns ul li
+{
+	display: table-cell;
+	height: auto;
+	list-style-type: none;
+	margin: 10px;
+	vertical-align: middle;
+}
+.vha-sc-cvragechk-btns ul li button {
+	height: 57px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600 !important;
+    margin-left: 18px;
+    font-size: 17px;
+}
+
+.vha-sc-cvragechk-bar {
+	border-right: 2px solid #E5E5E5;
+    margin: auto 40px;
+    position: relative;
+    top: 20px;
+}
+.vha-sc-cvrage-mob-active::after {
+	content: '';
+	display: block;
+	width: 30%;
+	height: 4px;
+	background: #DA0000;
+}
+.vha-sc-newcust-active::after {
+	content: '';
+	display: block;
+	width: 5%;
+	height: 4px;
+	background: #DA0000;
+}
+
+/* Device and plan button css */
+
+.vha-sc-allguidedtab-btns-init ul {
+    display:table-row;
+}
+.vha-sc-allguidedtab-btns-init ul li
+{
+    display: table-cell;
+    height: auto;
+    list-style-type: none;
+    margin: 10px;
+    vertical-align: middle;
+    padding: 0px 20px 0px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #E5E5E5;
+}
+.vha-sc-allguidedtab-btns-init ul li button {
+    height:50px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+	font-size: 17px;
+}
+.vha-sc-devplan-active {
+    letter-spacing: 0px;
+    color: #5E2750;
+    opacity: 1;
+    font-weight: 600;
+}
+.vha-sc-devplan-active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #DA0000;
+}
+   /* Web 1920 -2 screen design sales calc */
+
+  .vha-sc-customerSince-span {
+    width: 15px;
+    height: 15px;
+    background: red;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .vha-sc-existingCustService {
+    list-style-type: none;
+    color: #75736B;
+  }
+  .vha-sc-existingCustService li span {
+    color: #5E2750;
+    font-weight: 600;
+    padding-top: 5px;
+    display: table-cell;
+  }
+  .vha-sc-existingCustService li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+	white-space: nowrap;
+  }
+  .vha-existingContract_bg {
+    position: relative;
+    color: #5E2750;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .vha-existingContract_bg:after {
+    content: " ";
+    display: block;
+    background: #DA0000;
+    height: 5px;
+    width: 70px;
+}
+.vha-sc-currentPlan {
+    background: #F4F4F4;
+    padding: 10px 5px 10px 5px;
+    color: #706B6B;
+    font-weight: 500;
+}
+.vha-sc-currentPlan li {
+    list-style-type: none;
+}
+.vha-sc-currentPlan li span {
+   position: absolute;
+   right: -25%;
+   color: #2E2A2A;
+   font-weight: 600;
+}
+
+.vha-sc-EarlyUpgradeButton button {
+    margin: auto 3px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #E8E5E5;
+}
+.vha-sc-BundleAndSave_Icon {
+	content: url("../../images/custom/menu-icons/BundleAndSave_Icon_sc.png") !important;
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-top: 10px;
+}
+.vha-sc-exxistingCustImg {
+	content: url("../../images/custom/menu-icons/ExistingCustomer_Icon_sc.png") !important;
+    width: 150px;
+    height: 150px;
+    display: block;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 10%;
+	margin-top: 20px;
+}
+.vha-sc-Watch_Icon {
+	content: url("../../images/custom/menu-icons/cart_summary_panel_sc.png") !important;
+    width: 35px;
+    height: 30px;
+    display: inline-block; 
+	margin: 20px 5px;
+}
+.vha-sc-custEmailIcon {
+	content: url("../../images/custom/menu-icons/Email_Icon_sc.png") !important;
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+	 margin-right: -10px;	
+}
+.vha-sc-custPhoneNumberIcon {
+	content: url("../../images/custom/menu-icons/PhoneNumber_Icon_sc.png") !important;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;	
+}
+.vha-sc-custMobileIcon {
+	content: url("../../images/custom/menu-icons/MobileIcon_sc.png") !important;
+	width: 20px;
+    height: 30px;
+    display: block;
+    margin-top: 5px;
+}
+#vha-sc-extcontractinfo {
+	flex: 0 0 30%;
+	max-width: 100%;
+}
+#vha-sc-extcustinfo {
+	flex: 0 0 70%;
+	max-width: 100%;
+}
+#vha-sc-extcustinfo .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 15px;
+    margin-left: 0px;
+}
+#vha-sc-extservices {
+	margin-top: 15px;
+    background: #fff;
+}
+#vha-sc-extservices .col {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#vha-sc-extcontractinfo .border {
+	margin: 0px !important;
+}
+#vha-sc-extcustinfo >.row >.col-6> .pt-5 {
+	padding: 0px !important;
+}
+#vha-sc-extcustinfo >.row >.col-6> .p-4 {
+	    padding: 20px 0px;
+}
+#vha-sc-extcustinfo >.row .text-center {
+	text-align: left !important;
+}
+#vha-sc-extcustinfo >.row .p-4 {
+	    padding: 40px 0px;
+}
+#vha-sc-extcustinfo >.row >.col-3 > .pt-5 {
+	padding: 0px !important;
+}
+#vha-sc-extcontractinfo .border, #vha-sc-extcustinfo .border, #vha-sc-extservices {
+    box-shadow: 0px 6px 16px #522d241a;
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 8px;
+	padding: 20px !important;	
+}
+#vha-sc-cancel-rli {
+	    display: block;
+    position: absolute;
+    right: 15px;
+}
+.vha-sc-DevicePlanSave {
+	display: flex;
+    /*gap: 2%;*/
+}
+.vha-sc-exiAccBan {
+    background: #5E2750 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    opacity: 1;
+    height: 50px;
+    padding: 10px 5px;
+    color: #F4F4F4;
+    margin: 10px 0px;
+}
+.vha-sc-exiAccBan .vha-sc-exiBANspan {
+    margin: auto 30px;
+}
+
+/*05Jan*/
+.vha-sc-MnpAppDef {
+    color: #F4F4F4;
+	background: #8A8383;
+    border-radius: 50%;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    display: initial;
+    position: absolute;
+    margin: 5px;
+    text-align: center;
+}
+
+.vha-sc-upgradeServiceBtn {
+    position: absolute;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    opacity: 1;
+    background: #fff;
+    border: 1px solid #9D2AA0;
+    border-radius: 6px;
+    padding: 10px 40px;
+    right: 10%;
+	margin-top: 5px;
+	font-size:15px;	
+}
+.vha-sc-checkbox {
+    position: absolute;
+    right: 5%;
+    margin-top: 15px;
+}
+
+.vha-sc-extcustomerdtls .row , ##MobileNumber {
+	font: normal normal 600 16px/24px Segoe UI !important;
+}
+.vha-sc-extcustomerdtls .col-5,.col-4,.col-3, .col-7, .col-6	{
+	padding-left: 0px;
+	padding-right: 0px;	
+}
+.vha-sc-extcustomerdtls .col-3 {
+	position: relative;
+	left: -50px;
+}
+.vha-sc-bgRed {
+	background: red !important;
+}
+/* Summary Card CSS */
+#vha-sc-SummaryCartApplet {
+    position: relative;
+	margin-left:10px;
+}
+.vha-sc-summaryMaindiv {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 16px #522D241A;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 10px;
+   /* width: 378px; */
+}
+.vha-sc-SummaryHeading {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #5E2750;
+	display: flex;
+    align-items: center;
+}
+/*10Nov*/
+.vha-sc-planDesigncart {
+    background: white;
+    /*display: flex;*/
+    padding: 10px;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0px;
+}
+
+/*05Jan*/
+.vha-sc-exiAccBanCart {
+	background-color: #F4F4F4;
+    border-radius: 5px;
+    gap: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    padding-left: 10px;
+	margin:10px 0px; 
+}
+/*05Jan*/
+.vha-sc-cartserdata{
+	margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.vha-sc-aligncartcustSpanDiv {
+	font-weight:600;
+}
+/*05Jan*/
+.vha-sc-planDesign {
+    background: #F9F9F9;
+    display: flex;
+    padding: 10px 5px;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+	/*line-height: 35px;*/
+}
+/*.vha-sc-planDesign span{
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    font-weight: 600;
+}*/
+.vha-sc-PromoCode {
+    padding: 20px 5px;
+	    /*justify-content: center;*/
+}
+.vha-sc-PromoCode span {
+	display: none;
+}
+/*05Jan*/
+.vha-sc-upgradeMnpApp {
+	background: #DA0000 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+	margin: 40px 0px;
+}
+.vha-sc-EarlyUpgradeBtn {
+	background: #E8E5E5;
+    border-radius: 8px;
+    border: none;
+    margin: 0px 5px;
+    padding: 0px 10px;
+}
+.vha-sc-PromoCodeInput {
+    outline: none;
+    border: 1px solid #CCCCCC;
+    width: 140px;
+    padding: 5px 10px;
+    margin-left: 15px;
+}
+.vha-sc-PromoCode, input::placeholder {
+    color: #E09BE2;
+  }
+.vha-sc-ApplyPromoBtn {
+    color: #9D2AA0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+}
+.vha-sc-ExistCustTerminateBtn {
+    color: #9D2AA0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+}
+.panel-title {
+	padding-bottom: 5px;
+    padding-top: 5px;
+	/*display: flex;
+    align-items: center;*/
+}
+.panel-title > .cust-details:before {
+    padding-left: 62px;
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+}
+.panel-title > .exist-services:before {
+    padding-left: 67px;
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+}
+.panel-title > .exist-contract:before {
+    padding-left: 63px;
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+}
+
+.panel-title ::after {
+    content: " ";
+    display: block;
+    background:  #CCCCCC;
+    opacity: 0.61;
+    height: 1px;
+}
+
+.panel-title > a:before {
+    float: right !important;
+    content: "\2212";
+    padding-right: 5px;
+
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content: '\002B';
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.panel-title > a {
+	text-align: left;
+    font: normal normal 600 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #5E2750;
+    font-size: 20px;
+	vertical-align: top;
+}
+.panel-title > a:hover {
+    color: #5E2750;
+}
+.vha-sc-customerDetails {
+    white-space: nowrap;
+    gap: 10px !important;
+	background: #fff;
+}
+/*10Nov*/
+/* .vha-sc-aligncartcustSpanDiv { */
+    /* position: relative; */
+    /* left: -16px; */
+    /* top: -20px; */
+    /* white-space: nowrap; */
+/* } */
+
+/*05Jan*/
+.vha-sc-alignSpanDiv {
+     position: absolute;
+    right: 0;
+	width: 30%;
+	color: #2E2A2A;
+}
+.vha-sc-summaryBottom {
+    background: #5E2750;
+    border-radius: 8px;
+    padding: 10px;
+  /*  margin: 10px 0px; */
+    margin-top: 10px;
+	color: #F4F4F4;
+ /*   width: 378px; */
+}
+.vha-sc-activeServiceBottom {
+    display: flex;
+    align-items: center;
+    gap: 16%;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+/*05Jan*/
+.vha-sc-MnpAppDef {
+    color: #F4F4F4;
+	background: #8A8383;
+    border-radius: 50%;
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    display: initial;
+    position: absolute;
+    margin: 5px;
+    text-align: center;
+}
+
+.vha-sc-activeServiceIcondiv {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+.vha-sc-activedeleteEdit {
+	box-shadow: 0px 0px 8px #f5f5f5 !important;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	margin: 0 5px 5px 5px;
+}
+.vha-sc-deleteEdit {
+    background: #461647;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vha-sc-WithDeviceIcon {
+	content: url("../../images/custom/menu-icons/Device_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+.vha-sc-NbnDeviceIcon {
+	content: url("../../images/custom/menu-icons/NBN_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+.vha-sc-HomeInternetIcon{
+	content: url("../../images/custom/menu-icons/Home_internet_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+.vha-sc-SimOnlyIconIcon{
+	content: url("../../images/custom/menu-icons/Sim_Icon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+}
+
+.vha-sc-SummaryHeadingIcon {
+	content: url("../../images/custom/menu-icons/Summary_Icon_sc.png") !important;
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-BundleAndSaveSummary_Icon {
+	content: url("../../images/custom/menu-icons/BundleAndSave_Icon_sc.png") !important;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+	margin: 20px 5px;
+}
+.vha-sc-offer_Icon {
+	content: url("../../images/custom/menu-icons/Data_offers_Icon_sc.png") !important;
+    width: auto;
+    height: auto;
+    display: inline-block;
+	margin: 20px 5px;
+}
+
+.vha-sc-ExistingServicesIcon {
+	content: url("../../images/custom/menu-icons/Existing_services_Icon_sc.png") !important;
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-ExistingContractIcon {
+	content: url("../../images/custom/menu-icons/Existing_contract_Icon_sc.png") !important;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-CustDetails_Icon {
+	content: url("../../images/custom/menu-icons/Customer_Icon_sc.png") !important;
+	width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.vha-sc-DataOffersIcon {
+	content: url("../../images/custom/menu-icons/Data_offers_Icon_sc.png") !important;
+     width: 20px;
+    height: 30px;
+    display: inline-block; 
+}
+/*05Jan*/
+.vha-sc-DiviceCareIcon {
+	content: url("../../images/custom/menu-icons/Data_Icon_sc.png") !important;
+	width: 24px;
+    height: 32px;
+    display: inline-block;
+	margin: 45px 5px; 
+}
+/*10Nov*/
+.vha-sc-maxwidth22per{
+	max-width: 22%;
+}
+.vha-sc-MobileandDataplanIcon {
+    content: url("../../images/custom/menu-icons/MobileIcon_sc.png") !important;
+    width: 25px;
+    height: auto;
+    display: inline-block; 
+	margin: 20px 5px;
+}
+
+.vha-sc-EditIcons {
+	content: url("../../images/custom/menu-icons/Edit_Icon_sc.png") !important;
+    width: 10px;
+    height: 10px;
+    display: inline-block; 
+}
+
+.vha-sc-EditIcon {
+	content: url("../../images/custom/menu-icons/Edit_Icon_sc.png") !important;
+    width: 10px;
+    height: 10px;
+    display: inline-block; 
+}
+.vha-sc-DeleteIcon {
+	content: url("../../images/custom/menu-icons/Delete_Icon_sc.png") !important;
+    width: 10px;
+    height: 13px;
+    display: inline-block; 
+}
+.vha-sc-simHomeNbn {
+    padding-left: 30px;
+    padding-bottom: 10px; 
+	display: flex;
+    gap: 16%;
+}
+.vha-sc-simHomeNbn span {
+    word-wrap: break-word;
+    display: inline-table;
+    width: auto;
+}
+.vha-sc-activeTotalAmt {
+    display: flex;
+    align-items: center;
+    gap: 23%;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.vha-sc-totalNewbtn {
+    background: #DA0000;
+    border-radius: 6px;
+    opacity: 1;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 3px 15px;
+}
+#ExistingPlan{
+	width: 150px;
+}
+.vha-sc-DeletEdit{
+	background: transparent;
+    border: none;
+}
+.vha-sc-reviewSummary >span > button:focus{
+	outline:none;
+}
+
+/* Device and plan*/
+.input-margin-left {
+	margin-left: 15px !important;
+}
+#vha-sc-p-carousel-container {
+	background: transparent linear-gradient(90deg, #5E2020 0%, #5E2750 100%) 0% 0% no-repeat padding-box;
+	margin-left: 0px;
+    margin-right: 0px;
+}
+#vha-sc-tot-paltym0,#vha-sc-tot-paltym1, #vha-sc-tot-paltym3 {
+	color: #fff !important;
+	font-size: 15px !important;
+}
+.vha-sc-card-row1-col2 .pt-3 >span {
+	font-size: 30px !important;
+	color: #fff !important;
+	    vertical-align: inherit !important;
+}
+.vha-sc-card-row1-col2 >div >span {
+	color: #fff !important;
+}
+.vha-sc-card-row1-col2 .pt-3 {
+	padding-top: 0px !important;
+}
+
+.vha-sc-device-select{
+	padding-top: 20px;
+}
+.vha-sc-lbl {
+	text-align: left;
+    font: normal normal 600 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #413A3A;
+    opacity: 1;
+    font-size: 15px;
+	padding-bottom:5px;
+}
+.vha-sc-dev-plan-md-font {
+	text-align: left;
+    font: normal normal 600 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #413A3A;
+    opacity: 1;
+    font-size: 16px;
+	padding-bottom:0px;
+}
+.vha-sc-btn-div-bottom-div {
+		display: flow-root;
+    padding: 20px 10px;
+    background: #F4F4F4;
+    margin: 10px 0px;
+}
+.vha-sc-btn-div-brand{
+	display: flow-root;
+    padding: 20px 0px;
+    background: #F4F4F4;
+    margin: 10px 0px;
+}
+.vha-sc-btn-div-payment {
+	display: flow-root;
+    padding: 20px 0px;
+    background: #fff;
+    margin: 10px 0px;
+}
+.vhascbrand ,.vhasc-d-term {
+	    min-width: 130px;
+    background: white;
+    border: 1px solid #D981DB !important;
+    color: #2E2A2A;
+    border-radius: 5px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+    margin: 0px 5px;
+}
+.vhascplantype {
+	    min-width: 150px;
+    background: white;
+    border: 1px solid #CCCCCC !important;
+    color: #4a4d4e;
+    border-radius: 6px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+    margin-left: 10px;
+}
+.vhascbrand :hover {
+	background: #9D2AA0;
+	color : #fff;	
+}
+.vha-sc-SearchDeviceIcon {
+	content: url("../../images/custom/menu-icons/vha-sc-searchIcon.png") !important;
+	    width: 25px;
+    display: block;
+}
+#vha-sc-d-carousel .device-card{
+    border-radius: 10px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+}
+.vha-sc-card-red {
+	    display: none !important;
+}
+.applet-button-active {
+	background: #9D2AA0 0% 0% no-repeat padding-box;
+	border: 1px solid #D981DB;
+	color: #fff;
+}
+/*Device and Plan*/
+
+/*Rushikesh W Sales Calc CSS end*/
+
+
+
+/* Hari Yeturu sales calculator button style */
+.vha-sc-mobno-err{ 
+	color: Red; 
+	visibility: hidden;
+	font-family: Arial; font-size: 10pt;
+ }
+.vha-sc-addressdetails-val{
+    width: 500px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-btn-border-clr
+{
+	border: 1px solid #9D2AA0 !important;
+	border-radius: 6px;
+}
+.vha-sc-connectaddr-lbl{
+    /*border-radius: 5px;*/
+    font-size: 15px;
+    /*border: 1px solid #9B9C9C;*/
+    margin: 5px 0px 0px 20px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-txtbox-large{
+    width: 500px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-txtbox-medium{
+    width: 242px;
+    height: 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 20px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right: 30px; */
+}
+.vha-sc-greyclr-h150px{
+        background:#EBE9E9;
+        height:150px; 
+        border-radius: 6px;
+        justify-content: start;
+        /* align-items: center; */
+}
+.vha-sc-txtbox-medium-mleft-127px{
+	width:200px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 127px;
+	padding-left: 0px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+   
+.vha-sc-pleft-172px{
+	padding-left: 172px;
+}
+.vha-sc-pleft-207px{
+	padding-left: 200px;
+}
+.vha-sc-pleft-202px{
+	padding-left: 203px;
+}
+
+.vha-sc-txt-style-pre-medium{
+	font: normal normal 600 20px/27px Segoe UI;
+	letter-spacing: 0px;
+	color: #413A3A;
+	opacity: 1;
+	font-size: 15px;
+}
+.vha-sc-txt-style-pre-normal{
+	font: normal normal normal 18px/24px Segoe UI;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	opacity: 0.8;
+	font-size: 14px;
+}
+/*Configure Service*/
+.vha-sc-greyclr{
+	background: #F4F4F4;
+	height:80px; 
+	border-radius: 6px;
+	justify-content: start;
+	align-items: center;
+	
+  }
+  .vha-sc-greyclr-h35px{
+	background-color: #F4F4F4;
+	height:35px; 
+	border-radius: 6px;
+	justify-content: start;
+	align-items: center;
+  }
+  .vha-sc-greyclr-h50px{
+	background-color: #F4F4F4;
+	height:50px; 
+	border-radius: 6px;
+	justify-content: start;
+	align-items: center;
+	
+  }
+  .vha-sc-pleft-50px{
+	padding-left: 43px;
+  }
+  .vha-sc-pleft-360px{
+	padding-left: 250px;
+  }
+  .vha-sc-pleft-70px{
+	padding-left: 70px;
+  }
+  .vha-sc-mleft-42px{
+	margin-left: 32px;
+  }
+  .vha-sc-mleft-67px{
+	margin-left: 67px;
+  }
+  
+  .vha-sc-list-style li {
+list-style-type: none;
+
+  }
+
+
+
+.vha-sc-cfg-txtbox-medium{
+	width: 350px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 25px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left;
+	/* padding-right: 30px; */
+}
+.vha-sc-cfg-txtbox-small{
+	width: 110px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 25px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left;
+	/* padding-right: 30px; */
+}
+.vha-sc-txtbox-medium-mleft-37px{
+	width: 200px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 37px;
+/*  padding-left: 4px; */
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+.vha-sc-cfg-txtbox-small{
+	width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 40px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+.vha-sc-txtbox-small-mleft-41px{
+	width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 41px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+
+.vha-sc-txtbox-small-mleft-105px{
+width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 152px;
+	padding-left: 0px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+
+.vha-sc-txtbox-small-mleft-150px{
+	width:80px;
+	height: 26px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 4px 0px 0px 150px;
+	padding-left: 0px;
+	background-size: 30px;
+	text-align: left !important;
+	/* padding-right: 30px; */
+}
+
+
+
+.vha-sc-txt-style{
+	font: normal normal 600 18px/24px Segoe UI;
+	letter-spacing: 0px;
+	color: #706B6B;
+	opacity: 1;
+	font-size: 15px;
+}
+.vha-sc-txt-style-black{
+	font: normal normal 600 18px/24px Segoe UI;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	opacity: 1;
+	font-size: 15px;
+}
+.vha-sc-txt-style-black-bold{
+	text-align: left;
+	font: normal normal 600 22px/30px Segoe UI;
+	letter-spacing: 0px;
+	color: #2E2A2A;
+	opacity: 1;
+	font-size: 17px;
+}
+
+#salescalcpage input[type=radio] {
+	appearance: none;
+	padding: 7px;
+	border-radius:50%;
+	background-color: #CCCCCC;
+	opacity: 1;
+
+}
+#salescalcpage input[type=radio]:checked {
+	background-color: #9D2AA0;
+	opacity: 1;
+}
+.vha-sc-config-col1{
+	/* border-radius: 8px; */
+
+}
+.vha-sc-config-col2{
+	border-radius: 8px;
+	padding: 0px;
+}
+.vha-sc-cfg-row2{
+    width: 100%;
+    /* margin-top: 17px; */
+    /*display: block; */
+    margin: 20px 0px;
+}
+.vha-sc-prepay{
+	/* border-radius: 8px; */
+}
+.vha-sc-btm-mrgn{
+	margin-bottom:23px;
+}
+.vha-sc-configservice-select{
+  /*  background: #F4F4F4; */
+}
+.vha-sc-mleft-27px{
+	margin-left: 27px;
+    margin-top: 7px;
+}
+ .vha-sc-greyclr-bg-white{
+	/* background: #F4F4F4; */
+    height:60px; 
+    border-radius: 6px;
+    justify-content: start;
+    align-items: center;
+}
+.vha-sc-exist-cus-overide{
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    opacity: 1;
+    font-size: 16px;
+	padding-left: 26px;
+}
+.vha-sc-dev-plan-drp-dwn{
+	width: 227px;
+	height: 29px;
+	border-radius: 4px;
+	font-size: 16px;
+	border: 1px solid #9B9C9C;
+	margin: 0px 0px 0px 25px;
+	padding-left: 4px;
+	background-size: 30px;
+	text-align: left;    
+	/* padding-right: 30px; */
+}
+.vhascppbtn-new{
+	/* min-width: 150px; */
+    /* background: white; */
+	border: 1px solid #707070;
+    /* color: #4a4d4e; */
+    /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+    border-radius: 4px;
+    font: 16px VodafoneRegular !important;
+    height: 30px;
+}
+.vha-sc-mleft-30px{
+	margin-left:30px;
+}
+.vha-sc-mleft-15px{
+	margin-left:15px;
+}
+/*Accessory & wearbles*/
+
+.vha-sc-smartwearbles{
+    padding-left: 27px;
+}
+.vha-sc-wear-fltby-brand{
+    padding-left: 41px;
+}
+.vha-sc-wear-payterm{
+    padding-left: 41px;
+}
+.vha-sc-acces-payterm{
+    padding-left: 41px;
+}
+.vha-sc-Accessory{
+    padding-left: 27px;
+}
+
+.vha-sc-font-sty-acess-wear{
+    text-align: left;
+    font: normal normal 600 18px/24px Segoe UI;
+    letter-spacing: 0px;
+    color: #413A3A;
+    opacity: 1;
+    font-size: 15px;
+}
+
+
+
+.vha-sc-greyclr-new{
+    background: #F4F4F4;
+    height:110px; 
+    /*border-radius: 6px; */
+    /* justify-content: start; */
+    /*  align-items: center; */
+    }
+    .vha-sc-whiteclr-new{
+    background: white;
+    height:110px; 
+    /*border-radius: 6px; */
+    /* justify-content: start; */
+    /*  align-items: center; */
+    }
+     
+.vhascppbtn-new-sm {
+   /* min-width: 100px; */
+    background: red;
+    color: white;
+    /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 6px;
+    font: 16px VodafoneRegular !important;
+    height: 29px;
+	min-height: 32px;
+    max-height: 32px;
+    float: right;
+	width: 80px;
+}
+    .vha-sc-acces-txtbox-medium{
+        width: 200px;
+        height: 26px;
+        border-radius: 4px;
+        font-size: 16px;
+        border: 1px solid #9B9C9C;
+        margin: 0px 0px 0px 0px;
+    /*  padding-left: 4px; */
+        background-size: 30px;
+        text-align: left !important;
+        /* padding-right: 30px; */
+    }
+
+
+    .vha-sc-txt-style-drp-dwn{
+		font: normal normal 600 18px/24px Segoe UI;
+		letter-spacing: 0px;
+		color: black;
+		opacity: 1;
+		font-size: 13px;
+    }
+    .vhascppbtn {
+    min-width: 100px;
+    background: white;
+    color: #4a4d4e;
+    /* box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
+    border: 1px solid #d4d4d4 !important;
+    border-radius: 6px;
+    font: 16px VodafoneRegular !important;
+    height: 35px;
+    }
+    .vha-sc-txt-style-black-bold{
+    text-align: left;
+    font: normal normal 600 22px/30px Segoe UI;
+    letter-spacing: 0px;
+    color: #2E2A2A;
+    opacity: 1;
+    font-size: 17px;
+    }
+	.vha-sc-wear-col1{
+		/* border-radius:8px; */
+	}
+	.vha-sc-acces-col1{
+		/* border-radius:8px; */
+	}
+	.vha-sc-mleft-41px{
+		margin-left:41px;
+	}
+	.vha-sc-mleft-40px{
+		margin-left:40px;
+	}
+	.vha-sc-mleft-53px{
+		margin-left:53px;
+	}
+	.vha-sc-mleft-52px{
+		margin-left:52px;
+	}
+	.vha-sc-mleft-65px{
+		margin-left:65px;
+	}
+	.vha-sc-mleft-64px{
+		margin-left:64px;
+	}
+	.vha-sc-nmleft-10px{
+		margin-left:-10px;
+	}
+    .vha-sc-mleft-27px{
+		margin-left:27px;
+	}
+	.vha-sc-exist-new-btn{
+		margin-top:-28px;
+		/*float: right; */
+		color: white;
+		background-color: red;
+		min-width: 100px;
+		border: 1px solid #d4d4d4 !important;
+		border-radius: 8px;
+		font: 16px VodafoneRegular !important;
+		height: 32px;
+		position: absolute;
+		margin-left: 834px;
+	}
+	.vha-custom-button{
+		margin-left: 23px;
+	}
+	.vha-sc-coveragechk-applet{
+		background: white;
+	}
+	.btn-toolbar{
+		background: white; 
+		
+	}
+/*	.bd-highlight {
+		margin-top: 3rem!important;
+	} */
+	.vha-sc-cfg-row1{
+		margin-right: 0px;
+        margin-left: 0px;
+	}
+	.vha-sc-addressdetails-lblnm{
+		font-size: 15px;
+	}
+	sup {
+		top: -2px;
+	}
+	.vha-sc-pl-2px{
+		padding-left: 2px;
+	}	
+	
+	.vha-sc-quotelist {
+	 /* box-shadow: #d4d4d4 0 0 4px 0 !important; */
+	padding-left: 0px;
+	padding-right: 0px;
+		}
+	 
+	.reviewsum1{
+	padding-left: 0px;
+		padding-right: 0px;
+		margin-top: 50px;
+	}
+	 
+	.reviewsum2{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.vha-sc-flex_row_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 100% !important;
+	}
+	 
+	 
+	.vha-sc-we-NCIdrecLines {
+		margin-top: 10px;
+	}
+	.vha-sc-ac-NCIdrecLines {
+		margin-top: 10px;
+	}
+	 
+	.vha-sc-accessory-font {
+		text-align: left;
+		font: normal normal 600 22px/30px Segoe UI;
+		letter-spacing: 0px;
+		color: #2E2A2A;
+		opacity: 1;
+		font-size: 15px;
+	}
+	.vha-sc-greyclr-access-new{
+		background: #F4F4F4;
+		/* height: 110px; */
+		/* border-radius: 6px; */
+		/* justify-content: start; */
+		/* align-items: center; */
+	}
+	.parent-controls-container {
+    display: flex;
+    padding: 15px 0 15px 0;
+}
+.input-field {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-999999);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    opacity: 1;
+    min-height: 32px;
+    max-height: 32px;
+    width: 300px;
+}
+.siebui-icon-dropdown, .siebui-icon-pick {
+    display: inline !important;
+}
+/*Dec 19 sales calculator accessory style */
+.vha-sc-QuoteNumberIcon {
+	content: url("../../images/custom/menu-icons/Quoteno_Icon_sc.png") !important;
+	width: 25px;
+    height: 32px;
+    display: inline-block;
+	margin: 20px 5px;
+	/* padding: 20px 7px;	
+    margin-top: 20px;
+    margin-left: 15px;*/ 
+}
+
+#vha-sc-acc-payterm-reason{
+	margin-left:39px;
+}
+.vha-sc-cartsumcustquote{
+	float:right;
+}   
+.vha-sc-address-coveragechk-nbn .vha-sc-nbnaddr-val {
+	width:500px;
+}
+.vhascwearbrand{
+	 min-width: 130px;
+	 /* background: white; */
+	 border: 1px solid #D981DB !important;
+	 /* color: #2E2A2A; */
+	 border-radius: 5px;
+	 font: 16px VodafoneRegular !important;
+	 height: 35px;
+	 margin: 0px 5px;
+}
+.vhascwearbrand:hover{
+	background: #9D2AA0;
+	color : #fff;	
+	
+}
+.vhascbrand:hover, .vhasc-d-term:hover, .vha-sc-pp-btn:hover,.vhascwearbrand:hover {
+	background: #9D2AA0 0% 0% no-repeat padding-box;
+	border: 1px solid #D981DB;
+	color: #fff;
+}
+/*05Jan*/
+.vha-sc-searchdevice-col{
+    background-color: #5E2750;
+    height: 68px;
+    align-items: center;
+	border-radius:5px;
+}
+.vha-sc-searchdevice-col .vha-sc-dev-plan-md-font{
+	font-size: 16.5px;
+	color:white;
+ 
+}
+/*05Jan*/
+.vha-sc-searchplan-col{
+	background-color: #5E2750;
+    height: 68px;
+    align-items: center;
+	border-radius:5px;
+}
+.vha-sc-searchplan-col .vha-sc-dev-plan-md-font{
+	font-size: 16.5px;
+	color:white;
+}
+.vha-sc-bg-purple-clr{
+	 background-color: #5E2750;
+}
+.vha-sc-white-color-fnt{
+	color: white;
+}
+.vha-sc-searchdevice-new-ml-5 {
+    width: 350px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin-top: 5px;
+    padding-left: 5px;
+    margin-left: 91px;
+    background-size: 30px;
+    text-align: left !important;
+    padding-right: 30px;
+}
+.vha-sc-gf-eistcust-grey-accordion{
+	border: 1px solid #9B9C9C;
+	width:auto;
+	padding:20px 10px;
+	background: #F4F4F4 0% 0% no-repeat padding-box;
+	border-radius:6px;
+}
+.vha-sc-totalNewbtn-disable-nbn {
+    pointer-events: none;
+    background-color: #ccc !important;
+    color: #666;
+    cursor: not-allowed;
+
+}
+/* Hari Yeturu sales calculator button style */
+/*Device and Plan*/
+#vha-sc-d-carousel {
+    height: 100%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    background-color: inherit;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.vha-sc-carousel-container {
+    margin-top: 25px;
+	    margin-right: 0px;
+    margin-left: 0px;
+	background: #E2E2E2;
+}
+.vha-sc-d-carousel-inner {
+position: relative;
+    width: 99%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 0%;
+}
+.vha-sc-d-carouselnav {
+    background-color: black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+.carousel-control-next, .carousel-control-prev {
+	z-index:999;
+}
+#vha-sc-carousel {
+    height: 100%;
+    width: 93%;
+    margin-bottom: 25px;
+    display: flex;
+    background-color: transparent;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.vha-sc-carouselnav {
+    background-color: black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.vha-sc-carousel-inner {
+    position: relative;
+    width: 88%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 6%;
+}
+
+.vha-sc-carousel-inner .card {
+    max-width: 350px;
+    background: #DA0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 35px #00000029;
+    border-radius: 22px;
+    color: #fff;
+}
+.vha-sc-d-carousel-inner .card {
+    max-width: 250px;
+}
+[name="vhatscapacity"],
+[name="vhatscolour"] {
+    width: 35% !important;
+}
+.vha-sc-d-card-row1 {
+    height: 30px;
+    /*padding-bottom: 10px;*/
+    border: 1px solid #707070;
+    border-top: none;
+}
+.vha-sc-d-card-row2 {
+    height: 250px;
+    padding-bottom: 10px;
+    border: none;
+    border-top: none;
+}
+.vha-sc-d-card-row3 {
+    /*background-color: #e9ecef; */
+    /*border: 1px solid #727780;*/
+	border: none;
+    height: 170px;
+    padding-bottom: 30px;
+    border-top: none;
+    /*background: #DDDDDD5D 0% 0% no-repeat padding-box;*/
+}
+.vha-sc-greysmall {
+    font-size: small;
+    color: gray;
+}
+.vha-sc-carasole-dollar {
+    margin-left: 1px;
+    vertical-align: super;
+    font-weight: bold;
+    /*Changed rate ($ amount) weight to bold*/
+    font-size: 15px;
+    color: black;
+    /*Changed rate ($ amount) color to black*/
+}
+.vha-sc-d-desc{
+    min-width:250px;
+}
+.vha-sc-d-shopaddtocartbtn {
+    background-color: purple;
+    border-color: purple
+}
+
+/*Added below post click colour change for Shop Now button*/
+.vha-sc-d-shopaddtocartbtn:hover,
+.vha-sc-d-shopaddtocartbtn:focus {
+    background-color: purple;
+    border-color: purple;
+}
+.vha-sc-carasole-bolder {
+    font-weight: 600;
+    font-size: 30px;
+}
+.vha-sc-carasole-bold {
+	font-size: 24px;
+	padding-left: 5px;
+    font-weight: 600;
+}
+.vha-ts-carasole-bold {
+    font-weight: 700;
+}
+.vha-sc-card-red {
+    background: #E60000 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border-color: red;
+    border: 1px solid #707070;
+}
+.vha-sc-d-name{
+    min-height:40px;
+}
+img[class^="vha-sc-d-img"] {
+    height: 70%;
+    width: 50%;
+    padding-left: 25%;
+}
+.vha-sc-searchdevice-col,
+.vha-sc-searchplan-col {
+	display: flex;
+	
+}
+.vha-sc-searchdevice,
+.vha-sc-searchplan {
+    width: 350px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin-top: 5px;
+    padding-left: 5px;
+	margin-left:40px;
+    background-size: 30px;
+    text-align: left !important;
+    padding-right: 30px;
+}
+/* .vha-sc-searchdevice-btn:hover,
+.vha-sc-searchplan-btn:hover {
+    border: 1px solid #999999;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+
+.vha-sc-searchdevice-btn,
+.vha-sc-searchplan-btn {
+	height: 36px;
+    vertical-align: bottom;
+    background-color: transparent;
+    left: -50px;
+    border: none;
+    position: relative;
+}
+Ã¢â‚¬â€¹ .vha-sc-card-row1 {
+    height: 135px;
+    z-index: 1;
+    border: 1px solid #dc3545;
+}
+
+.vha-sc-card-row1-col1 {
+    color: #FFFFFF;
+    width: 50%;
+    opacity: 1;
+    border: none;
+}
+
+.vha-sc-card-row1-col2 {
+   border: none;
+    width: auto;
+    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    background: #413A3A;
+    height: 60px;
+    border-radius: 12px;
+	padding: 1rem!important;
+}
+.vha-sc-card-row2 {
+    max-height: 25%;
+    min-height: 75px;
+    /*border-bottom: 1px solid #727780;*/
+    padding-bottom: 10px;
+    border: none;
+    border-top: none;
+}
+
+.vha-sc-card-row3 {
+    /* background-color: #e9ecef; */
+    /* border-bottom: 1px solid #727780; */
+    max-height: 60px!important;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    border: none;
+    border-top: none;
+    background: transparent;
+    min-height: 60px !important
+}
+.vha-sc-tot-conterm-hd {
+    font: Bold 17px/18px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1
+}
+
+.vha-sc-tot-conterm {
+    font: 15px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-tot-ent {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-tot-enttxt {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+[id^="vha-sc-tot-enttxt"] {
+    min-height: 40px;
+    max-height: 40px;
+}
+.vha-sc-tot-plantype {
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+    font: Bold 15px/16px VodafoneRegular;
+}
+
+.vha-sc-tot-plantypedtls {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-card-row4 {
+    /*background-color: #e9ecef; */
+    border: none;
+    /*height: 130px;*/
+    padding-bottom: 10px;
+    border-top: none;
+    background: transparent;
+}
+.vha-sc-tot-conterm-hd {
+    font: Bold 17px/18px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1
+}
+
+.vha-sc-tot-conterm {
+    font: 15px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.vha-sc-addtocartbtn {
+    width: 100%;
+    height: 40px;
+    padding: 0px !important;
+    box-shadow: 0px 1px 3px #0000004d;
+    opacity: 1;
+    font: 16px/18px VodafoneRegular;
+    background: #413A3A 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    /*position: absolute;*/
+    right: 0px;
+    bottom: 0px;
+    border: 1px solid #413A3A;
+}
+
+
+/*Added below post click colour change for Shop Now button*/
+
+.vha-sc-addtocartbtn:hover,
+.vha-sc-addtocartbtn:focus {
+    background-color: purple !important;
+    border-color: purple !important;
+}
+/*shankar start*/
+.vhascppbtn-active {
+	background-color: #9d2aa0;
+	color: white;
+}
+/*shankar end*/
+
+/*balaji*/
+.vha-sc-container>.sw-theme-dots>ul.step-anchor>li>div:before {
+    content: counter(step);
+    counter-increment: step;
+    position: relative;
+    bottom: 0px;
+    left: 15%;
+    display: block;
+    border-radius: 50%;
+    color: #727780;
+    border: 2px solid #9d2aa0;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 98;
+    top: 19%;
+}
+
+.vha-sc-container>div>#vha-guided-wizard li {
+    list-style-type: none;
+    width: 25%;
+    float: left;
+    font-size: 3px;
+    position: relative;
+    text-align: center;
+    color: #7d7d7d;
+}
+.vha-sc-parentdiv-bdr {
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 6px 16px #522d241a;
+border: 1px solid #E5E5E5;
+border-radius: 8px;
+}
+
+.width75 {
+width: 75%;
+}
+.width25 {
+width: 25%;
+}
+.scmainbgcolor{
+	background-color: #F4F4F4;
+}
+.vha-sc-container{
+	min-width: 90%;
+}
+/*4Nov*/
+.vha-sc-EditIcon:hover,
+.vha-sc-DeletEdit:hover,
+.vha-sc-totalNewbtn:hover{
+	transform: scale(1.5);
+}
+
+.vha-sc-totalNewbtn-disable{
+	pointer-events: none;
+    background-color: #ccc !important;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.vha-sc-summarybtn{
+    background: #DA0000;
+    border-radius: 6px;
+    opacity: 1;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+	margin-left: 10px;
+}
+
+.vha-sc-cart-cost, .vha-sc-cart-mins, .vha-sc-cart-gb{
+	float: right;
+}
+
+.vha-sc-container>.sw-theme-dots>ul.step-anchor>li.active>div:before {
+    color: #fff;
+    background: #5E2750;
+    border: 2px solid #9d2aa0;
+    left: 26%;
+    transform: scale(1.2);
+    font-size: 2.1rem;
+    line-height: 35px;
+}
+
+/*.vha-sc-container>.sw-theme-dots>ul.step-anchor>li.done>div:before {
+    background-color: #9d2aa0 !important;
+    border-color: #9d2aa0;
+    background: url(../../images/custom/check.svg) no-repeat;
+    text-indent: -99999999px;
+    background-position: center;
+    background-size: 30px;
+}*/
+
+.vha-sc-container>div>#vha-guided-wizard li:after {
+    width: 98%;
+    height: 3px;
+    position: absolute;
+    background-color: #ada3a3;
+    top: 29%;
+    left: -71%;
+}
+
+.vha-sc-reviewsum iframe{
+	position: relative;
+}
+
+#pdf_preview_sc {
+    Min-height: 900px;
+}
+
+/*.sc-text-warning-red{
+	color: red;
+    font-size: medium;
+    background-color: #e09be229;
+    padding-left: 25px;
+    margin-bottom: 8px;
+}*/
+
+.sc-stock-status{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem!important;       
+}
+/*Dev and plan change Rushi - 18JAN2024*/
+.device-card {
+	border: none;
+}
+.sc-stock-status-border-green {
+	border: 2px solid lightgreen !important;
+    box-shadow: 0px 0px 8px lightgreen !important;
+}
+.sc-stock-status-border-red {
+	border: 2px solid #e60000ba !important;
+    box-shadow: 0px 0px 8px #e60000ba !important;
+}
+.sc-stock-status-border-yellow {
+	border: 2px solid #ffff008c !important;
+    box-shadow: 0px 0px 8px #ffff008c !important;
+}
+
+/*Dev and plan change Rushi - 18JAN2024*/
+.sc-stock-status-green{
+	background-color: lightgreen; 
+}
+.sc-stock-status-red{
+	color: red;
+    background-color: #e09be229;
+}
+.sc-stock-status-yellow{
+    background-color: #ff65004a;
+}
+/*.vha-sc-SendEmailNote {
+	display: block;
+    height: 2em;
+    background-repeat: no-repeat;
+	font-size: medium;
+}*/		
+ 
+.VHASCattachimgcontainer {
+    float: right;
+    position: relative;
+    /* margin: -5% -40% 11% 4%; */
+    display: flex;
+    /* width: 20%;*/
+}
+.VHASCPrint{
+display: block;
+    width: 200em;
+    height: 4em;
+    background-repeat: no-repeat;
+    margin: 0% 30%;
+}
+ 
+.vha-sc-att-icon{
+margin-right: 40px;
+cursor: pointer;
+}
+ 
+.VHASCSend {
+    display: block;
+    width: 200em;
+    height: 4em;
+    background-repeat: no-repeat;
+    margin: 0% -80%;
+}
+/*.vha-sc-attmsgCont{
+	width: 90%;
+}*/
+.vha-sc-emailCont{
+	display: flex;
+}
+
+.vha-sc-cart-item-cont{
+	width: 100%;
+    margin-right: 20%;
+}
+
+.vha-sc-wear-table-main, .vha-sc-access-table-main{
+	padding-left: 27px;
+}
+#scpwdtoggle{
+	margin-top: -5px;
+	margin-left: -30px;
+    vertical-align: middle!important;
+}
+
+/*balaji*/
+/*shankar Device and  plan start*/
+.vha-sc-btn-div-brand, .vha-sc-searchdevice-col, .vha-sc-btn-div-payment, .vha-sc-searchplan-col{
+    padding-left: 25px;
+}
+.vhascbrand:hover, .vhasc-d-term:hover, .vha-sc-pp-btn:hover {
+	background: #9D2AA0 0% 0% no-repeat padding-box;
+	border: 1px solid #D981DB;
+	color: #fff;
+}
+#vha-sc-d-carousel .device-card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 5px !important;
+	/*cursor: pointer;*/
+}
+img[class^="vha-sc-d-img"] {
+    height: 100%;
+}
+.vha-sc-d-card-row2 {
+    height: 200px;
+}
+.vha-sc-d-brand{
+    font-size: 0.85rem;
+}
+.vha-sc-d-product-name{
+    font-size: 0.85rem;
+    font-weight: 600;
+	width:50%;
+	color: #5E2750;
+}
+.vhasccapacity, .vhasccolour{
+	border:none;
+	outline: none;
+	font-size: 0.85rem;
+	max-width:50%;
+	float:right;
+	color: #5E2750;
+		
+}
+.vha-sc-d-card-row-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.vha-sc-d-card-col-flex{
+    width: 50%;
+    display: flex;
+}
+.vhasccapacity, .vhasccolour {
+    background: url("data:image/svg+xml,<svg height='9px' width='8px' viewBox='0 0 16 16' fill='%235E2750' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance:none !important;
+    -webkit-appearance: none !important; 
+    appearance: none !important;
+    padding-right: 20px !important;
+}
+.vha-sc-carasole-bolder {
+    font-weight: 600;
+    font-size: 1.2rem;
+	color: #5E2750;
+}
+.vha-sc-d-price, .vha-sc-d-description {
+	font-size: 0.75rem;
+}
+.vha-sc-d-card-row3 {
+    height: 110px;
+    padding-bottom: 0px;
+}
+.vha-sc-d-shopaddtocartbtn{
+	width: 100%;
+    border: none;
+    height: 2.5rem;
+	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+	background-color: #F4F4F4;
+    border-color: #F4F4F4;
+	outline: none;
+}
+.vha-sc-d-shopaddtocartbtn:hover, .vha-sc-d-shopaddtocartbtn:focus {
+    background-color: #DA0000;
+    border-color: #DA0000;
+	color:white;
+	outline: none !important;
+}
+#vha-sc-d-carousel .device-card:hover img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+#vha-sc-d-carousel .device-card:hover .vha-sc-d-shopaddtocartbtn {
+    background-color: #DA0000;
+    border-color: #DA0000;
+	color:white;
+	outline: none !important;
+}
+
+.sucess_check-mark {
+    display: none;
+    position: absolute;
+    top: 15rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 0.1rem solid #28A745;
+    border-radius: 50%;
+    background-color: #28A745;
+}
+
+.check-mark {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 20px;
+    width: 7px;
+    position: relative;
+    top: -4px;
+    left: 3px;
+    border-bottom: 3px solid rgb(255 255 255);
+    border-right: 3px solid rgb(255 255 255);
+}
+#vha-sc-d-carousel .device-card.device-card-selected .sucess_check-mark {
+    display: block;
+}
+.vha-sc-carousel-inner .vha-sc-container {
+    min-width: 90%;
+}
+#vha-sc-d-carousel .device-card.device-card-selected .vha-sc-d-shopaddtocartbtn {
+    background-color: #DA0000;
+    border-color: #DA0000;
+	color:white;
+	outline: none !important;
+}
+.vha-sc-carousel-inner .vha-sc-carasole-bolder {
+    color: #fff;
+}
+.vha-sc-addtocartbtn:hover, .vha-sc-addtocartbtn:focus {
+    background-color: white !important;
+    border-color: white !important;
+    color: #2E2A2A;
+}
+.vha-sc-card-row3 {
+    padding-bottom: 0px;
+}
+.vha-sc-empty-row {
+	min-height: 1rem;
+}
+
+.vha-sc-plan-select {
+    padding-top: 20px;
+}
+
+.vha-sc-carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 0;
+}
+#vha-sc-carousel {
+    width: 95%;
+}
+.vha-sc-carousel-inner .card {
+    max-width: 260px;
+}
+
+.vha-sc-checkbox-container {
+display: block;
+position: absolute;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.vha-sc-checkbox-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.vha-sc-checkbox-checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #8A8383;
+border-radius: 50%;
+}
+.vha-sc-checkbox-checkmark:after {
+content: "";
+position: absolute;
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid #5E2750;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.vha-sc-checkbox-container:hover input ~ .vha-sc-checkbox-checkmark {
+background-color: #28A745;
+}
+.vha-sc-checkbox-container:hover input ~ .vha-sc-checkbox-checkmark:after {
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.vha-sc-checkbox-container input:checked ~ .vha-sc-checkbox-checkmark {
+background-color: #28A745;
+}
+.vha-sc-checkbox-container input:checked ~ .vha-sc-checkbox-checkmark:after {
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.vha-sc-checkbox-container input[type=radio]:checked {
+opacity: 0;
+}
+/*shankar Device and  plan end*/
+/*shankar summary start */
+.vha-sc-summarybtn-new .vha-sc-simHomeNbn {
+    padding-left: 0;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.vha-sc-summarybtn-new .vha-sc-activeServiceIcondiv {
+    gap: 0;
+    justify-content: space-between;
+}
+
+.vha-sc-summarybtn-new .vha-sc-activeServiceBottom {
+    gap: 0;
+    justify-content: space-between;
+}
+.vha-sc-summarybtn-new .vha-sc-deleteEdit-parent { 
+    margin: -10px;
+    margin-top: 10px;
+}
+.vha-sc-summarybtn-new .vha-sc-deleteEdit:nth-child(odd) {
+    background-color: #461647;
+}
+.vha-sc-summarybtn-new .vha-sc-deleteEdit:nth-child(even) {
+    background-color: #360C37;
+}
+
+.vha-sc-summarybtn-new .vha-sc-deleteEdit { 
+    padding: 10px;
+}
+.vha-sc-summarybtn-new .vha-sc-activedeleteEdit {
+    /*box-shadow: none !important;*/
+    border: none;
+    /*border-radius: 0;*/
+	justify-content: space-between;
+}
+.vha-sc-summarybtn-new .vha-sc-simHomeNbn span {
+    word-wrap: break-word;
+    display: inline-table;
+    width: auto;
+}
+.vha-sc-summarybtn-new .vha-sc-activeTotalAmt {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+.vha-sc-devcecare-align {
+	margin-left:70px;
+	margin-bottom: 30px;
+}
+.vha-sc-exiBANspan-mpp  {
+    position: absolute;
+    right: 36%;
+    margin-top: 15px !important;
+}
+.vha-sc-exiBANspan-app  {
+    position: absolute;
+    right: 30%;
+    margin-top: 15px !important;
+}
+/*.vha-sc-pp-btn:hover,
+.vha-sc-pp-btn:focus {
+    background-color: purple;
+    border-color: purple;
+	color: white;
+}*/
+.vha-sc-pp-btn-active {
+	background: #9D2AA0 0% 0% no-repeat padding-box !important;
+    border: 1px solid #D981DB !important;
+    color: #fff !important;
+}
+
+.vha-sc-extcustomerdtls-outercontainer {
+	margin-top: -50px;
+    padding-top: 50px;
+}
+
+/*#salescalcpage:not(:has(div.vha-sc-extcustomerdtls.VHASCDisplayNoneimp.container)) {
+ background-color: #F4F4F4;
+ 	margin-top: -50px;
+ padding-top: 50px;
+ 	margin-bottom: -50px;
+ padding-bottom: 50px;
+ }*/
+ 
+.vha-sc-deleteEdit-parent .vha-sc-deleteEdit {
+	background: #461647;
+	display: flex;
+	align-items: center;
+	gap: 0%;
+	justify-content: space-between;
+}
+.vha-sc-summarybtn-new .vha-sc-activeServiceIcondiv {
+	padding-top: 6px;
+}
+
+.sc-landpage-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-width: 80%;
+}
+
+.container-responsiveUI {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container-responsiveUI {
+        max-width:540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-responsiveUI {
+        max-width:720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-responsiveUI {
+        max-width:960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-responsiveUI {
+        max-width:1140px;
+    }
+}
+.vha-sc-txtbox-small-pin {
+    width: 121px;
+    height: 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /* padding-right:*/
+}
+.vha-sc-trade-txtbox {
+    width: 80px;
+    height: 26px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 4px 0px 0px 30px;
+    padding-left: 0px;
+    background-size: 30px;
+    text-align: left !important;
+}
+
+.vha-input-bg-readonly{
+	background-color: "#dddddd"
+}
+
+.vha-sc-address-coveragechk-nbn .vha-input-bg-readonly{
+	background-color: #f3ebeb;
+}
+
+#vha-sc-nbaofferbtn:disabled {
+	color: #a29ba3;
+}
+#vha-sc-ApplyPromoCode:disabled {
+	color: #a29ba3;
+}
+
+
+.vha-sc-att-icon {
+    margin-right: 40px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 21px;
+}
+.vha-sc-SendEmailNote {
+    display: block;
+    height: auto;
+    background-repeat: no-repeat;
+    font-size: medium;
+    line-height: 45px;
+    background-color: #e09be229;
+    padding-left: 25px;
+    margin-bottom: 8px;
+	font-weight: bold;
+}
+#TSNSAEmailNotification{
+	 position: relative;
+}
+#TSOrderStatusMsg{
+	 position: relative;
+}
+.mailsent_check-mark {
+    display: block;
+    position: absolute;
+    top: 8px;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 0.1rem solid #28A745;
+    border-radius: 50%;
+    background-color: #28A745;
+}
+
+.mail-check-mark {
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 20px;
+    width: 7px;
+    position: relative;
+    top: -8px;
+    left: 2px;
+    border-bottom: 3px solid rgb(255 255 255);
+    border-right: 3px solid rgb(255 255 255);
+}
+.mailerror_cross-mark {
+    display: block;
+    position: absolute;
+    top: 8px;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border: 0.1rem solid #DC3545; 
+    border-radius: 50%;
+    background-color: #DC3545;
+}
+
+.mailerror-x-cross-mark::before {
+    content: '';
+    display: block;
+    width: 1.5rem; 
+    height: 0.20rem; 
+    background-color: #FFF; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+.mailerror-x-cross-mark::after {
+    content: '';
+    display: block;
+    width: 1.5rem; 
+    height: 0.20rem; 
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); 
+}
+.sc-greydark{
+	background: #E4E4E4;
+}
+
+.vha-sc-attmsgCont{
+	width: 99%;
+}
+.sc-red{ 
+	color:red;
+}
+
+.sc-landpage-container  .ui-jqgrid .ui-jqgrid-btable tr:nth-child(even) td {
+    background-color: white;
+}
+
+.sc-landpage-container .ui-jqgrid .ui-jqgrid-btable .ui-state-highlight td{
+	background-color: #d985dd59 !important;
+}
+
+.sc-landpage-container .drilldown{
+	color: #88118b !important;
+	font-weight: 500 !important;
+}
+
+/*shankar summary end */
+
+
+.vha-sc-shipZipCode {
+    outline: none;
+    border: 1px solid #CCCCCC;
+    width: 140px;
+    padding: 5px 10px;
+    margin-left: 15px;
+	border-radius: 5px;
+}
+
+.vha-sc-emailid-lbl{
+	width: 100px;
+}
+
+.vha-sc-Inquiry-lbl{
+	width: 95% !important;
+}
+
+.vha-sc-Inquiry-lbl1{
+	width: 95% !important;
+}
+
+.vha-sc-Inquiry{
+	margin-top: 30px;
+}
+
+.vha-sc-Inquiry-val{
+    margin: 10px 20px 0px 0px !important;
+}
+/* HariY 31/may/2024 */
+.vha-sc-mar28px{
+    margin-left:28px;
+}
+#vha-sc-get-nbn-new{
+	margin-left: 48px;
+}
+.vha-sc-mar48px{
+	margin-top: 11px;
+	margin-left: 28px;
+}
+#vha-sc-nbn-tech-type{
+	margin-left:60px;
+}

@@ -1,0 +1,232 @@
+{
+    "MAIL_TEMPLATE_001": {
+        "templateFileName": "MAIL_TEMPLATE_001.txt",
+        "attachments": [],
+        "subject": "Important information"
+    },
+    "MAIL_TEMPLATE_002": {
+        "templateFileName": "MAIL_TEMPLATE_002.txt",
+        "attachments": ["Customer_Authorisation_Form.pdf"],
+        "subject": "Transfer your number to Vodafone"
+    },
+    "MAIL_TEMPLATE_003": {
+        "templateFileName": "MAIL_TEMPLATE_003.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Critical Information Summary"
+    },
+    "MAIL_TEMPLATE_004": {
+        "templateFileName": "MAIL_TEMPLATE_004.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_005": {
+        "templateFileName": "MAIL_TEMPLATE_005.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_006": {
+        "templateFileName": "MAIL_TEMPLATE_006.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+	 "MAIL_TEMPLATE_007": {
+        "templateFileName": "MAIL_TEMPLATE_007.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_008": {
+        "templateFileName": "MAIL_TEMPLATE_008.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_009": {
+        "templateFileName": "MAIL_TEMPLATE_009.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_010": {
+        "templateFileName": "MAIL_TEMPLATE_010.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline Diversion"
+    },
+    "MAIL_TEMPLATE_011": {
+        "templateFileName": "MAIL_TEMPLATE_011.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_012": {
+        "templateFileName": "MAIL_TEMPLATE_012.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_013": {
+        "templateFileName": "MAIL_TEMPLATE_013.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_014": {
+        "templateFileName": "MAIL_TEMPLATE_014.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_015": {
+        "templateFileName": "MAIL_TEMPLATE_015.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_016": {
+        "templateFileName": "MAIL_TEMPLATE_016.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_017": {
+        "templateFileName": "MAIL_TEMPLATE_017.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_018": {
+        "templateFileName": "MAIL_TEMPLATE_018.txt",
+        "attachments": [],
+        "subject": "Your Vodafone Mobile Landline service"
+    },
+    "MAIL_TEMPLATE_019": {
+        "templateFileName": "MAIL_TEMPLATE_019.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_020": {
+        "templateFileName": "MAIL_TEMPLATE_020.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_021": {
+        "templateFileName": "MAIL_TEMPLATE_021.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_022": {
+        "templateFileName": "MAIL_TEMPLATE_022.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_023": {
+        "templateFileName": "MAIL_TEMPLATE_023.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_024": {
+        "templateFileName": "MAIL_TEMPLATE_024.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn appointment"
+    },
+    "MAIL_TEMPLATE_025": {
+        "templateFileName": "MAIL_TEMPLATE_025.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn appointment"
+    },
+    "MAIL_TEMPLATE_026": {
+        "templateFileName": "MAIL_TEMPLATE_026.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn appointment"
+    },
+    "MAIL_TEMPLATE_027": {
+        "templateFileName": "MAIL_TEMPLATE_027.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_028": {
+        "templateFileName": "MAIL_TEMPLATE_028.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_029": {
+        "templateFileName": "MAIL_TEMPLATE_029.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn appointment"
+    },
+    "MAIL_TEMPLATE_030": {
+        "templateFileName": "MAIL_TEMPLATE_030.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_031": {
+        "templateFileName": "MAIL_TEMPLATE_031.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_032": {
+        "templateFileName": "MAIL_TEMPLATE_032.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service - Transfer of Ownership"
+    },
+    "MAIL_TEMPLATE_033": {
+        "templateFileName": "MAIL_TEMPLATE_033.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_034": {
+        "templateFileName": "MAIL_TEMPLATE_034.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_035": {
+        "templateFileName": "MAIL_TEMPLATE_035.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_036": {
+        "templateFileName": "MAIL_TEMPLATE_036.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_037": {
+        "templateFileName": "MAIL_TEMPLATE_037.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_038": {
+        "templateFileName": "MAIL_TEMPLATE_038.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn order"
+    },
+    "MAIL_TEMPLATE_039": {
+        "templateFileName": "MAIL_TEMPLATE_039.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_040": {
+        "templateFileName": "MAIL_TEMPLATE_040.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_041": {
+        "templateFileName": "MAIL_TEMPLATE_041.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_042": {
+        "templateFileName": "MAIL_TEMPLATE_042.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_043": {
+        "templateFileName": "MAIL_TEMPLATE_043.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_044": {
+        "templateFileName": "MAIL_TEMPLATE_044.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_045": {
+        "templateFileName": "MAIL_TEMPLATE_045.txt",
+        "attachments": [],
+        "subject": "Your Vodafone nbn service"
+    },
+    "MAIL_TEMPLATE_046": {
+        "templateFileName": "MAIL_TEMPLATE_046.txt",
+        "attachments": [],
+        "subject": "Device Order"
+    }
+}

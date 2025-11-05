@@ -1,0 +1,6 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+Call 1300 801 122 and say CHANGE OF OWNERSHIP to speak to a dedicated team for transferring your Vodafone Mobile Landline service no. <input class="InlineField" SEQ="2" type='text'/>. Auth code: <input class="InlineField" SEQ="3" type='text'/> valid until <input class="InlineField" SEQ="4" type='text'/> .
+<br><br>
+Thanks, Vodafone
+<br><br>

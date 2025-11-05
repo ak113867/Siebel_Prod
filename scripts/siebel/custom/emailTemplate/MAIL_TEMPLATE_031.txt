@@ -1,0 +1,7 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+We're sorry there's a delay in completing your Vodafone nbn connection. We expect this will be fixed by <input class="InlineField" SEQ="2" type='text'/>. If you have any questions, please call us on 1300 801 122. 
+<br><br>
+Thanks,<br>
+Vodafone.
+<br><br>

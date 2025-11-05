@@ -1,0 +1,136 @@
+{
+   "IDType": [
+{
+"name": "Driver's Licence",
+"items": 
+[
+{"name": "NSW", "Sequence": ["First Name","Middle Name","Last Name","License Number","Card Number","Date of Birth","Expiry Date","Q Condition","Country","ID Sighted"]},
+{"name": "VIC", "Sequence": ["First Name","Middle Name","Last Name","License Number","Card Number","Expiry Date","Date of Birth","Country","ID Sighted"]},
+{"name": "ACT", "Sequence": ["Last Name","First Name","Middle Name","Date of Birth","License Number","Card Number","Expiry Date","Country","ID Sighted"]},
+{"name": "SA", "Sequence": ["License Number","Card Number","Date of Birth","Expiry Date","First Name","Last Name","Middle Name","Country","ID Sighted"]},
+{"name": "WA", "Sequence": ["Last Name","First Name","Middle Name","License Number","Card Number","Expiry Date","Date of Birth","Country","ID Sighted"]},
+{"name": "NT", "Sequence": ["Last Name","First Name","Middle Name","License Number","Card Number","Date of Birth","Expiry Date","Country","ID Sighted"]},
+{"name": "QLD", "Sequence": ["Last Name","First Name","Middle Name","License Number","Card Number","Date of Birth","Expiry Date","Country","ID Sighted"]},
+{"name": "TAS", "Sequence": ["License Number","Card Number","Date of Birth","Expiry Date","Last Name","First Name","Middle Name","Country","ID Sighted"]},
+{"name": "Default", "Sequence": ["First Name","Middle Name","Last Name","License Number","Card Number","Date of Birth","Expiry Date","Country","ID Sighted"]}
+]
+},
+{
+"name": "Passport",
+"items": 
+[
+{"name": "Australia", "Sequence": ["Passport Number","Last Name","First Name","Middle Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "New Zealand", "Sequence": ["Passport Number","Last Name","First Name","Middle Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "Default", "Sequence": ["Passport Number","Last Name","First Name","Middle Name","Date of Birth","Expiry Date","ID Sighted"]} 
+]
+},
+{
+"name": "International Passport",
+"items": 
+[
+{"name": "India", "Sequence": ["Passport Number","Last Name","First Name","Middle Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "China", "Sequence": ["Passport Number","Last Name","First Name","Middle Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "Nepal", "Sequence": ["Passport Number","Last Name","First Name","Middle Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "Default", "Sequence": ["Passport Number","Last Name","First Name","Middle Name","Date of Birth","Expiry Date","ID Sighted"]}
+]
+},
+{
+"name": "Medicare Card",
+"items": 
+[
+{"name": "Green", "Sequence": ["Medicare Card Number","Medicare Line Number","First Name","Middle Name","Last Name","Expiry Date","Date of Birth","ID Sighted"]},
+{"name": "Yellow", "Sequence": ["Medicare Card Number","Medicare Line Number","First Name","Middle Name","Last Name","Expiry Date","Date of Birth","ID Sighted"]},
+{"name": "Blue", "Sequence": ["Medicare Card Number","Medicare Line Number","First Name","Middle Name","Last Name","Expiry Date","Date of Birth","ID Sighted"]},
+{"name": "Default", "Sequence": ["Medicare Card Number","Medicare Line Number","First Name","Middle Name","Last Name","Expiry Date","Date of Birth","ID Sighted"]}
+]
+},
+{
+"name": "VISA",
+"items": 
+[
+{"name": "Default", "Sequence": ["Passport Number","First Name","Middle Name","Last Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "India", "Sequence": ["Passport Number","First Name","Middle Name","Last Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "China", "Sequence": ["Passport Number","First Name","Middle Name","Last Name","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "Nepal", "Sequence": ["Passport Number","First Name","Middle Name","Last Name","Date of Birth","Expiry Date","ID Sighted"]}
+]
+},
+{
+"name": "Proof of Age Card(Govt Issued)",
+"items": 
+[
+{"name": "NSW", "Sequence": ["First Name","Middle Name","Last Name","Id Reference Number","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "VIC", "Sequence": ["First Name","Middle Name","Last Name","Id Reference Number","Date of Birth","Issue Date","ID Sighted"]},
+{"name": "ACT", "Sequence": ["First Name","Middle Name","Last Name","Date of Birth","Id Reference Number","Issue Date","ID Sighted"]},
+{"name": "SA", "Sequence": ["Id Reference Number","Date of Birth","First Name","Middle Name","Last Name","ID Sighted"]},
+{"name": "WA", "Sequence": ["Last Name","First Name","Middle Name","Id Reference Number","Expiry Date","Date of Birth","ID Sighted"]},
+{"name": "NT", "Sequence": ["First Name","Middle Name","Last Name","Date of Birth","Expiry Date","Id Reference Number","ID Sighted"]},
+{"name": "QLD", "Sequence": ["First Name","Middle Name","Last Name","Id Reference Number","Date of Birth","Expiry Date","ID Sighted"]},
+{"name": "TAS", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Date of Birth","ID Sighted"]},
+{"name": "Default", "Sequence": ["First Name","Middle Name","Last Name","Id Reference Number","Date of Birth","Expiry Date","Issue Date","ID Sighted"]}
+]
+},
+{
+"name": "Cert of Enrol",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "Credit/Debit Card",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "DVA Health Care Card",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "Defence Force ID",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "Gold Veteran Affairs Card",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "Student ID",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "KeyPass",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "Pensioner Card",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+},
+{
+"name": "Photo ID",
+"items": 
+[
+{"name": "Default", "Sequence": ["Id Reference Number","First Name","Middle Name","Last Name","Country Of Issue","Date of Birth","Expiry Date","Issue Date","Issuer","ID Sighted"]}
+]
+}
+]
+}

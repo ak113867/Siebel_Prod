@@ -1,0 +1,1274 @@
+/*
+29 Sep 20 / TBUI to OUI - Order flows -3 step upgrade
+*/
+
+.vha-ts-shrngcmp {
+    color: #D9000D;
+}
+
+#ts-savelead-reason {
+    margin-left: 49px;
+    margin-top: 32px;
+}
+
+#SalesSearch {
+    display: none;
+}
+
+.vhasalessearch {
+    width: 100%;
+    margin-top: 8px !important;
+    margin-bottom: -10px !important;
+    border-radius: 6px !important;
+    opacity: 1 !important;
+}
+
+.vha-gf-accordion {
+    background: #5E2750 0% 0% no-repeat padding-box;
+    box-shadow: 1px 1px 4px #FFFFFF;
+    opacity: 1;
+    color: #FFFFFF !important;
+    height: 20px;
+    padding: 10px 0px 10px 20px;
+    font: 18px VodafoneRegular !important;
+    cursor: pointer;
+}
+
+.vha-gf-accordion-chd {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #f4f4f4;
+    padding-left: 20px;
+}
+
+.vha-gf-accordion-dummy {
+    background: #5E2750 0% 0% no-repeat padding-box;
+    box-shadow: 1px 1px 4px #FFFFFF;
+    opacity: 1;
+    color: #FFFFFF !important;
+    height: 20px;
+    padding: 10px 0px 10px 20px;
+    font: 18px VodafoneRegular !important;
+    cursor: pointer;
+}
+
+.vha-ts-container {
+    min-width: 95%!important;
+}
+
+.sw-width-70 {
+    width: 70%!important;
+}
+
+.sw-width-30 {
+    width: 30%!important;
+}
+
+.sw-cart-sum {
+    /*width: 430px !important;*/
+    background-color: white;
+    display: table;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #f4f4f4;
+    box-shadow: 0px 2px 10px #000000;
+    margin-left: 20px;
+    position: fixed;
+    right: 25px;
+    top: 75px;
+}
+
+.vha-ts-cart-sum-chd {
+    min-height: 150px;
+    max-height: 190px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.vha-ts-indcost {
+    margin-left: 15px;
+}
+
+.vha-ts-cart-sum.stick {
+    margin-top: 65px;
+    position: fixed;
+    top: 0;
+    width: 430px !important;
+    /*display: table; */
+    box-shadow: 0px 2px 10px #000000;
+    border-radius: 5px;
+    margin-left: -2px;
+}
+
+â€‹ .vha-ts-card-row1 {
+    height: 135px;
+    z-index: 1;
+    border: 1px solid #dc3545;
+}
+
+.vha-ts-card-row1-col1 {
+    background: #E60000 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border-color: red;
+    width: 50%;
+    opacity: 1;
+    border: 1px solid #707070;
+}
+
+.vha-ts-card-row1-col2 {
+    border: 1px solid #E60000;
+    width: 50%;
+}
+
+.vha-ts-tot-conterm-hd {
+    font: Bold 17px/18px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #4A4D4E;
+    opacity: 1
+}
+
+.vha-ts-tot-conterm {
+    font: 15px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #4A4D4E;
+    opacity: 1;
+}
+
+.vha-ts-tot-ent {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #4A4D4E;
+    opacity: 1;
+}
+
+.vha-ts-carasole-bolder {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.vha-ts-carasole-bold {
+    font-weight: 700;
+}
+
+.vha-ts-greysmall {
+    font-size: small;
+    color: gray;
+}
+
+.vha-ts-carasole-dollar {
+    margin-left: 7px;
+    vertical-align: super;
+    font-weight: bold;
+    /*Changed rate ($ amount) weight to bold*/
+    font-size: 15px;
+    color: black;
+    /*Changed rate ($ amount) color to black*/
+}
+
+.vha-ts-card-row2 {
+    max-height: 25%;
+    min-height: 75px;
+    /*border-bottom: 1px solid #727780;*/
+    padding-bottom: 10px;
+    border: 1px solid #707070;
+    border-top: none;
+}
+
+.vha-ts-card-row3 {
+    /* background-color: #e9ecef; */
+    /* border-bottom: 1px solid #727780; */
+    max-height: 60px!important;
+    overflow-y: auto;
+    padding-bottom: 10px;
+    border: 1px solid #707070;
+    border-top: none;
+    background: #DDDDDD5D 0% 0% no-repeat padding-box;
+    min-height: 60px !important
+}
+
+.vha-ts-tot-plantype {
+    letter-spacing: 0px;
+    color: #990000;
+    opacity: 1;
+    font: Bold 15px/16px VodafoneRegular;
+}
+
+.vha-ts-tot-plantypedtls {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #4A4D4E;
+    opacity: 1;
+}
+
+.vha-ts-card-row4 {
+    /*background-color: #e9ecef; */
+    border: 1px solid #727780;
+    /*height: 130px;*/
+    padding-bottom: 10px;
+    border-top: none;
+    background: #DDDDDD5D 0% 0% no-repeat padding-box;
+}
+
+.vha-ts-d-card-row3 {
+    /*background-color: #e9ecef; */
+    border: 1px solid #727780;
+    height: 220px;
+    padding-bottom: 10px;
+    border-top: none;
+    /*background: #DDDDDD5D 0% 0% no-repeat padding-box;*/
+}
+
+.vha-ts-d-card-row1 {
+    height: 30px;
+    /*padding-bottom: 10px;*/
+    border: 1px solid #707070;
+    border-top: none;
+}
+
+.vha-ts-d-card-row2 {
+    height: 300px;
+    padding-bottom: 10px;
+    border: 1px solid #707070;
+    border-top: none;
+}
+
+.vha-ts-tot-enttxt {
+    font: 12px/16px VodafoneRegular;
+    letter-spacing: 0px;
+    color: #4A4D4E;
+    opacity: 1;
+}
+
+.vha-ts-addtocartbtn {
+    width: 100%;
+    /* font-weight: 700; */
+    height: 30px;
+    padding: 0px !important;
+    border-color: purple;
+    background-color: purple;
+    background: purple 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #0000004D;
+    border-radius: 2px;
+    opacity: 1;
+    font: 16px/18px VodafoneRegular;
+}
+
+
+/*Added below post click colour change for Shop Now button*/
+
+.vha-ts-addtocartbtn:hover,
+.vha-ts-addtocartbtn:focus {
+    background-color: purple !important;
+    border-color: purple !important;
+}
+
+.vha-ts-searchdevice-col,
+.vha-ts-searchplan-col {
+    width: 100%;
+    /*margin-left: 35px;*/
+}
+
+.vha-ts-lbl {
+    font-weight: 500;
+    font-size: 15px;
+    color: #4a4d4e;
+    font: bold 16px VodafoneRegular !important;
+}
+
+.vha-ts-lbl>span {
+    text-align: left;
+    font: Bold 16px VodafoneRegular !important;
+    letter-spacing: 0px;
+    color: #4A4D4E;
+    opacity: 1;
+}
+
+.vha-ts-searchdevice,
+.vha-ts-searchplan {
+    width: 210px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin-top: 5px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    padding-right: 30px;
+}
+
+.vha-ts-imei {
+    width: 242px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /*padding-right: 30px;*/
+}
+
+.vha-ts-searchdevice-btn:hover,
+.vha-ts-searchplan-btn:hover {
+    border: 1px solid #999999;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.vha-ts-searchdevice-btn,
+.vha-ts-searchplan-btn {
+    height: 36px;
+    background-image: url(../../images/esearch_submitsearch.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 40px;
+    vertical-align: bottom;
+    background-color: white;
+    margin-left: -3px;
+    /* border: 1px solid #999999; */
+    border-left: none!important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font: 16px VodafoneRegular !important;
+    border: 1px solid #999999;
+}
+
+#vha-ts-carousel {
+    height: 100%;
+    width: 93%;
+    margin-bottom: 25px;
+    display: flex;
+    background-color: white;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.vha-ts-carouselnav {
+    background-color: black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.vha-ts-carousel-inner {
+    position: relative;
+    width: 88%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 6%;
+}
+
+.vha-ts-cnores {
+    text-align: center;
+    width: 93%;
+    display: flex;
+    background-color: white;
+    vertical-align: middle;
+    align-items: center;
+    font: Bold 18px VodafoneRegular !important;
+}
+
+.vha-ts-btn-div {
+    margin-top: 25px;
+}
+
+.vha-h-line {
+    heigth: 0px;
+    border: 1px solid #989898;
+    opacity: 1;
+    margin: 30px 0px 30px 0px
+}
+
+#vha-ts-d-carousel {
+    height: 100%;
+    width: 93%;
+    margin-bottom: 25px;
+    display: flex;
+    background-color: white;
+    vertical-align: middle;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.vha-ts-d-carouselnav {
+    background-color: black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.vha-ts-d-carousel-inner {
+    position: relative;
+    width: 88%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 6%;
+}
+
+.vha-ts-d-cnores {
+    text-align: center;
+    width: 93%;
+    display: flex;
+    background-color: white;
+    vertical-align: middle;
+    align-items: center;
+    font: Bold 18px VodafoneRegular !important;
+}
+
+.vha-ts-brandbtn,
+.vha-ts-paytermbtn,
+.vha-ts-a-paytermbtn {
+    margin: 10px 0 0 0;
+}
+
+.vha-ts-carousel-container {
+    margin-top: 25px;
+}
+
+.ts-applet-from {
+    position: relative;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.ts-feature-config .field-label-override,
+#vha-ts-overridersn .field-label-override {
+    min-width: 255px;
+}
+
+.ts-feature-config .vcol-1 {
+    min-width: 50%;
+}
+
+.ts-feature-config .vcol-2 {
+    min-width: 10%;
+}
+
+.ts-feature-config .vcol-3 {
+    min-width: 10%;
+}
+
+.ts-feature-config .vcol-4 {
+    min-width: 30%;
+}
+
+#ts-feature-config-addon,
+#ts-feature-config-idd {
+    padding-right: 20px;
+    text-overflow: ellipsis!important;
+}
+
+.ts-data-addon-container,
+.ts-idd-addon-container {
+    padding: unset!important;
+}
+
+.ts-product-selection .vcol-2 .input-override,
+.ts-product-selection .vcol-3 .input-override,
+.ts-product-selection .vcol-4 .input-override {
+    width: 80%;
+}
+
+.vha-arrow {
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+    float: right;
+    margin-right: 30px;
+    opacity: 1;
+}
+
+.vha-arrow-down {
+    transform: rotate(45deg)!important;
+}
+
+.vha-arrow-right {
+    transform: rotate(-45deg);
+}
+
+.vha-gf-card-inline {
+    margin: 10px;
+    border: 1px solid #fff;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.vhagfautowidth {
+    width: auto !important;
+}
+
+#vha-ts-shipping .input-field {
+    width: 180px !important;
+}
+
+#vha-ts-shipping .input-field.delivery-address {
+    width: 400px !important;
+}
+
+#vha-ts-shipping .input-field.shipment-pref {
+    width: 100px !important;
+}
+
+#vha-ts-infoimg {
+    height: 20px;
+    width: 20px;
+}
+
+
+/*cart - start*/
+
+.vha-ts-custiconsm {
+    background-image: url(../../images/custom/person_pin-24px.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    margin-left: 14px;
+    margin-top: 7px;
+    width: 42px;
+}
+
+.vha-ts-cart-cust-dtls .row {
+    margin-bottom: 5px
+}
+
+.vha-ts-carticonsm {
+    background-image: url(../../images/custom/shopping_cart-24px.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    margin-left: 14px;
+    margin-top: 7px;
+    width: 42px;
+}
+
+.vha-ts-deleteiconsm {
+    background-image: url(../../images/custom/deleteplan1.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-top: 7px;
+    width: 42px;
+    margin-left: 148px;
+}
+
+.vha-ts-deleteiconsm1 {
+    background-image: url(../../images/custom/deleteplan1.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 42px;
+}
+
+div#Showhistoryapp .miniBtnUICTop {
+    display: none;
+}
+
+div#Showhistoryapp .siebui-row-counter {
+    display: none;
+}
+
+/*.vha-ts-cart-sum-chd, .vha-ts-ext-contract-chd{
+padding: 10px 10px 10px 20px;
+}*/
+
+.vha-ts-pt {
+    height: 60px;
+}
+
+.vha-ts-redtxt {
+    color: #990000;
+    font: Bold 18px VodafoneRegular !important;
+    letter-spacing: 0px;
+}
+
+.vha-ts-cartitemw {
+    max-width: 180px;
+    min-width: 180px;
+    font: 16px VodafoneRegular !important;
+    letter-spacing: 0px;
+    color: #808080;
+    margin-right: 20px;
+}
+
+.vha-ts-cartitemw.vha-ts-remmonths,
+.vha-ts-cartitemw.ts-cart-plan-name {
+    font: 14px VodafoneRegular !important;
+    color: #E68619;
+    margin-bottom: 10px;
+}
+
+.text-warning-acc {
+    font: 14px VodafoneRegular !important;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.vha-ts-cartval,
+.vha-ts-promoCode {
+    max-width: 80px;
+    min-width: 80px;
+    color: black;
+}
+
+.vha-ts-simimg {
+    background-image: url(../../images/custom/sim-mid@2x.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    /* margin-top: 7px; */
+    width: 60px;
+    /* margin-left: 10px; */
+    /* z-index: 100; */
+    height: 70px;
+}
+
+.vha-ts-shortline {
+    width: 81px;
+    border-top: 1px solid #dddddd;
+    margin-left: 183px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.vha-ts-offerapply:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.vha-ts-offerapply {
+    color: blue;
+}
+
+.vha-ts-indcost>div {
+    font-size: 16px;
+    font-weight: bolder;
+    color: #990000;
+    letter-spacing: 0px;
+}
+
+
+/*cart- end*/
+
+#vf-ts-ext-credcard {
+    margin: 10px;
+    border: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.vha_ts_earlyupfee {
+    border-radius: 30px;
+    width: 30px;
+    margin-right: 3px;
+    border: solid #A4A4A4;
+    border-width: 1px 2px 2px 1px;
+}
+
+.vha_ts_earlyupfeeclr {
+    background-color: #FAA41A !important;
+}
+
+.tssearchplan,
+.totsearchplan-pre {
+    width: 210px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #7070704E;
+    margin-top: 5px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    padding-right: 30px;
+}
+
+.tssearchplanbtn:hover,
+.totsearchplanbtn-pre:hover {
+    border: 1px solid #999999;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tssearchplanbtn,
+.totsearchplanbtn-pre {
+    height: 36px;
+    background-image: url(../../images/esearch_submitsearch.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 40px;
+    vertical-align: bottom;
+    background-color: white;
+    margin-left: -3px;
+    /* border: 1px solid #999999; */
+    border-left: none!important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font: 16px VodafoneRegular !important;
+    border: 1px solid #999999;
+}
+
+.vha-ts-secondarybrand {
+    border-radius: 30px;
+}
+
+img[class^="vha-ts-d-img"] {
+    height: 70%;
+    width: 50%;
+    padding-left: 25%;
+}
+
+#pdf_preview {
+    Min-height: 800px;
+    width: 65%;
+}
+
+.vha3StepUpgrade {
+    overflow-x: hidden !important;
+}
+
+
+/*.vhappbtn {
+	min-width: 150px;
+	background: white;
+	border: 1px solid #d4d4d4 !important;
+	color: #4a4d4e;
+	/*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+
+border-radius:8px;
+font:16px VodafoneRegular !important;
+height:35px;
+margin-top:26px;
+
+}
+*/ .parent-controls-container {
+    display: flex;
+    padding: 15px 0 0px 15px;
+}
+.vha3StepUpgrade .input-field {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--unnamed-color-999999);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    opacity: 1;
+    min-height: 32px;
+    max-height: 32px;
+    width: 200px;
+}
+[name="vhatscapacity"],
+[name="vhatscolour"] {
+    width: 35% !important;
+}
+
+/*custom wizard*/
+
+/*body {
+  margin: 50px 20px;
+}
+
+.customwizard {
+    width: 451px;
+    display: flex;
+    border-top: 4px solid #b39797;
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-left: 110px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+.round{
+	border-radius: 50%;
+	background-color: #ffffff;
+  font-weight: bold;
+  border: 2px solid black;
+  margin-top: -40px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.cont{
+    margin: 0 0 0 88px;
+    font-size: 15px !important;
+    font-style: bold;
+    font-weight: bold;
+}
+.active
+{background-color: #7878ea !important;}
+.success
+{
+background-color: #a9eca9 !important;
+       font-size: 28px !important;
+	
+	}*/
+
+/*****Upgrade 3 steps- shashi*******/
+#VFPPOUIPayCorpIFrameID {
+    height: 400px;
+}
+.vha-ins-dtls {
+    min-height: 60px;
+    max-height: 300px;
+    background-color: white;
+    width: 94%;
+}
+
+/*************************************/
+
+/*****Shipping Address*******/
+.Shippingaddress .siebui-applet-header {
+    display: none !important;
+}
+.Shippingaddress .FormSection {
+    margin: 20px;
+}
+.Shippingaddress .mceGridField,
+.Shippingaddress .mceGridLabel {
+    margin-left: 20px;
+}
+.Shippingaddress .siebui-value {
+    margin-bottom: 30px;
+}
+.Shippingaddress #Manual_Address_Entry_Label {
+    margin-left: unset !important;
+    margin-bottom: unset !important;
+    position: relative;
+    right: 50px;
+    bottom: 15px;
+}
+.Shippingaddress[aria-label="Manual Address Entry"] {
+    position: relative;
+    top: 16px;
+}
+.Shippingaddress[aria-label="Pick Primary Address"] {
+    position: relative;
+    top: 16px;
+    right: 38px;
+}
+.Shippingaddress #Pick_Primary_Address_Label {
+    position: relative;
+    right: 35px;
+    bottom: 15px;
+}
+.Shippingaddress #VHA_Shipment_Preference_Label {
+    /*position: relative;*/
+    
+    right: 60px;
+    margin-bottom: 30px;
+}
+.Shippingaddress[aria-labelledby="VHA_Shipment_Preference_Label"] {
+    position: relative;
+    right: 120px;
+    top: 13px;
+}
+
+/*.Shippingaddress #s_4_1_10_0_icon {
+    position: relative;
+    right: 120px;
+    top: 12px;
+}*/
+
+/*Commented to fix dropdown alignment issue for Shipment Preference field*/
+.Shippingaddress #VHA_Shipment_Preference_Message_Label {
+    position: relative;
+    right: 470px;
+    top: 15px;
+}
+.Shippingaddress[aria-label="Shipping Details:Pick Store Address"] {
+    position: relative;
+    top: 18px;
+    right: 12px;
+}
+.Shippingaddress #Manual_Delivery_Address_Label {
+    margin-bottom: 28px;
+}
+.Shippingaddress .mceField>input {
+    border-radius: 5px;
+}
+.shippingapp .siebui-applet {
+    width: 98.3% !important;
+    margin-left: 10px !important;
+    margin-bottom: 40px !important;
+}
+
+/*************************************/
+
+/*****Sharing*******/
+#vha-ts-prepayment-hd .vha-arrow-down {
+    position: absolute !important;
+    margin-left: 495px;
+    top: 1px;
+}
+#vha-ts-prepayment-hd .vha-arrow {
+    position: relative !important;
+    margin-left: 300px;
+}
+.exsRow {
+    min-height: 30px;
+    padding-top: 10px;
+    font-size: 17px;
+}
+.exspsrc,
+.exspgrpname {
+    /*float: right;
+    margin-right: 640px;
+    position: relative;
+    bottom: 24px;*/
+    
+    width: 20%;
+    float: left;
+}
+.exspchck input {
+    margin-left: 27px;
+}
+.exspchck {
+    float: left;
+    width: 20%;
+}
+.ExsHead {
+    margin-bottom: 4px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.ExsMSISDN {
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#sharinggrouplist {
+    /*float: right;
+    margin-right: 90px;*/
+}
+
+/*************************************/
+#showMsg,
+#showMsgAdd {
+    align-self: center;
+    color: red;
+    margin-left: 20px;
+}
+#showDeviceMsg,
+#showDeviceMsg1,
+#accessmsg,
+#overrideId {
+    align-self: center;
+    color: red;
+}
+.vha-ts-card-red {
+    background: #E60000 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+    border-color: red;
+    border: 1px solid #707070;
+}
+.bgcolor {
+    background-color: #f4f4f4;
+    padding-left: 27px;
+}
+.vha-ts-d-shopaddtocartbtn {
+    background-color: purple;
+    border-color: purple
+}
+
+/*Added below post click colour change for Shop Now button*/
+.vha-ts-d-shopaddtocartbtn:hover,
+.vha-ts-d-shopaddtocartbtn:focus {
+    background-color: purple;
+    border-color: purple;
+}
+.customclass {
+    margin-bottom: 20px;
+}
+#tickmark {
+    margin-top: 25px;
+}
+#slectbox {
+    margin-left: 7px;
+}
+.devicealign {
+    text-align: center !important;
+}
+.device-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid red;
+    border-radius: .25rem;
+}
+.borderhighlight {
+    border: 4px solid purple;
+}
+#stockmsg {
+    color: #2eab2e;
+    font-size: 12px;
+}
+.reviewsum #pdf_preview {
+    width: 1214px
+}
+.reviewsum div:first-child {
+    width: 1500px
+}
+.VHAPrint {
+    /* background-image:url("../../images/VHADownload.png"); */
+    
+    display: block;
+    width: 200em;
+    height: 4em;
+    background-repeat: no-repeat;
+    margin: 0% 30%;
+}
+.VHASend {
+    /* background-image:url("../../images/email-24px.svg"); */
+    
+    display: block;
+    width: 200em;
+    height: 4em;
+    background-repeat: no-repeat;
+    margin: 0% -80%;
+}
+.VHASendEmailNote {
+    display: block;
+    width: 200em;
+    height: 2em;
+    background-repeat: no-repeat;
+    margin: 0% 0%;
+}
+.VHAattachimgcontainer {
+    float: right;
+    position: relative;
+    margin: -5% -40% 11% 4%;
+    display: flex;
+    width: 25em;
+}
+.vha-ts-sharingdetails {
+    height: 15px;
+    text-align: left;
+    color: #4A4D4E;
+    opacity: 1;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 98% !important;
+}
+.vha_sharing_checkbox {
+    right: 22px;
+    position: relative;
+}
+.vha_sharing_populateddetails {
+    height: 54px;
+    text-align: left;
+    color: #4A4D4E;
+    opacity: 1;
+    /* margin-bottom: 34px; */
+    
+    font-size: 17px;
+    /*font-weight: bold;*/
+    
+    width: 98% !important;
+    border-bottom: 1px solid black;
+    float: left;
+}
+.vha_sharing_Msisdn {
+    color: #EB9700;
+}
+.vha-ts-sharingdetails div,
+.vha_sharing_populateddetails div,
+.vha_sharing_populateddetails select {
+    float: left;
+    width: 20%;
+}
+.vha_sharing_checkbox input {
+    margin-left: 42px;
+}
+.exsmsdn,
+.exsshrng {
+    float: left;
+    width: 20%;
+}
+.exspmsdn,
+.exspchck div {
+    float: left;
+    width: 20%;
+}
+#listid,
+#listmsgid {
+    color: red;
+}
+.criticalinfo {
+    background-color: #f4f4f4;
+    margin-left: 0px;
+}
+.custclass {
+    padding-left: 40px;
+    margin: 1rem !important;
+}
+.vha-ts-cartimg {
+    height: 31px;
+    background-image: url(../../images/custom/shopping_cart-24px.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    /* margin-left: -1px; */
+    /* margin-top: 7px; */
+    
+    width: 86px;
+}
+.dropsize {
+    width: 170px !important;
+}
+.vha-ts-carddetails {
+    margin-left: 0px;
+}
+.vha-ts-carddetails div span {
+    display: block;
+}
+.vha-ts-carddetails div {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.vha-ts-upidetails {
+    margin-left: 0px;
+}
+.vha-ts-upidetails div span {
+    display: block;
+}
+.vha-ts-upidetails div {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.brandsize {
+    border-radius: 20px;
+    margin-left: 7px;
+}
+.vha-ts-d-payinfo,
+.vha-ts-sd-payinfo,
+.vha-ts-a-payinfo {
+    color: gray;
+    font-weight: 250;
+    font-size: 12px;
+}
+#showMsgSharing,
+#twoWaySmsshowMsg {
+    color: #E60000;
+    /* display: none; */
+    /*Updated from block to none for fixing alignment issue*/
+}
+.shareGrp,
+.shareData,
+.ExistingGroup {
+    min-height: 40px;
+}
+.numberCircle {
+    font-size: 15px;
+    font-align: top;
+    font-weight: 1000;
+    position: absolute;
+    border: solid rgba(94, 39, 80, 1);
+    border-radius: 70%;
+    height: 20px;
+    width: 19px;
+    background: rgb(146 95 133);
+    margin-left: 29px;
+    margin-top: -7px;
+    //margiun-top: 22px;
+    color: white;
+}
+#pickmodelid {
+    margin-left: 20px;
+    color: red;
+}
+.monthstyle {
+    font-weight: lighter;
+    color: black;
+    font-size: 13px;
+}
+span.dollar-input-container {
+    position: relative;
+}
+span.dollar-input-container i {
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 50%;
+    pointer-events: none;
+    width: 25px;
+    text-align: center;
+    font-style: normal;
+    left: 15px;
+}
+span.dollar-input-container input {
+    padding-left: 15px;
+}
+#static2waysmsmsg {
+    margin-left: 1.6em ! important;
+}
+#ts-secondary-model {
+    width: 284px !important;
+}
+.custermer-details-collapse {
+    cursor: pointer;
+    height: inherit;
+    width: 10px;
+    line-height: 35px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: 40px;
+}
+.vha-ts-rcc {
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #9B9C9C;
+    margin: 5px 0px 0px 40px;
+    padding-left: 5px;
+    background-size: 30px;
+    text-align: left !important;
+    /*padding-right: 30px;*/
+}
+#vhatsoutstock,
+#vhats12termaccess,
+#vhats24termaccess,
+#vhats36termaccess,
+#vhatsinstock,
+#vhatsaddsimy,
+#vhatsaddsimno {
+    height: 31.0833px !important;
+    border-radius: 8px !important;
+    border-color: #80808059;
+}
+.vha3StepUpgrade .sw-toolbar-bottom>div div div.float-right {
+    margin-right: 30%;
+}
+.vha-ts-carousel-inner .card {
+    max-width: 250px;
+}
+.vha-ts-d-carousel-inner .card {
+    max-width: 250px;
+}
+[id^="vha-ts-tot-enttxt"] {
+    min-height: 30px;
+    max-height: 30px;
+}
+.inactive-submit {
+    background: #E4E4E4;
+    color: #C4C4C4 !important;
+    border-color: #D4D4D4;
+}
+.vha-ts-d-name{
+    min-height:40px;
+}
+.vha-ts-d-desc{
+    min-width:250px;
+}

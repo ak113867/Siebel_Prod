@@ -1,0 +1,2383 @@
+/*Kathambari - Created this CSS file to add the css rules related to upgrade in IP18 - 19/02/2019*/
+
+
+/*.siebui-button-toolbar{
+	display:none;
+}*/
+
+.siebui-view-main .NotSelectedForm .FormSection {
+    border-bottom: 2px #ffff solid ! important;
+}
+
+.content {
+    float: right;
+}
+
+#Coverageframe {
+    width: 50% !important;
+    height: 50% !important;
+    /* margin-bottom: 51px; */
+    border: none !important;
+}
+
+.cke_skin_kama .cke_dialog_ui_hbox a.cke_dialog_ui_button,
+.ui-dialog .ui-dialog-buttonset button,
+.fc-button,
+.AppletMenu span.miniBtnUIC>button,
+span.miniBtnUIC>a,
+.appletButton {
+    background-color: rgba(94, 39, 80, 1) !important;
+    border: 2px solid rgba(94, 39, 80, 1) !important;
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+}
+
+
+/*Chitra - Added for econfig mandatory*/
+
+.VHAeConfigReq {
+    font-size: 25px !important
+}
+
+
+/*Kathambari - Added this to change button styles in IP18 - 19/02/2019*/
+
+.siebui-label-btn:hover,
+.miniBtnUIC>button:hover,
+.appletButton:hover,
+.appletButtons:hover,
+.siebui-ctrl-btn:hover,
+.siebui-label-btn:focus,
+.miniBtnUIC>button:focus,
+.appletButton:focus,
+.appletButtons:focus,
+.siebui-ctrl-btn:focus,
+.appletButton:hover,
+.appletButton:focus,
+.appletButtonDis:hover,
+.appletButtonDis:focus,
+.siebui-button-secondary:hover,
+.siebui-button-secondary:focus,
+.siebui-icon-showpopup[title="Products and Services:New"]:focus,
+.siebui-icon-showpopup[title="Products and Services:New"]:hover,
+.siebui-file-focus,
+.siebui-popup-cti-call-from-ui .ui-dialog-buttonpane .ui-dialog-buttonset>button:hover {
+    background-color: #FFFFFF ! important;
+    border: 2px solid rgba(94, 39, 80, 1) !important;
+    color: rgba(94, 39, 80, 1) !important;
+    font-size: 12px !important;
+}
+
+
+/*Kathambari - Added this to change button styles in IP18 - 19/02/2019*/
+
+.siebui-label-btn:active,
+.miniBtnUIC>button:active,
+.appletButton:active,
+.appletButtons:active,
+.siebui-ctrl-btn:active,
+.siebui-label-btn.active,
+.miniBtnUIC>button.active,
+.appletButton.active,
+.appletButtons.active,
+.siebui-ctrl-btn.active,
+.appletButton:active,
+.appletButton.active,
+.appletButtonDis:active,
+.appletButtonDis.active,
+.siebui-button-secondary:active,
+.siebui-button-secondary.active {
+    /*background: linear-gradient(to bottom, #E60000 10%, #E60000 100%)! important;*/
+    background-color: rgba(94, 39, 80, 1) !important;
+    border: 2px solid rgba(94, 39, 80, 1) !important;
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+}
+
+
+/*Chitra added for connect NBN SQ page UI*/
+
+.appletButtonDis.siebui-icon-changeaddress,
+.appletButton.siebui-icon-changeaddress {
+    background-color: #fff !important;
+    border: none !important;
+    font-weight: bold;
+}
+
+.appletButton.siebui-icon-changeaddress {
+    color: #1474bf !important;
+}
+
+
+/*.appletButton.siebui-icon-canceltask,
+.appletButtonDis .siebui-icon-canceltask,
+.appletButton.siebui-icon-canceltask:active,
+.appletButton.siebui-icon-canceltask:hover,
+.appletButton.siebui-icon-canceltask:focus {
+    font-weight: bold;
+    background-color: rgba(84, 87, 90, 1) !important;
+    border: none !important;
+}
+
+.appletButton.siebui-icon-canceltask,
+.appletButton.siebui-icon-canceltask:active,
+.appletButton.siebui-icon-canceltask:hover,
+.appletButton.siebui-icon-canceltask:focus {
+    color: #fff !important;
+}
+
+.appletButtonDis .siebui-icon-canceltask {
+    color: #d4d4d4 !important;
+}*/
+
+input[type="checkbox"] {
+    height: 18px !important;
+    width: 18px !important;
+}
+
+
+/*Chitra - Added this to change checkbox styles in IP18 - 08/04/2019*/
+
+.siebui-ctrl-btn,
+.appletButtonDis {
+    margin: 0 2px !important;
+    padding: 4px 5px !important;
+    font-size: 12px !important;
+}
+
+
+/*Kathambari - Added to fix alignment issue - 06/03/2019*/
+
+
+/*Madhu - Added for hiding MenuBar show/hide toggle - 19Feb19
+.applicationMenu.siebui-appmenu-on .siebui-appmenu-toggle::before,.applicationMenu .siebui-appmenu-toggle::before{content:'';}
+/*Madhu - Added for vodafone logo change - 19Feb19*/
+
+.siebui-logo {
+    background-size: 105px 50px !important;
+    background-image: url("../../images/custom/VHA_Logo.svg") !important;
+    background-position: 20% 50% !important;
+}
+
+
+/*Madhu - Added for showing full column name in Columns Displayed Applet - 27Feb19*/
+
+.ui-dialog .ui-dialog-content .siebui-popup-select-columns .siebui-popup-column>select:not(:empty) {
+    width: auto !important;
+}
+
+
+/*Chitra-Added for custom error message - 28-Feb-2019*/
+
+div#VHAAlertMessageParent {
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#VHAAlertMessage {
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    border-top: 2px groove;
+    border-bottom: 2px groove;
+    color: #29303f;
+    padding: 10px 5px;
+    max-height: 100px;
+    overflow-y: auto;
+    width: 500px;
+}
+
+.VHADisplayNone {
+    display: none;
+}
+
+.VHADisplayBlock {
+    display: block;
+}
+
+.VHAAlertOKBtn {
+    border-radius: 5px;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    width: 50px;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 10px;
+    margin-left: 50px;
+    background: linear-gradient(to bottom, rgba(94, 39, 80, 1) 10%, rgba(94, 39, 80, 1) 100%)! important;
+    border: 1px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+    font-size: 12.8px !important;
+    cursor: pointer;
+}
+
+.VHAmodalDialogAlert {
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 10002;
+    position: fixed;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+}
+
+.VHAmodalDialogAlert>div {
+    padding: 20px 30px 20px 40px;
+    margin-top: 650px;
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #FFF);
+    background: -webkit-linear-gradient(#fff, #FFF);
+    background: -o-linear-gradient(#fff, #FFF);
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+    height: 200px;
+}
+
+.VHADialogClose {
+    background: #FFFFFF;
+    color: #000000;
+    line-height: 25px;
+    position: absolute;
+    right: 50px;
+    text-align: center;
+    top: 25px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.modalDialog_C .VHADialogClose {
+    left: 1500px !important;
+}
+
+.VHADialogClose>img {
+    height: 20px;
+}
+
+.VHAAlertHeader {
+    height: 20px;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    width: 750px;
+    /* font-weight: 100; */
+    margin: 10px 0px;
+    border-bottom: 2x solid #9C2AA0;
+    width: 100%;
+    /*color: #727780;*/
+    color: #E00000;
+}
+
+
+/*Madhu;For scrollbars in applet;28Feb19*/
+
+div.NotSelected,
+div.Selected {
+    overflow: auto !important;
+}
+
+
+/*Keerthana - Added for allignment issue of field and label - 06-Mar-2019*/
+
+.mceField input {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.mceLabel {
+    padding-right: 6px;
+}
+
+
+/*Madhu - 15Mar19 - Added for grey background for MVG per oracle update*/
+
+.siebui-ctrl-mvg[readonly="readonly"],
+.siebui-input-popup[readonly="readonly"],
+.mceGridField .siebui-ctrl-input~span .siebui-anchor-readonly {
+    color: #727780 !important;
+    background-color: #dddddd !important;
+    border: 1px solid #d4d4d4 !important
+}
+
+
+/*Madhu;20Mar19;Added for color background of status control in search pane*/
+
+
+/*Chitra Added for search pane*/
+
+
+/*Madhu - Added for Scrollbar in Search Pane - 26Feb19*/
+
+.siebui-search-pane-results .ui-jqgrid-bdiv {
+    height: 500px !important;
+}
+
+.siebui-search-pane-inline .siebui-value {
+    font-weight: bold;
+    width: 50%;
+    text-align: left;
+}
+
+.siebui-search-dropdown-menu-item li {
+    float: left;
+    display: table-cell;
+    width: 50%;
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+.Class_Search_Active {
+    background-color: rgb(34, 177, 76);
+    color: rgb(34, 177, 76);
+    font-weight: bold;
+    border-radius: 50%;
+    width: 0px !important;
+    height: 12px;
+    padding-left: 17px;
+    text-indent: 5px;
+}
+
+.Class_Search_Inactive {
+    background-color: #E60000;
+    color: #E60000;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 0px !important;
+    height: 12px;
+    padding-left: 17px;
+    text-indent: 5px;
+}
+
+.Class_Active,
+.VHACreditApproved {
+    /*background-color:red;*/
+    color: rgb(34, 177, 76);
+    font-weight: bold;
+    border-radius: 3px;
+    width: 40% !important;
+    /*text-align:center !important;*/
+}
+
+.Class_Inactive,
+.VHACreditDenied {
+    /*background-color:red;*/
+    color: #E60000;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 40% !important;
+    /*text-align:center !important;*/
+}
+
+.VHACreditApproved,
+.VHACreditDenied {
+    width: auto !important;
+}
+
+.Class_Open {
+    /*background-color:#CCCC00;*/
+    color: rgba(235, 151, 0, 1);
+    ;
+    font-weight: bold;
+    border-radius: 3px;
+    width: 40% !important;
+    /*text-align:center !important;*/
+}
+
+
+/*css for status highlights* - mani*/
+
+.VFClass_Open {
+    color: rgba(235, 151, 0, 1);
+    font-weight: bold;
+}
+
+.VFClass_Pending {
+    color: rgba(235, 151, 0, 1);
+    font-weight: bold;
+}
+
+.VFClass_Cancelled {
+    color: rgba(235, 151, 0, 1);
+    font-weight: bold;
+}
+
+.VFClass_Closed {
+    color: rgba(235, 151, 0, 1);
+    font-weight: bold;
+}
+
+.VFClass_Overdue {
+    color: rgba(235, 151, 0, 1);
+    font-weight: bold;
+}
+
+
+/*End of css for status highlights* - mani*/
+
+td[id*='l_title'] {
+    padding-left: 10px !important;
+}
+
+
+/*Madhu;20Mar19;Added for custom tooltip*/
+
+.ui-tooltip {
+    padding: 8px;
+    position: absolute;
+    z-index: 9999;
+    max-width: 300px;
+    min-height: 70px;
+    border: 2px solid rgba(94, 39, 80, 1);
+    !important;
+}
+
+div.ui-tooltip li {
+    margin: 2px 10px 2px 25px;
+    list-style-type: square;
+}
+
+body .ui-tooltip {
+    color: black;
+    background-color: #FFF;
+    border-radius: 10px;
+    /*font-weight:bold; */
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+img#About {
+    max-height: 25px;
+}
+
+.tooltip_arrow {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translateX(-100%);
+    overflow: hidden;
+}
+
+.tooltip_arrow::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    background: #FFF none repeat scroll 0% 0%;
+    transform: translateX(12%) translateY(18%) rotate(45deg);
+    top: 0;
+    left: 50%;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ui-tooltip-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;
+    border-color: white transparent;
+    top: 60%;
+    background-color: rgba(94, 39, 80, 1);
+}
+
+.left .ui-tooltip-content::after {
+    left: -17px;
+    border-width: 15px 15px 15px 0;
+}
+
+.right .ui-tooltip-content::after {
+    right: -16px;
+    border-width: 15px 0 15px 15px;
+}
+
+
+/*Madhu;20Mar19;End of custom tooltip*/
+
+
+/*Madhu;26Mar19;End of drilldown from search pane*/
+
+.drilldown[class*='vha'] {
+    padding-left: 20px;
+}
+
+.drilldown[class*='vha'] a {
+    color: inherit !important;
+}
+
+.siebui-search-pane-results .siebui-results-list-applet .ui-jqgrid .ui-jqgrid-btable tr td[id$='title'] {
+    pointer-events: none;
+}
+
+.siebui-search-pane-results .siebui-results-list-applet .ui-jqgrid .ui-jqgrid-btable tr td a,
+[class*='vha_'] a.drilldown {
+    pointer-events: auto !important;
+}
+
+#drilldown_links {
+    float: right;
+}
+
+.drilldown[class*='vha']:hover {
+    text-decoration: underline;
+}
+
+
+/*Madhu;26Mar19;End of drilldown from search pane*/
+
+
+/*Madhu;28Mar19;NBN titles bold*/
+
+
+/*.siebui-applet .siebui-applet-content .FormSection,.siebui-applet-taskui-h,.siebui-applet .siebui-applet-header .siebui-applet-title
+{font-weight:bold;} /*End Of NBN titles bold*/
+
+*/ .vha_remove_border {
+    border: none !important;
+}
+
+
+/*Madhu;01Apr19;Remove border in refine address pick applet*/
+
+
+/*Madhu;01Apr19;Button background for menu icons in applet header row*/
+
+.siebui-dashboard-update,
+.siebui-comm-panel-side-toggle-narrow,
+.siebui-comm-panel-side-toggle-wide,
+.siebui-comm-panel-dock-toggle-pin,
+.siebui-comm-panel-close,
+.siebui-comm-panel-dashboard-toggle-more,
+.siebui-icon-dockundock,
+.siebui-icon-hide,
+.siebui-icon-deleterecord,
+.siebui-icon-editrecord,
+.siebui-icon-executequery,
+.siebui-icon-explicitwriterecord,
+.siebui-icon-newquery,
+.siebui-icon-newrecord,
+.siebui-icon-undoquery,
+.siebui-icon-undorecord,
+.siebui-icon-writerecord,
+.siebui-icon-createrecord,
+.AppletMenu span.miniBtnUIC>button,
+.siebui-icon-bttns_more,
+.siebui-icon-bttns_less,
+.siebui-btn-icon-e span,
+.siebui-icon-showpopup[title="Products and Services:New"] {
+    background: none !important;
+    color: rgba(94, 39, 80, 1) !important;
+    font-size: 18px !important;
+    text-align: center!important;
+    vertical-align: middle!important;
+    border: none !important
+}
+
+.siebui-icon-deleterecord.appletButtonDis,
+.siebui-icon-editrecord.appletButtonDis,
+.siebui-icon-executequery.appletButtonDis,
+.siebui-icon-explicitwriterecord.appletButtonDis,
+.siebui-icon-newquery.appletButtonDis,
+.siebui-icon-newrecord.appletButtonDis,
+.siebui-icon-undoquery.appletButtonDis,
+.siebui-icon-undorecord.appletButtonDis,
+.siebui-icon-writerecord.appletButtonDis,
+.siebui-icon-createrecord.appletButtonDis {
+    background: none !important;
+    font-size: 15px !important;
+}
+
+.siebui-applet .siebui-applet-header .appletButtonDis:not(.siebui-icon-deleterecord):not(.siebui-icon-editrecord):not(.siebui-icon-executequery):not(.siebui-icon-explicitwriterecord):not(.siebui-icon-newquery):not(.siebui-icon-newrecord):not(.siebui-icon-undoquery):not(.siebui-icon-undorecord):not(.siebui-icon-writerecord):not(.siebui-icon-createrecord):not([title="Products and Services:New"]) {
+    background-color: #d3d3d3 !important;
+}
+
+
+/*End of Button background*/
+
+
+/*Chitra Added for task pane header styles*/
+
+ul.fancytree-container .fancytree-folder span.fancytree-title {
+    font-weight: bold !important;
+}
+
+.siebui-applet-taskui-h {
+    width: 100%;
+}
+
+
+/*Chitra Added to align task play bar applet to center*/
+
+.siebui-taskui-playbar-bottom,
+.siebui-taskui-playbar-top {
+    text-align: center !important;
+    background-color: grey;
+    padding: 5px;
+}
+
+
+/*Madhu;05Apr19;Added for gray border for read only controls*/
+
+.siebui-extend-ctrl[readonly]:focus,
+.siebui-ctrl-mvg[readonly]:focus,
+.siebui-ctrl-calc[readonly]:focus,
+.siebui-ctrl-currency[readonly]:focus,
+.siebui-ctrl-date[readonly]:focus,
+.siebui-ctrl-datetime[readonly]:focus,
+.siebui-ctrl-effdate[readonly]:focus,
+.siebui-ctrl-pick[readonly]:focus,
+.siebui-ctrl-select[readonly]:focus,
+.siebui-ctrl-password[readonly]:focus,
+.siebui-ctrl-phone[readonly]:focus,
+.siebui-ctrl-mailto[readonly]:focus,
+.siebui-ctrl-input[readonly]:focus,
+.siebui-ctrl-url[readonly]:focus,
+.siebui-drilldown-input[readonly]:focus,
+.siebui-input-popup[readonly]:focus {
+    border: 1px solid grey !important;
+    -webkit-box-shadow: grey 0 0 0 1px inset;
+    -moz-box-shadow: grey 0 0 0 1px inset;
+    box-shadow: grey 0 0 0 1px inset;
+}
+
+
+/*End - Gray border for read only controls*/
+
+
+/*Pallavi.11Apr19.Added for Application Channel in UPG UAM Enhancements*/
+
+.VHAChannelheader {
+    font-size: 20px;
+    margin-left: 13px;
+}
+
+.VHAChannelmargin {
+    margin-left: 13px;
+}
+
+.VHAChannelBody {
+    margin-left: 100px;
+}
+
+.VHAChannelA,
+#A1,
+#A2,
+#A3,
+#A4 {
+    font-size: 10px;
+}
+
+.VHAChannelB {
+    font-size: 20px;
+}
+
+.VHAChannelBody1 {
+    width: 250px;
+    float: left;
+    height: 80px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 62px;
+    border-radius: 15px;
+    font-weight: bold;
+    border-style: groove;
+    background: linear-gradient(to bottom, #d3d3d382, #d3d3d3);
+    cursor: pointer;
+}
+
+.VHAChannelBody2 {
+    width: 250px;
+    float: left;
+    height: 80px;
+    margin: 10px;
+    padding-top: 62px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: groove;
+    background: linear-gradient(to bottom, #0bf93a3d, #0bf93ab8);
+    cursor: pointer;
+}
+
+.VHAChannelbottom p {
+    color: red !important;
+}
+
+
+/*End for Application Channel in UPG UAM Enhancements*/
+
+
+/*Madhu;15Apr19;Refine Address Pick applet to Link
+[aria-label^="Can't find address"]{background:none !important;line-height:10px !important;border:none!important;}
+.appletButtonDis[aria-label^="Can't find address"] span{color:#404453 !important;}
+.appletButton[aria-label^="Can't find address"] span{color:#1474bf !important;}
+[aria-label^="Can't find address"] span:hover{text-decoration:underline;}
+End of Refine Address Pick applet*/
+
+
+/* Madhu;15Apr19;Refine Address Pick applet to Link*/
+
+.VHANBNAddreSection+table .vha_remove_border+span::before {
+    content: "Can't find address? Refine Address Search" !important;
+}
+
+.mceField>input.vha_remove_border {
+    border: none !important;
+}
+
+.mceField>input.vha_remove_border.siebui-input-popup:focus {
+    box-shadow: none !important;
+}
+
+.VHANBNAddreSection+table .vha_remove_border+span:hover::before {
+    text-decoration: underline;
+}
+
+
+/*End of Refine Address Pick applet*/
+
+
+/*Madhu;15Apr19;Read only icons color change*/
+
+.siebui-extend-ctrl[readonly]+span,
+.siebui-ctrl-mvg[readonly]+span,
+.siebui-ctrl-calc[readonly]+span,
+.siebui-ctrl-currency[readonly]+span,
+.siebui-ctrl-date[readonly]+span,
+.siebui-ctrl-datetime[readonly]+span,
+.siebui-ctrl-effdate[readonly]+span,
+.siebui-ctrl-pick[readonly]+span,
+.siebui-ctrl-select[readonly]+span,
+.siebui-ctrl-password[readonly]+span,
+.siebui-ctrl-phone[readonly]+span,
+.siebui-ctrl-mailto[readonly]+span,
+.siebui-ctrl-input[readonly]+span,
+.siebui-ctrl-url[readonly]+span,
+.siebui-drilldown-input[readonly]+span,
+.siebui-input-popup[readonly]+span {
+    color: grey !important;
+}
+
+
+/*End of Icons color change*/
+
+
+/*Chitra added to increase the width of user settings popup*/
+
+.siebui-toolbar-settings-popup {
+    width: 400px !important;
+}
+
+
+/*Chitra added for Connect NBN page*/
+
+.VHAInactiveBorderColour {
+    border: 2px solid #E00000 !important;
+    color: #E00000 !important;
+}
+
+.VHANBNAddreSection {
+    display: flex;
+}
+
+.VHANBNPageLabel {
+    /*border: 1px solid rgba(84,87,90,1);*/
+    min-height: 30px;
+    vertical-align: middle;
+    /*background-color: #d4d4d4;*/
+    color: rgba(84, 87, 90, 1);
+    border-radius: 3px;
+    padding: 2px;
+    font-size: 17px;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+}
+
+.VHANBNAddressLabel,
+.VHANBNSQLabel,
+.VHANBNOrderInfoLabel,
+.VHANBNLeadLabel,
+.VHANBNSRLabel {
+    margin-left: 5px;
+}
+
+
+/*MANI MODIFIED FOR NBN ALIGNMENTS*/
+
+.VHANBNAddressLabel {
+    width: 99%;
+    display: inline-block;
+}
+
+.VHANBNAddressSearchLabel {
+    width: 70%;
+    display: inline-block;
+}
+
+
+/*MANI MODIFIED FOR NBN ALIGNMENTS - ENDS*/
+
+.siebui-ecfg-tabs {
+    background-color: rgba(94, 39, 80, 1) !important;
+    border-radius: 0px !important;
+}
+
+.siebui-ecfg-tab.eCfgProductTabOn a {
+    background: #fff !important;
+    color: #E60000 !important;
+    border-radius: 4px !important;
+}
+
+.VHASQInfoexpand,
+.VHASQInfocollapse,
+.VHAOrderInfoexpand,
+.VHAOrderInfocollapse {
+    line-height: 10px !important;
+}
+
+#Capture_Lead_Details_Label>b,
+#Service_Request_Label>b {
+    font-size: 15px;
+    font-weight: normal !important
+}
+
+.VHASQExpandCollapse,
+.VHAOrderExpandCollapse {
+    float: left;
+}
+
+.VHADisplayblock {
+    display: block !important;
+}
+
+.VHADisplaynone {
+    display: none !important;
+}
+
+.mceGridField>.VHAActiveBorderColour {
+    background-color: #fff !important;
+    border: transparent !important;
+    color: rgba(68, 180, 0, 1) !important;
+    font-weight: bold;
+}
+
+.mceGridField>.VHAInactiveBorderColour {
+    background-color: #fff !important;
+    border: transparent !important;
+    color: #E60000 !important;
+    font-weight: bold;
+}
+
+.mceGridField>.VHANoBorderColour {
+    background-color: #fff !important;
+    border: none !important;
+}
+
+.siebui-applet-taskui-h {
+    background-color: #fff !important;
+    /*rgba(84, 87, 90, 1) !important;*/
+    width: 100%;
+    font-weight: bold;
+    font-size: 17px !important;
+    -webkit-border-radius: 0 0 0px 0px !important;
+    border-radius: 0 0 0px 0px !important;
+    box-shadow: 0 0 4px #fff !important;
+    color: #333 !important
+}
+
+.siebui-icon-canceltask {
+    float: left;
+}
+
+
+/*.siebui-icon-navigatenext{
+	margin-left: 1400px !important;
+}*/
+
+
+/*Jaya-24/04/2019-Added for Overlapping Issue*/
+
+#_sweview {
+    overflow: auto;
+    /*Sreevidya - added for ST Defect fix 113 - 15/05/2019*/
+    height: auto !important;
+}
+
+
+/*Yajnesh Added below for session applet do not delete*/
+
+#VHASessionApplet {
+    /* margin-top: 10px !important;
+    margin-left: 5px !important;*/
+    border: 2px solid rgba(94, 39, 80, 1);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 7px !important;
+}
+
+.VHASessionProgressBarPar {
+    display: flex;
+    background-color: #E4E4E4;
+    height: 28px;
+}
+
+.VHASessionProgressBarChild {
+    background: rgba(94, 39, 80, 1);
+    min-height: 28px;
+    border-radius: 3px;
+    line-height: 30px;
+    font-family: sans-serif;
+    color: #FFF;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.VHASessionParentDiv {
+    display: flex;
+    /* border-bottom: 2px solid #CCC; */
+    margin: 5px 0;
+    padding: 5px 5px 5px 0px;
+    border-radius: 5px;
+    height: 25px;
+    background-color: #dfdcdc;
+}
+
+.VHASessionChildDiv {
+    flex: 1 0px;
+    text-align: left;
+}
+
+.VHASessionAppletLabel {
+    font-family: sans-serif;
+}
+
+.VHASessionAppletField {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.VHASessionAppletParentFlap {
+    display: flex;
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 5px;
+}
+
+.Flap1 {
+    flex: 1.5 0px;
+    border-right: 2px solid #ccc;
+}
+
+.Flap2 {
+    flex: 5.4 0px;
+    margin: 0 10px;
+}
+
+.Flap3 {
+    flex: 1 0px;
+}
+
+.VHASessionAppletInfoDiv {
+    border: none;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.ContentSecion1 {}
+
+.FieldContainer {
+    margin: 5px 0 0 5px;
+    text-align: left;
+}
+
+.VHASessionCreditCheckinfo {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px 5px 0px;
+    flex: 1 0px;
+}
+
+.ContentSecion2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#CreditCheckRow1,
+#CreditCheckRow3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.VHASessionbotonfield {
+    min-height: 30px;
+    min-width: 50px;
+    /*border: 2px solid #CCC;
+     border-radius: 3px;*/
+    text-align: center;
+    line-height: 30px;
+    /*font-weight: bold;*/
+    font-family: sans-serif;
+    margin-left: 5px !important;
+}
+
+.VHASessionTopLabel {
+    text-align: center;
+    /* margin-bottom: 10px;*/
+    /*font-weight: bold;*/
+    font-family: sans-serif;
+    /* min-height: 40px;*/
+}
+
+
+/*.ChevronInactive {
+    background-image: url('../../images/custom/VHA_AccordCollapsed.png');
+}
+
+.ChevronActive {
+    background-image: url('../../images/custom/VHA_AccordExpanded.png');
+}*/
+
+.VHASessionChevron {
+    height: 28px;
+    width: 28px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+    cursor: pointer;
+}
+
+.VHASessionDisplayNone {
+    display: none !important;
+}
+
+
+/*Below to align the applet with task title bar */
+
+.VHACustomerSessionApplet {
+    margin: 8px;
+}
+
+.VHASessionCreditCheckinfoCOlFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.CreditCheckMessage {
+    min-height: 30px !important;
+}
+
+.CreditCheckMessage .VHASessionbotonfield,
+#OrderFeasibility .VHASessionbotonfield,
+#WarningMessage .VHASessionbotonfield {
+    width: auto;
+    text-align: left;
+    line-height: 15px !important;
+    min-width: 140px;
+    padding-left: 5px;
+    border: none !important;
+    max-width: 75%;
+}
+
+.Section2Container {
+    display: flex;
+    flex-direction: column;
+}
+
+.Section2Container .VHASessionAppletInfoDiv {
+    border: none !important;
+}
+
+.VHASessionAppletChildFlap {
+    border-bottom: 2px solid #CCC;
+    padding: 5px 10px;
+}
+
+#OrderFeasibility {
+    display: flex;
+    flex-direction: column;
+}
+
+#WarningMessage {
+    margin: 5px 0px;
+    height: 25px;
+}
+
+.CreditCheckMessage .VHASessionTopLabel,
+#OrderFeasibility .VHASessionTopLabel,
+#WarningMessage .VHASessionTopLabel {
+    min-height: 30px;
+    margin-left: 5px;
+}
+
+#VHASessionApplet input {
+    background: none;
+    border: none !important;
+    /*font-weight:bold;*/
+    color: #000000 !important;
+    background-color: transparent !important;
+}
+
+.VHASessionParentDiv input {
+    font-weight: bold;
+}
+
+.VHASessionAppletBold {
+    font-weight: bold;
+}
+
+.ContentSecion1 input[aria-label="Customer Segment:"] {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    padding-right: 0px !important;
+}
+
+.ContentSecion1 input[aria-label="Customer Segment:"]+span {
+    display: none !important;
+}
+
+#WarningMessage input {
+    visibility: hidden;
+}
+
+.VHASessionCreditCheckImg .VHACreditApproved {
+    content: url("../../images/custom/VHACreditApproved.png");
+    object-fit: contain;
+    height: 30px;
+    width: 45px;
+    border: none;
+}
+
+.VHASessionCreditCheckImg .VHACreditDenied {
+    content: url("../../images/custom/VHACreditDenied.jpg");
+    object-fit: contain;
+    height: 30px;
+    width: 45px;
+    border: none;
+}
+
+.VHASessionCreditCheckImg img {
+    display: block;
+    width: 50%;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.VHASessionChildDiv:nth-child(3) {
+    flex: 2 0px !important;
+}
+
+.VHASessionChildDiv:nth-child(3) .FieldContainer {
+    display: table;
+    margin: 0 auto;
+}
+
+.ContentSecion1 .VHASessionAppletLabel:not(.VHASessionAppletBold) {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.VHASessionAppletFormSection,
+#CreditCheckMessageField {
+    text-align: left
+}
+
+#CreditCheckRow3 .VHASessionTopLabel,
+#CreditCheckRow1 .VHASessionTopLabel,
+#CreditClass {
+    display: inline-flex;
+    align-items: center;
+}
+
+#CreditCheckRow3 .VHASessionbotonfield:not(#CreditClass) {
+    background-color: #fff;
+    border: 1px solid grey;
+    height: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 10px;
+    min-height: 35px !important;
+    min-width: 35px !important;
+    line-height: 33px;
+}
+
+#CreditCheckRow3 div.VHASessionCreditCheckinfo:last-child {
+    justify-content: flex-end;
+}
+
+#CreditCheckRow1 .VHASessionCreditCheckinfo:last-child {
+    flex: 0.5 0px !important;
+    justify-content: flex-end;
+}
+
+#ConnectionsGroup {
+    display: flex;
+    min-width: 45% !important;
+    padding-left: 12px;
+}
+
+
+/*.VHASessionChevron.ChevronActive {
+    background-image: url('../../images/custom/VHA_Accordion_Expand.png') !important;
+}
+
+.VHASessionChevron.ChevronInactive {
+    background-image: url('../../images/custom/VHA_Accordion_Collapse.png') !important;
+}*/
+
+.ChevronInactive::before {
+    content: '\e661';
+    font-size: 25px;
+    color: rgba(94, 39, 80, 1);
+}
+
+.ChevronActive::before {
+    content: '\e660';
+    font-size: 25px;
+    color: rgba(94, 39, 80, 1);
+}
+
+.ChevronInactive::before,
+.ChevronActive::before {
+    font-family: 'oracle';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block
+}
+
+
+/*End of CSS- Session Applet with flex*/
+
+.siebui-extend-icon,
+.siebui-icon-calc,
+.siebui-icon-currency,
+.siebui-icon-date,
+.siebui-icon-datetime,
+.siebui-icon-detail,
+.siebui-icon-dropdown,
+.siebui-icon-effdate,
+.siebui-icon-mvg,
+.siebui-icon-pick,
+.siebui-icon-phone-outbound,
+.siebui-icon-mailto,
+.siebui-icon-date {
+    border-left-color: #d4d4d4 !important;
+}
+
+.siebui-icon-dropdown::before {
+    color: rgba(51, 51, 51, 1);
+}
+
+.mceField>input,
+.dCCItemValue>input,
+.mceField>textarea,
+.mceGridField .siebui-ctrl-input~span .siebui-anchor-readonly,
+.siebui-input-popup~span .siebui-anchor-readonly {
+    min-height: 36px !important;
+    border-radius: 3px;
+    margin: 3px 0px;
+    border: 1px solid #d4d4d4 !important;
+}
+
+
+/*Chitra added for field alignment*/
+
+.mceField>input[type='radio'] {
+    min-height: 0px !important;
+}
+
+
+/*Chitra added to align dealer home page control*/
+
+.siebui-icon-invokedashboard {
+    float: left;
+}
+
+.dCCItemValue>input {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+/*Chitra added for userprofile toolbar label*/
+
+.VHAUserLabel {
+    font-weight: bold;
+}
+
+
+/*Katambari - 27/04/2019 - Added for SIMSWap view enhancement.*/
+
+.VHASIMSWAPSelectedCheckbox {
+    background: rgba(94, 39, 80, 1);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.VHASIMSWAPCheckbox {
+    cursor: pointer;
+    text-align: center;
+    margin-left: 2px;
+}
+
+
+/*Katambari - 27/04/2019 - Added for SIMSWap view enhancement.*/
+
+
+/* Yanjesh- 29/04/2019 - Dialog changes */
+
+.VHADialogDataSection {
+    max-height: 310px;
+    overflow-y: scroll;
+}
+
+.modalDialog {
+    height: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 9003;
+    position: fixed;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: auto;
+}
+
+.VHADialogClose {
+    background: #FFFFFF;
+    color: #000000;
+    line-height: 25px;
+    position: absolute;
+    right: 80px;
+    text-align: center;
+    top: 85px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.VHAIDPopUpHeader {
+    height: 20px;
+}
+
+.VHAmodalDialogPicklist>div {
+    height: 965px;
+}
+
+.VHAmodalDialogPicklist .VHAIDType {
+    float: left;
+    width: 96%;
+    font-size: 14px;
+    margin: 50px 0px 50px 20px;
+}
+
+.VHALineSpacePick {
+    width: 100%;
+    height: 2px;
+    background: #CCCCCC;
+    float: left;
+}
+
+.VHALineSpace {
+    width: 100%;
+    height: 1px;
+    background: #CCCCCC;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.VHAmodalDialogPicklist .VHAIDTypeLine {
+    width: 100%;
+    height: 140px;
+}
+
+.VHAmodalDialogPicklist .VHAIDTypeLine:active {
+    background: #F4F4F4;
+}
+
+#VHAPrimaryIDTypesIDDetails .VHAIDTypeLine .VHAIDType:hover {
+    background-color: rgba(84, 87, 90, .2);
+    cursor: pointer;
+}
+
+#VHAPrimaryIDTypesIDDetails .VHAIDTypeLine .VHAIDType {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Arial;
+    line-height: 20px;
+}
+
+#VHAPrimaryIDTypesIDDetails .VHAIDTypeLine {
+    width: 100%;
+    height: 30px;
+}
+
+#VHAPrimaryIDTypesIDDetails .VHAIDTypeLine .VHAIDPoints {
+    width: 20%;
+}
+
+#VHAPrimaryIDTypesIDDetails .VHAIDTypeLine .VHAIDPoints {
+    float: left;
+    font-size: large;
+}
+
+#VHAPrimaryIDTypesIDDetails {
+    width: 25%;
+    padding: 5px 10px;
+    background: #FFF;
+    top: 30%;
+    left: 40%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.VHAPopupClose {
+    float: right;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* Dialog changes ends*/
+
+
+/* Madhu- 29/04/2019 - NBN Get URL map icon changes */
+
+.siebui-ctrl-link #map_url:hover {
+    border-bottom: 1px solid #1474bf !important;
+    text-decoration: none !important;
+}
+
+.siebui-ctrl-link #map_url img {
+    max-height: 18px !important;
+}
+
+#DOM_Notes,
+#VHA_Prepay {
+    white-space: pre-wrap;
+    width: 140px;
+}
+
+.VHA_Address_Valid,
+.VHA_CovCheck_Valid {
+    content: url('../../images/custom/VHACreditApproved.png');
+    object-fit: contain;
+    height: 25px;
+    width: 25px;
+}
+
+.VHA_Address_NotValid,
+.VHA_CovCheck_NotValid {
+    content: url('../../images/custom/VHACreditDenied.jpg');
+    object-fit: contain;
+    height: 25px;
+    width: 25px;
+}
+
+.VHA_CovCheck_Submitted {
+    content: url('../../images/custom/VHACreditSubmitted.png');
+    height: 25px;
+    width: 25px;
+    padding-left: 10px;
+}
+
+
+/* Get URL map changes ends*/
+
+
+/* Spinner Code Starts*/
+
+.VHASpinner {
+    height: 35px;
+    width: 35px;
+}
+
+
+/* Spinner code ends*/
+
+
+/*mani added for nbn alignments*/
+
+.mceField>input[aria-label="NBN Location Id/Address"] {
+    background-color: #ffffff !important;
+    border: 0px !important;
+}
+
+
+/*mani added for nbn alignments - ends*/
+
+.VHAAssetStatus {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    float: right;
+}
+
+.VHAAssetStatusActive {
+    border-color: green;
+    background-color: green;
+    color: #FFF;
+}
+
+.VHAAssetStatusInactive {
+    border-color: #E60000;
+    color: #E60000;
+}
+
+.VHAAssetStatusSubmitted {
+    border-color: #CCCC00;
+    color: #CCCC00;
+}
+
+.VHAAssetMSISDN {
+    line-height: 20px;
+    padding: 5px;
+    float: left;
+    font-weight: bold;
+}
+
+.siebui-label-btn,
+.miniBtnUIC>button,
+.appletButton,
+.appletButtons,
+.siebui-popup-cti-call-from-ui .ui-dialog-buttonpane .ui-dialog-buttonset>button {
+    background-color: rgba(94, 39, 80, 1);
+    border-color: rgba(94, 39, 80, 1);
+}
+
+.siebui-applet.siebui-active,
+.siebui-ide-canvas .siebui-odh-drag-candidate-hover,
+.siebui-ide-canvas .siebui-odh-drop-candidate-hover {
+    box-shadow: #d4d4d4 0 0 4px 0 !important;
+}
+
+
+/*Smart Agent Changes below*/
+
+.VHACretActButton {
+    border-radius: 5px;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    min-width: 100px;
+    text-align: center;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-left: 50px;
+    background: linear-gradient(to bottom, #E60000 10%, #E60000 100%)! important;
+    border: 1px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+    font-size: 12.8px !important;
+}
+
+.VHACretActNotesSection textarea.VHACretActComments {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.VHACretActLabel {
+    color: #727780 !important;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.VHACretActReadonly {
+    font-weight: bold;
+}
+
+.VHACretActReadSection {
+    padding: 5px;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+    background-color: #E4E4E4;
+    margin-bottom: 5px;
+}
+
+.VHACretActEditIcon {
+    float: right;
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer;
+    min-width: 20px;
+    position: relative;
+    top: -25px;
+}
+
+.VHACretActSection {
+    margin-bottom: 5px;
+    min-height: 25px;
+}
+
+#VHACretActTemplateList .ui-selecting {
+    background: #FECA40;
+}
+
+#VHACretActTemplateList .ui-selected {
+    background: rgba(41, 48, 63, 1);
+    color: white;
+}
+
+#VHACretActTemplateList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#VHACretActTemplateList li {
+    margin: 3px;
+    padding: 0.4em;
+    font-size: 13px;
+    height: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #CCC;
+}
+
+#VHACretActTemplateList li:hover {
+    background: rgba(41, 48, 63, 0.7);
+    color: white;
+}
+
+#VHACretActTemplateList {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+#VHASmartBuddy .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active,
+#VHASmartBuddy .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active:active {
+    background: #FFF;
+    border: 2px solid #E60000;
+    color: #333;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#VHASmartBuddy .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active .ui-tabs-anchor {
+    color: #333;
+    padding: .1em .2em;
+}
+
+#VHASmartBuddy .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
+    background: #E60000;
+    color: #FFF;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin: 1px .2em 0 0;
+}
+
+#VHASmartBuddy .ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab .ui-tabs-anchor {
+    color: #FFF;
+    padding: .2em .2em;
+}
+
+#VHASmartBuddy .ui-widget-header {
+    background: #FFF;
+}
+
+.VHACretActTextMessageDynamicArea {
+    border: 1px solid #CCC;
+    min-height: 100px;
+}
+
+.VHACretActTextMessageTextArea {
+    min-height: 100px;
+    margin-right: 5px;
+}
+
+.VHACretActTextMessageTextArea textarea {
+    min-height: 100px;
+    width: 100%;
+    resize: vertical;
+}
+
+.VHASmartAgentSelectables .ui-selecting {
+    background: #C4C4C4;
+}
+
+.VHASmartAgentSelectables .ui-selected {
+    background: #C4C4C4;
+    color: white;
+}
+
+.VHASmartAgentSelectables {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.VHASmartAgentSelectables li {
+    margin: 3px;
+    padding: 0.4em;
+    font-size: 1.2em;
+    height: 18px;
+    line-height: 18px;
+    background: #F4F4F4;
+    border: none;
+}
+
+#VHASMSTab {
+    max-width: 95%;
+    padding: 10px 10px 20px 10px;
+}
+
+.InlineField {
+    border: 1px dashed green;
+    min-width: 150px;
+}
+
+.InlineField.Error {
+    border-color: #E60000;
+}
+
+.SearchSendTextTemplates {
+    width: 100%;
+}
+
+.VHASmartAgentButtonsPostive {
+    background: #E60000;
+    color: #FFF;
+    border-radius: 5px;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    min-width: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: inherit;
+    border: 1px solid #E60000;
+    cursor: pointer;
+}
+
+.VHASmartAgentButtonsNegtive {
+    background: #F4F4F4;
+    color: #333;
+    border-radius: 5px;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    min-width: 100px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #E4E4E4;
+    cursor: pointer;
+}
+
+.VHAFloatLeft {
+    float: left;
+}
+
+.VHAFloatRight {
+    float: right;
+}
+
+.VHASmartAgentFieldLabel {
+    color: #333;
+    font-weight: bold;
+}
+
+.VHASmartAgentTextFields {
+    width: 100%;
+}
+
+.SmartAgentTitle .ui-dialog-titlebar {
+    background: #E60000;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.SmartAgentTitle .ui-dialog-title {
+    color: #FFF !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+#VHASmartBuddyDialog {
+    max-width: 350px;
+}
+
+#VHACreateActivityParentCont {
+    padding: 5px 0 0 0;
+    /*
+    min-width: 350px;
+    min-height: 350px;
+    */
+    max-width: 350px;
+}
+
+.SmartAgentTitle {
+    box-shadow: none;
+    padding: 0px;
+    margin: 5px;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px 8px 0 0;
+    z-index: 9000;
+}
+
+#SendTextFloatContiner {
+    max-width: 150px;
+    min-height: 20px;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    padding: 5px 40px;
+    color: #FFF;
+    right: -75px;
+    border-radius: 8px 8px 0px 0px;
+    cursor: pointer;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    font-size: larger;
+    z-index: 1000;
+}
+
+.VHABackgroundActive {
+    border: 1px solid rgba(168, 180, 0, 1);
+    background: rgba(168, 180, 0, 1);
+}
+
+.VHABackgroundInactive {
+    border: 1px solid #E60000;
+    background: #E60000;
+}
+
+.VHABackgroundMinimize {
+    border: 1px solid rgba(94, 38, 80, 1);
+    background: rgba(94, 38, 80, 1);
+}
+
+.VHASmartAgentMinimize {
+    margin-right: 20px !important;
+}
+
+.SmartAgentTitle .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close .ui-icon-closethic,
+.VHASmartAgentMinimize .ui-icon-minus {
+    color: #FFF;
+    text-indent: 0;
+    text-indent: initial;
+    background-color: transparent;
+    min-width: 5px;
+    min-height: 5px;
+    line-height: 5px;
+    font-size: xx-large;
+}
+
+.VHASmartAgentMinimize .ui-icon-minus::before {
+    content: '\002D';
+    font-family: 'oracle';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+}
+
+#VHAActivityTab {
+    padding: 10px 10px 20px 10px;
+    max-width: 95%;
+}
+
+.VHASmartAgentButtonsPostive2 {
+    background: #E60000;
+    color: #FFF;
+    border-radius: 5px;
+    font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    min-width: 90px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border: 2px solid #E60000;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.CreateActivityButtons {
+    min-height: 35px;
+    margin-bottom: 5px;
+}
+
+.SmartAgentTitle span.ui-dialog-title {
+    background-image: url("../../images/custom/dialog_header_logo.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    text-align: center;
+    font-size: 16px !important;
+}
+
+.VHACretActSection2 {
+    font-size: 12px;
+}
+
+.VHAHyperlinkUnderline:hover {
+    text-decoration: underline;
+}
+
+
+/*Smart Agent Changes end*/
+
+.siebui-applet.siebui-active,
+.siebui-ide-canvas .siebui-odh-drag-candidate-hover,
+.siebui-ide-canvas .siebui-odh-drop-candidate-hover {
+    box-shadow: #fff 0 0 4px 0 !important;
+}
+
+
+/*mani added for spinner*/
+
+.ui-autocomplete-loading {
+    background: white url("../../images/custom/VHAAddressloader.gif") right center no-repeat;
+}
+
+
+/* Haritha- 26Jul19 - Added for list columns header alignment*/
+
+.ui-jqgrid .ui-jqgrid-htable th {
+    text-align: left!important;
+}
+
+[aria-label="Transaction History:Retrieve"] {
+    margin-left: 6px!important;
+}
+
+
+/*haritha 02-08-2019 added for sales order configuration message*/
+
+input[aria-labelledby="Configuration_Message_Label"] {
+    background-color: #ffffff !important;
+    border: 0px !important;
+}
+
+
+/*haritha 02-08-2019 added for title in customer accounts->addresses in edit mode*/
+
+.siebui-icon-map {
+    font-size: 23px;
+}
+
+
+/* Sridhar;01Aug19; Maginfying Execute Query and Cancel Query icons*/
+
+.siebui-icon-undoquery::before,
+.siebui-icon-executequery::before {
+    transform: scaleY(1.5);
+}
+
+
+/*mani added for status styling*/
+
+.dot_Class_Active {
+    height: 17px;
+    width: 17px;
+    background-color: #22b14c;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+.dot_Class_Inactive {
+    height: 17px;
+    width: 17px;
+    background-color: #E60000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+div span[class="dot"] {
+    margin-top: 8px !important;
+}
+
+.mceField>input.RemoveBorder {
+    border: 0px !important;
+    font-weight: bold;
+}
+
+.mceField>input.AccountStatusLabel {
+    border: 0px !important;
+    width: 50% !important;
+    margin-top: 3px !important;
+    padding-top: 0px;
+    text-indent: 5px;
+    font-weight: 750 !important;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.AddressStatusStyle {
+    font-weight: 750 !important;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.CoverageChckSts {
+    vertical-align: bottom;
+}
+
+.DotCredit {
+    margin-right: 4px !important;
+    margin-left: 5px !important;
+    margin-top: 0px !important;
+}
+
+*
+/*mani added for status styling - ends*/
+
+
+/*Haritha-07-08-2019 Added for asset form applet*/
+
+.FormSection span[id="Customer_Profile_Label"] {
+    display: block !important;
+    width: 200px !important;
+}
+
+
+/* Madhu 13Aug19; Content Transaction history Applet*/
+
+.siebui-icon-newrecord[title="Transaction History:Query"]::before {
+    content: '\e621' !important
+}
+
+
+/* Madhu 13Aug19; Content Transaction history Applet*/
+
+
+/* Madhu 21Aug19; ProductsAndServices list applet*/
+
+.siebui-icon-showpopup[title="Products and Services:New"]:before {
+    content: "\e6a4" !important;
+    font-family: oracle !important;
+}
+
+.siebui-icon-showpopup[title="Products and Services:New"] span {
+    display: none !important;
+}
+
+.siebui-icon-showpopup[title="Products and Services:New"][disabled] {
+    color: #404453 !important;
+}
+
+
+/* Madhu 21Aug19; ProductsAndServices list applet*/
+
+
+/* Madhu - 05Sep19- dashboard drilldown */
+
+.vha_dashboard_drilldown a::before {
+    content: '\e904';
+    font-family: oracle;
+    font-size: 15px;
+    color: #1474bf !important;
+}
+
+
+/*-----VFSUIAPP.css*/
+
+
+/* Ritwika added this for highlighting border color*/
+
+.redBgcolor input[readonly="readonly"] {
+    border: 1px solid #DD0000 !important;
+    border-radius: 3px !important;
+    /*background: #F56E6E !important;*/
+}
+
+
+/*.greenBgcolor {
+background-color:#ccffcc !important
+}*/
+
+.greenBgcolor input[readonly="readonly"] {
+    border: 1px solid #006714 !important;
+    /* Ritwika added this for highlighting border color */
+    border-radius: 3px !important;
+    /*background-color: #ccffcc !important;*/
+}
+
+
+/* Daniel added for view web template change -- End */
+
+
+/*Kathambari/Ritwika added to fix saluation issue in Open UI*/
+
+.salutation-pr-applet {
+    min-height: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.salutation-pr-title {
+    float: left;
+    font-size: 1.3em;
+    margin-right: 40px;
+    font-weight: bold;
+    color: #777;
+}
+
+.salutation-pr-salutation {
+    top: 2px;
+    position: relative;
+}
+
+
+/*11/10/2018 - Kathambari - Added to style the Salutation applet*/
+
+.siebui-salutation-applet-title {
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+}
+
+
+/*mani added*/
+
+.VHASUIWidth {
+    min-width: 1660px !important;
+    /* changed from 1010px to 1670px - for SUI*/
+}
+
+.VHASUISecondRow {
+    overflow: hidden !important;
+    /*mani added*/
+}
+
+.VFSUIBillingScroll .GridBorder {
+    overflow: hidden !important;
+    /*mani added*/
+}
+
+.SUIForm .siebui-applet-content {
+    height: 290px !important;
+    overflow: hidden !important;
+    /*mani added*/
+}
+
+.SUISecond .siebui-applet-content {
+    height: 240px !important;
+}
+
+.SUILastRow .siebui-applet-content {
+    height: 230px !important;
+}
+
+.SUIFormPrepay .siebui-applet-content {
+    height: 240px !important;
+}
+
+
+/*.SUISecondPrepay .siebui-form,.siebui-list{
+          height: 300px !important; 
+         
+}*/
+
+.VFSUICAFormApplet div.NotSelected,
+.VFSUICAFormApplet div.Selected,
+.VFSUIBAFormApplet div.NotSelected,
+.VFSUIPre2AppletWidth div.Selected,
+.VFSUIBAFormApplet div.Selected,
+.VFSUIIAFormApplet div.NotSelected,
+.VFSUIIAFormApplet div.Selected,
+.VFSUIPre2AppletWidth div.NotSelected {
+    overflow: hidden !important;
+}
+
+
+/* Ritwika added this for changing style for all labels, input box and input data, Applet Title START */
+
+#PostpayStyle tr.AppletButtons .AppletTitle .siebui-ctrl-link a,
+#PrepayStyle tr.AppletButtons .AppletTitle .siebui-ctrl-link a {
+    color: #004892 !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    vertical-align: middle !important;
+}
+
+
+/*hyperlink */
+
+
+/*10/01/2018 - Upgrade change - Kathambari - changed the class from AppletTitle to siebui-applet-title since AppletTitle class is not used in upgrade environment*/
+
+#PostpayStyle tr.AppletButtons .siebui-applet-title:first-child,
+#PrepayStyle tr.AppletButtons .siebui-applet-title:first-child {
+    color: #333 !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    vertical-align: middle !important;
+    padding: 0px 8px 0px 8px !important;
+    height: 40px !important;
+}
+
+
+/*standard title*/
+
+#PostpayStyle .VFSUICAFormApplet div.siebui-collapsible-applet-content,
+#PostpayStyle .VFSUIBAFormApplet div.siebui-collapsible-applet-content,
+#PostpayStyle .VFSUIIAFormApplet div.siebui-collapsible-applet-content,
+#PrepayStyle .VFSUICAFormApplet div.siebui-collapsible-applet-content,
+#PrepayStyle .VFSUIBAFormApplet div.siebui-collapsible-applet-content,
+#PrepayStyle .VFSUIIAFormApplet div.siebui-collapsible-applet-content {
+    height: 260px !important;
+}
+
+
+/* Added for screen tab changes - End */
+
+#up,
+#down {
+    margin-right: -13px;
+}
+
+
+/* Ritwika added this for button alignment in top applets END*/
+
+.VFSUIbuttons {
+    float: left;
+    padding-top: 6px;
+    padding-left: 3px;
+}
+
+
+/*VFSUIAPP.css - end*/
+
+
+/*----VFSUIPCI.css*/
+
+
+/*Yajnesh Added for PCI to hide the buttons*/
+
+.VFDisplayNone {
+    display: none !important;
+}
+
+
+/*Yajnesh added for the Submit and cancel buttons*/
+
+.VFPPOUIPayCorpSubmit,
+.VFPPOUIPayCorpCancle {
+    margin-left: 20px;
+}
+
+.VFPPOUIPayCorpIFrameUNISIM iframe {
+    height: 400px !important;
+}
+
+
+/* DM added for PKE000000034012*/
+
+.siebui-logo {
+    /*margin-top: 8px;*/
+    margin-left: 5px !important;
+    /*changed from 2 to 5*/
+    width: 122px !important;
+    /*changed from 106 to 122*/
+    height: 24px !important;
+    /*changed from 16 to 24*/
+}
+
+
+/*YP added for AOA Defect 42*/
+
+.VFWizardButtons button {
+    min-width: 150px;
+    margin-bottom: 10px !important;
+}
+
+
+/*Roseline: 08/08/2016 - Added for Sharing Simplification*/
+
+
+/*To remove the extra symbol in the select applet of Manage Services flow*/
+
+.ui-icon.ui-icon-radio-off.tree-leaf.treeclick {
+    background-image: none !important;
+}
+
+
+/*Yajnesh added for Device Pick applet */
+
+.VHAChangeWidth1000px {
+    width: 1000px !important;
+}
+
+#iHelpList .ui-accordion-header {
+    background: #363636 url(../images/menuBGnoise.png) repeat-x 0 bottom !important;
+    color: #FFF !important;
+}
+
+#iHelpPopUp .ui-accordion .ui-accordion-content {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+#VFPPOUIPayCorpIFrameID {
+    position: static !important;
+}
+
+
+/*VFSUIPCI.css - end*/
+
+
+/*YP added for econfig changes*/
+
+.siebui-ecfg-header-label {
+    color: #f5f5f5;
+    background-color: rgba(94, 39, 80, 1)!important;
+    font-size: 16px;
+}
+
+.siebui-ecfg-header-label-ext {
+    color: #f5f5f5;
+    background-color: rgba(94, 39, 80, 1)!important;
+}

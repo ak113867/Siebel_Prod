@@ -1,0 +1,9 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+Thanks for contacting us today. The reference number for your records is <input class="InlineField" SEQ="2" type='text'/>. 
+<br><br>
+Have another question? Head to http://vfau.co/helpsupport
+<br><br>
+Thanks,<br>
+Vodafone.
+<br><br>

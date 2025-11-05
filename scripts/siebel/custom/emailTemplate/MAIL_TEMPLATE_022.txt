@@ -1,0 +1,9 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+We're trying to get in touch with you about your Vodafone nbn order. 
+<br><br>
+Please call us back on 1300 801 122. 
+<br><br>
+Thanks,<br>
+Vodafone.
+<br><br>

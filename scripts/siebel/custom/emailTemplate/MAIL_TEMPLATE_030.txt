@@ -1,0 +1,7 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+Your Vodafone nbn order has been cancelled.  The charge of <input class="InlineField" SEQ="2" type='text'/> for your Vodafone Wi-Fi Hub will appear on your next bill. 
+<br><br>
+Thanks,<br>
+Vodafone.
+<br><br>

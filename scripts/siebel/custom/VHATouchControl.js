@@ -1,0 +1,1 @@
+define("siebel/custom/VHATouchControl ",["siebel/decisionmanager"],function(){SiebelAppFacade.DecisionManager.IsTouch=function(){return false}});

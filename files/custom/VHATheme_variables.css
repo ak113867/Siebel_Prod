@@ -1,0 +1,85 @@
+:root{
+	
+  --body-bgcolor:#F0F2F5;
+  
+  --btn-primary-def-bgcolor: #E60000;  
+  --btn-primary-hover-bgcolor: #CE0000;
+  --btn-primary-focused: #00B0CA;
+  --btn-primary-focused-outline: 2px slid;
+  --btn-primary-pressed-bgcolor: #990000;
+  --btn-primary-disabled-opacity: 38%;  
+  
+  --btn-secondary-def-bgcolor: #002244;  
+  --btn-secondary-hover-bgcolor: #00325C;
+  --btn-secondary-focused: #00B0CA ;
+  --btn-secondary-focused-outline: 2px solid ;
+  --btn-secondary-pressed-bgcolor: #063B68;
+  --btn-secondary-disabled-opacity: 38%;
+  --btn-secondary-def-height: 44px;
+  
+  --btn-tertiary-def-bgcolor: #ffffff;
+  --btn-tertiary-def-boder: 1px solid #666577;
+  --btn-tertiary-hover-bgcolor: #E0E0E4;
+  --btn-tertiary-hover-border: 2px solid #464657;
+  --btn-tertiary-focused: #00B0CA;
+  --btn-tertiary-focused-outline: 2px slid;  
+  --btn-tertiary-pressed-bgcolor: #D1D1D6;
+  --btn-tertiary-pressed-border: 1px slid #252434;
+  --btn-tertiary-loading-bgcolor: #D1D1D6;
+  --btn-tertiary-pressed-border: 1px slid #252434;
+  --btn-tertiary-disabled-opacity: 38%;
+  --btn-tertiary-def-height: 44px;
+  
+  --btn-font-style-large: 16px;
+  --btn-font-style-small: 14px;
+  --font-size-link:12px;
+  --font-size-xxlarge:24px;
+  
+  --font-famly:Arial;
+  
+  --btn-disabled-opacity: 38%; 
+
+  --First-Level-fontcolor: #002244;
+  --First-Level-height:44px;
+  --First-Level-active:#E60000;
+  --Second-Level-active:#002244;
+
+  --menu-focused: #00B0CA; 
+  
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  
+  --font-white: #ffffff;
+  
+  --line-height:20px;
+  --line-height-large:32px;
+    
+  --btn-height-large: 44px;
+  --btn-height-medium: 36px;
+  --btn-height-small: 24px;
+  
+  --btn--link-large-size:16px;
+  --btn--link-large-color:#063B68;
+  --btn--link-large-fweight:400;
+  
+  
+  
+  --appllet-gap:16px;
+  
+  --padding-xsmall : 8px;
+  --padding-small : 12px;  
+  --padding-medium : 16px;  
+  --padding-xlarge: 14px;
+  --padding-xxlarge: 20px;
+  --noPadding: 0px; 
+  --padding-xxxlarge: 24px;	
+  
+  --radius-xxsmall:4px;   
+
+  --divider-color:#A3A3AD;
+  
+  --breadcrumb-current-link:#063B68;
+  
+  --linktext:#063B68;
+  --link-size: 12px;
+}

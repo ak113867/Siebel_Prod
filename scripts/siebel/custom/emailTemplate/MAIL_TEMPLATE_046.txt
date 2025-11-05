@@ -1,0 +1,9 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>,
+<br><br>
+Thanks for placing an order. Unfortunately, the device you ordered is no longer available.
+<br><br>
+We have tried contacting you to discuss your options however we couldn’t reach you. Please give us a call on 1300 439 740.
+<br><br>
+Thanks<br>
+Your Vodafone Team
+<br><br>

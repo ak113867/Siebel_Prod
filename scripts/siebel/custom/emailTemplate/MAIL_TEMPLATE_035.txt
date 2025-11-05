@@ -1,0 +1,6 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+Your Vodafone nbn service has been reinstated. You'll see a credit on your next bill for $<input class="InlineField" SEQ="2" type='text'/> to waive any incurred fees while your service was disconnected. 
+<br><br>
+Thanks,<br>
+Vodafone.

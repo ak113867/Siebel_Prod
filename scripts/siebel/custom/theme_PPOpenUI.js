@@ -1,0 +1,1 @@
+SiebelApp.ThemeManager.addResource("GRAY_TAB",{css:{"VFPPOpenUIApp_1":"files/custom/VFSUIPCI.css"}});

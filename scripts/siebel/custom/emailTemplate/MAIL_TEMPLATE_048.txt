@@ -1,0 +1,76 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>,
+<br><br>
+We've received your request to transfer the mobile number 04XX XXX XXX. To complete this request, you'll need to complete the attached forms, scan them as a PDF or JPEG and email them to us at <a>tot@vodafone.com.au</a>
+<br><br>
+The 'Authorisation of Transfer (Part A)' form should be completed by the current account holder. The 'Acceptance of Transfer Prepaid (Part B)' form should be completed by the person who is taking ownership of the mobile number.
+<br><br>
+<b>For the current account holder.</b>
+<br><br>
+  -	Please complete all sections of the 'Authorisation of Transfer (Part A)' form. Once you've authorised the transfer, we will send the authorisation code to the service that is being request to be transferred. we'll notify the person you'd like to transfer the number to with a text message. This person The new account holder will need to be provided the authorisation code and will have 30 days to complete the 'Acceptance of Transfer Prepaid (Part B) form'.
+<br><br>
+  -	A confirmation text message will be sent to the mobile number being transferred once this request is complete.
+<br><br>
+<b>For the person taking ownership of the mobile number.</b>
+<br><br>
+   -	Please complete all relevant sections of the 'Acceptance of Transfer Prepaid (Part B)' form.
+<br><br>
+   -	Please submit the following ID together with this form:
+<br><br>
+   -	If you have less than five prepaid mobile services, including this service, please provide 1 current ID from List A or 2 current IDs from List B; or
+<br><br>
+   -	If you have more than five prepaid mobile services, including this service, please provide 2 current IDs from List A or a current ID from List A and 2 current IDs from list B.
+<br><br>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<table>
+<tr><th>List A</th><th>List B</th></tr>
+<tr>
+<td>
+<ul>
+<li>Passport</li>
+<li>Centrelink/pension/health care card</li>
+<li>Other Australian Government recognised proof of identity (e.g. proof of age card)</li>
+<li>Birth certificate/card)</li>
+<li>Licence or permit issued under Commonwealth, State or Territory law (e.g. driver's licence/learner's permit)</li>
+<li>Tertiary student identification card</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>Credit/debit/ATM card</li>
+<li>2nd credit/debit/ATM card</li>
+<li>Medicare card</li>
+<li>Bank passbook</li>
+<li>Council rates statement**</li>
+<li>Landline telephone bill**</li>
+<li>**Council rates statement or Landline Telephone bill should be less than 12 months old, showing your name and address</li>
+</ul>
+</td>
+</tr>
+</table>
+<br><br>
+<ul>
+<li>A confirmation text message will be sent to the mobile number being transferred once this request is complete.</li>
+<li>If you are applying as a student or senior, you must include the relevant ID</li>
+<li>When you select a PIN, please don't use the following number combinations:</li>
+</ul>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-	Consecutive numbers. eg 1234, 2345, 9876, 4321.
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-	Repetitive numbers. eg 0000, 1111, 2222 through to 9999.
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-	Birthday e.g. if your birthday is 10 February 1966, you cannot use 1002 or 1966.
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-	Phone keypad patterns eg 1379, 2468, 1397, 2684, 1793, 2580.
+<br.<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-	You also can't use the postcode of your home or billing address.
+<br><br>
+Our team will respond to you within 48hours once the forms has been submitted. 
+<br><br>
+<br><br>
+Thanks,<br>
+Your Vodafone Team  
+<br><br>
+<br><br>

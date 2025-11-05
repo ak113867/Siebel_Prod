@@ -1,0 +1,16 @@
+<!-- Template Start: CCTaskViewTitle.swt -->
+
+<swe:if condition="Task UI Service (SWE),IsInTask">
+
+	
+
+
+	<table datatable="0" summary="" valign="top" width="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr><td style="background-color:#ffffff;"><img src="images/spacer.gif" width="1" height="2" alt=""></td></tr>
+	
+	<tr><td style="background-color:#466FB4;"><img src="images/spacer.gif" width="1" height="2" alt=""></td></tr>
+	</table>
+
+</swe:if>
+
+<!-- Template End: CCTaskViewTitle.swt -->

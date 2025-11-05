@@ -1,0 +1,65 @@
+{
+    "reasonCode": [
+        "Student Promo",
+        "2nd Service Promo",
+        "Seniors Promo",
+        "Save Offer - Tier 1",
+        "Save Offer - Tier 2",
+        "In Market Offer–Acq",
+        "In Market Offer-Ret",
+        "Recurring Data Pack",
+        "Recurring IDD Pack",
+        "Incorrect Price Plan",
+        "OOG Resolution-CRT",
+        "SCAF Approved",
+        "Upgrade Offer",
+        "Insurance",
+        "Agent/System Error",
+        "Auth Resolution",
+        "Proposed Coverage",
+        "Trade-in Adjustment-GST excl"
+    ],
+    "productList": [{
+            "id": "1-1CL6EVM",
+            "samid": "SAM1569",
+            "name": "Subscription Level $ Discount Recurring Charges",
+            "period": "2-36",
+			"percent": ""
+        },
+        {
+            "id": "1-4LV7C3N",
+            "samid": "AUX0207",
+            "name": "Subscription 10% Manual Discount Plan Recurring Charges",
+            "period": "2-36",
+			"percent": "10"
+        },
+        {
+            "id": "2-CS906ND",
+            "samid": "AUV0450",
+            "name": "Recurring Trade-in 1 GST Excl",
+            "period": "2-36",
+			"percent": ""
+        },
+        {
+            "id": "2-CS906OR",
+            "samid": "AUV0451",
+            "name": "Recurring Trade-in 2 GST Excl",
+            "period": "2-36",
+			"percent": ""
+        },
+        {
+            "id": "2-CS906KL",
+            "samid": "AUV0452",
+            "name": "Recurring Trade-in 3 GST Excl",
+            "period": "2-36",
+			"percent": ""
+        },
+        {
+            "id": "2-CQJOBJP",
+            "samid": "AUX1414",
+            "name": "VIP Discount - 5% off Monthly Access Fee",
+            "period": "2-36",
+			"percent": "5"
+        }
+    ]
+}

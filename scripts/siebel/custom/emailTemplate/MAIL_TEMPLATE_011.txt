@@ -1,0 +1,22 @@
+Order reference number: <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+Hi <input class="InlineField" SEQ="2" type='text'/>
+<br><br>
+Great news, your Vodafone Mobile Landline service is now active!
+<br><br>
+Calls placed to landline phone number <input class="InlineField" SEQ="3" type='text'/> are now being redirected to your Vodafone mobile number <input class="InlineField" SEQ="4" type='text'/>. You will be charged for making outgoing calls from your mobile at the rates set out in your Vodafone Postpaid Mobile plan details. - 
+<br><br>
+Important information<br>
+Charges for Vodafone Mobile Landline will not apply until your service is up and running. Charges will appear as an add-on on your Vodafone Postpaid mobile service bill. 
+<br><br>
+Have a question about your Vodafone Mobile Landline service. Please don't hesitate to contact us on 1300 801 122.
+<br><br>
+Thanks,<br>
+Your Vodafone Team. 
+<br><br>
+<br><br>
+Things you need to know:<br>
+nbn, nbn co and other nbn logos and brands are trademarks of nbn co limited and used under licence.
+<br><br>
+Recurring monthly access fee charged until the end of the month in which you cancel the service. Only available to customers who are connected to an eligible  Vodafone Postpaid Voice Plan (‘Voice Plan’) and sign up to an eligible Vodafone nbn Plan. This Add-on does not come with a separate call allowance, it simply allows you to retain your existing Fixed Voice (business/home phone) Number service (‘FVN’) and supports unlimited incoming calls redirected to a Postpaid Voice service on the same account.  You will be unable to make outgoing calls using your FVN as all calls will be using your mobile device via the Vodafone Network. You will be charged for making outgoing calls from your mobile at the rate set out in your Voice Plan details. Only your FVN (business/home phone number) will be ported to Vodafone. Porting may result in loss of any services dependent on using the fixed voice service associated with that FVN (business/home phone number) including broadband, line sharing services, redirection or call waiting. Please check with your existing provider about these additional services and whether you will be required to pay any costs upon your number being transferred. If your eligible voice plan is cancelled, this Add-on will also automatically cancel and you will lose access to your FVN. Min monthly spend is prorated when Add-on is purchased or cancelled part way through the billing month for your eligible voice plan. This Add-on is not shareable with other eligible voice plans on the same account. For full terms and conditions please refer to your Voice Plan details.
+<br><br>

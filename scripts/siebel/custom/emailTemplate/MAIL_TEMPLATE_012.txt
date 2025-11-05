@@ -1,0 +1,6 @@
+Hi <input class="InlineField" SEQ="1" type='text'/> 
+<br><br>
+We're trying to get in touch with you about your Vodafone Mobile Landline service. Please call us back on 1300 801 122. 
+<br><br>
+Thanks, Vodafone
+<br><br>

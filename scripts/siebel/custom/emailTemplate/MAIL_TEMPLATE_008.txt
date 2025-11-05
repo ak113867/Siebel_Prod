@@ -1,0 +1,7 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+We've resolved your Vodafone nbn issue. Please give us a call on 1300 801 122 if you have any questions. 
+<br><br>
+Thanks, 
+Vodafone.
+<br><br>

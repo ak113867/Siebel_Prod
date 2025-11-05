@@ -1,0 +1,1 @@
+SiebelApp.ThemeManager.addResource("GRAY_TAB",{css:{"VFSUIAPP":"files/custom/VFSUIAPP.css","VFSUIAPP1":"files/custom/jquery.jqplot.css","VFSUIAPP2":"files/custom/jquery.jqplot.min.css","VFSUIAPP3":"files/custom/VFSUIPCI.css"}});

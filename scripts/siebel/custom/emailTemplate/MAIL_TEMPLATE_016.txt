@@ -1,0 +1,6 @@
+Hi <input class="InlineField" SEQ="1" type='text'/>
+<br><br>
+As requested we've submitted your port reversal request for landline <input class="InlineField" SEQ="2" type='text'/>. It will be completed within 4 hours. 
+<br><br>
+Thanks, Vodafone
+<br><br>

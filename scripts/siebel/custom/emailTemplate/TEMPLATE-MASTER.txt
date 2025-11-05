@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+    <style>
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+      <body class="setupTab" style=" background-color:#CCCCCC; bEditID:b1st1; bLabel:body;">
+       <center>
+         <table cellpadding="0" width="500" cellspacing="0" id="topTable" height="450">
+                <tr valign="top">
+                    <td style=" background-color:#FFFFFF; bEditID:r1st1; bLabel:header; vertical-align:top; height:100; text-align:left;"><img border="0" beditid="r1sp1" blabel="headerImage" id="r1sp1" src="https://vha.my.salesforce.com/servlet/servlet.ImageServer?id=015D00000045k5V&amp;oid=00D200000000GC5"><!-- </img> --></td>
+                </tr>
+                <tr valign="top" style=" display:none;">
+                    <td style=" background-color:#FFFFFF; bEditID:r2st1; bLabel:accent1; height:0;"></td>
+                </tr>
+                <tr valign="top">
+                    <td styleinsert="1" height="300" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;">
+                        <table border="0" cellpadding="5" width="550" cellspacing="5" height="400">
+                            <tr valign="top" height="400">
+                                <td teditid="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aeditid="c1r1" locked="0">
+                                    <span style="color: rgb(0, 0, 0); font-family: &quot;Vodafone Rg&quot;, arial; font-size: 16px;">
+                                    ###########_EMAIL_CONTENT_HERE_###########
+                                    </span>
+                                    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+                                        <span style="font-family: Vodafone Rg,arial; font-size:16px;"><br></span>
+                                    </div>
+                                    <div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;">
+                                        <span style="font-family: Vodafone Rg,arial; font-size:16px;"><br></span>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <span style="font-family:Vodafone Rg, arial; font-size:12px; font-weight:bold;">Things you should know:</span>
+                                        </div>
+                                        <div>
+                                            <span style="font-family:Vodafone Rg, arial; font-size:12px;">This email was sent to you by Vodafone from a notification-only address and can't be replied to. Copyright 2016 Vodafone Pty Limited ABN 76&amp; 062 954 554</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+                <tr valign="top" style=" display:none;">
+                    <td style=" background-color:#FFFFFF; bEditID:r4st1; bLabel:accent2; height:0;"></td>
+                </tr>
+                <tr valign="top">
+                    <td style=" background-color:#FFFFFF; bEditID:r5st1; bLabel:footer; vertical-align:top; height:100; text-align:left;"></td>
+                </tr>
+                <tr valign="top" style=" display:none;">
+                    <td style=" background-color:#FFFFFF; bEditID:r6st1; bLabel:accent3; height:0;"></td>
+                </tr>
+       </center>
+      </body>
+</html>
