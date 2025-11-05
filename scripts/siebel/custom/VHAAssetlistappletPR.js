@@ -30,7 +30,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 			
 			// U35 SholderCheck
 			$('.generate-payment').text("Generate payment URL");
-			$('.view-invoices').text("View recent invoices");
+			$('.view-invoices').text("View recent invoice");
 			$('.pay-bill').text("Pay bill");
 			// U35 SholderCheck End
 		
@@ -315,7 +315,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
     <!-- Additional Plan Information -->\
     <div class="section">\
         <div class="section-title" id ="'+sAssetId+'inAddPlan">In addition to the plan</div>\
-        <div class="section-content InaddPlan">\
+        <div class="section-content">\
             <div class="row">\
                 <div class="row-title addPlanLable" id="'+sAssetId+'mpp">MPPs</div>\
                 <div class="addPlan row-value" id="'+sAssetId+'mpp">'+mpp+'</div>\
@@ -416,7 +416,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 				<!-- Additional Plan Information -->\
 				<div class="section">\
 					<div class="section-title" id ="'+sAssetId+'inAddPlan">In addition to the plan</div>\
-					<div class="section-content InaddPlan">\
+					<div class="section-content">\
 						<div class="row">\
 							<div class="row-title addPlanLable" id="'+sAssetId+'mpp">MPPs</div>\
 							<div class="addPlan row-value" id="'+sAssetId+'mpp">'+mpp+'</div>\
@@ -527,7 +527,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 				<!-- Additional Plan Information -->\
 				<div class="section">\
 					<div class="section-title" id ="'+sAssetId+'inAddPlan">In addition to the plan</div>\
-					<div class="section-content InaddPlan">\
+					<div class="section-content">\
 						<div class="row">\
 							<div class="row-title addPlanLable" id="'+sAssetId+'mpp">MPPs</div>\
 							<div class="addPlan row-value" id="'+sAssetId+'mpp">'+mpp+'</div>\
@@ -589,7 +589,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 		$("#vha-img-pega-LinkedcontactTable tbody").empty();
 		$.each(arry, function (index, item) {
 			console.log(item.Contactid);
-			var anchor = $("<a>").attr("href", "#").attr("Contactid",item.Contactid).attr("Id","gotoView-LimitedContacts").attr("class","gotoviewLimitedContact").text("Go to overview");
+			var anchor = $("<a>").attr("href", "#").attr("Contactid",item.Contactid).attr("Id","gotoView-LimitedContacts").attr("class","gotoviewLimitedContact").text("Go to view");
 			var ActiveStatus = $('<span id="activeicon"class="dot_Class_Active"></span>');
 			var row = $("<tr>");
 			var td = $("<td>");
@@ -711,7 +711,6 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 			var assetid = assetApp.GetBusComp().GetFieldValue("Id");
 			var assetApplet = SiebelApp.S_App.GetActiveView().GetApplet("VHA Customer Dashboard Asset Form Applet");
 			var controls = assetApplet.GetControls();
-			var bANum = SiebelApp.S_App.GetActiveView().GetApplet("VHA Customer Dashboard Assets Billing Applet").GetBusComp().GetFieldValue("Billing Account Number");
 			switch(selVal){
 				case 'View full asset':
 					GotoviewwithrowId("VF Asset Summary View - with extra IN fields",assetid,"","Asset Mgmt - Asset - Header Form Applet","VF Asset","Asset Mgmt - Asset - Header");
@@ -792,13 +791,11 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 					$('[name="'+Disconnect+'"]').trigger("click");
 				break;
 				case 'Pre to Post':
-					var pretopost = controls["PreToPost Connect TBUI"].GetInputName();
-					//var pretopost = controls["PosttoPre Connect TBUI"].GetInputName(); /*Commented for CM-3253*/
+					var pretopost = controls["PosttoPre Connect TBUI"].GetInputName();
 					$('[name="'+pretopost+'"]').trigger("click");
 				break;
 				case 'Change payment method':
-					console.log(selVal);/*Added the below line  for CM-3253*/
-					GotoviewwithrowId("VF Credit Card View - AU",bANum,"Account Number","VF Billing Account Form Applet","VF Billing Account","VF Billing Account");
+					console.log(selVal);
 				break;
 				case 'Change Fixed Address':
 					var ChangeFixedAddress = controls["Change Fixed Address"].GetInputName();
@@ -820,46 +817,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 				break;
 					}			
 			});
-		$(".invoice-link").on('click', function(){
-		    event.preventDefault();
-			var svc = TheApplication().GetService("VF Damon Service");
-			var Input = TheApplication().NewPropertySet();
-			var Output = TheApplication().NewPropertySet();
-			var sARII = TheApplication().GetProfileAttr("InvoiceARII");
-			var invoicerowid = $('#latesinvoicenum').attr('InvoiceRowid');
-			var ARII = "";
-			var sARII = "Australia";
-			TheApplication().SetProfileAttr("InvoiceARII", "");
-			Input.SetProperty("ARII","Australia");
-			Input.SetProperty("RowId",invoicerowid);
-			Input.SetProperty("BOName","FS Invoice");
-			Input.SetProperty("BCName","FS Invoice");
-			
-			switch(sARII)
-			{
-				case "Australia":
-					Input.SetProperty("SymbolicURLName", "BillStatementAU");
-					Input.SetProperty("Encrypt", "VF AU Encrypt");
-					Input.SetProperty("Password", "VF AU Encryption Password");
-					break;
-
-				  case "Fiji":
-                            sInp.SetProperty("SymbolicURLName", "BillStatementFJ");
-                            sInp.SetProperty("Encrypt", "VF FJ Encrypt");
-                            sInp.SetProperty("Password", "VF FJ Encryption Password");
-                            break;
-                      default:
-                            alert("Unknown ARII value:" + sARII);
-                            returnStructure["CancelOperation"] = true;
-                            SiebelApp.S_App.uiStatus.Free();
-                            break
-                    }
-                    svc.InvokeMethod("getURL",Input, Output);
-                    var sURL = SiebelApp.S_App.GetProfileAttr("Results");
-                    var w = window.open(sURL, "CNN_WindowName", "menubar=no,titlebar=no,location=no,resizable=yes,scrollbars=yes,status=yes");
-                    SiebelApp.S_App.uiStatus.Free();
 		
-	 }); 
 			
    }
 
@@ -915,8 +873,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 		   //var billAccnum = billAccnum1.split(' (')[0];
 		   GotoviewwithrowId("VHA Billing Account Prepayment UPI View",billAccnum,"Account Number","VF Billing Account Form Applet","VF Billing Account","VF Billing Account");
 	  }); 
-	  //$("#latesinvoicenum").on('click', function(){
-	/*  $(".invoice-link").on('click', function(){
+	  $("#latesinvoicenum").on('click', function(){
 		    event.preventDefault();
 			var svc = TheApplication().GetService("VF Damon Service");
 			var Input = TheApplication().NewPropertySet();
@@ -955,7 +912,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
                     var w = window.open(sURL, "CNN_WindowName", "menubar=no,titlebar=no,location=no,resizable=yes,scrollbars=yes,status=yes");
                     SiebelApp.S_App.uiStatus.Free();
 		
-	 }); */
+	 }); 
 	 $(document).on('click','.gotoInvoice', function() {
 			  event.preventDefault();
 			  console.log("gotoInvoice")
@@ -1053,7 +1010,6 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 			$(".billing-container").removeClass("displaynone");
 			$(".baselection").removeClass("displaynone");
 			$("#allactiveAssets").text("Active assets");
-			$("#allactiveAssets").addClass('activeAssetsHeading');
 			//var selAcc = selVal.match(/^\d+/);
 			TheApplication().GetProfileAttr("listofBillingAccounts");
 			var selAcc = selVal.split(' (');
@@ -1149,7 +1105,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 				$('.view-invoices').removeClass('appletButtonDis');*/
 				$('.view-invoices').removeClass('buttondisabled');
 				$('.view-invoices').prop('disabled',false);
-				$('.view-invoices').attr("style","color:rgba(37, 36, 52, 1) !important");
+				$('.view-invoices').attr("style","color:white !important");
 				if($('#invoiceNA').text() == "N/A")
 				{
 					$("#invoiceNA").replaceWith('<a id="latesinvoicenum" href="#" class="invoice-link billvalue2"></a>');
@@ -1196,7 +1152,7 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 				document.getElementById("billingStaus").innerHTML = "";
 				//console.log(billingStatus);
 			}
-				
+				   var sRelSwitch = VHAAppUtilities.GetPickListValues("", "[List Of Values.Type]='VF_CR_ENABLE_FLAG' AND [List Of Values.Name]='SSJ' AND [List Of Values.Active]='Y'", "")[0];
 				if (paymentmethod =="Postpay")
 				{
 					$('.billing-container').removeClass('displaynone');
@@ -1207,6 +1163,8 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 					$('#selectBillingAcc').append('<option value="Update payment details">Update payment details</option>');
 					$('#selectBillingAcc').append('<option value="Lodge service request">Lodge service request</option>');
 					$('#selectBillingAcc').append('<option value="View orders">View orders</option>');
+					   if (sRelSwitch == "SSJ_ON") 
+					$('#selectBillingAcc').append('<option value="Sales calculator">Sales calculator</option>');
 				}
 				else if (paymentmethod =="Prepay")
 				{
@@ -1232,6 +1190,8 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 					$('#selectBillingAcc').append('<option value="Update automatic recharge">Update automatic recharge</option>');
 					$('#selectBillingAcc').append('<option value="Lodge service request">Lodge service request</option>');
 					$('#selectBillingAcc').append('<option value="View orders">View orders</option>');
+					   if (sRelSwitch == "SSJ_ON") 
+					$('#selectBillingAcc').append('<option value="Sales calculator">Sales calculator</option>');
 				}
 				else
 				{
@@ -1240,6 +1200,8 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 					$('#selectBillingAcc').append('<option value="View full billing account">View full billing account</option>');
 					$('#selectBillingAcc').append('<option value="Lodge service request">Lodge service request</option>');
 					$('#selectBillingAcc').append('<option value="View orders">View orders</option>');
+					   if (sRelSwitch == "SSJ_ON") 
+					$('#selectBillingAcc').append('<option value="Sales calculator">Sales calculator</option>');
 				}
 			//queryByBillingAccount(selectedbillAcc)
 			}
@@ -1267,6 +1229,50 @@ if (typeof(SiebelAppFacade.VHAAssetlistappletPR) === "undefined") {
 			break;
 			case 'Update automatic recharge':
 			GotoviewwithrowId("VF Credit Card View - AU",billAccnum,"Account Number","VF Billing Account Form Applet","VF Billing Account","VF Billing Account");
+			break;
+			case 'Sales calculator':
+			
+			/******/
+			
+				   // TheApplication().SetProfileAttr("SalesCalcExistCust","Y");
+				   // TheApplication().SetProfileAttr("SSJNewSalesCalcflow","N");
+				   // var bsWFProcMgr = TheApplication().GetService("Workflow Process Manager");
+				   // var psInputs = TheApplication().NewPropertySet();
+				   // var	psOutputs = TheApplication().NewPropertySet();
+
+				   // psInputs.SetProperty("AccId", $('#accountRowId').text());
+				   // psInputs.SetProperty("ProcessName", "VHA Create SSJ Parent Order WF");
+				   // bsWFProcMgr.InvokeMethod("RunProcess", psInputs, psOutputs);
+			
+			/******/
+			
+			   var bsRespCheck1 = SiebelApp.S_App.GetService("VF BS Process Manager");
+			   var psInputs1 = SiebelApp.S_App.NewPropertySet();
+			   var psOutputs1 = SiebelApp.S_App.NewPropertySet();
+			   psInputs1.SetProperty("Service Name", "Shopping Service");
+			   psInputs1.SetProperty("Method Name", "GotoView");
+			   psInputs1.SetProperty("View", "VHA SSJ Billing Account View");
+			   psInputs1.SetProperty("Business Component", "Account");
+			   var view = SiebelApp.S_App.GetActiveView();
+			   if (view) {
+				   var targetApplet = view.GetApplet("VHA Customer Dashboard Account List Applet");
+				   if (targetApplet) {
+					   var bc = targetApplet.GetBusComp();
+					   if (bc) {
+						   var rowId = bc.GetFieldValue("Id");
+						   if (rowId) {
+							   psInputs1.SetProperty("Row Id", rowId);
+						   } else {
+							   psInputs1.SetProperty("Row Id", "No record Found");
+						   }
+					   }
+				   }
+			   }
+			   
+			   psOutputs1 = bsRespCheck1.InvokeMethod("Run Process", psInputs1);
+			   
+			   
+			   // GotoviewwithrowId("VHA SSJ Billing Account View",billAccnum,"Account Number","VHA SSJ Parent Order Form Applet","Order Entry (Sales)", "VHA Order Entry Parent Orders SSJ");
 			break;
 			}
 		});
@@ -1608,7 +1614,7 @@ function buildQuicklinks(type){
 	//$('#quicklinks').empty();
 	if (type == "Postpay")
 	{
-	$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Action">Actions</option>');
+	$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Action">Action</option>');
 	$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="View full asset">View full asset</option>');
 	$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="3 Step Upgrade">3 Step Upgrade</option>');
 	$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Change proposition">Change proposition</option>');
@@ -1628,7 +1634,7 @@ function buildQuicklinks(type){
 	}
 	else if (type == "Prepay")
 	{
-		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Action">Actions</option>');
+		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Action">Action</option>');
 		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="View full asset">View full asset</option>');
 		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Pre to Post">Pre to Post</option>');
 		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Change MSISDN">Change MSISDN</option>');
@@ -1641,7 +1647,7 @@ function buildQuicklinks(type){
 	}
 	else
 	{
-		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Action">Actions</option>');
+		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Action">Action</option>');
 		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="View full asset">View full asset</option>');
 		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Change proposition">Change proposition</option>');
 		$("td[aria-roledescription='Quick links']").find('#quicklinks').append('<option value="Create new APP">Create new APP</option>');

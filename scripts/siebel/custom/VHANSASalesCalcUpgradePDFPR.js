@@ -226,6 +226,7 @@ if (typeof SiebelAppFacade.VHANSASalesCalcUpgradePDFPR === "undefined") {
                 y = metaData.logo.height + 20;
                 var Column1 = "",
                 Column2 = "";
+				var valTotalSrvPerMth = 0;
                 var FurtherRow = "",
                 Furthertemp = "";
                 var RQIrows1 = [],
@@ -233,8 +234,9 @@ if (typeof SiebelAppFacade.VHANSASalesCalcUpgradePDFPR === "undefined") {
                 Qrows1 = [];
                 if (scJson.QuoteHeader.RootItem.length > 0) {
                     scJson.QuoteHeader.RootItem.forEach(function (rliItem, rliIdx) {
+						valTotalSrvPerMth = rliItem.TotalSrvPerMth; //Marvin: Added to check for value.   
                         Column1 = rliItem.Proposition;
-                        Column2 = "$" + rliItem.TotalSrvPerMth;
+                        Column2 = valTotalSrvPerMth ? "$" + rliItem.TotalSrvPerMth : ""; //Marvin: Added to set the value to null when value is 0;
                         FurtherRow = [{
                                 value1: Column1,
                                 value2: Column2
@@ -373,6 +375,8 @@ if (typeof SiebelAppFacade.VHANSASalesCalcUpgradePDFPR === "undefined") {
                     scJson.QuoteHeader.RootItem.forEach(function (rliItem, rliIdx) {
                         Qrows2 = [];
                         console.log("Hello-->" + rliIdx);
+						var valTtlSrvPerMth = rliItem.TotalSrvPerMth; //Marvin: Added to check the value;
+						var finTtlSrvPerMth = valTtlSrvPerMth ? "$" + rliItem.TotalSrvPerMth : ""; //Marvin: Added to set the value to null when value is 0;
                         if (rliIdx > 0)
                             y += 12;
                         else
@@ -385,7 +389,7 @@ if (typeof SiebelAppFacade.VHANSASalesCalcUpgradePDFPR === "undefined") {
                         else
                             doc.text(rliItem.SrvType + " - " + rliItem.PlanItem.Name, x, y);
                         doc.setFontStyle(metaData.textStyle.normal);
-                        doc.text("$" + rliItem.TotalSrvPerMth, x + 167, y);
+                        doc.text(finTtlSrvPerMth, x + 167, y);//Marvin: Added to finTtlSrvPerMth for set the value;
                         Column1 = rliItem.PlanItem.Descr;
                         Column2 = "$" + rliItem.PlanItem.Price;
                         FurtherRow = [{
@@ -434,7 +438,7 @@ if (typeof SiebelAppFacade.VHANSASalesCalcUpgradePDFPR === "undefined") {
                                         } else {
                                             Column1 = dvcItem.Item__Name + " (" + parseFloat(dvcItem.UI__RRP__Inc__GST).toFixed(2) + " Incl. GST over " + dvcItem.Term + ")";
                                         }
-                                        Column2 = "$" + dvcItem.Monthly__Repayment;
+                                        Column2 = (dvcItem.Monthly__Repayment.indexOf("$") > -1) ? dvcItem.Monthly__Repayment : "$" + dvcItem.Monthly__Repayment;//Marvin : Added condition to only add "$" when it does not exist.
                                         FurtherRow = [{
                                                 value1: Column1,
                                                 value2: Column2
@@ -494,16 +498,16 @@ if (typeof SiebelAppFacade.VHANSASalesCalcUpgradePDFPR === "undefined") {
                             });
                             y = doc.lastAutoTable.finalY;
                         }
-                        if (rliItem.SDItem.length > 0) {
+                        if (rliItem.SecondaryItem.length > 0) {
                             y = y + 8;
                             Qrows4 = [];
                             doc.setFontStyle(metaData.textStyle.bold);
                             doc.text("Secondary Device", x + 5, y);
                             doc.setFontStyle(metaData.textStyle.normal);
-                            rliItem.SDItem.sort(function (a, b) {
+                            rliItem.SecondaryItem.sort(function (a, b) {
                                 return parseFloat(b.Monthly__Repayment) - parseFloat(a.Monthly__Repayment);
                             });
-                            rliItem.SDItem.forEach(function (sdItem, sdIdx) {
+                            rliItem.SecondaryItem.forEach(function (sdItem, sdIdx) {
                                 if (sdItem.Term != "" && sdItem.RemTerm == "") {
                                     if (Number(sdItem.Prepayment__Amount) > 0) {
                                         Column1 = sdItem.Accessory__Name + " (" + sdItem.Accessory__RRP__Inc__GST + " Incl. GST over " + sdItem.Term + ") \n\t[Adjusted Prepayment Amount $" + sdItem.Prepayment__Amount + "]";
