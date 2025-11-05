@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+>SATESHM: Created for SSJ on 070725</Comments
+><DestinationObjectName
+>VHA Get Est Dates Request IO</DestinationObjectName
+><Name
+>VHASSJAccStockChkMap</Name
+><SourceObjectName
+>VHASSJAccStockChkIIO</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Accessory</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Accessory</Name
+><ParentComponentMapName
+>Header_to_HeaderOnly</ParentComponentMapName
+><SourceComponentName
+>VHA Accessory Matrix BC</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Device Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OrderChannel</DestinationFieldName
+><SourceFieldExpression
+>IIf (GetProfileAttr(&quot;VHA User Type&quot;) = LookupValue(&quot;VHA_USER_TYPE&quot;,&quot;Care&quot;), &quot;Telesales&quot;, IIF (GetProfileAttr(&quot;VHA User Type&quot;) = LookupValue(&quot;VHA_USER_TYPE&quot;,&quot;Retail&quot;), &quot;CLinstore&quot; , &quot;&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OrderFunction</DestinationFieldName
+><SourceFieldExpression
+>&quot;Acquisition&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PostCode</DestinationFieldName
+><SourceFieldExpression
+>[&amp;PostCd]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SKU</DestinationFieldName
+><SourceFieldExpression
+>[Product Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ServiceId</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ServiceId]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>HeaderOnly</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Header_to_HeaderOnly</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Header</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>
