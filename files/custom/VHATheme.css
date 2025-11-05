@@ -1959,7 +1959,7 @@ End of Refine Address Pick applet*/
 .siebui-applet.siebui-active,
 .siebui-ide-canvas .siebui-odh-drag-candidate-hover,
 .siebui-ide-canvas .siebui-odh-drop-candidate-hover {
-   /* box-shadow: #d4d4d4 0 0 4px 0 !important;*/
+    box-shadow: #d4d4d4 0 0 4px 0 !important;
 }
 
 
@@ -2352,7 +2352,7 @@ div#SendTextFloaterText::before {
 .siebui-applet.siebui-active,
 .siebui-ide-canvas .siebui-odh-drag-candidate-hover,
 .siebui-ide-canvas .siebui-odh-drop-candidate-hover {
-    /*box-shadow: #fff 0 0 4px 0 !important;*/
+    box-shadow: #fff 0 0 4px 0 !important;
     
 }
 
@@ -7096,7 +7096,7 @@ input[aria-label="Manual Service Address"]
 }
 
 /*Saravanan J added to make CSS for imagine*/
-input[aria-readonly="true"], .siebui-ctrl-mvg[readonly="readonly"], .siebui-input-popup[readonly="readonly"], .mceGridField .siebui-ctrl-input~span .siebui-anchor-readonly{
+input[aria-readonly="true"], .siebui-ctrl-mvg[readonly="readonly"], .mceField>textarea, .siebui-input-popup[readonly="readonly"], .mceGridField .siebui-ctrl-input~span .siebui-anchor-readonly{
    background-color: #F4F4F4;
     /* display: inline-block; */
     /* float: left; */
@@ -7599,7 +7599,6 @@ button[title="Product and Service Types List Applet:OK"].appletButtonDis, .siebu
     color:var(--font-white);
     margin-bottom: var(--noPadding);
 }
-/*CLMNBA-2894  -  #LaunchButton:hover is removed from the below */
  .siebui-form .siebui-applet-buttons .siebui-ctrl-btn:hover, .siebui-form .siebui-applet-buttons .appletButton:hover,
  .siebui-form .mceField .siebui-ctrl-btn:hover, .siebui-form .mceField .appletButton:hover,  .siebui-list .siebui-applet-buttons .appletButton:hover, .siebui-popup-button button:hover, .siebui-btn-grp-search .appletButton:hover,
 .ui-dialog-buttonset button:hover, .siebui-form-buttons button:hover, .siebui-icon-showpopup:hover, .siebui-icon-selecthierarchy:hover, 
@@ -7610,7 +7609,7 @@ button[title="Product and Service Types List Applet:OK"].appletButtonDis, .siebu
 button[aria-label="Import Form Applet:Update Mapping"].appletButton:hover,
 button[title="Product and Service Types List Applet:OK"].appletButton:hover, .siebui-applet-button button:hover,
 .VHAJustContentStart button:hover, .siebui-icon-getchart:hover, .siebui-form .siebui-applet-header .siebui-ctrl-btn:hover,
-.siebui-applet-header .appletButton:hover, #CreateActivityButton:hover, .contactMarketingPreferences .miniBtnUIC a:hover,.ContactDetailParent .miniBtnUIC a:hover,
+.siebui-applet-header .appletButton:hover, #CreateActivityButton:hover, .contactMarketingPreferences .miniBtnUIC a:hover,.ContactDetailParent .miniBtnUIC a:hover, #LaunchButton:hover,
 #authButton:hover, #vha-img-ap2-Go-btn:hover,.vha-glbal-secnd-btns:hover,#vha-step3-can-btn:hover,#vha-step3-next:hover, .ContactDetailParent .miniBtnUIC a:hover,#FPCreditCheckBtn:hover, .ui-dialog .ui-dialog-content .AppletButtons .siebui-popup-action a:hover,
 button.pay-bill:hover, button.generate-payment:hover, button.view-invoices:hover,.btn-bg-blue-validate:hover, button[data-display="Coverage Verify"]:hover,button[aria-label="Rate Plan Details Form Applet:Back"]:hover{
     background-color: var(--btn-secondary-hover-bgcolor) ; 
@@ -7734,12 +7733,8 @@ button[data-display="Coverage Verify"]:focus,button[aria-label="Rate Plan Detail
 .siebui-form table td .mceLabel:has(span[id*='Notification_MSISDN']){
     text-align:right;
 }
-.siebui-form table td .mceField input[readonly="readOnly"],
-.siebui-ctrl-textarea[readonly="readonly"]{
-    background-color: #F0F2F5;
-    color: #666577 !important;
-    border-color: #E0E0E4 !important;
-	font-size: 16px;
+.siebui-form table td .mceField input[readonly="readOnly"]{
+    background-color: #F4F4F4;
 }
 
 td[colspan="2"]:has(div.mceField input[aria-label="Notification Email"]),
@@ -7804,16 +7799,13 @@ td:has(div.mceLabel span[id*="VHA_NBN_SLA_Plan_Label"]) + td{
     width:fit-content;
     float: right;
 }
-.siebui-form table td .mceField input{
+.siebui-form table td .mceField input, .siebui-form table td .mceField textarea{
     width:150px !important;
 	font-family: var(--font-famly);
-    font-size: var(--btn-font-style-large);
+    font-size: var(--btn-font-style-small);
 	padding: 8px 12px;
 	height:36px !important;
     background-color: #fff;
-}
-.siebui-form table td .mceField textarea{
-	 width:150px !important;
 }
 .siebui-form table td .mceField textarea[aria-labelledby="Script_Label_2"]{
     width:800px !important;
@@ -7972,8 +7964,7 @@ td:has(button[data-display="Validate and Add (Prepay)"]),td:has(button[data-disp
     background-color:transparent;
     border:none;    
 }
-.siebui-subview-navs div[title_automation="Third Level View Bar"] ul,
-.siebui-subview-navs div[title="Third Level View Bar"] ul{
+.siebui-subview-navs div[title_automation="Third Level View Bar"] ul{
     border-bottom : 1px solid var(--divider-color);    
 }
 select.siebui-nav-links{
@@ -8293,7 +8284,7 @@ div:has(a[title="Paused Session"]) div.siebui-applet{
 } 
 input[aria-readonly="true"], .siebui-ctrl-mvg[readonly="readonly"], .siebui-input-popup[readonly="readonly"], .mceGridField .siebui-ctrl-input~span .siebui-anchor-readonly {
 color:#002244;
-/*opacity:var(--btn-secondary-disabled-opacity);*/
+opacity:var(--btn-secondary-disabled-opacity);
 }
 .siebui-form table td .mceField:has(.siebui-icon-pick)>input{
 	padding-right: 32px!important;
@@ -8382,7 +8373,7 @@ td:has(div button[title="Authenticate Customer Form Applet:Validate"]) + td{
     display: none;
 }
 .siebui-form .mceField button{
-   /* margin-left:16px;*/
+    margin-left:16px;
 }
 div[title="Automatic Debit Form Applet"] td:has(.mceField button[aria-label="Automatic Debit Form Applet:Edit Account #"]){
     width: 35px;
@@ -8443,12 +8434,12 @@ input[aria-label="NetworkReadonlyResp"]{
 }
 
 /******HIDDING LOCATION ID*******/
-/*.mceLabel:has(span[id*="NBN_Location_Id_Search_Label"]){
+.mceLabel:has(span[id*="NBN_Location_Id_Search_Label"]){
 	display:none;
 }
 .mceField:has(input[aria-label="NBN Location Id Search"]){
     display:none;
-}*/
+}
 /******HIDDING LOCATION ID*******/
 .T2RCPNotifyAlarm1-supprlist-title{
     vertical-align: middle;
@@ -8479,21 +8470,17 @@ div#BarcodeButtons:has(span[title="test1b"]) ~ .vha-img-BarcodeButtons-line{
     background-color:#063B68;
 }*/
 /*********Ganesh Feb Release Changes************/
-div:has(a[title="Fixed Service Address Details"]) input[aria-label="Fixed Address"],
-div:has(a[title="Fixed Service Address Details"]) input[aria-label="Fixed Location Id"],
-div:has(a[title="Fixed Service Address Details"]) input[aria-label="Fixed Technology"]{
+div:has(a[title="NBN Service Address Details"]) input[aria-label="NBN Address"],
+div:has(a[title="NBN Service Address Details"]) input[aria-label="NBN Location Id"],
+div:has(a[title="NBN Service Address Details"]) input[aria-label="NBN Technology"]{
     width:450px !important;
 }
-div:has(a[title="Fixed Service Address Details"]) td:has(div.mceLabel span[id*="NBN_Address_Label"]){
+div:has(a[title="NBN Service Address Details"]) td:has(div.mceLabel span[id*="NBN_Address_Label"]){
     width:150px;
 }
-.siebui-form table td .mceField input[aria-label="Fixed Location Id/Address"]{
-    /*width: 550px !important;*/
-	/*CM-3161 changed the width */
-	width: 1000px !important;
+.siebui-form table td .mceField input[aria-label="NBN Location Id/Address"]{
+    width: 550px !important;
     min-width:180px;
-	background-color: #ffffff !important;
-    border: 0px !important;
 }
 .ui-jqgrid tr.selected-row td[aria-roledescription="Expand"],
 .ui-jqgrid tr.selected-row td[aria-roledescription="Info"]{
@@ -9147,7 +9134,7 @@ div[title-preserved="Siebel Web Call Center Home"] .AppletDiv4 .siebui-applet-ti
 /*Imagine--Retail Home page end*/ 
 .siebui-form table td .mceField input[aria-label="Connection Address"], .siebui-form table td .mceField input[aria-label="Address"],
 .siebui-form table td .mceField textarea[aria-label="Technology Description"],
-.siebui-form table td .mceField textarea[aria-label="Site Restriction"]/*santoshb for NBN changes*/
+.siebui-form table td .mceField textarea[aria-label="Site Restriction"] /*santoshb for NBN changes*/
 {
     width:440px !important;
 }
@@ -10319,30 +10306,12 @@ div[title="Home Page view of the CME Application"] td:has(input[aria-label="Your
 }
 button[aria-label= "Transfer Authorization Form:Activate"]{
 	margin-left: -16px !important;
-}	
-.direct-debit{
-    flex-wrap:wrap !important;   /*PKE000000123692 Added for PKE : INDIVAR -10/03/2025 */
 }
 /*End - CM-2016 retail home page*/
 
-/*Hari Start */
-p:has(span#vha-ret-authName-step6), p:has(span#vha-ret-authDob-step6){
-    display:inline;  
-    font-size: 16px;
-    font-family: arial;
-    color: #002244;
-}
-span#vha-ret-authName-step6, span#vha-ret-authDob-step6{
-    padding-left:16px;
-    font-style: normal;
-}
 
-/*Hari end*/
-/*Raj V Added for R1.2 Telescopic / Binocular search result links: Siebel CR */
-.vha_dashboard_drilldown, #drillBill_sal_Net_links{
-	display:none;
-}
-/*Raj V Added for R1.2 the defect number CM-3328 */
-.siebui-form .vha-img-contact-profile-form table td .mceField input[aria-labelledby*="IdType_Label"]{
-    border: 1px solid #A3A3AD!important;
-}
+/**hiding the SSJ applets*/
+/*.vha-scj-siebelapplet1, .vha-scj-siebelapplet2, .vha-scj-siebelapplet3{
+    display:none;
+}*/
+/**END hiding the SSJ applets*/
