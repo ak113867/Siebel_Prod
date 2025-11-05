@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+>Dinesh:15092025:Modified for egw mobility migration</Comments
+><DestinationObjectName
+>VF Internal Create Billing Account Billing Profile Request</DestinationObjectName
+><Name
+>External BA BillingProf to Internal BA BillingProf Mobility</Name
+><SourceObjectName
+>VF Create Billing Account Billing Profile</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>CUT Address</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>CUT Address_to_CUT Address</Name
+><ParentComponentMapName
+>VF Billing Account_to_VF Billing Account</ParentComponentMapName
+><SourceComponentName
+>CUT Address</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Building</DestinationFieldName
+><SourceFieldExpression
+>[Address Building]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Floor</DestinationFieldName
+><SourceFieldExpression
+>[Address Floor]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Floor Type</DestinationFieldName
+><SourceFieldExpression
+>[Address Floor Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Format</DestinationFieldName
+><SourceFieldExpression
+>[Address Format]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Street Type - AU</DestinationFieldName
+><SourceFieldExpression
+>[Address Street Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attention to</DestinationFieldName
+><SourceFieldExpression
+>[Attention to]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Country</DestinationFieldName
+><SourceFieldExpression
+>[Country]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>DPID</DestinationFieldName
+><SourceFieldExpression
+>[DPID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>District</DestinationFieldName
+><SourceFieldExpression
+>[District]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Freeform address line 1</DestinationFieldName
+><SourceFieldExpression
+>[Freeform address line 1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Freeform address line 2</DestinationFieldName
+><SourceFieldExpression
+>[Freeform address line 2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([DPID] IS NOT NULL, [DPID]+Left([Postal Code],4)+Left([City],4)+Left([Address Format],4)+Left([Address Street Type],3), Left([Postal Code],4)+Left([City],4)+Left([Address Format],4)+IIF([Address Format] = &quot;Street&quot; OR [Address Format] = &quot;Service&quot;,Left([Street Address],4)+Right([Street Address 2],2)+Right([Address Floor],2)+Left([Address Street Type],3), IIF([Address Format] = &quot;GPO Box&quot; OR [Address Format] = &quot;PO Box&quot;, Left([Street Address],18), IIF([Address Format] = &quot;Private Bag&quot; OR [Address Format] = &quot;Locked Bag&quot;, Left([Private Bag],18), IIF([Address Format] = &quot;Overseas&quot; OR [Address Format] = &quot;Rural&quot;, Right([Freeform address line 1],9)+Left([Freeform address line 2],9),&quot;&quot;)))))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POBox</DestinationFieldName
+><SourceFieldExpression
+>[POBox]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Private Bag</DestinationFieldName
+><SourceFieldExpression
+>[Private Bag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Private Bag Name</DestinationFieldName
+><SourceFieldExpression
+>[Private Bag Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Rural Delivery</DestinationFieldName
+><SourceFieldExpression
+>[Rural Delivery]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SSA Primary Field</DestinationFieldName
+><SourceFieldExpression
+>[SSA Primary Field]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>State</DestinationFieldName
+><SourceFieldExpression
+>[State]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Address</DestinationFieldName
+><SourceFieldExpression
+>[Street Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Address 2</DestinationFieldName
+><SourceFieldExpression
+>[Street Address 2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>XA: 16/09/2010 - To fix TD#3940 changed Target Field Name from &apos;City AU&apos; to &apos;VF Inbound Valid City AU&apos;</Comments
+><DestinationFieldName
+>VF Inbound Valid City AU</DestinationFieldName
+><SourceFieldExpression
+>[City]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>XA: 16/09/2010 - To fix TD#3940 changed Target Field Name from &apos;Postal Code&apos; to &apos;VF Inbound Valid Postal Code&apos;</Comments
+><DestinationFieldName
+>VF Inbound Valid Postal Code</DestinationFieldName
+><SourceFieldExpression
+>[Postal Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Validation Status</DestinationFieldName
+><SourceFieldExpression
+>[Validation Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;insert&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Com Invoice Profile</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Com Invoice Profile_to_Com Invoice Profile</Name
+><ParentComponentMapName
+>VF Billing Account_to_VF Billing Account</ParentComponentMapName
+><SourceComponentName
+>Com Invoice Profile</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+>BalajiM - Miami APM- 07/07/2022</Comments
+><DestinationFieldName
+>APM Token</DestinationFieldName
+><SourceFieldExpression
+>[APM Token]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>BalajiM - Miami APM- 07/07/2022</Comments
+><DestinationFieldName
+>APM Type</DestinationFieldName
+><SourceFieldExpression
+>[APM Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Accounting Type</DestinationFieldName
+><SourceFieldExpression
+>[Accounting Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bank Account Name</DestinationFieldName
+><SourceFieldExpression
+>[Bank Account Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bank Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Bank Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bank Branch</DestinationFieldName
+><SourceFieldExpression
+>[Bank Branch]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Charges Override</DestinationFieldName
+><SourceFieldExpression
+>[Bill Charges Override]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Charges Override Reason</DestinationFieldName
+><SourceFieldExpression
+>[Bill Charges Override Reason]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Format</DestinationFieldName
+><SourceFieldExpression
+>[Bill Format]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>BalajiM - Miami - 13/04/2022</Comments
+><DestinationFieldName
+>Credit Card First 6</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card First 6]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>BalajiM - Miami - 13/04/2022</Comments
+><DestinationFieldName
+>Credit Card Last 4</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card Last 4]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Name</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Number</DestinationFieldName
+><SourceFieldExpression
+>IIF(([Credit Card Number] IS NOT NULL AND LookupValue(&apos;VF_BLOWFISH_SWITCH&apos;, &apos;Y&apos;) = &quot;Y&quot;), InvokeServiceMethod(&quot;VF Damon Service&quot;,&quot;getDecryption&quot;,&quot;Channel=&quot;&quot;&quot;+[Service.Channel]+&quot;&quot;&quot;&quot;+&quot;,&quot;+&quot;Contents=&quot;&quot;&quot;+[Credit Card Number]+&quot;&quot;&quot;&quot;,&quot;Results&quot;), [Credit Card Number])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Type</DestinationFieldName
+><SourceFieldExpression
+>IIF([Credit Card Type] = &quot;MASTERCARD&quot;, LookupValue(&apos;VF_CC_TYPE&apos;, &apos;MasterCard&apos;), IIF([Credit Card Type] = &quot;DINERS&quot;, LookupValue(&apos;VF_CC_TYPE&apos;, &apos;Diners&apos;), [Credit Card Type]))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email</DestinationFieldName
+><SourceFieldExpression
+>[Email]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email Bill</DestinationFieldName
+><SourceFieldExpression
+>[Email Bill]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email Bill To</DestinationFieldName
+><SourceFieldExpression
+>[Email Bill To]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Expiration Month</DestinationFieldName
+><SourceFieldExpression
+>[Expiration Month]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Expiration Year</DestinationFieldName
+><SourceFieldExpression
+>[Expiration Year]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Include Call Details</DestinationFieldName
+><SourceFieldExpression
+>[Include Call Details]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>MSISDN For TXT</DestinationFieldName
+><SourceFieldExpression
+>[MSISDN For TXT]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>VF RT 11/01/2011 - Modified for R11.1 OLS3. If Channel has CSN Map Required, Query Customer Account Id method will be invoked.</Comments
+><DestinationFieldName
+>Master Account Id</DestinationFieldName
+><SourceFieldExpression
+>IIF((LookupValue(&apos;VF_SS_CHANNEL_CSN_MAP_TYPE&apos;, [Service.Channel])) = &quot;CSN Map Required&quot;, InvokeServiceMethod(&quot;VF SS Inbound Query Logic&quot;,&quot;QueryCustomerAccountId&quot;,&quot;AccountNumber= &quot;&quot;&quot;+  [Service.CustomerAccountId] + &quot;&quot;&quot;&quot;,&quot;CustomerAccountId&quot;), [Service.CustomerAccountId])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Media Type</DestinationFieldName
+><SourceFieldExpression
+>[Media Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Notification Method</DestinationFieldName
+><SourceFieldExpression
+>IIF([Email Bill] = &quot;N&quot; AND [Suppress Paper] = &quot;N&quot;, LookupValue(&apos;VF_NOTFCTN_TYPE&apos;,&apos;None&apos;), [Notification Method])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Paper Bill Reason Note</DestinationFieldName
+><SourceFieldExpression
+>[Paper Bill Reason Note]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Method</DestinationFieldName
+><SourceFieldExpression
+>[Payment Method]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Term</DestinationFieldName
+><SourceFieldExpression
+>[Payment Term]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Type</DestinationFieldName
+><SourceFieldExpression
+>[Payment Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Presentment</DestinationFieldName
+><SourceFieldExpression
+>[Presentment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Suppress Paper</DestinationFieldName
+><SourceFieldExpression
+>[Suppress Paper]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Detailed Data Usage</DestinationFieldName
+><SourceFieldExpression
+>[VF Detailed Data Usage]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Validity Status</DestinationFieldName
+><SourceFieldExpression
+>[Validity Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;insert&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Contact_VF Contact Hobby</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Contact Hobby_to_Contact Hobby</Name
+><ParentComponentMapName
+>Contact_to_Contact</ParentComponentMapName
+><SourceComponentName
+>Contact_VF Contact Hobby</SourceComponentName
+><SourceSearchSpecification
+>[Hobby Interests] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Hobby Interests</DestinationFieldName
+><SourceFieldExpression
+>[Hobby Interests]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;insert&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Contact_VF Contact Household Age</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Contact Household Age_to_Contact Household Age</Name
+><ParentComponentMapName
+>Contact_to_Contact</ParentComponentMapName
+><SourceComponentName
+>Contact_VF Contact Household Age</SourceComponentName
+><SourceSearchSpecification
+>[Household Age Range] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Household Age Range</DestinationFieldName
+><SourceFieldExpression
+>[Household Age Range]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;insert&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Contact_VF Contact Promotion Channel</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Contact Promotion Channel_to_Contact Promotion Channel</Name
+><ParentComponentMapName
+>Contact_to_Contact</ParentComponentMapName
+><SourceComponentName
+>Contact_VF Contact Promotion Channel</SourceComponentName
+><SourceSearchSpecification
+>[Send Promotions Via] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Send Promotions Via</DestinationFieldName
+><SourceFieldExpression
+>[Send Promotions Via]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;insert&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Contact</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Contact_to_Contact</Name
+><ParentComponentMapName
+>VF Billing Account_to_VF Billing Account</ParentComponentMapName
+><SourceComponentName
+>Contact</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Birth Date</DestinationFieldName
+><SourceFieldExpression
+>[Birth Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Cellular Phone #</DestinationFieldName
+><SourceFieldExpression
+>[Cellular Phone #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Contact Deceased Date</DestinationFieldName
+><SourceFieldExpression
+>[Contact Deceased Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Contact Preferred Name</DestinationFieldName
+><SourceFieldExpression
+>[Contact Preferred Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Contact Previous Last Name</DestinationFieldName
+><SourceFieldExpression
+>[Contact Previous Last Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email Address</DestinationFieldName
+><SourceFieldExpression
+>[Email Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Employer Name Free Text</DestinationFieldName
+><SourceFieldExpression
+>[Employer Name Free Text]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>First Name</DestinationFieldName
+><SourceFieldExpression
+>[First Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Home Phone #</DestinationFieldName
+><SourceFieldExpression
+>[Home Phone #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Household Grouping</DestinationFieldName
+><SourceFieldExpression
+>[Household Grouping]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;getDateTimeInMilliseconds&quot;,&quot;CurrentTimeStamp=&quot;&quot;&quot;+Timestamp()+&quot;&quot;&quot;&quot;,&quot;TimeInMilliseconds&quot;)+Left([First Name],4)+Left([Last Name],4)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Job Title</DestinationFieldName
+><SourceFieldExpression
+>[Job Title]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Last Name</DestinationFieldName
+><SourceFieldExpression
+>[Last Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>M/F</DestinationFieldName
+><SourceFieldExpression
+>[M/F]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>M/M</DestinationFieldName
+><SourceFieldExpression
+>[M/M]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Marital Status</DestinationFieldName
+><SourceFieldExpression
+>[Marital Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Middle Name</DestinationFieldName
+><SourceFieldExpression
+>[Middle Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Mobile Before</DestinationFieldName
+><SourceFieldExpression
+>[Mobile Before]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Number of Mobiles</DestinationFieldName
+><SourceFieldExpression
+>[Number of Mobiles]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Occupation</DestinationFieldName
+><SourceFieldExpression
+>[Occupation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Phone Usage</DestinationFieldName
+><SourceFieldExpression
+>[Phone Usage]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Previous Account Type</DestinationFieldName
+><SourceFieldExpression
+>[Previous Account Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Previous Prepay Type</DestinationFieldName
+><SourceFieldExpression
+>[Previous Prepay Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Previous Vodafone Number</DestinationFieldName
+><SourceFieldExpression
+>[Previous Vodafone Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SSA Primary Field</DestinationFieldName
+><SourceFieldExpression
+>[SSA Primary Field]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Send Promotions</DestinationFieldName
+><SourceFieldExpression
+>[Send Promotions]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Previous Employer Name</DestinationFieldName
+><SourceFieldExpression
+>[VF Previous Employer Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Residential Status</DestinationFieldName
+><SourceFieldExpression
+>[VF Residential Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Time in Current Employer</DestinationFieldName
+><SourceFieldExpression
+>[VF Time in Current Employer]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Visa Expiry Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Visa Expiry Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Visa Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Visa Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Work Phone #</DestinationFieldName
+><SourceFieldExpression
+>[Work Phone #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;insert&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Account</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Service_to_Account</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Service</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+>VF RT 11/01/2011 - Modified for R11.1 OLS3. If Channel has CSN Map Required, Query Customer Account Id method will be invoked.</Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>IIF((LookupValue(&apos;VF_SS_CHANNEL_CSN_MAP_TYPE&apos;, [Channel])) =&quot;CSN Map Required&quot;, InvokeServiceMethod(&quot;VF SS Inbound Query Logic&quot;,&quot;QueryCustomerAccountId&quot;,&quot;AccountNumber= &quot;&quot;&quot;+  [CustomerAccountId] + &quot;&quot;&quot;&quot;,&quot;CustomerAccountId&quot;), [CustomerAccountId])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;upsert&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Billing Account</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF Billing Account_to_VF Billing Account</Name
+><ParentComponentMapName
+>Service_to_Account</ParentComponentMapName
+><SourceComponentName
+>VF Billing Account</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Channel Type</DestinationFieldName
+><SourceFieldExpression
+>[Service.Channel]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;VF Date Time Utilities&quot;,&quot;getDateTimeInMilliseconds&quot;,&quot;CurrentTimeStamp=&quot;&quot;&quot;+Timestamp()+&quot;&quot;&quot;&quot;,&quot;TimeInMilliseconds&quot;)+[Service.CustomerAccountId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Parent Account Id</DestinationFieldName
+><SourceFieldExpression
+>[Parent Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Password</DestinationFieldName
+><SourceFieldExpression
+>[Password]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>[Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Bill Cycle Day</DestinationFieldName
+><SourceFieldExpression
+>[VF Bill Cycle Day]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Bill Cycle Id</DestinationFieldName
+><SourceFieldExpression
+>[VF Bill Cycle Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Marketing Marker</DestinationFieldName
+><SourceFieldExpression
+>[VF Marketing Marker]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Migrated Account Number</DestinationFieldName
+><SourceFieldExpression
+>[VF Migrated Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Migrated Account Start Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Migrated Account Start Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>&quot;insert&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF TechFundBANumber</DestinationFieldName
+><SourceFieldExpression
+>[VF TechFundBANumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Apple DEP</DestinationFieldName
+><SourceFieldExpression
+>[VF Apple DEP]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Apple DEP Oracle Onboarded</DestinationFieldName
+><SourceFieldExpression
+>[VF Apple DEP Oracle Onboarded]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>
