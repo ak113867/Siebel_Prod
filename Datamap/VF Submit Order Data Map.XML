@@ -3388,6 +3388,110 @@
 ><Comments
 ></Comments
 ><DestinationFieldName
+>Vision Contract Term Value</DestinationFieldName
+><SourceFieldExpression
+>&quot;12&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Orders.Billing Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Orders.Service Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Name</DestinationFieldName
+><SourceFieldExpression
+>[Street Road Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>State Territory Code</DestinationFieldName
+><SourceFieldExpression
+>[State Territory Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Country</DestinationFieldName
+><SourceFieldExpression
+>[Country]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Latitude</DestinationFieldName
+><SourceFieldExpression
+>[Latitude]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Longitude</DestinationFieldName
+><SourceFieldExpression
+>[Longitude]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Number</DestinationFieldName
+><SourceFieldExpression
+>[Street Road Number1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Type</DestinationFieldName
+><SourceFieldExpression
+>LookupValue(&apos;VHA_ADDRESS_STREETTYPE&apos;, [Street Road Type Code])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Number2</DestinationFieldName
+><SourceFieldExpression
+>[Street Road Number 2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Reference</DestinationFieldName
+><SourceFieldExpression
+>IIF([NBN Order Type] = &apos;Connect&apos; AND ([Order Sub function] IS NULL OR (([Order Sub function] = &apos;Change Location Across NW&apos; OR [Order Sub function] = &apos;Change Location Within NW&apos; OR [Order Sub function] = &apos;Change Technology Across NW&apos;) AND InStr([Access Technology], &quot;FTTBW&quot;) &gt; 0)),[Customer Reference Number],[Customer Reference Number2])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Type</DestinationFieldName
+><SourceFieldExpression
+>IIF ([VHA NBN Order Details.Access Technology] = &apos;TRANSACT-HFC&apos; , &apos;Layer3&apos;,&apos;Layer2&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
 >Access Seeker Contact Name</DestinationFieldName
 ><SourceFieldExpression
 >[Contact Full Name]</SourceFieldExpression
@@ -3535,110 +3639,6 @@
 >Suburb</DestinationFieldName
 ><SourceFieldExpression
 >[Locality Suburb Name]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Vision Contract Term Value</DestinationFieldName
-><SourceFieldExpression
->&quot;12&quot;</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Billing Account Number</DestinationFieldName
-><SourceFieldExpression
->[Orders.Billing Account Number]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Customer Account Number</DestinationFieldName
-><SourceFieldExpression
->[Orders.Service Account Number]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Street Name</DestinationFieldName
-><SourceFieldExpression
->[Street Road Name]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->State Territory Code</DestinationFieldName
-><SourceFieldExpression
->[State Territory Code]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Country</DestinationFieldName
-><SourceFieldExpression
->[Country]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Latitude</DestinationFieldName
-><SourceFieldExpression
->[Latitude]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Longitude</DestinationFieldName
-><SourceFieldExpression
->[Longitude]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Street Number</DestinationFieldName
-><SourceFieldExpression
->[Street Road Number1]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Street Type</DestinationFieldName
-><SourceFieldExpression
->LookupValue(&apos;VHA_ADDRESS_STREETTYPE&apos;, [Street Road Type Code])</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Street Number2</DestinationFieldName
-><SourceFieldExpression
->[Street Road Number 2]</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Customer Reference</DestinationFieldName
-><SourceFieldExpression
->IIF([NBN Order Type] = &apos;Connect&apos; AND ([Order Sub function] IS NULL OR (([Order Sub function] = &apos;Change Location Across NW&apos; OR [Order Sub function] = &apos;Change Location Within NW&apos; OR [Order Sub function] = &apos;Change Technology Across NW&apos;) AND InStr([Access Technology], &quot;FTTBW&quot;) &gt; 0)),[Customer Reference Number],[Customer Reference Number2])</SourceFieldExpression
-></EaiFieldMap
-><EaiFieldMap
-><Comments
-></Comments
-><DestinationFieldName
->Access Type</DestinationFieldName
-><SourceFieldExpression
->IIF ([VHA NBN Order Details.Access Technology] = &apos;TRANSACT-HFC&apos; , &apos;Layer3&apos;,&apos;Layer2&apos;)</SourceFieldExpression
 ></EaiFieldMap
 ></ListOfEaiFieldMap
 ></EaiComponentMap

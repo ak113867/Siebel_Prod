@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+>sindhuk:modified for GFAST</Comments
+><DestinationObjectName
+>VHA Notify Request Internal IO</DestinationObjectName
+><Name
+>VHA NBN Order MBB Map</Name
+><SourceObjectName
+>VHA Notify Order Request TD IO</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA ​NBN Order TD Entity BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Notes_Entity</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>NoteAttributes1</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Id</DestinationFieldName
+><SourceFieldExpression
+>[Notes1.NoteId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order Diagnostics BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Diagnostics</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>EntityRelationship</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>EntityType</DestinationFieldName
+><SourceFieldExpression
+>[EntityType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ID</DestinationFieldName
+><SourceFieldExpression
+>[ID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type1</DestinationFieldName
+><SourceFieldExpression
+>[Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ObjectId</DestinationFieldName
+><SourceFieldExpression
+>[ItemInvolvesTestAndDiagnostic.ObjectId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TestSpecifiedBy</DestinationFieldName
+><SourceFieldExpression
+>[ItemInvolvesTestAndDiagnostic.TestSpecifiedBy]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Version</DestinationFieldName
+><SourceFieldExpression
+>[ItemInvolvesTestAndDiagnostic.Version]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[ItemInvolvesTestAndDiagnostic.Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Result</DestinationFieldName
+><SourceFieldExpression
+>[ItemInvolvesTestAndDiagnostic.Result]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TestExecutionStartDate</DestinationFieldName
+><SourceFieldExpression
+>[ItemInvolvesTestAndDiagnostic.TestExecutionStartDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TestExecutionEndDate</DestinationFieldName
+><SourceFieldExpression
+>[ItemInvolvesTestAndDiagnostic.TestExecutionEndDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order TD Entity Attributes BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Entity Attributes</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Attribute</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Qualifier</DestinationFieldName
+><SourceFieldExpression
+>[Qualifier]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Type</DestinationFieldName
+><SourceFieldExpression
+>[Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute ValueType</DestinationFieldName
+><SourceFieldExpression
+>[ValueType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ID</DestinationFieldName
+><SourceFieldExpression
+>[Entity1.ID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Entity Category</DestinationFieldName
+><SourceFieldExpression
+>[Entity1.Category]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Entity Name</DestinationFieldName
+><SourceFieldExpression
+>[Entity1.Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Entity Type</DestinationFieldName
+><SourceFieldExpression
+>[Entity1.Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+>VIPULA : 28/05/2017 - Line Item update will be performed only for OrderCompleted notification and will be ensured to update when [Network Element Type] is available.</Comments
+><DestinationComponentName
+>VF Order Entry - Line Items Thin</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>LineItem</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>VHA Order Entry - Line Items</SourceComponentName
+><SourceSearchSpecification
+>[Interface Info.Interaction Action] = &quot;OrderCompleted&quot; AND ([VHA NBN Order Details.NBN Order Type] = &quot;Connect&quot;) AND [Network Element Type] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Network Element Type</DestinationFieldName
+><SourceFieldExpression
+>[Network Element Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Sub Type</DestinationFieldName
+><SourceFieldExpression
+>[Product Sub Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Sub Type Code</DestinationFieldName
+><SourceFieldExpression
+>[Product Sub Type Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Order Entry - Line Items</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>ListOfLIOneItem</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order Logistics Response BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Logistics</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>DeliveryInfo</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NBN Order Logistics Response&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Interaction Date</DestinationFieldName
+><SourceFieldExpression
+>[InteractionDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[InteractionStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Authority To Leave</DestinationFieldName
+><SourceFieldExpression
+>[AuthorityToLeave]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Tracking Id</DestinationFieldName
+><SourceFieldExpression
+>[TrackingId]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>NBN Order Info</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Completion Date</DestinationFieldName
+><SourceFieldExpression
+>[Completion Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Action</DestinationFieldName
+><SourceFieldExpression
+>[NBN Action]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>[NBN Location Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Notification Type</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property6]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Order Id</DestinationFieldName
+><SourceFieldExpression
+>[NBN Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Order Status</DestinationFieldName
+><SourceFieldExpression
+>[NBN Order Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Order Sub-Status</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property5]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Order Type</DestinationFieldName
+><SourceFieldExpression
+>[NBN Order Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Product Instance Id</DestinationFieldName
+><SourceFieldExpression
+>[NBN Product Instance Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Completion Date</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property7]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NBN Order Details&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Billing Account Num</DestinationFieldName
+><SourceFieldExpression
+>[VHA Billing Account Num]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Notes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>NBN Order Response History</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Interface Info</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>InfrastructurePlannedDate</DestinationFieldName
+><SourceFieldExpression
+>[VHA NBN Order Details.InfrastructurePlannedDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Interaction Date</DestinationFieldName
+><SourceFieldExpression
+>[Interaction Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>InteractionDateExpiry</DestinationFieldName
+><SourceFieldExpression
+>[VHA NBN Order Details.InteractionDateExpiry]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Notification Type</DestinationFieldName
+><SourceFieldExpression
+>[Interaction Action]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Type</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property4]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Planned Completion Date</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property7]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property3]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Sub Status</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property5]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;NBN Order Response History&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA Notify Notes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>NoteAttrib</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Notes Attributes</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Notes Id</DestinationFieldName
+><SourceFieldExpression
+>[VHA Notify Notes.Notes Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Notify Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order TD Notes BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Notes_First</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>NoteAttributes</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Id</DestinationFieldName
+><SourceFieldExpression
+>[Notes.NoteId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attribute Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Order Item XA</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Order Attributes</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Order Item XA</SourceComponentName
+><SourceSearchSpecification
+>[Name] = &quot;Port Id&quot; OR [Name] = &quot;NNI CVLAN Id&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Numeric Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Text Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order Diagnostics Attributes BC</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>DiaAttrib</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Entity</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Entity Category</DestinationFieldName
+><SourceFieldExpression
+>[Category]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>EntityType</DestinationFieldName
+><SourceFieldExpression
+>[Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Entity Type</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.EntityType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ID</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.ID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type1</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Value</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ObjectId</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.ObjectId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Result</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.Result]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Version</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.Version]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TestSpecifiedBy</DestinationFieldName
+><SourceFieldExpression
+>[InvolvesTestAndDiagnostic.TestSpecifiedBy]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;Property1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+>VIPULA : 28/05/2017 - Line Item update will be performed only for OrderCompleted notification and will be ensured to update when [Network Element Type] is available.</Comments
+><DestinationComponentName
+>VF Order Entry - Line Items Thin</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>LineItem_Modify</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>VHA Order Entry - Line Items</SourceComponentName
+><SourceSearchSpecification
+>[Interface Info.Interaction Action] = &quot;OrderCompleted&quot; AND ([VHA NBN Order Details.NBN Order Type] = &quot;Modify&quot;) AND [Network Element Type] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Action Code</DestinationFieldName
+><SourceFieldExpression
+>&quot;Update&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Network Element Type</DestinationFieldName
+><SourceFieldExpression
+>[Network Element Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Sub Type</DestinationFieldName
+><SourceFieldExpression
+>[Product Sub Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Sub Type Code</DestinationFieldName
+><SourceFieldExpression
+>[Product Sub Type Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property1</DisplayName
+><Name
+>Property1</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property2</DisplayName
+><Name
+>Property2</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property3</DisplayName
+><Name
+>Property3</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property4</DisplayName
+><Name
+>Property4</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property5</DisplayName
+><Name
+>Property5</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property6</DisplayName
+><Name
+>Property6</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property7</DisplayName
+><Name
+>Property7</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>Property8</DisplayName
+><Name
+>Property8</Name
+></EaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>
