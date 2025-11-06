@@ -1,0 +1,4615 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+>14082025- SG Added IC Map - EGW_SF_Order_Details for EGW Mobility</Comments
+><DestinationObjectName
+>Order Interface</DestinationObjectName
+><Name
+>VF Submit Order Data Map</Name
+><SourceObjectName
+>Internal Order Interface</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+>Thulsi: 28/12/2015 - Added SearchSpec for R16.1 MSOD</Comments
+><DestinationComponentName
+>FS Shipment</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>FS Shipment_to_FS Shipment</Name
+><ParentComponentMapName
+>Orders_to_Orders</ParentComponentMapName
+><SourceComponentName
+>FS Shipment</SourceComponentName
+><SourceSearchSpecification
+>(([Orders.Order Sub Type] = &quot;Fulfilment&quot;) OR (([Orders.Order Sub Type] = &quot;Modify&quot; OR [Orders.Order Sub Type] = &quot;Change Proposition&quot;) AND ([Orders.Fulfilment Order Number] IS NULL)))</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Ship Via</DestinationFieldName
+><SourceFieldExpression
+>[Ship Via]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Shipment Number</DestinationFieldName
+><SourceFieldExpression
+>[Shipment Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Address Format</DestinationFieldName
+><SourceFieldExpression
+>[VF Address Format]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>JS: Updated Source Expression for MSOD.</Comments
+><DestinationFieldName
+>Shipment Preference</DestinationFieldName
+><SourceFieldExpression
+>IIF([Shipment Preference] = &quot;1&quot;,&quot;Full&quot;,IIF([Shipment Preference] = &quot;2&quot;,&quot;Partial&quot;,&quot;&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Shipping Notification MSISDN</DestinationFieldName
+><SourceFieldExpression
+>[Shipping Notification MSISDN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Shipping Notification Method</DestinationFieldName
+><SourceFieldExpression
+>IIF([Shipping Notification Method] = &quot;Email&quot;,&quot;EMAIL&quot;,IIF([Shipping Notification Method] = &quot;TXT&quot;,&quot;SMS&quot;,IIF([Shipping Notification Method] = &quot;Email and TXT&quot;,&quot;BOTH&quot;,IIF([Shipping Notification Method] = &quot;None&quot;,&quot;NONE&quot;,[Shipping Notification Method]))))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Address Building</DestinationFieldName
+><SourceFieldExpression
+>[VF Address Building]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Address Floor</DestinationFieldName
+><SourceFieldExpression
+>[VF Address Floor]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Address Floor Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Address Floor Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Address Street Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Address Street Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Attention To</DestinationFieldName
+><SourceFieldExpression
+>[VF Attention To]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Billing Account Number</DestinationFieldName
+><SourceFieldExpression
+>[VF Billing Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Business Name</DestinationFieldName
+><SourceFieldExpression
+>[VF Business Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Company Name</DestinationFieldName
+><SourceFieldExpression
+>[VF Company Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Customer Name</DestinationFieldName
+><SourceFieldExpression
+>[VF Customer Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Customer Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Customer Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Email Address</DestinationFieldName
+><SourceFieldExpression
+>[VF Email Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Freeform address line 1</DestinationFieldName
+><SourceFieldExpression
+>[VF Freeform address line 1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Freeform address line 2</DestinationFieldName
+><SourceFieldExpression
+>[VF Freeform address line 2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF PO Box</DestinationFieldName
+><SourceFieldExpression
+>[VF PO Box]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Private Bag</DestinationFieldName
+><SourceFieldExpression
+>[VF Private Bag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Private Bag Name</DestinationFieldName
+><SourceFieldExpression
+>[VF Private Bag Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Rural Delivery</DestinationFieldName
+><SourceFieldExpression
+>[VF Rural Delivery]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Ship To Contact First Name</DestinationFieldName
+><SourceFieldExpression
+>[VF Ship To Contact First Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Ship To Contact Last Name</DestinationFieldName
+><SourceFieldExpression
+>[VF Ship To Contact Last Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Ship To Contact Title</DestinationFieldName
+><SourceFieldExpression
+>[VF Ship To Contact Title]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Shipment City</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment City]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Shipment Country</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment Country]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Shipment State</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment State]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Shipment Street #</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment Street #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Shipment Street Address</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment Street Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Shipment Zipcode</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment Zipcode]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Submission Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Submission Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Value Band</DestinationFieldName
+><SourceFieldExpression
+>[VF Value Band]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Added for ATOM</Comments
+><DestinationFieldName
+>VHA Secondary Device</DestinationFieldName
+><SourceFieldExpression
+>IIF([VHA Secondary Device Flag] IS NOT NULL,[VHA Secondary Device Flag],&quot;N&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Waybill Number</DestinationFieldName
+><SourceFieldExpression
+>[Waybill Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>[operation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Carrier Priority</DestinationFieldName
+><SourceFieldExpression
+>[Carrier Priority]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Primary Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Primary Order Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+>Lavanya Added for ATOM</Comments
+><DestinationComponentName
+>Order Item XA IMEI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>IMEI_to_Order Item XA IMEI</Name
+><ParentComponentMapName
+>Line Items_to_ServiceOrders</ParentComponentMapName
+><SourceComponentName
+>IMEI</SourceComponentName
+><SourceSearchSpecification
+>(([Orders.Order Sub Type] = &quot;Modify&quot; AND [Orders.VF Order Type TBUI] = &quot;Refund APP&quot;) AND  [Name] = &quot;IMEI&quot; AND [Text Value] IS NOT NULL)</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IMEI</DestinationFieldName
+><SourceFieldExpression
+>[Text Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>FBBLineItems</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Line Items_to_FBBLineItems</Name
+><ParentComponentMapName
+>Orders_to_ListOfFBBLineItems</ParentComponentMapName
+><SourceComponentName
+>Line Items</SourceComponentName
+><SourceSearchSpecification
+>([Service Type] = &quot;NBN&quot; OR [Service Type]=&quot;OPTICOM&quot; OR [Service Type]=&quot;VISION&quot;) AND (([VF Root Service Order Type] &lt;&gt; &quot;Modify&quot; AND [VF Root Service Order Type] &lt;&gt; &quot;Change Proposition&quot;) OR ([VF Action Code] &lt;&gt; &quot;Deleted&quot; AND ([VF Root Service Order Type] = &quot;Modify&quot; OR [VF Root Service Order Type] = &quot;Change Proposition&quot;)))</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Parent Order Item Id</DestinationFieldName
+><SourceFieldExpression
+>[Parent Order Item Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product</DestinationFieldName
+><SourceFieldExpression
+>[Product]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Id</DestinationFieldName
+><SourceFieldExpression
+>[Product Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Root Order Item Id</DestinationFieldName
+><SourceFieldExpression
+>[Root Order Item Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[Service Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Action Code</DestinationFieldName
+><SourceFieldExpression
+>IIF ([VF Root Service Order Type] = &apos;Connect&apos; AND [Network Element Type] = &quot;NTD&quot; AND [Service Id] &lt;&gt; &quot;&quot;, &quot;-&quot;, IIF ([VF Root Service Order Type] = &apos;Connect&apos; AND [Network Element Type] = &quot;UNI-DSL&quot; AND [Service Id] &lt;&gt; &quot;&quot;, &quot;Update&quot;, IIF ([VF Root Order Sub Function] = &quot;Change Location Disconnect&quot;, &quot;Delete&quot;, [VF Action Code])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Version</DestinationFieldName
+><SourceFieldExpression
+>IIF([VHA Root Serv Provider Ref] = &apos;VHA&apos;,IIF ([Product Sub Type Code] = &quot;Product Specification&quot;, LookupValue(&apos;VHA_NBN_PRODUCT_TEMPLATE&apos;, &quot;Version&quot; + &quot;|&quot; + [Network Element Type] + &quot;|&quot; + [VHA Root Access Technology]), &quot;1.0&quot;),IIF ([Product Sub Type Code] = &quot;Product Specification&quot;, LookupValue(&apos;VHA_NBN_PRODUCT_TEMPLATE&apos;, &quot;TPGVersion&quot; + &quot;|&quot; + [Network Element Type] + &quot;|&quot; + [VHA Root Access Technology]), &quot;1.0&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>[operation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Specification Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([VHA Root Serv Provider Ref] = &apos;VHA&apos;,IIF ([Product Sub Type Code] = &quot;Product Specification&quot;, LookupValue(&apos;VHA_NBN_PRODUCT_TEMPLATE&apos;, &quot;Name&quot; + &quot;|&quot; + [Network Element Type] + &quot;|&quot; + [VHA Root Access Technology]), [Network Element Type]),IIF ([Product Sub Type Code] = &quot;Product Specification&quot;, LookupValue(&apos;VHA_NBN_PRODUCT_TEMPLATE&apos;, &quot;TPGName&quot; + &quot;|&quot; + [Network Element Type] + &quot;|&quot; + [VHA Root Access Technology]), [Network Element Type]))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Sub Type</DestinationFieldName
+><SourceFieldExpression
+>[Product Sub Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Type</DestinationFieldName
+><SourceFieldExpression
+>[Product Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Sub Type Code</DestinationFieldName
+><SourceFieldExpression
+>[Product Sub Type Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Header Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Header Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Line Items</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Line Items_to_Line Items</Name
+><ParentComponentMapName
+>Orders_to_Orders</ParentComponentMapName
+><SourceComponentName
+>Line Items</SourceComponentName
+><SourceSearchSpecification
+>IIF([VF Root Order Sub Function] = &quot;Change Location Disconnect&quot;, ([Prepayment Type] &lt;&gt; &quot;Sale&quot; OR [Prepayment Type] IS NULL OR [Prepayment Type] = &quot;&quot;) AND ([Id] = [Root Order Item Id] OR ([Service Type] = &quot;NBN&quot; OR [Service Type] = &quot;Fixed MBB&quot; OR [Service Type] = &quot;Fixed NBN&quot;)), [Root Order Item Id] IS NOT NULL AND ([Prepayment Type] &lt;&gt; &quot;Sale&quot; OR [Prepayment Type] IS NULL OR [Prepayment Type] = &quot;&quot;))</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service End Date</DestinationFieldName
+><SourceFieldExpression
+>IIF([VF Siebel Product Type] = LookupValue(&apos;VF_PROD_TYPE&apos;, &apos;NBN Speed Add On&apos;), &quot;&quot;,[Service End Date])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Instance Flag</DestinationFieldName
+><SourceFieldExpression
+>[Service Instance Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service PIN</DestinationFieldName
+><SourceFieldExpression
+>[Service PIN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Start Date</DestinationFieldName
+><SourceFieldExpression
+>[Service Start Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[Service Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Sharing Action</DestinationFieldName
+><SourceFieldExpression
+>IIF([Sharing Lead MSISDN] IS NULL, [Conflict Id], IIF(([VF Service Order Sub Type] = &apos;Connect&apos; AND [Sharing Action] = &apos;Add Member&apos;), IIF([New MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Action]),IIF(([VF Service Order Sub Type] = &apos;Modify&apos; OR [VF Service Order Sub Type] = &apos;Change Proposition&apos;) AND [Sharing Action] = &apos;Add Member&apos;, IIF([MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Action]), IIF([VF Service Order Sub Type] = &apos;Change Proposition&apos; AND [Sharing Action] = &apos;Existing Member&apos;, &apos;Add Member&apos;, [Sharing Action]))))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Sharing Group Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([Sharing Lead MSISDN] IS NULL, [Conflict Id], IIF(([VF Service Order Sub Type] = &apos;Connect&apos; AND [Sharing Action] = &apos;Add Member&apos;), IIF([New MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Group Id]),IIF(([VF Service Order Sub Type] = &apos;Modify&apos; OR [VF Service Order Sub Type] = &apos;Change Proposition&apos;) AND [Sharing Action] = &apos;Add Member&apos;, IIF([MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Group Id]), [Sharing Group Id])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Sharing Lead MSISDN</DestinationFieldName
+><SourceFieldExpression
+>IIF([Sharing Lead MSISDN] IS NULL, [Conflict Id], IIF(([VF Service Order Sub Type] = &apos;Connect&apos; AND [Sharing Action] = &apos;Add Member&apos;), IIF([New MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Lead MSISDN]),IIF(([VF Service Order Sub Type] = &apos;Modify&apos; OR [VF Service Order Sub Type] = &apos;Change Proposition&apos;) AND [Sharing Action] = &apos;Add Member&apos;, IIF([MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Lead MSISDN]), [Sharing Lead MSISDN])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Sharing New Lead MSISDN</DestinationFieldName
+><SourceFieldExpression
+>IIF([Sharing Lead MSISDN] IS NULL, [Conflict Id], IIF(([VF Service Order Sub Type] = &apos;Connect&apos; AND [Sharing Action] = &apos;Add Member&apos;), IIF([New MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing New Lead MSISDN]),IIF(([VF Service Order Sub Type] = &apos;Modify&apos; OR [VF Service Order Sub Type] = &apos;Change Proposition&apos;) AND [Sharing Action] = &apos;Add Member&apos;, IIF([MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing New Lead MSISDN]), [Sharing New Lead MSISDN])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Sharing Type</DestinationFieldName
+><SourceFieldExpression
+>IIF([Sharing Lead MSISDN] IS NULL, [Conflict Id], IIF(([VF Service Order Sub Type] = &apos;Connect&apos; AND [Sharing Action] = &apos;Add Member&apos;), IIF([New MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Type]),IIF(([VF Service Order Sub Type] = &apos;Modify&apos; OR [VF Service Order Sub Type] = &apos;Change Proposition&apos;) AND [Sharing Action] = &apos;Add Member&apos;, IIF([MSISDN] = [Sharing Lead MSISDN], [Conflict Id], [Sharing Type]), [Sharing Type])))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Ship/Units</DestinationFieldName
+><SourceFieldExpression
+>[Ship/Units]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Siebel Only</DestinationFieldName
+><SourceFieldExpression
+>[Siebel Only]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Siebel Price</DestinationFieldName
+><SourceFieldExpression
+>[Siebel Price]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Kailash: 20/Aug/18 Added for HardCaps</Comments
+><DestinationFieldName
+>Special Rating List Type</DestinationFieldName
+><SourceFieldExpression
+>[Special Rating List Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Updated By</DestinationFieldName
+><SourceFieldExpression
+>[Updated By]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Action Code</DestinationFieldName
+><SourceFieldExpression
+>[VF Action Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Order Function</DestinationFieldName
+><SourceFieldExpression
+>[VF Order Function]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF PCRF Flag</DestinationFieldName
+><SourceFieldExpression
+>[VF PCRF Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Root Status</DestinationFieldName
+><SourceFieldExpression
+>[VF Root Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Service Order Sub Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Service Order Sub Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Siebel Product Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Siebel Product Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF WBI Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[VF WBI Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Delivery Date</DestinationFieldName
+><SourceFieldExpression
+>[VHA Delivery Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Est Shipment Date</DestinationFieldName
+><SourceFieldExpression
+>[VHA Est Shipment Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Root Waive Charges</DestinationFieldName
+><SourceFieldExpression
+>[VHA Root Waive Charges]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Stock Band</DestinationFieldName
+><SourceFieldExpression
+>[VHA Stock Band]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Waive Charges</DestinationFieldName
+><SourceFieldExpression
+>IIF(([Product Type] = &quot;Billing - MPP&quot; OR [Product Type] = &quot;Billing - GPP&quot;) AND [VF Root Service Order Type] = &quot;Decon/Con Transfer FROM&quot; AND [VHA Waive Charges] IS NOT NULL, [VHA Waive Charges], IIF([VHA Waive Charges] IS NOT NULL AND [Product Type]=&quot;Billing - APP&quot;, [VHA Waive Charges], (IIF(([Product Type] = &quot;Billing - GPP TradeInCredit&quot; OR [Product Type] = &quot;Billing - GPP TradeInBonus&quot;) AND [VF Root Service Order Type] = &quot;Decon/Con Transfer FROM&quot;,&quot;Y&quot;,(IIF([Product Type] = &quot;Billing - GPP TradeInCredit&quot; AND [VF Root Service Order Type] = &quot;Modify&quot; AND [VHA Waive Charges] IS NOT NULL AND [VF Action Code]=&quot;Deleted&quot;,[VHA Waive Charges],&quot;N&quot;))))))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>[operation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Id</DestinationFieldName
+><SourceFieldExpression
+>[Asset Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Integration Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([Product Type] = &quot;Billing - GPP TradeInCredit&quot; OR [Product Type] = &quot;Billing - GPP TradeInBonus&quot;,[Asset Internal Integration Id],[Asset Integration Id])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Internal Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Asset Internal Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Base Price</DestinationFieldName
+><SourceFieldExpression
+>[Base Price]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Created By</DestinationFieldName
+><SourceFieldExpression
+>[Created By]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Description</DestinationFieldName
+><SourceFieldExpression
+>[Description]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>17022025:Soumalya:Added new mapping for VHA Sequence for MSP R2.0</Comments
+><DestinationFieldName
+>VHA Sequence</DestinationFieldName
+><SourceFieldExpression
+>[VHAMSPSequenceCalc]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>CM-3534:Added new field for BRMPackage mapping at line item level</Comments
+><DestinationFieldName
+>VHA BRM Package</DestinationFieldName
+><SourceFieldExpression
+>[VHA BRM Package]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Display Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[Display Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Installed Asset Name</DestinationFieldName
+><SourceFieldExpression
+>[Installed Asset Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[Integration Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>MSISDN</DestinationFieldName
+><SourceFieldExpression
+>[MSISDN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>New MSISDN</DestinationFieldName
+><SourceFieldExpression
+>[New MSISDN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Header Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Header Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Override Amount</DestinationFieldName
+><SourceFieldExpression
+>[Override Amount]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Override Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[Override Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Parent Order Item Id</DestinationFieldName
+><SourceFieldExpression
+>[Parent Order Item Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product</DestinationFieldName
+><SourceFieldExpression
+>[Product]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Id</DestinationFieldName
+><SourceFieldExpression
+>[Product Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Type</DestinationFieldName
+><SourceFieldExpression
+>[Product Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Related Asset Integration Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([Product Type] = &quot;Billing - GPP TradeInCredit&quot; OR [Product Type] = &quot;Billing - GPP TradeInBonus&quot;,[Asset Internal Integration Id],[Related Asset Integration Id])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Related Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Related Service Order]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Root Order Item Id</DestinationFieldName
+><SourceFieldExpression
+>[Root Order Item Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SAM Id</DestinationFieldName
+><SourceFieldExpression
+>[SAM Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava 6/9/25: Created for Tallyman to PCC -1092</Comments
+><DestinationFieldName
+>VF Rate Plan Calc</DestinationFieldName
+><SourceFieldExpression
+>IIF([Parent Order Item Id] IS NULL, InvokeServiceMethod(&quot;VF Inbound MSISDN Mapping&quot;,&quot;GetRatePlan&quot;,&quot;ParOrdItemId=&quot;&quot;&quot;+ [Id] + &quot;&quot;&quot;&quot;,&quot;RatePlanName&quot;),&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Business First Identifier</DestinationFieldName
+><SourceFieldExpression
+>[Business First Identifier]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>TechFund Order Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>TECH_FUND_Order_Details</Name
+><ParentComponentMapName
+>Line Items_to_ServiceOrders</ParentComponentMapName
+><SourceComponentName
+>TechFundOrderInfo</SourceComponentName
+><SourceSearchSpecification
+>[VF Tech Fund Account Number] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ReasonForRequest</DestinationFieldName
+><SourceFieldExpression
+>[Reason For Request]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TechFundBAStatus</DestinationFieldName
+><SourceFieldExpression
+>[VF Tech Fund BA Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreatedByLogin</DestinationFieldName
+><SourceFieldExpression
+>[Created By Login]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PrimaryBAId</DestinationFieldName
+><SourceFieldExpression
+>[Linked Billing Account]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TechFundBAId</DestinationFieldName
+><SourceFieldExpression
+>[VF Tech Fund Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>InvoiceDescription</DestinationFieldName
+><SourceFieldExpression
+>[VF Invoice Description]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TFPlanAmount</DestinationFieldName
+><SourceFieldExpression
+>IIF ([VF Prorata TF Plan Amt] IS NOT NULL,[VF Prorata TF Plan Amt],[VF TF Plan Amount])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionNotes</DestinationFieldName
+><SourceFieldExpression
+>[VF Transaction Notes]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>GSTIndicator</DestinationFieldName
+><SourceFieldExpression
+>&quot;Exclusive&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ResourceType</DestinationFieldName
+><SourceFieldExpression
+>&quot;Dollar Bundle&quot;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>SF Order Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>EGW_SF_Order_Details</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>EGWSFOrderInfo</SourceComponentName
+><SourceSearchSpecification
+>[SFAccountNumber] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Country</DestinationFieldName
+><SourceFieldExpression
+>[Country]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Post Code</DestinationFieldName
+><SourceFieldExpression
+>[Postal Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Name</DestinationFieldName
+><SourceFieldExpression
+>[Street Address 2]+&quot; &quot;+[Street Address]+&quot; &quot;+[Address Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Tech Fund BAN</DestinationFieldName
+><SourceFieldExpression
+>[Tech Fund BAN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>City</DestinationFieldName
+><SourceFieldExpression
+>[City]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>State</DestinationFieldName
+><SourceFieldExpression
+>[State]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AccountType</DestinationFieldName
+><SourceFieldExpression
+>IIf ([Tech Fund BAN] IS NOT NULL,&quot;Hardware&quot;,[Account Type Code])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>DeliveryMethod</DestinationFieldName
+><SourceFieldExpression
+>[VHA Delivery Method]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>EmailAddress</DestinationFieldName
+><SourceFieldExpression
+>[Email Bill To]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AppleDEPOracleOnboareded</DestinationFieldName
+><SourceFieldExpression
+>[Apple DEP Oracle Onboarded]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentTerm</DestinationFieldName
+><SourceFieldExpression
+>[VHA Payment Term]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentType</DestinationFieldName
+><SourceFieldExpression
+>[VHA Payment Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Cycle</DestinationFieldName
+><SourceFieldExpression
+>[Bill Cycle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>BillingAccountName</DestinationFieldName
+><SourceFieldExpression
+>[Billing Account Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Apple DEP</DestinationFieldName
+><SourceFieldExpression
+>[Apple DEP]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>BillingActiveFlag</DestinationFieldName
+><SourceFieldExpression
+>IIf ([Billing Account Status] = LookupValue(&quot;VF_BILL_ACCT_STATUS&quot;, &quot;Active&quot;), &quot;Y&quot;, &quot;N&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SF Customer Account Number</DestinationFieldName
+><SourceFieldExpression
+>[SFAccountNumber]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>ServiceOrders</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Line Items_to_ServiceOrders</Name
+><ParentComponentMapName
+>Orders_to_Orders</ParentComponentMapName
+><SourceComponentName
+>Line Items</SourceComponentName
+><SourceSearchSpecification
+>[Parent Order Item Id] IS NULL AND ([VF Service Order Sub Type] &lt;&gt; &quot;Change Proposition&quot; OR ([VF Service Order Sub Type] = &quot;Change Proposition&quot; AND [VF Action Code] &lt;&gt; &quot;Deleted&quot;))</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Marketing Marker</DestinationFieldName
+><SourceFieldExpression
+>[VF Marketing Marker]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Order Function</DestinationFieldName
+><SourceFieldExpression
+>[VF Order Function]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Order Sub Function</DestinationFieldName
+><SourceFieldExpression
+>IIF([VF Order Sub Function] = LookupValue(&apos;VHA_ORDER_SUB_FUNCTION&apos;, &apos;Fibre Upgrade Disconnect&apos;) OR [VF Order Sub Function] = LookupValue(&apos;VHA_ORDER_SUB_FUNCTION&apos;, &apos;Fibre Upgrade SIM Swap&apos;),&quot;&quot;,[VF Order Sub Function])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Root Status</DestinationFieldName
+><SourceFieldExpression
+>[VF Root Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Service Order Sub Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Service Order Sub Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Siebel Product Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Siebel Product Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>NIRMAL 07/09/2016 Edited Source exoression for PKE000000039818 // Thulsi: 04JAN2016 - Added Source Expr for R16.1 MSOD</Comments
+><DestinationFieldName
+>VF WBI Reason Code</DestinationFieldName
+><SourceFieldExpression
+>IIF([Orders.Order Sub Type] &lt;&gt; &quot;Fulfilment&quot; AND [VF WBI Reason Code] = &quot;Brightpoint&quot;,&quot;&quot;,[VF WBI Reason Code])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Bypass Provisioning</DestinationFieldName
+><SourceFieldExpression
+>[VHA Bypass Provisioning]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Added for ATOM</Comments
+><DestinationFieldName
+>VHA SS Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[VHA SS Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>[operation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Technology</DestinationFieldName
+><SourceFieldExpression
+>IIF([Access Technology] IS NULL, [Conflict Id],IIF([VF Network Identifier] = &quot;OPTICOMM&quot;,EAILookUpExternal(&quot;OPTICOMM_ACCESS_TECHNOLOGY&quot;,[Access Technology]),[Access Technology]))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Action Code</DestinationFieldName
+><SourceFieldExpression
+>[Action Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AssociateRootOrderItemId</DestinationFieldName
+><SourceFieldExpression
+>[AssociateRootOrderItemId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Display Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[Display Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[Integration Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Main Email Address</DestinationFieldName
+><SourceFieldExpression
+>[Main Email Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Related Service Order</DestinationFieldName
+><SourceFieldExpression
+>[Related Service Order]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Root Order Item Id</DestinationFieldName
+><SourceFieldExpression
+>[Root Order Item Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Added for ATOM</Comments
+><DestinationFieldName
+>SS Disconnect Flag</DestinationFieldName
+><SourceFieldExpression
+>IIF([VHA SS Disconnect Flag] IS NOT NULL,[VHA SS Disconnect Flag],&quot;N&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Added for ATOM</Comments
+><DestinationFieldName
+>Secondary Subs Flag</DestinationFieldName
+><SourceFieldExpression
+>IIF([VHA Secondary Subs Flag] IS NOT NULL,[VHA Secondary Subs Flag],&quot;N&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Account Type</DestinationFieldName
+><SourceFieldExpression
+>[Service Account Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Priority</DestinationFieldName
+><SourceFieldExpression
+>[Service Order Priority]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Position Indicator</DestinationFieldName
+><SourceFieldExpression
+>IIF([Service Position Indicator] = &quot;0&quot;,&quot;FIRST&quot;,IIF([Service Position Indicator]=&quot;1&quot;,&quot;LAST&quot;,&quot;&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service User</DestinationFieldName
+><SourceFieldExpression
+>[Service User]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Shipping Priority</DestinationFieldName
+><SourceFieldExpression
+>&quot;&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Kailash: 20/Aug/18 Added for HardCaps</Comments
+><DestinationFieldName
+>Special Rating List Type</DestinationFieldName
+><SourceFieldExpression
+>[Special Rating List Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Customer Segment</DestinationFieldName
+><SourceFieldExpression
+>[VF Customer Segment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Customer Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Customer Type]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>ListOfFBBLineItems</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Orders_to_ListOfFBBLineItems</Name
+><ParentComponentMapName
+>Orders_to_Orders</ParentComponentMapName
+><SourceComponentName
+>Orders</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>ListofPrepayments</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Orders_to_ListofPrepayments</Name
+><ParentComponentMapName
+>Orders_to_Orders</ParentComponentMapName
+><SourceComponentName
+>Orders</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Orders</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Orders_to_Orders</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Orders</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TF Account Number</DestinationFieldName
+><SourceFieldExpression
+>[TF Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Approval Id</DestinationFieldName
+><SourceFieldExpression
+>[Approval Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Payment Method</DestinationFieldName
+><SourceFieldExpression
+>[Bill Payment Method]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill To Account Id</DestinationFieldName
+><SourceFieldExpression
+>[Bill To Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Effective DateTime</DestinationFieldName
+><SourceFieldExpression
+>[Billing Effective DateTime]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Cart Id</DestinationFieldName
+><SourceFieldExpression
+>[Cart Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Account Id</DestinationFieldName
+><SourceFieldExpression
+>[Customer Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Bill Cycle</DestinationFieldName
+><SourceFieldExpression
+>[Customer Bill Cycle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Display Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[Display Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Effective DateTime</DestinationFieldName
+><SourceFieldExpression
+>[Effective DateTime]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>VHA Muthushankari 11122017 - Added for R18.1 FTTC</Comments
+><DestinationFieldName
+>Organization</DestinationFieldName
+><SourceFieldExpression
+>[Primary Organization]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[Integration Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Migrated Account Flag</DestinationFieldName
+><SourceFieldExpression
+>[Migrated Account Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>New Billing Account Id</DestinationFieldName
+><SourceFieldExpression
+>[New Billing Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Old Billing Account Id</DestinationFieldName
+><SourceFieldExpression
+>[Old Billing Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Number</DestinationFieldName
+><SourceFieldExpression
+>[Order Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact Email Address Validated</DestinationFieldName
+><SourceFieldExpression
+>IIF((([&amp;CustType] = &quot;Sole Trader&quot; OR [&amp;CustType] = &quot;Person&quot; OR [&amp;CustType] = &quot;Local Registered Company&quot;) AND [Primary Organization] &lt;&gt; &quot;Kogan&quot; AND [&amp;FulFilOrder] IS NULL),IIF([&amp;ConEmlVal] = &quot;Y&quot;,&quot;true&quot;,&quot;false&quot;),&quot;true&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Phone Validated</DestinationFieldName
+><SourceFieldExpression
+>IIF((([&amp;CustType] = &quot;Sole Trader&quot; OR [&amp;CustType] = &quot;Person&quot; OR [&amp;CustType] = &quot;Local Registered Company&quot;) AND [Primary Organization] &lt;&gt; &quot;Kogan&quot; AND [&amp;FulFilOrder] IS NULL),IIF([&amp;ConPhoneVal] = &quot;Y&quot;,&quot;true&quot;,IIF(([&amp;ConPhone] = LookupValue(&quot;VHA_PREPAY_NUM_SKIP&quot;, &quot;PREPAY_NUM_SKIP&quot;)) AND [Bill Payment Method] =&quot;Prepay&quot;,&quot;true&quot;,&quot;false&quot;)),&quot;true&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava : Created for Tallyman to PCC</Comments
+><DestinationFieldName
+>Sales Channel</DestinationFieldName
+><SourceFieldExpression
+>[Sales Channel]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA App Reg Flag</DestinationFieldName
+><SourceFieldExpression
+>IIF((([&amp;CustType] = &quot;Sole Trader&quot; OR [&amp;CustType] = &quot;Person&quot; OR [&amp;CustType] = &quot;Local Registered Company&quot;) AND [Primary Organization] &lt;&gt; &quot;Kogan&quot; AND [&amp;FulFilOrder] IS NULL),IIF(([&amp;ConDigUName] IS NOT NULL OR [VF Order Channel] = &quot;EG Portal&quot;),&quot;false&quot;,IIF(LookupValue(&quot;VF_CR_ENABLE_FLAG&quot;, &quot;SendAppInvite&quot;) = &quot;Y&quot;,&quot;true&quot;,&quot;false&quot;)),&quot;false&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Verification URL</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConURL]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Order Acct Contact Id</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA EmailShortId</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;ConEmlVal] = &quot;Y&quot;,&quot;&quot;,[&amp;ConEmlShortId])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA PhoneShortId</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;ConPhoneVal] = &quot;Y&quot;,&quot;&quot;,[&amp;ConPhShortId])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact Email Address</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConMail]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Primary Contact Number</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConPhone]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact First Name</DestinationFieldName
+><SourceFieldExpression
+>[&amp;ConFName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Priority</DestinationFieldName
+><SourceFieldExpression
+>[Order Priority]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Sub Type</DestinationFieldName
+><SourceFieldExpression
+>[Order Sub Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Requested Date</DestinationFieldName
+><SourceFieldExpression
+>[Requested Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Shipping Priority</DestinationFieldName
+><SourceFieldExpression
+>&quot;&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Target Service Provider</DestinationFieldName
+><SourceFieldExpression
+>[Target Service Provider]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Bulk Flag</DestinationFieldName
+><SourceFieldExpression
+>IIF([VF Bulk Flag] IS NOT NULL,[VF Bulk Flag],[&amp;BulkFlag])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF External Reference Id</DestinationFieldName
+><SourceFieldExpression
+>[VF External Reference Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Intended Usage</DestinationFieldName
+><SourceFieldExpression
+>[VF Intended Usage]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Linkage Id</DestinationFieldName
+><SourceFieldExpression
+>[Linkage Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Order Channel</DestinationFieldName
+><SourceFieldExpression
+>[VF Order Channel]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Order Function</DestinationFieldName
+><SourceFieldExpression
+>[VF Order Function]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Sales Person</DestinationFieldName
+><SourceFieldExpression
+>[VF Sales Person]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Service Provider</DestinationFieldName
+><SourceFieldExpression
+>[VF Service Provider]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Tools of Trade</DestinationFieldName
+><SourceFieldExpression
+>[VF Tools of Trade]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>WBI Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[WBI Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>[operation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>IIF([Id] = &quot;2-1IS7OLW&quot;,&quot;&quot;,[ARII]) for testing</Comments
+><DestinationFieldName
+>ARII</DestinationFieldName
+><SourceFieldExpression
+>[ARII]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Prepayments</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Prepayments</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Prepayments</SourceComponentName
+><SourceSearchSpecification
+>[Payment Order Id] IS NOT NULL AND [Prepayment Status] = LookupValue(&quot;VHA_PREPAYMENT_STATUS&quot;,&quot;Success&quot;)</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PrepaymentType</DestinationFieldName
+><SourceFieldExpression
+>IIf([Prepayment Option Type]=&quot;Y&quot;,&quot;Involuntary&quot;,&quot;Voluntary&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionGrpID</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[TransactionGrpID],[VHA TPP TransactionGrp ID])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionRefrerenceNumber</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[ReceiptNumber],[Transaction Reference Number])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SalesChannel</DestinationFieldName
+><SourceFieldExpression
+>[VHA Order Sales Channel Description]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Version</DestinationFieldName
+><SourceFieldExpression
+>[Version]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>InternalReferenceId</DestinationFieldName
+><SourceFieldExpression
+>[InternalReferenceId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>BillingAccountId</DestinationFieldName
+><SourceFieldExpression
+>[Billing Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CCFirst6Digits</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[First6Digits],[VHA CC First 6])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CCLast4Digits</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[Last4Digits],[VHA CC Last 4])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CardNumber</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[PaymentToken],[VHA CC Token Number])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CardType</DestinationFieldName
+><SourceFieldExpression
+>IIf([PaymentStatus] = &quot;Approved&quot;,[CardType],[VHA CC Type])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>DealerCode</DestinationFieldName
+><SourceFieldExpression
+>[VHA Dealer Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ExpiryDate</DestinationFieldName
+><SourceFieldExpression
+>IIf([PaymentStatus] = &quot;Approved&quot;,[ExpiryDate],[VHA CC Expiry Date])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>FailureReason</DestinationFieldName
+><SourceFieldExpression
+>[VHA Failure Reason]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LegacyID</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[TransactionReference],[VHA TPP Legacy ID])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PrepaymentAmount</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[PaymentAmount],[PP Amount Paid Upfront])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PrepaymentAmountIncSurcharge</DestinationFieldName
+><SourceFieldExpression
+>[Total Prepayment Amount Inc Surcharge]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PrepaymentClientId</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[ChannelId],LookupValue(&quot;VF_PCI_INIT_SETTINGS&quot;,&quot;VHAAuthorizeAndSettleOpenUI&quot;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ResponseCode</DestinationFieldName
+><SourceFieldExpression
+>IIf([&amp;IsDynamicPayment]=&quot;Y&quot;,[PaymentStatus],[Prepayment Response Code])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ServiceOrderId</DestinationFieldName
+><SourceFieldExpression
+>[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsDynamicPayment</DestinationFieldName
+><SourceFieldExpression
+>[&amp;IsDynamicPayment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionCreatedDate</DestinationFieldName
+><SourceFieldExpression
+>[TransactionCreatedDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AuthenticationStatus</DestinationFieldName
+><SourceFieldExpression
+>[AuthenticationStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CardEnrolled</DestinationFieldName
+><SourceFieldExpression
+>[CardEnrolled]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>DeviceDataCapturedFlag</DestinationFieldName
+><SourceFieldExpression
+>[DeviceDataCapturedFlag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LiabilityShiftPossible</DestinationFieldName
+><SourceFieldExpression
+>[LiabilityShiftPossible]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LiabilityShifted</DestinationFieldName
+><SourceFieldExpression
+>[LiabilityShifted]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ParesStatus</DestinationFieldName
+><SourceFieldExpression
+>[ParesStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentToken</DestinationFieldName
+><SourceFieldExpression
+>[PaymentToken]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentMethodType</DestinationFieldName
+><SourceFieldExpression
+>[PaymentMethodType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>RiskScore</DestinationFieldName
+><SourceFieldExpression
+>[RiskScore]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionStatus</DestinationFieldName
+><SourceFieldExpression
+>[TransactionStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionStatusReason</DestinationFieldName
+><SourceFieldExpression
+>[TransactionStatusReason]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TotalAPPPrepayment</DestinationFieldName
+><SourceFieldExpression
+>[Total Accessory PP Amount Paid Upfront]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TotalAccPPAmount</DestinationFieldName
+><SourceFieldExpression
+>[Total Accessory PP Amount Paid Upfront]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TotalDevicePPAmount</DestinationFieldName
+><SourceFieldExpression
+>[Total Device PP Amount Paid Upfront]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TotalGPPPrepayment</DestinationFieldName
+><SourceFieldExpression
+>[Total Device PP Amount Paid Upfront]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF IMSI - EAI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF IMSI - EAI_to_VF IMSI - EAI</Name
+><ParentComponentMapName
+>Line Items_to_Line Items</ParentComponentMapName
+><SourceComponentName
+>VF IMSI - EAI</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Number</DestinationFieldName
+><SourceFieldExpression
+>[Asset Number]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF New IMSI - EAI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF New IMSI - EAI_to_VF New IMSI - EAI</Name
+><ParentComponentMapName
+>Line Items_to_Line Items</ParentComponentMapName
+><SourceComponentName
+>VF New IMSI - EAI</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Number</DestinationFieldName
+><SourceFieldExpression
+>[Asset Number]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF New SIM - EAI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF New SIM - EAI_to_VF New SIM - EAI</Name
+><ParentComponentMapName
+>Line Items_to_Line Items</ParentComponentMapName
+><SourceComponentName
+>VF New SIM - EAI</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Number</DestinationFieldName
+><SourceFieldExpression
+>[Asset Number]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF New SIM Details - EAI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF New SIM Details - EAI_to_VF New SIM Details - EAI</Name
+><ParentComponentMapName
+>VF New SIM - EAI_to_VF New SIM - EAI</ParentComponentMapName
+><SourceComponentName
+>VF New SIM Details - EAI</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF SIM - EAI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF SIM - EAI_to_VF SIM - EAI</Name
+><ParentComponentMapName
+>Line Items_to_Line Items</ParentComponentMapName
+><SourceComponentName
+>VF SIM - EAI</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Asset Number</DestinationFieldName
+><SourceFieldExpression
+>[Asset Number]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF SIM Details - EAI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF SIM Details - EAI_to_VF SIM Details - EAI</Name
+><ParentComponentMapName
+>VF SIM - EAI_to_VF SIM - EAI</ParentComponentMapName
+><SourceComponentName
+>VF SIM Details - EAI</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF UniSIM Additional Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF UniSIM Additional Details_to_VF UniSIM Additional Details</Name
+><ParentComponentMapName
+>VF UniSIM Additional Details_to_VF UniSIM Additional Parent Details</ParentComponentMapName
+><SourceComponentName
+>VF UniSIM Additional Details</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Field Name</DestinationFieldName
+><SourceFieldExpression
+>[Field Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Calc Value</DestinationFieldName
+><SourceFieldExpression
+>[VF Calc Value]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF UniSIM Additional Parent Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF UniSIM Additional Details_to_VF UniSIM Additional Parent Details</Name
+><ParentComponentMapName
+>VF UniSIM Details_to_VF UniSIM Details</ParentComponentMapName
+><SourceComponentName
+>VF UniSIM Details Parent</SourceComponentName
+><SourceSearchSpecification
+>[VF Parent Id] IS NULL AND [Type] &lt;&gt; &quot;UniSIM Details&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>[Type]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF UniSIM Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF UniSIM Details_to_VF UniSIM Details</Name
+><ParentComponentMapName
+>Orders_to_Orders</ParentComponentMapName
+><SourceComponentName
+>VF UniSIM Details</SourceComponentName
+><SourceSearchSpecification
+>[Type] = &quot;UniSIM Details&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Password</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.Password],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Price Point</DestinationFieldName
+><SourceFieldExpression
+>[Price Point]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Type</DestinationFieldName
+><SourceFieldExpression
+>[Service Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Topup Profile</DestinationFieldName
+><SourceFieldExpression
+>[Topup Profile]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UPC</DestinationFieldName
+><SourceFieldExpression
+>[UPC]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Address State</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.VF Address State],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact Birth Date</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.VF Contact Birth Date],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact Email Address</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.VF Contact Email Address],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact First Name</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.VF Contact First Name],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact Gender</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.VF Contact Gender],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact Last Name</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.VF Contact Last Name],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Contact Title</DestinationFieldName
+><SourceFieldExpression
+>IIF([Activation Key] IS NOT NULL,[Orders.VF Contact Title],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ATR Reason Code</DestinationFieldName
+><SourceFieldExpression
+>[ATR Reason Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Activation Key</DestinationFieldName
+><SourceFieldExpression
+>[Activation Key]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Blackhawk Integrated</DestinationFieldName
+><SourceFieldExpression
+>[Blackhawk Integrated]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Blackhawk OuterBar Code</DestinationFieldName
+><SourceFieldExpression
+>[Blackhawk OuterBar Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Blackhawk Override</DestinationFieldName
+><SourceFieldExpression
+>[Blackhawk Override]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>BlackhawkBar Code</DestinationFieldName
+><SourceFieldExpression
+>[BlackhawkBar Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Commercial Offer Name</DestinationFieldName
+><SourceFieldExpression
+>[Commercial Offer Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Reg Skip Flag</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card Reg Skip Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Package Class</DestinationFieldName
+><SourceFieldExpression
+>[Package Class]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Par Row Id</DestinationFieldName
+><SourceFieldExpression
+>[Par Row Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>AdditionalInfo</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Order Details_to-AdditionalInfo</Name
+><ParentComponentMapName
+>Orders_to_ListOfFBBLineItems</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AVCId</DestinationFieldName
+><SourceFieldExpression
+>[AVC Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ModemSerialNumber</DestinationFieldName
+><SourceFieldExpression
+>[Modem Serial Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Network Provider</DestinationFieldName
+><SourceFieldExpression
+>[Network Provider]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>AccessSeekerContact</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Order Details_to_AccessSeekerContact</Name
+><ParentComponentMapName
+>Orders_to_ListOfFBBLineItems</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+>1=2</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>contactName</DestinationFieldName
+><SourceFieldExpression
+>LookupName(&apos;VHA_FBB_CONTACT_DETAILS&apos;, &apos;Contact Name&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>contactPhone</DestinationFieldName
+><SourceFieldExpression
+>LookupName(&apos;VHA_FBB_CONTACT_DETAILS&apos;, &apos;Contact Phone&apos;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>ContactInfo</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Order Details_to_ContactInfo</Name
+><ParentComponentMapName
+>VHA NBN Order Logistics Details_to_ListOfNBNLogisticsInfo</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Contact #</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Contact Email Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact Email Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Contact Name</DestinationFieldName
+><SourceFieldExpression
+>[Contact Full Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ContactType</DestinationFieldName
+><SourceFieldExpression
+>&apos;End User&apos;</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Order Details_to_VHA NBN Order Details</Name
+><ParentComponentMapName
+>Orders_to_ListOfFBBLineItems</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+>[Network Provider] = &quot;NBN&quot; OR [Network Provider] = &quot;nbn&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Account Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([NBN Order Type] = &apos;Connect&apos;, IIF(([Service Provider Reference] = &apos;VHA&apos; OR [Orders.VHA Override SPF] = &apos;Y&apos;),LookupName(&apos;VHA_FBB_SUBMIT_ORDER_CONFIG&apos;, &apos;VHA NBN Billing Account&apos;) ,IIF([Service Provider Reference] = &apos;IINET&apos;, LookupName(&apos;VHA_FBB_SUBMIT_ORDER_CONFIG&apos;, &apos;VHA NBN Billing Account IINET&apos;),LookupName(&apos;VHA_FBB_SUBMIT_ORDER_CONFIG&apos;, &apos;VHA NBN Billing Account TPG&apos;))),&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Service Provider Reference</DestinationFieldName
+><SourceFieldExpression
+>IIF([Orders.VHA Override SPF] = &quot;Y&quot;,&quot;VHA&quot;,[Service Provider Reference])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Migration Order Flag</DestinationFieldName
+><SourceFieldExpression
+>[Migration Order Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Id To Transfer</DestinationFieldName
+><SourceFieldExpression
+>[Service Id To Transfer]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Migration Source RSP</DestinationFieldName
+><SourceFieldExpression
+>[Source RSP]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Migration Target RSP</DestinationFieldName
+><SourceFieldExpression
+>[Target RSP]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Action</DestinationFieldName
+><SourceFieldExpression
+>[NBN Action]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Appointment Id</DestinationFieldName
+><SourceFieldExpression
+>[NBN Appointment Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN External Ref Id</DestinationFieldName
+><SourceFieldExpression
+>IIF ([Migration Order Flag] = &apos;Y&apos; , &quot;VHA_&quot;+[Service Order Id]+&quot;_MIG&quot;,&quot;VHA_&quot;+[Service Order Id])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Location Id</DestinationFieldName
+><SourceFieldExpression
+>IIF ([NBN Order Type] = &apos;Connect&apos; , [NBN Location Id],&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Order Type</DestinationFieldName
+><SourceFieldExpression
+>[NBN Order Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Provisioning Flag</DestinationFieldName
+><SourceFieldExpression
+>[NBN Provisioning Required]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Contact Name</DestinationFieldName
+><SourceFieldExpression
+>[Contact Full Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Email Address</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact Email Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Mobile Number</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact #]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Order Logistics Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Order Logistics Details_to_VHA NBN Order Logistics Details</Name
+><ParentComponentMapName
+>VHA NBN Order Logistics Details_to_ListOfNBNLogisticsInfo</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Logistics Details</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Authority To Leave</DestinationFieldName
+><SourceFieldExpression
+>[Authority To Leave]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Delivery Instructions</DestinationFieldName
+><SourceFieldExpression
+>[Delivery Instructions]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>ListOfNBNLogisticsInfo</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Order Logistics Details_to_ListOfNBNLogisticsInfo</Name
+><ParentComponentMapName
+>Orders_to_ListOfFBBLineItems</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Logistics Details</SourceComponentName
+><SourceSearchSpecification
+>[Service Order Id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>ModemInfo</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Order Modem Details_to_ModemInfo</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Modem Details</SourceComponentName
+><SourceSearchSpecification
+>[Service Order Id] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>FibreUpgradeCopperMSISDN</DestinationFieldName
+><SourceFieldExpression
+>IIF(LookupValue(&apos;VHA_SMB_SOHO_PROP_TYPE&apos;,[&amp;CoverageType]) = &apos;Y&apos;,[&amp;FibreUpgradeCopperMSISDN],&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ReUseModem</DestinationFieldName
+><SourceFieldExpression
+>[VF Reuse Modem Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>StaticIP</DestinationFieldName
+><SourceFieldExpression
+>IIF(LookupValue(&apos;VHA_SMB_SOHO_PROP_TYPE&apos;, [&amp;CoverageType]) = &apos;Y&apos;,[&amp;StaticIP],&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Modem Provisioning System</DestinationFieldName
+><SourceFieldExpression
+>IIF(InvokeServiceMethod(&quot;VF String Utilities&quot;,&quot;GetModemProvisioningSystem&quot;,&quot;ProductClass=&apos;&quot; + [Product Class] + &quot;&apos;&quot;,&quot;ModemProvisioningSystem&quot;) = &apos;MountainView&apos;,&apos;MountainView&apos;,&apos;&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ACS Provisioning Flag</DestinationFieldName
+><SourceFieldExpression
+>[ACS Provisioning Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address State</DestinationFieldName
+><SourceFieldExpression
+>[Address State]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ModemSerialNumber</DestinationFieldName
+><SourceFieldExpression
+>[Modem Serial Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>NBN Speed</DestinationFieldName
+><SourceFieldExpression
+>[NBN Speed]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OUI</DestinationFieldName
+><SourceFieldExpression
+>[OUI]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POI Value</DestinationFieldName
+><SourceFieldExpression
+>[POI Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Class</DestinationFieldName
+><SourceFieldExpression
+>[Product Class]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Technology Type</DestinationFieldName
+><SourceFieldExpression
+>[Technology Type]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Opticomm Order Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Opticomm_Order_ Details</Name
+><ParentComponentMapName
+>Orders_to_ListOfFBBLineItems</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+>[Network Provider] = &quot;OPTICOMM&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Opticomm Service Provider Reference</DestinationFieldName
+><SourceFieldExpression
+>IIF([Orders.VHA Override SPF] = &quot;Y&quot;,&quot;VHA&quot;,[Service Provider Reference])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Serviceability Status</DestinationFieldName
+><SourceFieldExpression
+>[Serviceability Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Offering Id</DestinationFieldName
+><SourceFieldExpression
+>&quot;OPT000000000001&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product Offering Specification Type</DestinationFieldName
+><SourceFieldExpression
+>&quot;Product Template&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Contact Name</DestinationFieldName
+><SourceFieldExpression
+>[Contact Full Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Mobile Number</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Email Address</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact Email Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>RSPId</DestinationFieldName
+><SourceFieldExpression
+>[RSPId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Network Provider</DestinationFieldName
+><SourceFieldExpression
+>[Network Provider]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Account Id</DestinationFieldName
+><SourceFieldExpression
+>LookupName(&apos;VHA_FBB_SUBMIT_ORDER_CONFIG&apos;, &apos;Billing ACCNT OPTICOMM&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Action</DestinationFieldName
+><SourceFieldExpression
+>[NBN Action]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Opticomm Appointment Id</DestinationFieldName
+><SourceFieldExpression
+>[NBN Appointment Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Opticomm External Ref Id</DestinationFieldName
+><SourceFieldExpression
+>&quot;VHA_&quot;+[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Opticomm Location Id</DestinationFieldName
+><SourceFieldExpression
+>[NBN Location Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Opticomm Order Type</DestinationFieldName
+><SourceFieldExpression
+>[NBN Order Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Opticomm Provisioning Flag</DestinationFieldName
+><SourceFieldExpression
+>[NBN Provisioning Required]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Vision Order Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Vision_Order_ Details</Name
+><ParentComponentMapName
+>Orders_to_ListOfFBBLineItems</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Order Details</SourceComponentName
+><SourceSearchSpecification
+>[Network Provider] = &quot;VISION&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Contact Name</DestinationFieldName
+><SourceFieldExpression
+>[Contact Full Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Email Address</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact Email Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Seeker Mobile Number</DestinationFieldName
+><SourceFieldExpression
+>[Order Contact #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Action</DestinationFieldName
+><SourceFieldExpression
+>[NBN Action]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Account Id</DestinationFieldName
+><SourceFieldExpression
+>IIF([Service Provider Reference] = &apos;IINET&apos;, LookupName(&apos;VHA_FBB_SUBMIT_ORDER_CONFIG&apos;, &apos;Billing ACCNT VISION TRANSACT&apos;),LookupName(&apos;VHA_FBB_SUBMIT_ORDER_CONFIG&apos;, &apos;Billing ACCNT VISION FTTBW&apos;))</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Network Provider</DestinationFieldName
+><SourceFieldExpression
+>[Network Provider]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Vision Appointment Id</DestinationFieldName
+><SourceFieldExpression
+>&quot;&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Vision External Ref Id</DestinationFieldName
+><SourceFieldExpression
+>&quot;VHA_&quot;+[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Vision Location Id</DestinationFieldName
+><SourceFieldExpression
+>[NBN Location Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Vision Order Type</DestinationFieldName
+><SourceFieldExpression
+>[NBN Order Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Vision Provisioning Flag</DestinationFieldName
+><SourceFieldExpression
+>[NBN Provisioning Required]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Vision Service Provider Reference</DestinationFieldName
+><SourceFieldExpression
+>IIF([Orders.VHA Override SPF] = &quot;Y&quot;,&quot;VHA&quot;,[Service Provider Reference])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Order Id</DestinationFieldName
+><SourceFieldExpression
+>[Service Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>RSPId</DestinationFieldName
+><SourceFieldExpression
+>[RSPId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bandwith Profile Type</DestinationFieldName
+><SourceFieldExpression
+>IIF (Left([VHA NBN Order Details.Access Technology],5) = &apos;FTTBW&apos; , &apos;Package Id&apos;,&apos;Offer Id&apos;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Full Address</DestinationFieldName
+><SourceFieldExpression
+>[NBN Address Calc]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Post Code</DestinationFieldName
+><SourceFieldExpression
+>[Post Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Suburb</DestinationFieldName
+><SourceFieldExpression
+>[Locality Suburb Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Vision Contract Term Value</DestinationFieldName
+><SourceFieldExpression
+>&quot;12&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Orders.Billing Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Orders.Service Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Name</DestinationFieldName
+><SourceFieldExpression
+>[Street Road Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>State Territory Code</DestinationFieldName
+><SourceFieldExpression
+>[State Territory Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Country</DestinationFieldName
+><SourceFieldExpression
+>[Country]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Latitude</DestinationFieldName
+><SourceFieldExpression
+>[Latitude]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Longitude</DestinationFieldName
+><SourceFieldExpression
+>[Longitude]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Number</DestinationFieldName
+><SourceFieldExpression
+>[Street Road Number1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Type</DestinationFieldName
+><SourceFieldExpression
+>LookupValue(&apos;VHA_ADDRESS_STREETTYPE&apos;, [Street Road Type Code])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Number2</DestinationFieldName
+><SourceFieldExpression
+>[Street Road Number 2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Reference</DestinationFieldName
+><SourceFieldExpression
+>IIF([NBN Order Type] = &apos;Connect&apos; AND ([Order Sub function] IS NULL OR (([Order Sub function] = &apos;Change Location Across NW&apos; OR [Order Sub function] = &apos;Change Location Within NW&apos; OR [Order Sub function] = &apos;Change Technology Across NW&apos;) AND InStr([Access Technology], &quot;FTTBW&quot;) &gt; 0)),[Customer Reference Number],[Customer Reference Number2])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Access Type</DestinationFieldName
+><SourceFieldExpression
+>IIF ([VHA NBN Order Details.Access Technology] = &apos;TRANSACT-HFC&apos; , &apos;Layer3&apos;,&apos;Layer2&apos;)</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VHA NBN Shipment Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA NBN Shipment Details_to_VHA NBN Shipment Details</Name
+><ParentComponentMapName
+>VHA NBN Order Logistics Details_to_ListOfNBNLogisticsInfo</ParentComponentMapName
+><SourceComponentName
+>VHA NBN Shipment Details</SourceComponentName
+><SourceSearchSpecification
+>[VHA Shipment Preference] = &quot;Shipment Address&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AddressLine1</DestinationFieldName
+><SourceFieldExpression
+>[AddressLine1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AddressLine2</DestinationFieldName
+><SourceFieldExpression
+>[AddressLine2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AddressLine3</DestinationFieldName
+><SourceFieldExpression
+>[AddressLine3]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LocalityName</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment City]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PostCode</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment Zipcode]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>State</DestinationFieldName
+><SourceFieldExpression
+>[VF Shipment State]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>AdditionalInfo_1</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA Throttle Details_to_AdditionalInfo</Name
+><ParentComponentMapName
+>Line Items_to_ServiceOrders</ParentComponentMapName
+><SourceComponentName
+>VHA Throttle Details</SourceComponentName
+><SourceSearchSpecification
+>[Line Items.Parent Order Item Id] IS NULL AND ([Line Items.VF Service Order Sub Type] &lt;&gt; &quot;Change Proposition&quot; OR ([Line Items.VF Service Order Sub Type] = &quot;Change Proposition&quot; AND [Line Items.VF Action Code] &lt;&gt; &quot;Deleted&quot;))</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>[Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Status</DestinationFieldName
+><SourceFieldExpression
+>[Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Unthrottle</DestinationFieldName
+><SourceFieldExpression
+>[Unthrottle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>UnthrottleSharing</DestinationFieldName
+><SourceFieldExpression
+>[UnthrottleSharing]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Action</DestinationFieldName
+><SourceFieldExpression
+>[Action]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PCRF Expiry Date</DestinationFieldName
+><SourceFieldExpression
+>[PCRF Expiry Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Product</DestinationFieldName
+><SourceFieldExpression
+>[Product]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>PrepaymentContracts</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VHA_Prepayment_Contract</Name
+><ParentComponentMapName
+>Prepayments</ParentComponentMapName
+><SourceComponentName
+>VHA Prepayment Contracts</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ContractServiceOrderId</DestinationFieldName
+><SourceFieldExpression
+>[ContractServiceOrderId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ContractType</DestinationFieldName
+><SourceFieldExpression
+>[ContractType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>DeviceName</DestinationFieldName
+><SourceFieldExpression
+>[Device Accessory Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PrepaymentAmount</DestinationFieldName
+><SourceFieldExpression
+>[PrepaymentAmount]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>ListofPrepaymentsUPI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Orders_to_ListofPrepaymentsUPI</Name
+><ParentComponentMapName
+>Orders_to_Orders</ParentComponentMapName
+><SourceComponentName
+>Orders</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>PrepaymentsUPI</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>PrepaymentsUPI</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>PrepaymentsUPI</SourceComponentName
+><SourceSearchSpecification
+>[PaymentStatus] = &quot;Approved&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AuthenticationStatus</DestinationFieldName
+><SourceFieldExpression
+>[AuthenticationStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>DeviceDataCapturedFlag</DestinationFieldName
+><SourceFieldExpression
+>[DeviceDataCapturedFlag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ReceiptNumber</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_ReceiptNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LegacyID</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_LegacyID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentMethodType</DestinationFieldName
+><SourceFieldExpression
+>[PaymentMethodType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>InternalReferenceId</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_InternalReferenceId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IsDynamicPayment</DestinationFieldName
+><SourceFieldExpression
+>&quot;Y&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentStatus</DestinationFieldName
+><SourceFieldExpression
+>[PaymentStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentAmount</DestinationFieldName
+><SourceFieldExpression
+>[PaymentAmount]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionCreatedDate</DestinationFieldName
+><SourceFieldExpression
+>[TransactionCreatedDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CardEnrolled</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_CardEnrolled]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CardType</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_CardType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ExpiryDate</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_ExpiryDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CCFirst6Digits</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_First6Digits]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CCLast4Digits</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_Last4Digits]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LiabilityShiftPossible</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_LiabilityShiftPossible]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LiabilityShifted</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_LiabilityShifted]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ParesStatus</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_ParesStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentToken</DestinationFieldName
+><SourceFieldExpression
+>[PaymentToken]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>RiskScore</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_RiskScore]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionGrpID</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_TransactionGrpID]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionStatus</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_TransactionStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Version</DestinationFieldName
+><SourceFieldExpression
+>[&amp;UPI_Version]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionStatusReason</DestinationFieldName
+><SourceFieldExpression
+>[&amp;TransactionStatusReason]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TransactionRefrerenceNumber</DestinationFieldName
+><SourceFieldExpression
+>[&amp;TransactionReference]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ChannelId</DestinationFieldName
+><SourceFieldExpression
+>[ChannelId]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Attributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Attributes_to_Attributes</Name
+><ParentComponentMapName
+>Line Items_to_Line Items</ParentComponentMapName
+><SourceComponentName
+>Attributes</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>[operation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Action Code</DestinationFieldName
+><SourceFieldExpression
+>[Action Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Object Id</DestinationFieldName
+><SourceFieldExpression
+>[Object Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+>VIPUL - 03/08/17 - Excluded End User Engagement Type in outbound xml</Comments
+><DestinationComponentName
+>FBBAttributes</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Attributes_to_FBBAttributes</Name
+><ParentComponentMapName
+>Line Items_to_FBBLineItems</ParentComponentMapName
+><SourceComponentName
+>Attributes</SourceComponentName
+><SourceSearchSpecification
+>[Name] &lt;&gt; &quot;End User Engagement Type&quot;</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Type</DestinationFieldName
+><SourceFieldExpression
+>IIF([Line Items.VF Network Identifier] = &quot;OPTICOMM&quot; AND [Network Element Type] = &quot;NFAS&quot;,EAILookUpExternal(&quot;OPTICOMM_ACCESS_TECHNOLOGY&quot;,[Line Items.VHA Root Access Technology]),[Network Element Type])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Value</DestinationFieldName
+><SourceFieldExpression
+>[Value]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>operation</DestinationFieldName
+><SourceFieldExpression
+>[operation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Action Code</DestinationFieldName
+><SourceFieldExpression
+>[Action Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Integration Id</DestinationFieldName
+><SourceFieldExpression
+>[Integration Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Object Id</DestinationFieldName
+><SourceFieldExpression
+>[Object Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>BulkFlag</DisplayName
+><Name
+>BulkFlag</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConDigUName</DisplayName
+><Name
+>ConDigUName</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConEmlShortId</DisplayName
+><Name
+>ConEmlShortId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConEmlVal</DisplayName
+><Name
+>ConEmlVal</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConFName</DisplayName
+><Name
+>ConFName</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConId</DisplayName
+><Name
+>ConId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConMail</DisplayName
+><Name
+>ConMail</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConPhShortId</DisplayName
+><Name
+>ConPhShortId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConPhone</DisplayName
+><Name
+>ConPhone</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConPhoneVal</DisplayName
+><Name
+>ConPhoneVal</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>ConURL</DisplayName
+><Name
+>ConURL</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>CoverageType</DisplayName
+><Name
+>CoverageType</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>CustType</DisplayName
+><Name
+>CustType</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>FibreUpgradeCopperMSISDN</DisplayName
+><Name
+>FibreUpgradeCopperMSISDN</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>FulFilOrder</DisplayName
+><Name
+>FulFilOrder</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>IsDynamicPayment</DisplayName
+><Name
+>IsDynamicPayment</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>StaticIP</DisplayName
+><Name
+>StaticIP</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>TransactionReference</DisplayName
+><Name
+>TransactionReference</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>TransactionStatusReason</DisplayName
+><Name
+>TransactionStatusReason</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_CardEnrolled</DisplayName
+><Name
+>UPI_CardEnrolled</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_CardType</DisplayName
+><Name
+>UPI_CardType</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_ChannelId</DisplayName
+><Name
+>UPI_ChannelId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_ExpiryDate</DisplayName
+><Name
+>UPI_ExpiryDate</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_First6Digits</DisplayName
+><Name
+>UPI_First6Digits</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_InternalReferenceId</DisplayName
+><Name
+>UPI_InternalReferenceId</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_Last4Digits</DisplayName
+><Name
+>UPI_Last4Digits</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_LegacyID</DisplayName
+><Name
+>UPI_LegacyID</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_LiabilityShiftPossible</DisplayName
+><Name
+>UPI_LiabilityShiftPossible</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_LiabilityShifted</DisplayName
+><Name
+>UPI_LiabilityShifted</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_ParesStatus</DisplayName
+><Name
+>UPI_ParesStatus</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_PaymentToken</DisplayName
+><Name
+>UPI_PaymentToken</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_ReceiptNumber</DisplayName
+><Name
+>UPI_ReceiptNumber</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_RiskScore</DisplayName
+><Name
+>UPI_RiskScore</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_TransactionGrpID</DisplayName
+><Name
+>UPI_TransactionGrpID</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_TransactionStatus</DisplayName
+><Name
+>UPI_TransactionStatus</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>UPI_Version</DisplayName
+><Name
+>UPI_Version</Name
+></EaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>

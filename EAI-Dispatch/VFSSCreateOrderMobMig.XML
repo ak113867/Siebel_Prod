@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Dispatch Service Rule Set"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDispatchServiceRuleSet
+><EaiDispatchServiceRuleSet
+><Description
+>Dinesh: Created for portal Order - EGW Migration</Description
+><Inactive
+>N</Inactive
+><Name
+>VFSSCreateOrderMobMig</Name
+><ListOfEaiDispatchServiceRule
+><EaiDispatchServiceRule
+><InputProperty
+>/*@TransactionName</InputProperty
+><InputValue
+>VFSSCreateOrderMobMig</InputValue
+><Method
+>VFSSEGWCreateOrder</Method
+><Sequence
+>1</Sequence
+><Service
+>VF SS Inbound Update Logic</Service
+><ListOfEaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>3-1RV35F</MethodArg
+><StorageType
+>ROOTHIERARCHY</StorageType
+><Value
+>/*</Value
+></EaiDispatchServiceRuleOutputProperty
+></ListOfEaiDispatchServiceRuleOutputProperty
+></EaiDispatchServiceRule
+></ListOfEaiDispatchServiceRule
+></EaiDispatchServiceRuleSet
+></ListOfEaiDispatchServiceRuleSet
+></SiebelMessage
+>

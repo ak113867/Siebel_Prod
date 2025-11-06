@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Dispatch Service Rule Set"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDispatchServiceRuleSet
+><EaiDispatchServiceRuleSet
+><Description
+>Dinesh:15092025:Modified for egw mobility migration</Description
+><Inactive
+>N</Inactive
+><Name
+>VFSSCreateBillAccProMobility</Name
+><ListOfEaiDispatchServiceRule
+><EaiDispatchServiceRule
+><InputProperty
+>/*@TransactionName</InputProperty
+><InputValue
+>VFSSCreateBillAccProMobility</InputValue
+><Method
+>ActivateWorkflowProcessAndCorrectResponse</Method
+><Sequence
+>1</Sequence
+><Service
+>VF Inbound Workflow Logic</Service
+><ListOfEaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>3-1RYD3Q</MethodArg
+><StorageType
+>ROOTHIERARCHY</StorageType
+><Value
+>/*</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty1</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*@CustomerAccountId</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty2</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*@Channel</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty3</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*@AccountSync</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty4</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*/*/*/ListOfCUT Address/*</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>DebugFlag</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;N&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Generate Response</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;N&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Post Process Name</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Create BA Billing Profile Post Process&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Pre Process Name</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Create BA Billing Profile Pre Process&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Request Data Map</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;External BA BillingProf to Internal BA BillingProf Mobility&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Request Operation</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;Execute&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>RequestDataMapOutputIO</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Internal Create Billing Account Billing Profile Request&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Response Data Map</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;Internal BA BillingProf to External BA BillingProf&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>ResponseDataMapInputIO</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Internal Create Billing Account Billing Profile Response&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>ResponseDataMapOutputIO</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Create Billing Acc Billing Profile Response&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>TransactionName</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VFSSCreateBillAccProMobility&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>WorkflowName</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Insert Upsert with Data Map&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+></ListOfEaiDispatchServiceRuleOutputProperty
+></EaiDispatchServiceRule
+></ListOfEaiDispatchServiceRule
+></EaiDispatchServiceRuleSet
+></ListOfEaiDispatchServiceRuleSet
+></SiebelMessage
+>
