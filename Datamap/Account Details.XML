@@ -1,0 +1,1955 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+></Comments
+><DestinationObjectName
+>VF Generic Account Details</DestinationObjectName
+><Name
+>Account Details</Name
+><SourceObjectName
+>VF Account Details – Data Map Input</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+>MJ:Added for EGW Account Sync</Comments
+><DestinationComponentName
+>Sync SF Account Info</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Sync SF Account Info</Name
+><ParentComponentMapName
+>VF Bill Account for Sync</ParentComponentMapName
+><SourceComponentName
+>VF Bill Account for Sync</SourceComponentName
+><SourceSearchSpecification
+>[SyncToSF] IS NOT NULL AND [&amp;SyncDataInfo] IS NOT NULL</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>BillingActiveFlag</DestinationFieldName
+><SourceFieldExpression
+>[BillingActiveFlag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Cycle</DestinationFieldName
+><SourceFieldExpression
+>[PaymentDays]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreditCheckApprovedBy</DestinationFieldName
+><SourceFieldExpression
+>&quot;CAREUSER1&quot;</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Name</DestinationFieldName
+><SourceFieldExpression
+>[Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Master Account Type Code</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Type Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ACNNumber</DestinationFieldName
+><SourceFieldExpression
+>IIF(Len([Master Account Tax Exempt Number]) = 9, [Master Account Tax Exempt Number],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email Bill To</DestinationFieldName
+><SourceFieldExpression
+>[Email Bill To]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AppleDEP</DestinationFieldName
+><SourceFieldExpression
+>[AppleDEP]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>AppleDEPOracleOnboarded</DestinationFieldName
+><SourceFieldExpression
+>[AppleDEPOracleOnboarded]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Media Type</DestinationFieldName
+><SourceFieldExpression
+>[Media Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OfferSegment</DestinationFieldName
+><SourceFieldExpression
+>EAILookUpExternal(&quot;OFFER_SEGMENT&quot;,[OfferSegment])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHAAccountManager</DestinationFieldName
+><SourceFieldExpression
+>[VHAAccountManager]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TechFundBANNumber</DestinationFieldName
+><SourceFieldExpression
+>[TechFundBANNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF SF Account Number</DestinationFieldName
+><SourceFieldExpression
+>[VF SF Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Co-Terminus Contract Length</DestinationFieldName
+><SourceFieldExpression
+>[VF Co-Terminus Contract Length]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Co-Terminus Start Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Co-Terminus Start Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Co-Terminus End Date</DestinationFieldName
+><SourceFieldExpression
+>[VF Co-Terminus End Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Co-Terminus Flag</DestinationFieldName
+><SourceFieldExpression
+>[VF Co-Terminus Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>MPP Contract Approved Amount</DestinationFieldName
+><SourceFieldExpression
+>[MPP Contract Approved Amount]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Remaining Connections</DestinationFieldName
+><SourceFieldExpression
+>IIF([Remaining Connections] &gt; &quot;0&quot;,[Remaining Connections],&quot;&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Term</DestinationFieldName
+><SourceFieldExpression
+>[Payment Term]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Type</DestinationFieldName
+><SourceFieldExpression
+>[Payment Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ABNStatus</DestinationFieldName
+><SourceFieldExpression
+>[ABNStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Account Status</DestinationFieldName
+><SourceFieldExpression
+>[Account Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Approved Connections</DestinationFieldName
+><SourceFieldExpression
+>[Approved Connections]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>BillingAccountStatus</DestinationFieldName
+><SourceFieldExpression
+>[BillingAccountStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Account Type Code</DestinationFieldName
+><SourceFieldExpression
+>[Account Type Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Business Name</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Company Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Check Status</DestinationFieldName
+><SourceFieldExpression
+>[Credit Check Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreditAssessmentDate</DestinationFieldName
+><SourceFieldExpression
+>[CreditAssessmentDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreditCheckExpiryDate</DestinationFieldName
+><SourceFieldExpression
+>[CreditCheckExpiryDate]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreditCheckMessage</DestinationFieldName
+><SourceFieldExpression
+>[CreditCheckMessage]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreditCheckStatusInfo</DestinationFieldName
+><SourceFieldExpression
+>[CreditCheckStatusInfo]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreditClass</DestinationFieldName
+><SourceFieldExpression
+>[Credit Class]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CreditLimit</DestinationFieldName
+><SourceFieldExpression
+>[Credit Limit]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CSN</DestinationFieldName
+><SourceFieldExpression
+>[CSN]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Type</DestinationFieldName
+><SourceFieldExpression
+>[VF Customer Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>EmployeeCountRange</DestinationFieldName
+><SourceFieldExpression
+>[EmployeeCountRange]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>IndustryType</DestinationFieldName
+><SourceFieldExpression
+>[IndustryType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Live Connections</DestinationFieldName
+><SourceFieldExpression
+>[Live Connections]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Master Account Name</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Company Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>PaymentDays</DestinationFieldName
+><SourceFieldExpression
+>[PaymentDays]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ProcessingStatus</DestinationFieldName
+><SourceFieldExpression
+>[ProcessingStatus]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TaxExemptNumber</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Tax Exempt Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>TradingName</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Alias]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Customer Segment</DestinationFieldName
+><SourceFieldExpression
+>[VF Customer Segment]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>CUT Address</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>CUT  Address</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>CUT Address</SourceComponentName
+><SourceSearchSpecification
+>([Start Date] &lt;= Today() AND ([End Date] &gt; Today() OR [End Date] is null)) AND ([Address Format] &lt;&gt; &quot;Service&quot;)</SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Ship Address Flag</DestinationFieldName
+><SourceFieldExpression
+>[Ship Address Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Building</DestinationFieldName
+><SourceFieldExpression
+>[Address Building]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Floor</DestinationFieldName
+><SourceFieldExpression
+>[Address Floor]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Floor Type</DestinationFieldName
+><SourceFieldExpression
+>[Address Floor Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Format</DestinationFieldName
+><SourceFieldExpression
+>[Address Format]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Address Street Type</DestinationFieldName
+><SourceFieldExpression
+>[Address Street Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Attention to</DestinationFieldName
+><SourceFieldExpression
+>[Attention to]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>City</DestinationFieldName
+><SourceFieldExpression
+>[City]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Country</DestinationFieldName
+><SourceFieldExpression
+>[Country]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>District</DestinationFieldName
+><SourceFieldExpression
+>[District]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Freeform address line 1</DestinationFieldName
+><SourceFieldExpression
+>[Freeform address line 1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Freeform address line 2</DestinationFieldName
+><SourceFieldExpression
+>[Freeform address line 2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>POBox</DestinationFieldName
+><SourceFieldExpression
+>[POBox]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Postal Code</DestinationFieldName
+><SourceFieldExpression
+>[Postal Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Primary Address Flg</DestinationFieldName
+><SourceFieldExpression
+>[Primary Address Flg]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Private Bag</DestinationFieldName
+><SourceFieldExpression
+>[Private Bag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Private Bag Name</DestinationFieldName
+><SourceFieldExpression
+>[Private Bag Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Rural Delivery</DestinationFieldName
+><SourceFieldExpression
+>[Rural Delivery]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>State</DestinationFieldName
+><SourceFieldExpression
+>[State]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Address</DestinationFieldName
+><SourceFieldExpression
+>[Street Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Street Address 2</DestinationFieldName
+><SourceFieldExpression
+>[Street Address 2]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Com Invoice Profile</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Com Invoice Profile</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Com Invoice Profile</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+>BalajiM - Miami APM- 07/07/2022</Comments
+><DestinationFieldName
+>APM Token</DestinationFieldName
+><SourceFieldExpression
+>[APM Token]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>BalajiM - Miami APM- 07/07/2022</Comments
+><DestinationFieldName
+>APM Type</DestinationFieldName
+><SourceFieldExpression
+>[APM Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Accounting Type</DestinationFieldName
+><SourceFieldExpression
+>[Accounting Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bank Account Name</DestinationFieldName
+><SourceFieldExpression
+>[Bank Account Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bank Account Number</DestinationFieldName
+><SourceFieldExpression
+>[Bank Account Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bank Branch Calc</DestinationFieldName
+><SourceFieldExpression
+>[Bank Branch Calc]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Charges Override</DestinationFieldName
+><SourceFieldExpression
+>[Bill Charges Override]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Cycle Day</DestinationFieldName
+><SourceFieldExpression
+>[Bill Cycle Day]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Format</DestinationFieldName
+><SourceFieldExpression
+>[Bill Format]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Frequency</DestinationFieldName
+><SourceFieldExpression
+>[Bill Frequency]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Bill Segment</DestinationFieldName
+><SourceFieldExpression
+>[Bill Segment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Billing Account Name</DestinationFieldName
+><SourceFieldExpression
+>[Billing Account Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CCP Reg Id</DestinationFieldName
+><SourceFieldExpression
+>[CCP Reg Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CCV</DestinationFieldName
+><SourceFieldExpression
+>[CCV]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:9/07/24 : Created for Tallyman to PCC</Comments
+><DestinationFieldName
+>Cellular Phone #</DestinationFieldName
+><SourceFieldExpression
+>[Cellular Phone #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card First 6</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card First 6]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Last 4</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card Last 4]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Name</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Number</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Card Type</DestinationFieldName
+><SourceFieldExpression
+>[Credit Card Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Account Name</DestinationFieldName
+><SourceFieldExpression
+>[Customer Account Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Contact First Name</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact First Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Contact Last Name</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Last Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Contact Mid Name</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Mid Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Contact Phone Number</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Phone Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Customer Contact Title</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Title]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:9/07/24 : Created for Tallyman to PCC</Comments
+><DestinationFieldName
+>Customer Contact Work Phone #</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Work Phone #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Detailed Data Usage</DestinationFieldName
+><SourceFieldExpression
+>[Detailed Data Usage]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Direct Debit Reference</DestinationFieldName
+><SourceFieldExpression
+>[Direct Debit Reference]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email</DestinationFieldName
+><SourceFieldExpression
+>[Email]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email Bill</DestinationFieldName
+><SourceFieldExpression
+>[Email Bill]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Email Bill To</DestinationFieldName
+><SourceFieldExpression
+>[Email Bill To]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Email Bill To Last Updated</DestinationFieldName
+><SourceFieldExpression
+>[Email Bill To Last Updated]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Expiration Month</DestinationFieldName
+><SourceFieldExpression
+>[Expiration Month]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Expiration Year</DestinationFieldName
+><SourceFieldExpression
+>[Expiration Year]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Include Call Details</DestinationFieldName
+><SourceFieldExpression
+>[Include Call Details]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>MSISDN For TXT</DestinationFieldName
+><SourceFieldExpression
+>[MSISDN For TXT]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Media Type</DestinationFieldName
+><SourceFieldExpression
+>[Media Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Non Paying Account Bill Format Flag</DestinationFieldName
+><SourceFieldExpression
+>[Non Paying Account Bill Format Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Notification Method</DestinationFieldName
+><SourceFieldExpression
+>[Notification Method]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Partner</DestinationFieldName
+><SourceFieldExpression
+>[Partner]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Method</DestinationFieldName
+><SourceFieldExpression
+>[Payment Method]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Term LIC</DestinationFieldName
+><SourceFieldExpression
+>[Payment Term LIC]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Payment Type</DestinationFieldName
+><SourceFieldExpression
+>[Payment Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:Created for Tallyman to PCC Def-907</Comments
+><DestinationFieldName
+>Prepaid Top-Up Frequency</DestinationFieldName
+><SourceFieldExpression
+>[Prepaid Top-Up Frequency]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:Created for Tallyman to PCC Def-907</Comments
+><DestinationFieldName
+>Prepaid Top-Up UOM</DestinationFieldName
+><SourceFieldExpression
+>[Prepaid Top-Up UOM]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Presentment</DestinationFieldName
+><SourceFieldExpression
+>[Presentment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Suppress Paper</DestinationFieldName
+><SourceFieldExpression
+>[Suppress Paper]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Suspend Payment</DestinationFieldName
+><SourceFieldExpression
+>[Suspend Payment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Added for 16.2 - CIR, DDS</Comments
+><DestinationFieldName
+>Suspend Payment End Date</DestinationFieldName
+><SourceFieldExpression
+>[Suspend Payment End Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:Created for Tallyman to PCC Def-907</Comments
+><DestinationFieldName
+>UpdNotifyMSISDNFlag</DestinationFieldName
+><SourceFieldExpression
+>[&amp;sUpdNotifyMSISDNFlag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Validity Status</DestinationFieldName
+><SourceFieldExpression
+>[Validity Status]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Bill Account for Sync</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF Bill Account for Sync</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>VF Bill Account for Sync</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Master Account Company Type</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Company Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava 10.09.24 Careated for Tallyman to pcc</Comments
+><DestinationFieldName
+>Master Account Corporate Group</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Corporate Group]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Master Account Id</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Master Account Main Phone Number</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Main Phone Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Master Account Tax Exempt Number</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Tax Exempt Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Master Account Type</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>BHAVA 16/04/24 : Created for Tallyman to PCC</Comments
+><DestinationFieldName
+>Maximum Connects</DestinationFieldName
+><SourceFieldExpression
+>[Maximum Connects]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Migrated Account Flag</DestinationFieldName
+><SourceFieldExpression
+>[Migrated Account Flag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Occupation</DestinationFieldName
+><SourceFieldExpression
+>[Occupation]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>OrganizationName</DestinationFieldName
+><SourceFieldExpression
+>[OrganizationName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Parent Account Id</DestinationFieldName
+><SourceFieldExpression
+>[Parent Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Parent Account Type Code</DestinationFieldName
+><SourceFieldExpression
+>[Parent Account Type Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Primary Country</DestinationFieldName
+><SourceFieldExpression
+>[Primary Country]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Primary Postal Code</DestinationFieldName
+><SourceFieldExpression
+>[Primary Postal Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Primary State</DestinationFieldName
+><SourceFieldExpression
+>[Primary State]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Primary Street Address</DestinationFieldName
+><SourceFieldExpression
+>[Primary Street Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>PrivateBag</DestinationFieldName
+><SourceFieldExpression
+>[PrivateBag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>PrivateBagNumber</DestinationFieldName
+><SourceFieldExpression
+>[PrivateBagNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>RuralDelivery</DestinationFieldName
+><SourceFieldExpression
+>[RuralDelivery]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Service Provider</DestinationFieldName
+><SourceFieldExpression
+>[Service Provider]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>ServiceProvider</DestinationFieldName
+><SourceFieldExpression
+>[ServiceProvider]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>StreetNumber</DestinationFieldName
+><SourceFieldExpression
+>[StreetNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>StreetType</DestinationFieldName
+><SourceFieldExpression
+>[StreetType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>SuburbTown</DestinationFieldName
+><SourceFieldExpression
+>[SuburbTown]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Account Number Calc</DestinationFieldName
+><SourceFieldExpression
+>[VF Account Number Calc]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SyncToSF</DestinationFieldName
+><SourceFieldExpression
+>IIF([&amp;SyncDataInfo] IS NULL,&quot;N&quot;,[SyncToSF])</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>SyncDataInfo</DestinationFieldName
+><SourceFieldExpression
+>[&amp;SyncDataInfo]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ARII</DestinationFieldName
+><SourceFieldExpression
+>[ARII]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Account Alias</DestinationFieldName
+><SourceFieldExpression
+>[Account Alias]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Account Status</DestinationFieldName
+><SourceFieldExpression
+>[Account Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Account Type</DestinationFieldName
+><SourceFieldExpression
+>[Account Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>AddresreferenceId</DestinationFieldName
+><SourceFieldExpression
+>[AddresreferenceId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>AddressType</DestinationFieldName
+><SourceFieldExpression
+>[AddressType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>ApptNoFloorFlat</DestinationFieldName
+><SourceFieldExpression
+>[ApptNoFloorFlat]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>BoxNumber</DestinationFieldName
+><SourceFieldExpression
+>[BoxNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>BuildingNumberName</DestinationFieldName
+><SourceFieldExpression
+>[BuildingNumberName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Channel Type</DestinationFieldName
+><SourceFieldExpression
+>[Channel Type]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>City</DestinationFieldName
+><SourceFieldExpression
+>[City]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Credit Check Status</DestinationFieldName
+><SourceFieldExpression
+>[Credit Check Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Credit Check Status Modified Date</DestinationFieldName
+><SourceFieldExpression
+>[Credit Check Status Modified Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Credit Class</DestinationFieldName
+><SourceFieldExpression
+>[Credit Class]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Credit Limit</DestinationFieldName
+><SourceFieldExpression
+>[Credit Limit]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>BHAVA 16/04/24 : Created for Tallyman to PCC</Comments
+><DestinationFieldName
+>Credit Score</DestinationFieldName
+><SourceFieldExpression
+>[Credit Score]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Currency Code</DestinationFieldName
+><SourceFieldExpression
+>[Currency Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Account Id</DestinationFieldName
+><SourceFieldExpression
+>[Customer Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>CustomerCurrency Code</DestinationFieldName
+><SourceFieldExpression
+>[CustomerCurrency Code]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CustomerSubSegment</DestinationFieldName
+><SourceFieldExpression
+>[&amp;CustomerSubSegment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Employer</DestinationFieldName
+><SourceFieldExpression
+>[Employer]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Financial Position</DestinationFieldName
+><SourceFieldExpression
+>[Financial Position]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Financial Status</DestinationFieldName
+><SourceFieldExpression
+>[Financial Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>FloorType</DestinationFieldName
+><SourceFieldExpression
+>[FloorType]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Format</DestinationFieldName
+><SourceFieldExpression
+>[Format]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>FreeFormAddressLine1</DestinationFieldName
+><SourceFieldExpression
+>[FreeFormAddressLine1]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>FreeFormAddressLine2</DestinationFieldName
+><SourceFieldExpression
+>[FreeFormAddressLine2]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>[Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Linkage Id</DestinationFieldName
+><SourceFieldExpression
+>[Linkage Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Master Account Alias</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Alias]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Master Account Bill Segment</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Bill Segment]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava 1/07/24:: Created for Tallyman to PCC</Comments
+><DestinationFieldName
+>Master Account Company Name</DestinationFieldName
+><SourceFieldExpression
+>[Master Account Company Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VHA Dealer Group</DestinationFieldName
+><SourceFieldExpression
+>[VHA Dealer Group]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Billing Account Contact</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF Billing Account Contact</Name
+><ParentComponentMapName
+>Com Invoice Profile</ParentComponentMapName
+><SourceComponentName
+>VF Billing Account Contact</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Account Manager First Name</DestinationFieldName
+><SourceFieldExpression
+>[Account Manager First Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Account Manager Last Name</DestinationFieldName
+><SourceFieldExpression
+>[Account Manager Last Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:Created for Tallyman to PCC Def-907</Comments
+><DestinationFieldName
+>Assistant</DestinationFieldName
+><SourceFieldExpression
+>[Assistant]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:Created for Tallyman to PCC Def-907</Comments
+><DestinationFieldName
+>Assistant Phone #</DestinationFieldName
+><SourceFieldExpression
+>[Assistant Phone #]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>CellularPhoneNumber</DestinationFieldName
+><SourceFieldExpression
+>[CellularPhoneNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Contact Deceased Date</DestinationFieldName
+><SourceFieldExpression
+>[Contact Deceased Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ContactPreferredName</DestinationFieldName
+><SourceFieldExpression
+>[ContactPreferredName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>ContactRowId</DestinationFieldName
+><SourceFieldExpression
+>[ContactRowId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Contact Email Description</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Email Description]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Contact Email Preferred</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Email Preferred]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Contact Email Valid From</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Email Valid From]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Contact Email Valid To</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Email Valid To]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Contact Phone Valid From</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Phone Valid From]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Contact Phone Valid To</DestinationFieldName
+><SourceFieldExpression
+>[Customer Contact Phone Valid To]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Customer Until Date</DestinationFieldName
+><SourceFieldExpression
+>[Customer Until Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>CustomerContactAccountId</DestinationFieldName
+><SourceFieldExpression
+>[CustomerContactAccountId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>CustomerContactFirstName</DestinationFieldName
+><SourceFieldExpression
+>[CustomerContactFirstName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>CustomerContactId</DestinationFieldName
+><SourceFieldExpression
+>[CustomerContactId]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>CustomerContactLastName</DestinationFieldName
+><SourceFieldExpression
+>[CustomerContactLastName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>CustomerContactMiddleName</DestinationFieldName
+><SourceFieldExpression
+>[CustomerContactMiddleName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>CustomerContactTitle </DestinationFieldName
+><SourceFieldExpression
+>[CustomerContactTitle]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>DOB</DestinationFieldName
+><SourceFieldExpression
+>[DOB]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>DrivingLicenceCountry</DestinationFieldName
+><SourceFieldExpression
+>[DrivingLicenceCountry]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>DrivingLicenceState</DestinationFieldName
+><SourceFieldExpression
+>[DrivingLicenceState]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Email Address</DestinationFieldName
+><SourceFieldExpression
+>[Email Address]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>EmailAddress</DestinationFieldName
+><SourceFieldExpression
+>[EmailAddress]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>End Date</DestinationFieldName
+><SourceFieldExpression
+>[End Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>FirstName</DestinationFieldName
+><SourceFieldExpression
+>[FirstName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Gender</DestinationFieldName
+><SourceFieldExpression
+>[Gender]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>HomePhoneNumber</DestinationFieldName
+><SourceFieldExpression
+>[HomePhoneNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>HomePhoneReference</DestinationFieldName
+><SourceFieldExpression
+>[HomePhoneReference]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Id Reference Number</DestinationFieldName
+><SourceFieldExpression
+>[Id Reference Number]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>LastName</DestinationFieldName
+><SourceFieldExpression
+>[LastName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Login Name</DestinationFieldName
+><SourceFieldExpression
+>[Login Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>MiddleName</DestinationFieldName
+><SourceFieldExpression
+>[MiddleName]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>PassportCountry</DestinationFieldName
+><SourceFieldExpression
+>[PassportCountry]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>PassportNumber</DestinationFieldName
+><SourceFieldExpression
+>[PassportNumber]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Primary Position Name</DestinationFieldName
+><SourceFieldExpression
+>[Primary Position Name]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Since Date</DestinationFieldName
+><SourceFieldExpression
+>[Since Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>Start Date</DestinationFieldName
+><SourceFieldExpression
+>[Start Date]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Title</DestinationFieldName
+><SourceFieldExpression
+>[Title]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>Bhava:Created for Tallyman to PCC Def-907</Comments
+><DestinationFieldName
+>UpdHomePhoneFlag</DestinationFieldName
+><SourceFieldExpression
+>[&amp;sUpdHomePhoneFlag]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+>ShilpaRaj17Jun24 :: Created for Tallyman to PCC Upgrade :: SyncAccount</Comments
+><DestinationFieldName
+>WorkPhoneReference</DestinationFieldName
+><SourceFieldExpression
+>[WorkPhoneReference]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Work Phone #</DestinationFieldName
+><SourceFieldExpression
+>[Work Phone #]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_DATE</DataType
+><DisplayName
+>CoTermEndDate</DisplayName
+><Name
+>CoTermEndDate</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+></Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>CoTermFlg</DisplayName
+><Name
+>CoTermFlg</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+>Added for EGW Account Sync</Comments
+><DataType
+>DTYPE_NUMBER</DataType
+><DisplayName
+>RemEquipLmt</DisplayName
+><Name
+>RemEquipLmt</Name
+></EaiMapArgument
+><EaiMapArgument
+><Comments
+>Added for EGW Account Sync</Comments
+><DataType
+>DTYPE_TEXT</DataType
+><DisplayName
+>SyncDataInfo</DisplayName
+><Name
+>SyncDataInfo</Name
+></EaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>

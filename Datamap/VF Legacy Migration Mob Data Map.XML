@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Data Map"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDataMap
+><EaiObjectMap
+><Comments
+>29/09/25 Dinesh: Created for EGW Data Migration</Comments
+><DestinationObjectName
+>VF Legacy Service Detail Mobility</DestinationObjectName
+><Name
+>VF Legacy Migration Mob Data Map</Name
+><SourceObjectName
+>VF Legacy Service Detail Mobility</SourceObjectName
+><ListOfEaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>Account</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>Account</Name
+><ParentComponentMapName
+></ParentComponentMapName
+><SourceComponentName
+>Account</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Row Id</DestinationFieldName
+><SourceFieldExpression
+>[Row Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+><EaiComponentMap
+><Comments
+></Comments
+><DestinationComponentName
+>VF Legacy Migrated Service Details</DestinationComponentName
+><DestinationValidation
+></DestinationValidation
+><Name
+>VF Legacy Migrated Service Details</Name
+><ParentComponentMapName
+>Account</ParentComponentMapName
+><SourceComponentName
+>VF Legacy Migrated Service Details</SourceComponentName
+><SourceSearchSpecification
+></SourceSearchSpecification
+><SourceValidation
+></SourceValidation
+><ListOfEaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>Id</DestinationFieldName
+><SourceFieldExpression
+>InvokeServiceMethod(&quot;SIS OM PC Service&quot;,&quot;Get Next RowId&quot;,&quot;Test = &apos;123&apos;&quot;,&quot;RowId&quot;)</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Legacy Account Id</DestinationFieldName
+><SourceFieldExpression
+>[VF Legacy Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Legacy Brand</DestinationFieldName
+><SourceFieldExpression
+>[VF Legacy Brand]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Legacy Migration Status</DestinationFieldName
+><SourceFieldExpression
+>[VF Legacy Migration Status]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Legacy Service Id</DestinationFieldName
+><SourceFieldExpression
+>[VF Legacy Service Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Legacy System</DestinationFieldName
+><SourceFieldExpression
+>[VF Legacy System]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Legacy Username</DestinationFieldName
+><SourceFieldExpression
+>[VF Legacy Username]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Migration Channel</DestinationFieldName
+><SourceFieldExpression
+>[VF Migration Channel]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF New Account Id</DestinationFieldName
+><SourceFieldExpression
+>[VF New Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF New Billing Account Id</DestinationFieldName
+><SourceFieldExpression
+>[VF New Billing Account Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF New Contact Id</DestinationFieldName
+><SourceFieldExpression
+>[VF New Contact Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF New Order Id</DestinationFieldName
+><SourceFieldExpression
+>[VF New Order Id]</SourceFieldExpression
+></EaiFieldMap
+><EaiFieldMap
+><Comments
+></Comments
+><DestinationFieldName
+>VF Legacy BA Id</DestinationFieldName
+><SourceFieldExpression
+>[VF Legacy BA Id]</SourceFieldExpression
+></EaiFieldMap
+></ListOfEaiFieldMap
+></EaiComponentMap
+></ListOfEaiComponentMap
+><ListOfEaiMapArgument
+></ListOfEaiMapArgument
+></EaiObjectMap
+></ListOfEaiDataMap
+></SiebelMessage
+>
