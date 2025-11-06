@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><SiebelMessage
+ MessageId=""
+ IntObjectName="EAI Dispatch Service Rule Set"
+ MessageType="Integration Object"
+ IntObjectFormat="Siebel Hierarchical"
+><ListOfEaiDispatchServiceRuleSet
+><EaiDispatchServiceRuleSet
+><Description
+>Dinesh:15092025:Modified for egw mobility migration</Description
+><Inactive
+>N</Inactive
+><Name
+>VFSSCreateUpdCusAccFinMobility</Name
+><ListOfEaiDispatchServiceRule
+><EaiDispatchServiceRule
+><InputProperty
+>/*@TransactionName</InputProperty
+><InputValue
+>VFSSCreateUpdCusAccFinMobility</InputValue
+><Method
+>ActivateWorkflowProcessAndCorrectResponse</Method
+><Sequence
+>1</Sequence
+><Service
+>VF Inbound Workflow Logic</Service
+><ListOfEaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>3-1RYIA3</MethodArg
+><StorageType
+>ROOTHIERARCHY</StorageType
+><Value
+>/*</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>ClearExistingID</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*@ClearExistingID</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CreditCheckStatus</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*/ListOfVF Com Financial Profile/VF Com Financial Profile</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustType</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*/*/*@Type</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty1</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*@CustomerAccountId</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty2</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*@Channel</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty3</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*/ListOfVF Com Financial Profile/*</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty4</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*@Organisation</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty5</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*/*/*@Dealer Code</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>CustomProcessProperty6</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*/*/*@Global Marketing Pref OptIn</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>DebugFlag</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;N&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>FinProfResetReq</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/*/*/*/ListOfVF Com Financial Profile/VF Com Financial Profile</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Generate Response</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;Y&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Post Process Name</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Create Update CA Finan Profile Post Process&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Pre Process Name</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Create Update CA Finan Profile Pre Process&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Request Data Map</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;External CA FinanProf to Internal CA FinanProf Mobility&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Request Operation</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;Execute&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>RequestDataMapOutputIO</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Internal Create Update Cust Acc Fin Profile Request&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Response Data Map</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;Internal CA FinanProf to External CA FinanProf&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>ResponseDataMapInputIO</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Internal Create Update Cust Acc Fin Profile Response&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>ResponseDataMapOutputIO</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VF Create Update Customer Acc Response&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>Transaction Id</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>/*/SiebelMessage@MessageId</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>TransactionName</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;VFSSCreateUpdCusAccFinMobility&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+><EaiDispatchServiceRuleOutputProperty
+><MethodArg
+>UNISIM Response Data Map</MethodArg
+><StorageType
+>PROPERTY</StorageType
+><Value
+>&quot;Internal CA to External CA&quot;</Value
+></EaiDispatchServiceRuleOutputProperty
+></ListOfEaiDispatchServiceRuleOutputProperty
+></EaiDispatchServiceRule
+></ListOfEaiDispatchServiceRule
+></EaiDispatchServiceRuleSet
+></ListOfEaiDispatchServiceRuleSet
+></SiebelMessage
+>
